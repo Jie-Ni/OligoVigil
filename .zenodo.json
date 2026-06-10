@@ -52,17 +52,48 @@
   "access_right": "open",
   "license": "CC-BY-4.0",
   "language": "eng",
-  "communities": [],
   "related_identifiers": [
-    {"relation": "isDerivedFrom", "identifier": "10.1093/nar/gkaf1064", "resource_type": "publication-article", "scheme": "doi"},
-    {"relation": "references",   "identifier": "10.1049/syb2.12102",   "resource_type": "publication-article", "scheme": "doi"},
-    {"relation": "references",   "identifier": "10.1186/s12859-025-06359-y", "resource_type": "publication-article", "scheme": "doi"},
-    {"relation": "isPartOf",     "identifier": "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1", "resource_type": "software", "scheme": "url"}
+    {
+      "relation": "isPartOf",
+      "identifier": "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1093/nar/gkaf1064",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1049/syb2.12102",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1186/s12859-025-06359-y",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
   ],
   "subjects": [
-    {"term": "Computational biology / Bioinformatics", "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D019295", "scheme": "MeSH"},
-    {"term": "Oligonucleotides, Antisense", "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D016376", "scheme": "MeSH"},
-    {"term": "RNA, Small Interfering", "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D034622", "scheme": "MeSH"}
+    {
+      "term": "Computational biology / Bioinformatics",
+      "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D019295",
+      "scheme": "MeSH"
+    },
+    {
+      "term": "Oligonucleotides, Antisense",
+      "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D016376",
+      "scheme": "MeSH"
+    },
+    {
+      "term": "RNA, Small Interfering",
+      "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D034622",
+      "scheme": "MeSH"
+    }
   ],
   "notes": "Metadata-corrected release candidate for NAR Database Issue submission. Curator of record: Jie Ni. All headline counts correspond to the 2026-06-08 release snapshot after EXPAND-2 and KAPPA-2 updates. Versioned data files, schema documentation, audit exports and benchmark splits are available through the GitHub release and web-portal downloads."
 }

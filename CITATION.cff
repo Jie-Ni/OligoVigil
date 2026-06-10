@@ -7,26 +7,26 @@ abstract: >-
   preclinical safety and off-target evidence for therapeutic
   oligonucleotides (ASO, siRNA, PMO, LNA, aptamer, GalNAc-siRNA). The v1
   release contains 737 human-adjudicated records (626 toxicity + 111
-  off-target) from 628 primary sources, each anchored to an exact
+  off-target) from 660 primary sources, each anchored to an exact
   in-source location and graded A/B/C, plus a leakage-aware 344-record
   evaluation benchmark with deterministic prior baselines. Following the
   v6 within-team collaborator round (2026-06-07), placeholder benchmark
   contamination was reduced from 31.1% to 4.1% and new chemistry and
   delivery dimensions were added. A second-round toxicity expansion
   (EXPAND-2; +32 records) and a mixed-sample inter-rater study with an
-  independent second curator (KAPPA-2) followed: binary Cohen kappa =
-  0.34 (fair, per Landis-Koch); the second curator is systematically
-  stricter than the curator of record (a safety-conservative direction).
+  independent second curator (KAPPA-2) followed: Cohen kappa_binary =
+  0.42 under the drop-abstain convention and 0.34 under a
+  safety-conservative collapse-abstain convention.
   The candidate-to-release firewall (no machine output is presented as
   human curation) and the full curation audit trail are exposed as bulk
   downloads and via a documented REST API with OpenAPI / MCP / Bioschemas
   JSON-LD / W3C PROV interfaces.
-version: "1.0.0"
-date-released: "2026-06-07"
+version: "1.0.1"
+date-released: "2026-06-10"
 license: MIT
 license-url: "https://github.com/Jie-Ni/OligoVigil/blob/main/LICENSE"
 repository-code: "https://github.com/Jie-Ni/OligoVigil"
-url: "[TBD: public OligoVigil web portal URL]"
+url: "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1"
 keywords:
   - oligonucleotide therapeutics
   - antisense oligonucleotide
@@ -70,12 +70,9 @@ authors:
     orcid: "https://orcid.org/0000-0001-7235-0665"
     email: "adam.jatowt@uibk.ac.at"
 identifiers:
-  - description: "Archive DOI for the v1.0.0 release (mint via Zenodo after tagging on GitHub)."
-    type: doi
-    value: "[TBD: 10.5281/zenodo.NNNNNN]"
-  - description: "Manuscript DOI (assigned by NAR after acceptance)."
-    type: doi
-    value: "[TBD: 10.1093/nar/gkXXNNNN]"
+  - description: "GitHub release for the metadata-corrected v1.0.1 snapshot."
+    type: url
+    value: "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1"
 preferred-citation:
   type: article
   title: "OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides"
@@ -94,6 +91,4 @@ preferred-citation:
       given-names: "Adam"
   year: 2027
   journal: "Nucleic Acids Research"
-  volume: "[TBD]"
   issue: "Database Issue"
-  doi: "[TBD]"
