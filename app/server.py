@@ -568,7 +568,6 @@ def cache_is_current(path: Path) -> bool:
         ROOT / "data" / "manifests" / "license_manifest_v1.csv",
         ROOT / "data" / "manifests" / "source_license_manifest_v1.csv",
         ROOT / "data" / "manifests" / "closest_work_matrix_v1.csv",
-        ROOT / "app" / "server.py",
     ]
     return all(not dep.exists() or dep.stat().st_mtime <= cache_mtime for dep in dependencies)
 
@@ -885,7 +884,7 @@ def api_quality() -> dict[str, object]:
             },
             {
                 "check": "stable_public_url",
-                "status": "blocked",
+                "status": "configured_pending_live_verification",
                 "evidence": f"Cloudflare Pages export targets {PREFERRED_PUBLIC_URL}; final pass requires the deployed URL to resolve.",
             },
         ],
@@ -1264,8 +1263,8 @@ def api_release_status() -> dict[str, object]:
         },
         {
             "gate": "Public HTTPS URL",
-            "status": "blocked",
-            "evidence": "The local QA build must be deployed to a stable public HTTPS URL before public citation.",
+            "status": "configured_pending_live_verification",
+            "evidence": f"Cloudflare Pages export is configured for {PREFERRED_PUBLIC_URL}; final pass requires the live URL smoke test.",
         },
         {
             "gate": "Download availability",
@@ -1312,15 +1311,15 @@ def api_release_status() -> dict[str, object]:
             },
             {
                 "check": "stable_public_url",
-                "status": "blocked",
-                "evidence": "Local QA target must be replaced by a real public HTTPS URL before public citation.",
+                "status": "configured_pending_live_verification",
+                "evidence": f"Cloudflare Pages export is configured for {PREFERRED_PUBLIC_URL}; final pass requires the live URL smoke test.",
             },
         ],
         "readiness_gates": readiness_gates,
         "public_url_gate": {
-            "status": "blocked_localhost_until_public_https_deployment",
+            "status": "cloudflare_pages_configured_pending_live_verification",
             "required_for_public_release": True,
-            "evidence": "The current QA target is local; public reuse requires a stable functional URL.",
+            "evidence": f"Static Pages package targets {PREFERRED_PUBLIC_URL}; verify the assigned URL after Cloudflare deployment.",
         },
         "release_batches": [
             {
@@ -1558,8 +1557,8 @@ def api_readiness() -> dict[str, object]:
         },
         {
             "gate": "Public HTTPS URL",
-            "status": "blocked",
-            "evidence": "The local QA build must be deployed to a stable public HTTPS URL before public citation.",
+            "status": "configured_pending_live_verification",
+            "evidence": f"Cloudflare Pages export is configured for {PREFERRED_PUBLIC_URL}; final pass requires the live URL smoke test.",
         },
         {
             "gate": "Download availability",
@@ -2976,7 +2975,7 @@ def api_submission_pack() -> dict[str, object]:
     blockers = [
             {
                 "item": "Stable public HTTPS URL",
-                "status": "blocked",
+                "status": "configured_pending_live_verification",
                 "owner_action": f"Deploy the generated Cloudflare Pages package and verify {PREFERRED_PUBLIC_URL} or the assigned pages.dev URL.",
             },
             {
@@ -3029,7 +3028,7 @@ def api_submission_pack() -> dict[str, object]:
         {
             "question": "Will it stay available?",
             "current_answer": f"The portal supports no-login access, CSV/ZIP downloads, manifests, maintenance commitments, and a DOI-backed archive ({ARCHIVE_DOI}).",
-            "risk": "A stable public HTTPS URL still has to resolve before public reuse can be claimed.",
+            "risk": "The Cloudflare Pages URL still has to resolve before public reuse can be claimed.",
             "mitigation": "Deploy the generated Cloudflare Pages package and run the smoke/final checks against the deployed URL.",
         },
     ]
@@ -3037,8 +3036,8 @@ def api_submission_pack() -> dict[str, object]:
         "version": PORTAL_VERSION,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "go_no_go": {
-            "status": "go_after_public_url_and_archive_doi",
-            "summary": "The resource is technically usable, curator-audited, and DOI-backed; public citation should wait until the stable HTTPS portal URL resolves.",
+            "status": "go_after_cloudflare_pages_live_verification",
+            "summary": "The resource is technically usable, curator-audited, DOI-backed, and Cloudflare Pages-ready; public citation should wait until the HTTPS portal URL resolves.",
         },
         "submission_snapshot": {
             "verified_release_evidence": snapshot.get("verified_release_records", 0),
@@ -3079,7 +3078,7 @@ def api_submission_pack() -> dict[str, object]:
         "quality_checks": quality.get("checks", []),
         "field_completeness_summary": field_completeness.get("summary", {}),
         "recommended_next_actions": [
-            "Deploy stable public HTTPS URL and run the same smoke/final checks against it.",
+            f"Deploy {PREFERRED_PUBLIC_URL} or the assigned Cloudflare Pages URL and run the same smoke/final checks against it.",
             f"Keep the frozen data bundle tied to DOI {ARCHIVE_DOI} and do not mutate the v1.0.1 release files.",
             "Add baseline result table after DOI freeze without changing reference splits.",
             "Expand exact sequence/modification curation to make sequence search a primary use case.",

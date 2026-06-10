@@ -16,7 +16,7 @@
       "status": "ready",
       "rows": null,
       "bytes": 11667765,
-      "sha256": "5065937ae3f4b1299b2c69e7b7b074a430921b3f88f9aa247a264d5f2e988640",
+      "sha256": "7991849754097ae7f5143c0106233c8625d0f25545ca9311d17bdb83ef54c978",
       "purpose": "Bulk reproducible snapshot of core CSV tables."
     },
     {

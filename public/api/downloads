@@ -1,6 +1,6 @@
 {
   "version": "20260604_core_validation_v45",
-  "generated_at": "2026-06-10T22:26:49+00:00",
+  "generated_at": "2026-06-10T22:58:01+00:00",
   "doi_status": "10.5281/zenodo.20633779",
   "archive_url": "https://doi.org/10.5281/zenodo.20633779",
   "license_policy": "Raw article text is not redistributed. Curator-reviewed derived annotations, source metadata, and PMID/DOI links are provided for reuse.",
@@ -183,7 +183,7 @@
       "recommended_use": "Archive or reproduce the release locally.",
       "rows": null,
       "bytes": 11667765,
-      "sha256": "5065937ae3f4b1299b2c69e7b7b074a430921b3f88f9aa247a264d5f2e988640",
+      "sha256": "7991849754097ae7f5143c0106233c8625d0f25545ca9311d17bdb83ef54c978",
       "schema": "RELEASE_MANIFEST.json",
       "license": "Bundle of derived annotations, source metadata, audit files, manifests, and benchmark files; raw article text/PDFs excluded.",
       "version": "20260604_core_validation_v45"
@@ -196,7 +196,7 @@
       "recommended_use": "Connect agentic clients, MCP clients, OpenAPI importers, notebooks, or small apps without scraping the portal UI.",
       "rows": 16,
       "bytes": 17199,
-      "sha256": "06cf8f587bfdcadca540048606215500351672ad2d006c2b6903b0186f8eede9",
+      "sha256": "3d6246487c694e1b76639e2f2a232d8b29ae6ecaeeb6f1e12e0c51f1b908f49c",
       "schema": "agent_access_manifest.json",
       "license": "Derived annotations; raw article text not redistributed; source PMID/DOI linked.",
       "version": "20260604_core_validation_v45"

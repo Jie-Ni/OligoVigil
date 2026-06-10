@@ -38,7 +38,7 @@
     },
     {
       "check": "stable_public_url",
-      "status": "blocked",
+      "status": "configured_pending_live_verification",
       "evidence": "Cloudflare Pages export targets https://oligovigil.pages.dev; final pass requires the deployed URL to resolve."
     }
   ]
