@@ -16,9 +16,9 @@ The portal supports browsing, free-text search, filtered evidence tables, per-re
 
 ## Versioned release archive
 
-A frozen, citable snapshot of the release corresponding to this manuscript will be deposited at:
+A frozen, citable snapshot of the release corresponding to this manuscript is assigned the archive DOI:
 
-**`[TBD: Zenodo or Figshare DOI]`**
+**`10.5281/zenodo.20633779`**
 
 The archive will contain the exact files backing the manuscript counts: 737 human curator-verified release records, 626 toxicity endpoints, 111 off-target observations, 660 primary release sources, the source-license manifest, curation-audit exports, benchmark reference splits, deterministic baseline outputs, schema documentation and checksums.
 
@@ -59,4 +59,4 @@ All numerical claims in the manuscript are tied to the 2026-06-08 release snapsh
 
 ---
 
-*[TBD before submission: insert final public URL and archive DOI.]*
+*[TBD before submission: insert final public URL after stable deployment.]*

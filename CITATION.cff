@@ -70,6 +70,9 @@ authors:
     orcid: "https://orcid.org/0000-0001-7235-0665"
     email: "adam.jatowt@uibk.ac.at"
 identifiers:
+  - description: "Zenodo archive DOI for the v1.0.1 data snapshot."
+    type: doi
+    value: "10.5281/zenodo.20633779"
   - description: "GitHub release for the metadata-corrected v1.0.1 snapshot."
     type: url
     value: "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1"

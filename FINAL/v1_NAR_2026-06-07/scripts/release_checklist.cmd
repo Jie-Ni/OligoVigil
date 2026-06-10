@@ -58,7 +58,7 @@ echo     CITATION.cff
 echo with:
 echo     [public HTTPS URL TBD]      -- e.g. https://oligovigil.dsc.uibk.ac.at
 echo     [TBD: GitHub URL]           -- e.g. https://github.com/^<owner^>/oligovigil
-echo     [TBD: Zenodo DOI]           -- e.g. 10.5281/zenodo.NNNNNN
+echo     Zenodo DOI                  -- 10.5281/zenodo.20633779
 echo.
 echo Then recompile the manuscript PDF and re-run the audit:
 echo     pandoc 04_delivery/MANUSCRIPT_DRAFT_v4_compile.md -o 04_delivery/MANUSCRIPT_DRAFT_v4.pdf --pdf-engine=xelatex -V mainfont="Times New Roman" -V fontsize=11pt -V geometry:margin=1in

@@ -158,7 +158,7 @@ The portal is organized as a workbench instead of a single long landing page. Th
 - Modification: delivery/chemistry safety profiles for terms such as GalNAc, LNP, phosphorothioate, LNA, PMO, ASO, and siRNA.
 - Use Cases: task-oriented entry points plus NAR-style case workflows for GalNAc-siRNA liver safety, ASO/gapmer hepatotoxicity, renal/thrombocytopenia scan, and siRNA seed/off-target evidence.
 - Record: single verified evidence record with source metadata, audit trail, and citation/BibTeX text.
-- Benchmark: deterministic Grade A/B reference splits, DOI-pending release contract, task cards, and baseline metric guidance.
+- Benchmark: deterministic Grade A/B reference splits, DOI-backed release contract, task cards, and baseline metric guidance.
 - Release: current release gates, batch status, access policy, public-URL blocker, field completeness, and the prioritized core oligo field upgrade queue.
 - Trust: curation protocol, reviewer audit path, release/candidate boundary, provenance coverage, independent second-review status, and license/redistribution policy.
 - Help: chaptered user guide covering inputs, evidence grades, benchmark reuse, downloads, troubleshooting, and citation.
@@ -202,7 +202,7 @@ No abstract-level batch-promotion script is shipped. The promotion gate requires
 
 The current Docker release exposes a no-login web portal and REST API with CSV/ZIP downloads. The primary citable release files are `evidence_release.csv`, `source_document.csv`, `molecule.csv`, `curation_audit.csv`, `benchmark_reference_splits.csv`, `benchmark_task_cards.csv`, `benchmark_baseline_results.csv`, `license_manifest_v1.csv`, `source_license_manifest_v1.csv`, and `data_dictionary_v1.csv`. File sizes, row counts, checksums, and file-specific reuse notes are exposed through `/api/downloads` and `/api/data_availability`.
 
-Before NAR submission, replace the pending placeholders with a stable public HTTPS URL, archive DOI, code repository DOI or release tag, final freeze date, maintainer contact, and correction route. The local release deliberately does not claim public adoption, citation impact, or long-term URL availability before deployment.
+Before NAR submission, replace the pending public-URL placeholder with a stable public HTTPS URL, final freeze date, maintainer contact and correction route. The release archive DOI is `10.5281/zenodo.20633779`; the code release tag is `https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1`. The local release deliberately does not claim public adoption, citation impact or long-term URL availability before deployment.
 
 ## Delivery Package
 
