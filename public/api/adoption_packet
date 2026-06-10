@@ -1,0 +1,108 @@
+{
+  "version": "20260604_core_validation_v45",
+  "usage_claim_policy": {
+    "current_external_users": "not_claimed_predeployment",
+    "current_citations": "not_claimed_prepublication",
+    "allowed_claim": "The portal is technically ready for no-login public evaluation after HTTPS deployment.",
+    "blocked_claim": "Do not claim community adoption, citation impact, or production reuse before public logs and feedback exist."
+  },
+  "primary_user_groups": [
+    {
+      "group": "oligonucleotide discovery teams",
+      "reason_to_use": "Find citable safety/off-target evidence by chemistry, target, endpoint, and source location.",
+      "entry_route": "/#triage"
+    },
+    {
+      "group": "preclinical safety reviewers",
+      "reason_to_use": "Build source-grounded evidence packets for liver, renal, platelet, and immune safety concerns.",
+      "entry_route": "/#examples"
+    },
+    {
+      "group": "RNAi and transcriptomics groups",
+      "reason_to_use": "Reuse seed/mismatch/transcriptome-level off-target evidence and reference splits.",
+      "entry_route": "/#sequence"
+    },
+    {
+      "group": "ML benchmark users",
+      "reason_to_use": "Download fixed A/B-grade splits, baseline results, task cards, checksums, and citation text.",
+      "entry_route": "/#benchmark"
+    }
+  ],
+  "shareable_workflows": [
+    {
+      "title": "GalNAc-siRNA liver safety profile",
+      "audience": "oligonucleotide drug discovery teams",
+      "entry_route": "/api/modification_profile?term=galnac",
+      "release_records": 22
+    },
+    {
+      "title": "ASO/gapmer hepatotoxicity review",
+      "audience": "ASO chemistry and safety groups",
+      "entry_route": "/api/evidence_records?domain=toxicity&q=hepatotoxicity",
+      "release_records": 341
+    },
+    {
+      "title": "Renal and thrombocytopenia safety scan",
+      "audience": "preclinical safety reviewers",
+      "entry_route": "/api/search?q=renal",
+      "release_records": 51
+    },
+    {
+      "title": "siRNA seed/off-target transcriptome evidence",
+      "audience": "RNAi design and transcriptomics groups",
+      "entry_route": "/api/evidence_records?domain=offtarget&q=seed",
+      "release_records": 44
+    },
+    {
+      "title": "Benchmark reuse with fixed reference splits",
+      "audience": "ML and computational biology groups",
+      "entry_route": "/api/benchmark",
+      "release_records": 737
+    }
+  ],
+  "instrumentation_events": [
+    {
+      "event": "release_download",
+      "trigger": "download evidence_release.csv or all_tables.zip",
+      "stored_fields": "timestamp, route, file, version, anonymized session id",
+      "excluded_fields": "raw IP, query text containing personal data, user identity"
+    },
+    {
+      "event": "record_open",
+      "trigger": "open citable evidence detail",
+      "stored_fields": "timestamp, domain, evidence id, source identifier, version",
+      "excluded_fields": "user identity and full browser fingerprint"
+    },
+    {
+      "event": "benchmark_reuse",
+      "trigger": "download benchmark splits, baseline results, or task cards",
+      "stored_fields": "timestamp, artifact, task name when known, checksum version",
+      "excluded_fields": "model code, unpublished user data"
+    },
+    {
+      "event": "triage_run",
+      "trigger": "generate safety triage report",
+      "stored_fields": "timestamp, selected endpoint/delivery/modification buckets, result counts",
+      "excluded_fields": "raw proprietary sequence unless explicit opt-in is implemented"
+    }
+  ],
+  "launch_evidence_to_collect": [
+    "download counts for release and benchmark files",
+    "record-open counts for citable evidence pages",
+    "public issue/correction submissions",
+    "tutorial notebook or repository stars/forks after public launch",
+    "direct early-user feedback from safety, RNAi, and ML benchmark users"
+  ],
+  "success_thresholds_for_revision": [
+    {
+      "window": "first 90 days after public launch",
+      "signal": "repeat downloads of evidence_release.csv and benchmark_reference_splits.csv",
+      "interpretation": "evidence of reuse interest; not equivalent to citation impact"
+    },
+    {
+      "window": "first 180 days after public launch",
+      "signal": "external issues, corrections, or tutorial reuse",
+      "interpretation": "community interaction that can support future database updates"
+    }
+  ]
+}

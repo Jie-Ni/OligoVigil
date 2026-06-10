@@ -1,0 +1,104 @@
+{
+  "version": "20260604_core_validation_v45",
+  "release_records": 705,
+  "packet_rows": 705,
+  "claim_boundary": "Current release can be described as a provenance-rich safety/off-target evidence database. It must not be described as complete sequence/modification/dose coverage until P0 field curation is source-verified.",
+  "summary": {
+    "p0_benchmark_linked_rows": 344,
+    "p1_grade_ab_nonbenchmark_rows": 149,
+    "p2_contextual_grade_c_rows": 212,
+    "p0_missing_sequence": 344,
+    "p0_missing_modification": 344,
+    "p0_missing_dose": 342,
+    "assays_with_dose": 2,
+    "assays_with_model_context": 1708
+  },
+  "priority_breakdown": [
+    {
+      "priority": "P0",
+      "rows": 344,
+      "meaning": "Grade A/B benchmark-linked release rows; curate first before claiming mature oligo design fields.",
+      "reviewer_risk": "Highest: empty sequence/modification/dose fields can make the resource look like a literature index."
+    },
+    {
+      "priority": "P1",
+      "rows": 149,
+      "meaning": "Grade A/B release rows outside current benchmark splits.",
+      "reviewer_risk": "Moderate: improves reuse and chemistry-specific search."
+    },
+    {
+      "priority": "P2",
+      "rows": 212,
+      "meaning": "Grade C contextual release rows retained for browsing, not A/B benchmark reuse.",
+      "reviewer_risk": "Lower: useful after P0/P1 are stable."
+    }
+  ],
+  "missing_field_breakdown": [
+    {
+      "field": "sequence",
+      "missing_rows": 705,
+      "pct": 100.0
+    },
+    {
+      "field": "seed",
+      "missing_rows": 705,
+      "pct": 100.0
+    },
+    {
+      "field": "modification",
+      "missing_rows": 705,
+      "pct": 100.0
+    },
+    {
+      "field": "delivery",
+      "missing_rows": 705,
+      "pct": 100.0
+    },
+    {
+      "field": "dose",
+      "missing_rows": 703,
+      "pct": 99.7
+    },
+    {
+      "field": "exposure",
+      "missing_rows": 705,
+      "pct": 100.0
+    },
+    {
+      "field": "model",
+      "missing_rows": 98,
+      "pct": 13.9
+    }
+  ],
+  "blocking_gates": [
+    {
+      "gate": "Complete oligo identity claim",
+      "status": "blocked",
+      "evidence": "P0 missing sequence=344; P0 missing modification=344."
+    },
+    {
+      "gate": "Dose-aware safety stratification",
+      "status": "blocked",
+      "evidence": "P0 missing dose=342; assay table currently has 2 dose-bearing assays."
+    },
+    {
+      "gate": "No-fabrication policy",
+      "status": "pass",
+      "evidence": "Packet fields are blank unless source-located; generated rows are curation work items, not release claims."
+    }
+  ],
+  "downloads": {
+    "core_field_packet": "/api/download/core_oligo_field_curation_packet.csv",
+    "core_field_packet_manifest": "/api/manifest/core_oligo_field_curation_packet_v1.csv",
+    "legacy_sequence_template": "/api/download/sequence_modification_curation_template.csv",
+    "field_completeness": "/api/field_completeness"
+  },
+  "field_completeness_summary": {
+    "core_required_avg_pct": 100.0,
+    "records_with_any_sequence": 0,
+    "records_with_any_chemistry_or_delivery": 0,
+    "sequence_completion_status": "gap",
+    "chemistry_completion_status": "gap",
+    "action_note": "Core provenance fields support citation now; sequence and chemistry fields remain the highest-value expansion path before public submission."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "project": "OligoVigil",
+  "legacy_project_name": "OligoSafetyDB",
+  "release_type": "verified_public_release_candidate",
+  "schema": "sqlite_v1",
+  "portal_version": "20260604_core_validation_v45",
+  "generated_at": "2026-06-10T22:43:44+00:00",
+  "active_source_manifest": "source_candidates_v6.csv",
+  "database_bytes": 62210048,
+  "release_snapshot": {
+    "verified_release_records": 737,
+    "toxicity_records": 626,
+    "offtarget_records": 111,
+    "benchmark_split_records": 344,
+    "candidate_records": 41114
+  },
+  "access_policy": {
+    "login_required": false,
+    "free_access": true,
+    "bulk_download": true,
+    "candidate_text_policy": "derived_annotations_only_no_raw_abstract_storage"
+  },
+  "sequence_policy": {
+    "release_grade_sequence_columns_available": true,
+    "curated_sequence_alignment_available": false,
+    "curation_template": "/api/download/sequence_modification_curation_template.csv",
+    "coverage_endpoint": "/api/sequence_coverage",
+    "current_sequence_search": "sequence parsing plus seed/off-target/modification evidence lookup; full alignment search requires curator-verified sequence strings"
+  },
+  "scope": {
+    "core": [
+      "ASO",
+      "siRNA",
+      "ASO/siRNA mixed context"
+    ],
+    "excluded": [
+      "CRISPR guide RNA"
+    ]
+  }
+}

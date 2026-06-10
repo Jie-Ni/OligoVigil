@@ -1,0 +1,94 @@
+{
+  "version": "20260604_core_validation_v45",
+  "molecule_count": 1012,
+  "sequence_fields": [
+    "sense_sequence",
+    "antisense_sequence",
+    "guide_sequence",
+    "passenger_sequence",
+    "seed_region"
+  ],
+  "modification_fields": [
+    "backbone_chemistry",
+    "sugar_modification",
+    "base_modification",
+    "conjugate_delivery"
+  ],
+  "sequence_nonempty": 0,
+  "sequence_curator_verified": 0,
+  "modification_nonempty": 0,
+  "modification_curator_verified": 0,
+  "needs_sequence_curation": 1012,
+  "needs_modification_curation": 1012,
+  "release_grade_sequence_alignment_available": false,
+  "curation_template": "/api/download/sequence_modification_curation_template.csv",
+  "policy": "Only curator-verified sequence/modification rows should be used for alignment claims; unverified template rows are curation work items.",
+  "by_modality": [
+    {
+      "modality": "siRNA",
+      "molecules": 581,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "ASO",
+      "molecules": 330,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "ASO/siRNA mixed context",
+      "molecules": 40,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "PMO",
+      "molecules": 34,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "CpG oligodeoxynucleotide",
+      "molecules": 13,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "aptamer",
+      "molecules": 7,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "miRNA agomir",
+      "molecules": 3,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "ASO/RNA mixed context",
+      "molecules": 1,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "DNA nanostructure",
+      "molecules": 1,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "DNA/RNA heteroduplex oligonucleotide",
+      "molecules": 1,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    },
+    {
+      "modality": "PMOplus",
+      "molecules": 1,
+      "sequence_nonempty": 0,
+      "modification_nonempty": 0
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+id,molecule_id,assay_id,offtarget_gene_symbol,offtarget_transcript_id,evidence_type,measured_effect,effect_unit,match_type,seed_match_length,is_observed_experimental,is_computational_prediction,source_document_id,source_location,evidence_grade
+1,4,4,unspecified,,seed-mediated off-target effect,,,seed,7,1,0,1031,Results > Analysis of miRNA-like off-target activity in a luciferase reporter assay; paragraph 3,A
+2,5,5,transcriptome-wide,,seed-mediated off-target effect,,,seed,7,1,0,1157,Results > RNAi and off-target activities of siRNAs with chemical modifications; paragraph 10,A
+3,6,6,AMPAR,,off-target evidence,,,off-target pharmacology,,1,0,1410,Results > RGLS4326 inhibits AMPAR ligand binding and function; paragraph 10,B
+4,7,7,transcriptome-wide,,hybridization/mismatch off-target effect,,,hybridization/mismatch,,1,0,1442,Results > Hybridization-dependent off-target splicing events do not play a major role after transfection; paragraph 19,A
+5,8,8,unspecified,,hybridization/mismatch off-target effect,,,hybridization/mismatch,,1,0,1136,Results > Hybridization-dependent mechanism: complementary PNA strand mitigates off-target hybridizations; paragraph 31,A
+6,9,9,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,1481,Results > RNA-seq reveals activation of the interferon response by all ASOs and additional off-target effects on gene expression by the repeat gapmer; paragraph 3,A
+7,10,10,unspecified,,seed-mediated off-target effect,,,seed,7,1,0,1411,RESULTS > Application of ESC+ design to improve the specificity and safety of ALN-HBV; paragraph 46,A
+8,11,11,transcriptome-wide,,seed-mediated off-target effect,,,seed,7,1,0,2058,Results > siRNA off-targets are enriched for seed complementarity; paragraph 17,A
+10,13,13,unspecified,,hybridization/mismatch off-target effect,,,hybridization/mismatch,,1,0,2813,RESULTS > Intronic regions are markedly more susceptible to ASO-silencing than exonic sequence; paragraph 24,A
+12,81,81,unspecified,,seed-mediated off-target effect,,,seed,,1,0,2454,Results > Modified UNAs mitigate off-target activity without reducing on-target activity in cell culture; paragraph 69,B
+13,100,100,unspecified,,hybridization/mismatch off-target effect,,,mismatch,,1,0,2306,RESULTS > INRI-seq identifies direct PNA off-targets; paragraph 50,B
+15,102,102,unspecified,,off-target evidence,,,,,1,0,4230,Results > Combination of MOE at Positions 9 and 10 with OMe at Position 14 Diminished or Eliminated Off-Target Effects; paragraph 17,B
+16,126,127,unspecified,,sequence-specificity/off-target evidence,,,specificity,,1,0,5621,3. Results > 3.1. Allele-Specific Silencing Reduces TDP-43 Mislocalization in ALS Motor Neurons; paragraph 21,B
+19,134,137,transcriptome-wide,,seed-mediated off-target effect,,,seed,,1,0,1497,Introduction; paragraph 5,C
+20,135,139,transcriptome-wide,,seed-mediated off-target effect,,,seed,,1,0,1154,Discussion; paragraph 27,C
+21,136,140,YY1;FADD,,sequence-specificity/off-target evidence,,,specificity,,1,0,12147,Results and Discussion; paragraph 13,C
+22,137,141,unspecified,,seed-mediated off-target effect,,,seed,,1,0,12077,Results and discussion > Genome-wide evaluation of off-target activities; paragraph 77,C
+23,138,142,unspecified,,seed-mediated off-target effect,,,seed,,1,0,1484,Results and Discussion > Off-Target Effects of siRNAs Modified with 2′-F/Me; Figure 5 caption,C
+24,139,143,transcriptome-wide,,seed-mediated off-target effect,,,seed,,1,0,2255,Introduction; paragraph 4,C
+25,140,144,unspecified,,seed-mediated off-target effect,,,seed,,1,0,2308,1. Introduction; paragraph 4,C
+26,141,145,transcriptome-wide,,hybridization/mismatch off-target effect,,,mismatch,,1,0,2113,Introduction; paragraph 4,C
+27,142,146,transcriptome-wide,,seed-mediated off-target effect,,,seed,,1,0,2117,Results and Discussion; paragraph 20,C
+28,143,147,transcriptome-wide,,seed-mediated off-target effect,,,seed,,1,0,2246,Abstract; paragraph 1,C
+33,212,228,unspecified,,seed-mediated off-target effect,,,seed,,1,0,3759,Discussion; paragraph 15,B
+36,215,231,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,2210,Discussion; paragraph 62,B
+40,218,235,TUBULIN;PKC;SURVIVIN;MCL-1;BCL-XL,,off-target evidence,,,off-target,,1,0,2845,RESULTS AND DISCUSSION > Gene silencing by gymnotic delivery is a general phenomenon; paragraph 15,A
+42,253,289,AGO4;AGO1;AGO2,,seed-mediated off-target effect,,,seed,,1,0,1011,PubMed abstract,B
+44,186,291,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,2193,PubMed abstract,B
+47,186,294,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,2216,PubMed abstract,B
+49,256,296,unspecified,,hybridization/mismatch off-target effect,,,mismatch,,1,0,12115,PubMed abstract,B
+50,257,297,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,12059,PubMed abstract,B
+51,328,410,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,1037,PubMed abstract,B
+56,370,472,HSPA5;PDIA3;CALU;LGALS1;TPI1,,off-target evidence,,,off-target,,1,0,2270,PubMed abstract,B
+59,989,536,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,1824,RESULTS > RNP delivery reduces transcriptome-wide off-target editing; paragraph 22,A
+60,434,537,FAH;TNFRSF10B;EGR1;PAK2;PCSK7,,seed-mediated off-target effect,,,seed,,1,0,9324,Results > Minimal off-target activity of GalNAc-siCIDEB; paragraph 8,A
+62,435,539,unspecified,,seed-mediated off-target effect,,,seed,,1,0,2309,RESULTS > Impact of GNA isonucleotides on GalNAc-siRNA in vitro activity; paragraph 49,A
+63,435,540,unspecified,,seed-mediated off-target effect,,,seed,6,1,0,12558,Results > Transcriptome-wide analyses of mi/siRNAs targeting E6/E7; paragraph 17,A
+64,990,541,transcriptome-wide,,seed-mediated off-target effect,,,seed,,1,0,4213,Results > Di-siRNA modulates HTT expression with minimal off-target events; paragraph 33,A
+65,991,542,DBHS,,transcriptome-level off-target effect,,,transcriptome,,1,0,2060,RESULTS > Hybridization-dependent toxicity is not likely to account for the 2′ F PS-ASO-induced hepatotoxicity; Figure 5. caption,A
+66,992,543,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,2064,Results > High Confirmation Rate of In Silico Predicted OTEs in Mouse Liver; paragraph 14,A
+67,438,544,transcriptome-wide,,hybridization/mismatch off-target effect,,,mismatch,,1,0,2062,RESULTS > Hepatotoxicity of LNA ASOs is RNase H1 dependent; paragraph 35,A
+73,441,550,unspecified,,hybridization/mismatch off-target effect,,,mismatch,,1,0,1453,PubMed abstract,B
+78,986,555,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,1035,Results > ASO off-target RNA reduction correlates well with off-target protein reduction in HepG2 cells; paragraph 48,A
+82,993,559,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,1732,Results > IGF2BP2 Knockdown promotes ferroptosis in HNSCC via reduced NRF2 mRNA stability; paragraph 10,A
+91,994,568,unspecified,,hybridization/mismatch off-target effect,,,mismatch,,1,0,3301,Results > Screening of SNA-modified siRNAs targeting CAG repeats; paragraph 8,A
+113,995,590,unspecified,,seed-mediated off-target effect,,,seed,,1,0,1477,Results > In silico off-target analysis and qPCR validation; paragraph 10,A
+115,435,592,IFIT1;OAS1;ISG20,,off-target evidence,,,off-target,,1,0,1788,2. Results > 2.4. Gene Silencing Effect of Chemically Modified siRNAs; paragraph 14,A
+116,996,593,unspecified,,seed-mediated off-target effect,,,seed,,1,0,1789,Results > Characterization of off-target activities of bsYW-61; paragraph 14,A
+135,468,612,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,8415,Results > Transcriptomic analyses of BHF7-transfected vSMCs demonstrates expected changes to known SMILR regulated genes without apparent toxic effect; paragraph 43,A
+144,1064,621,unspecified,,transcriptome-level off-target effect,,,transcriptome,,1,0,9881,Abstract; paragraph 1,B
+157,997,634,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,1592,Results; paragraph 9,A
+164,998,641,GRAMD4,,transcriptome-level off-target effect,,,transcriptome,,1,0,10539,Results > PH-762 is a stabilized self-delivering siRNA compound designed to potently silence PDCD1 mRNA with high specificity; paragraph 10,A
+188,999,665,LGALS2;POLA2;GAS2,,hybridization/mismatch off-target effect,,,mismatch,,1,0,14112,Results > Transcriptomics and proteomics analysis of modified CT102s; paragraph 23,A
+190,1000,667,transcriptome-wide,,seed-mediated off-target effect,,,seed,,1,0,14301,Results > Off-target effect analysis; paragraph 18,A
+193,1001,670,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,2253,RESULTS > Indirect FXN activation is unlikely to be mediated by a mutual hybridization-dependent off-target transcript; paragraph 49,A
+201,435,678,unspecified,,seed-mediated off-target effect,,,seed,,1,0,4163,RESULTS AND DISCUSSION > On-target and off-target activities of siRNAs modified with 2′-F-NMC; paragraph 42,C
+207,1002,684,transcriptome-wide,,off-target evidence,,,off-target,,1,0,2770,Results > ASOs targeting human mRNAs can also induce a type I IFN response in cultured THP1 cells; paragraph 31,A
+217,986,694,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,12621,"Results > QR-110 Treatment Reduces Aberrant Splicing, Increases Wild-Type CEP290 in Homozygous Retinal Organoids, and Shows No Off-Target Pharmacology; paragraph 15",A
+220,1003,697,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,2061,Results > Off-target knockdown by the Acsl1 gapmer; paragraph 15,A
+222,1004,699,transcriptome-wide,,transcriptome-level off-target effect,,,transcriptome,,1,0,15206,Results; paragraph 9,A
+229,1065,706,unspecified,,off-target evidence,,,off-target,,1,0,1209,PubMed abstract,B
+275,299,1716,unspecified,,transcriptome-level off-target effect,,,transcriptome,,1,0,28702,PubMed abstract,B
+281,733,1722,,,seed-mediated off-target effect,,,seed,,1,0,15373,PubMed abstract,C
+331,778,,unspecified,,seed-mediated off-target effect,,,,,1,0,15845,Results > Enrichment analysis of seed region matches in F7-1 off-target genes; paragraph 13,B
+333,780,,transcriptome-wide,,hybridization/mismatch off-target effect,,,,,1,0,1442,Results > Hybridization-dependent off-target splicing events do not play a major role after transfection; paragraph 19,B
+334,781,,unspecified,,seed-mediated off-target effect,,,,,1,0,1031,Results > In vitro gene silencing of modified siRNA containing SNA modifications; paragraph 28,B
+337,782,,unspecified,,seed-mediated off-target effect,,,,,1,0,15362,RESULTS > Global off-target analysis; paragraph 23,B
+338,783,,unspecified,,hybridization/mismatch off-target effect,,,,,1,0,15336,RESULTS > Comparison of site-specific alterations in siRNA or target sequence; paragraph 15,B
+339,784,,unspecified,,seed-mediated off-target effect,,,,,1,0,20894,RESULTS > A 7 nt complementation between the original GRK4(O)/BTK(O) siRNAs and the hif-1α mRNA triggers the degradation of hif-1α mRNA; paragraph 15,B
+340,785,,unspecified,,hybridization/mismatch off-target effect,,,,,1,0,28684,Results > Comparative Analysis of Off-Target Effects; paragraph 23,B
+343,788,,unspecified,,hybridization/mismatch off-target effect,,,,,1,0,31422,Results > Higher order structure of the SOD-1 minigene mRNA significantly influences ASO binding; paragraph 27,B
+344,789,,unspecified,,seed-mediated off-target effect,,,,,1,0,1411,RESULTS > Application of ESC+ design to improve the specificity and safety of ALN-HBV; paragraph 46,B
+345,790,,transcriptome-wide,,seed-mediated off-target effect,,,,,1,0,2058,Results > siRNA off-targets are enriched for seed complementarity; paragraph 17,B
+346,791,,unspecified,,hybridization/mismatch off-target effect,,,,,1,0,2813,RESULTS > Intronic regions are markedly more susceptible to ASO-silencing than exonic sequence; paragraph 24,B
+348,793,,unspecified,,hybridization/mismatch off-target effect,,,,,1,0,15837,RESULTS > Rational design of allele-specific siRNA using the mismatch discrimination model as a guide; paragraph 20,B
+351,796,,transcriptome-wide,,seed-mediated off-target effect,,,,,1,0,1157,Results > RNAi and off-target activities of siRNAs with chemical modifications; paragraph 10,B
+355,800,,transcriptome-wide,,transcriptome-level off-target effect,,,,,1,0,1481,Results > The repeat-blocking ASO and both gapmers lead to downregulation of DMPK RNA; paragraph 8,B
+364,809,,unspecified,,off-target evidence,,,,,1,0,4230,Results > Combination of MOE at Positions 9 and 10 with OMe at Position 14 Diminished or Eliminated Off-Target Effects; paragraph 17,B
+370,815,,unspecified,,seed-mediated off-target effect,,,,,1,0,16582,RESULTS > siPools affect global transcript levels less than single siRNAs; Figure 4. caption,B
+383,826,,unspecified,,seed-mediated off-target effect,,,,,1,0,15558,RESULTS > siRNA titrations reveal reduced off-targeting by siRNA UNA modification; paragraph 13,B
+384,827,,unspecified,,seed-mediated off-target effect,,,,,1,0,15470,RESULTS > Ago2 is not required for PIK3CB off-target and some on-target siRNA activity; paragraph 15,B
+386,829,,unspecified,,seed-mediated off-target effect,,,,,1,0,21536,RESULTS > 736 SENSE STRAND ACTIVITY IS INHIBITED BY CHEMICAL AND SEQUENCE MODIFICATION; paragraph 30,B
+390,833,,unspecified,,hybridization/mismatch off-target effect,,,,,1,0,1409,RESULTS > Identification of potential nucleobase modifications that reduce LNA gapmer hepatotoxicity; Figure 2. caption,B
+391,834,,transcriptome-wide,,hybridization/mismatch off-target effect,,,,,1,0,2253,RESULTS > Indirect FXN activation is unlikely to be mediated by a mutual hybridization-dependent off-target transcript; paragraph 49,B
+392,438,,transcriptome-wide,,hybridization/mismatch off-target effect,,,,,1,0,2062,RESULTS > Hepatotoxicity of LNA ASOs is RNase H1 dependent; paragraph 35,B
+394,836,,unspecified,,off-target evidence,,,,,1,0,1233,Results > TMEM16a ASO is specific and not toxic; paragraph 12,B
+411,629,,AGAP1,,hybridization/mismatch off-target effect,,,,,1,0,2060,RESULTS > Hybridization-dependent toxicity is not likely to account for the 2′ F PS-ASO-induced hepatotoxicity; Figure 5. caption,B
+414,850,,unspecified,,off-target evidence,,,,,1,0,2063,RESULTS > Evaluation of hepatotoxicity in mice; paragraph 14,B
+415,851,,DPP10;GRHL2;HHLA2,,hybridization/mismatch off-target effect,,,,,1,0,1055,Results > Translational activity in non-human primates; paragraph 29,B
+416,852,,transcriptome-wide,,transcriptome-level off-target effect,,,,,1,0,1058,Results > KCNT1-knockdown-ASO screening in cell lines and patient iPSC-derived neurons; paragraph 8,B
+417,853,,unspecified,,hybridization/mismatch off-target effect,,,,,1,0,1210,Results > Study of antiretroviral activity; paragraph 38,B
+436,869,,transcriptome-wide,,seed-mediated off-target effect,,,,,1,0,1615,Results > Initial tiling screen identified a parental ASO targeting the 3′ UTR of MAPT with high cross-species reactivity; paragraph 6,B
+441,873,,transcriptome-wide,,off-target evidence,,,,,1,0,2770,Results > ASOs targeting human mRNAs can also induce a type I IFN response in cultured THP1 cells; paragraph 31,B
+451,882,,transcriptome-wide,,seed-mediated off-target effect,,,,,1,0,1732,Results > IGF2BP2 Knockdown promotes ferroptosis in HNSCC via reduced NRF2 mRNA stability; paragraph 10,B
+456,886,,unspecified,,hybridization/mismatch off-target effect,,,,,1,0,3301,Results > Screening of SNA-modified siRNAs targeting CAG repeats; paragraph 8,B
+462,892,,unspecified,,seed-mediated off-target effect,,,,,1,0,1477,Results > In vivo silencing of AGT by GalNAc-siRNAs; paragraph 13,B
+463,893,,unspecified,,seed-mediated off-target effect,,,,,1,0,1789,Results > Characterization of off-target activities of bsYW-61; paragraph 14,B
+464,894,,transcriptome-wide,,transcriptome-level off-target effect,,,,,1,0,1824,RESULTS > RNP delivery reduces transcriptome-wide off-target editing; paragraph 22,B
+473,902,,NFATC1,,off-target evidence,,,,,1,0,3544,Results > Synthesis of a Cond-siRNA construct based on RNA sensor Nppa and target gene calcineurin; paragraph 11,B
+483,912,,transcriptome-wide,,seed-mediated off-target effect,,,,,1,0,8415,Results > Transcriptomic analyses of BHF7-transfected vSMCs demonstrates expected changes to known SMILR regulated genes without apparent toxic effect; paragraph 43,B
+493,921,,GRAMD4,,transcriptome-level off-target effect,,,,,1,0,10539,Results > PH-762 is a stabilized self-delivering siRNA compound designed to potently silence PDCD1 mRNA with high specificity; paragraph 10,B
+506,932,,GAS2;POLA2;LGALS2;IGFBP1,NM_001143830;NM_002689;NM_006498;NM_000596,hybridization/mismatch off-target effect,,,,,1,0,14112,Results > Transcriptomics and proteomics analysis of modified CT102s; paragraph 23,B
+510,187,,PLG;LPAL2,,seed-mediated off-target effect,,,,,1,0,1486,RESULTS > SLN360 Specifically Downregulates LPA in Primary Hepatocytes; paragraph 28,B
+526,881,,ANLN;APOLD1,,seed-mediated off-target effect,,,,,1,0,4213,Results > Di-siRNA modulates HTT expression with minimal off-target events; paragraph 33,B
+530,952,,transcriptome-wide,,hybridization/mismatch off-target effect,,,,,1,0,12621,"Results > QR-110 Treatment Reduces Aberrant Splicing, Increases Wild-Type CEP290 in Homozygous Retinal Organoids, and Shows No Off-Target Pharmacology; paragraph 15",B
+534,956,,transcriptome-wide,,hybridization/mismatch off-target effect,,,,,1,0,2064,Results > High Confirmation Rate of In Silico Predicted OTEs in Mouse Liver; paragraph 14,B
+535,208,,,,seed-based off-target suppression,,,,,1,0,12077,PMC full text high-precision preselection,B
+536,208,,,,unexpected cGAS signaling suppression,,,,,1,0,2281,PMC full text high-precision preselection,B
+537,208,,,,seed-mediated off-target,,,,,1,0,2308,PMC full text high-precision preselection,B
+538,208,,,,minimal off-target activity,,,,,1,0,4173,PMC full text high-precision preselection,B
+539,208,,,,TLR3-mediated off-target immune activation,,,,,1,0,4056,PMC full text high-precision preselection,C

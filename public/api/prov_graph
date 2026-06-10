@@ -1,0 +1,537 @@
+{
+  "version": "20260604_core_validation_v45",
+  "standard": "W3C PROV-compatible JSON profile",
+  "scope_note": "This profile records derivation from user query, verified release records, source documents, and candidate-gap annotations.",
+  "entity": [
+    {
+      "id": "design:query",
+      "prov:type": "design_query",
+      "label": "PCSK9 / GalNAc / hepatic"
+    },
+    {
+      "id": "concern:hematology_platelet",
+      "prov:type": "safety_concern",
+      "label": "Hematology and platelet safety"
+    },
+    {
+      "id": "release:toxicity_313",
+      "prov:type": "verified_release_record",
+      "label": "PCSK9; GN3; MC3-LNP"
+    },
+    {
+      "id": "source:37951519",
+      "prov:type": "source_document",
+      "label": "37951519"
+    },
+    {
+      "id": "release:toxicity_48",
+      "prov:type": "verified_release_record",
+      "label": "HsPCSK9-1811-LNA/GalNAc ASO panel from PMID 34760338"
+    },
+    {
+      "id": "source:34760338",
+      "prov:type": "source_document",
+      "label": "34760338"
+    },
+    {
+      "id": "release:toxicity_556",
+      "prov:type": "verified_release_record",
+      "label": "siPCSK9 (recovered B2 from PMID:41290746, curator:CM)"
+    },
+    {
+      "id": "source:41290746",
+      "prov:type": "source_document",
+      "label": "41290746"
+    },
+    {
+      "id": "candidate:1897",
+      "prov:type": "candidate_gap",
+      "label": "source title"
+    },
+    {
+      "id": "candidate:2224",
+      "prov:type": "candidate_gap",
+      "label": "source title"
+    },
+    {
+      "id": "concern:hepatobiliary_toxicity",
+      "prov:type": "safety_concern",
+      "label": "Hepatic and hepatobiliary toxicity"
+    },
+    {
+      "id": "candidate:5499",
+      "prov:type": "candidate_gap",
+      "label": "source title"
+    },
+    {
+      "id": "concern:immune_inflammatory",
+      "prov:type": "safety_concern",
+      "label": "Immune and inflammatory activation"
+    },
+    {
+      "id": "candidate:9923",
+      "prov:type": "candidate_gap",
+      "label": "source title"
+    },
+    {
+      "id": "candidate:1342",
+      "prov:type": "candidate_gap",
+      "label": "toxicity;toxic"
+    },
+    {
+      "id": "concern:local_tissue",
+      "prov:type": "safety_concern",
+      "label": "Local tissue and administration-site safety"
+    },
+    {
+      "id": "candidate:3623",
+      "prov:type": "candidate_gap",
+      "label": "source title"
+    },
+    {
+      "id": "concern:renal_toxicity",
+      "prov:type": "safety_concern",
+      "label": "Renal toxicity"
+    },
+    {
+      "id": "candidate:6953",
+      "prov:type": "candidate_gap",
+      "label": "renal"
+    },
+    {
+      "id": "candidate:1508",
+      "prov:type": "candidate_gap",
+      "label": "risk;adverse;renal"
+    },
+    {
+      "id": "concern:sequence_seed_offtarget",
+      "prov:type": "safety_concern",
+      "label": "Seed and hybridization off-target evidence"
+    },
+    {
+      "id": "release:offtarget_1",
+      "prov:type": "verified_release_record",
+      "label": "SNA-modified GalNAc-siRNA panel from PMID 41994868"
+    },
+    {
+      "id": "source:41994868",
+      "prov:type": "source_document",
+      "label": "41994868"
+    },
+    {
+      "id": "release:offtarget_60",
+      "prov:type": "verified_release_record",
+      "label": "siRNA-based"
+    },
+    {
+      "id": "source:40503175",
+      "prov:type": "source_document",
+      "label": "40503175"
+    },
+    {
+      "id": "release:offtarget_8",
+      "prov:type": "verified_release_record",
+      "label": "GalNAc-siRNA panel from PMID 29459660"
+    },
+    {
+      "id": "source:29459660",
+      "prov:type": "source_document",
+      "label": "29459660"
+    },
+    {
+      "id": "candidate:17855",
+      "prov:type": "candidate_gap",
+      "label": "sirna;rnai;off-target"
+    },
+    {
+      "id": "candidate:20345",
+      "prov:type": "candidate_gap",
+      "label": "sirna;rnai;off-target"
+    },
+    {
+      "id": "concern:transcriptome_offtarget",
+      "prov:type": "safety_concern",
+      "label": "Transcriptome-level off-target readout"
+    },
+    {
+      "id": "release:offtarget_338",
+      "prov:type": "verified_release_record",
+      "label": "siCD46 siRNA"
+    },
+    {
+      "id": "source:18420656",
+      "prov:type": "source_document",
+      "label": "18420656"
+    },
+    {
+      "id": "release:offtarget_4",
+      "prov:type": "verified_release_record",
+      "label": "APP-AON/ATXN3-AON/HTT-AON panel from PMID 41066632"
+    },
+    {
+      "id": "source:41066632",
+      "prov:type": "source_document",
+      "label": "41066632"
+    },
+    {
+      "id": "release:offtarget_6",
+      "prov:type": "verified_release_record",
+      "label": "DM1 ASO panel from PMID 37200862"
+    },
+    {
+      "id": "source:37200862",
+      "prov:type": "source_document",
+      "label": "37200862"
+    },
+    {
+      "id": "candidate:1028",
+      "prov:type": "candidate_gap",
+      "label": "transcriptome"
+    },
+    {
+      "id": "candidate:1030",
+      "prov:type": "candidate_gap",
+      "label": "transcriptome"
+    }
+  ],
+  "activity": [
+    {
+      "id": "activity:087d159b261b481c",
+      "prov:type": "oligovigil:safety_dossier_generation",
+      "label": "Generate source-grounded safety dossier"
+    }
+  ],
+  "agent": [
+    {
+      "id": "agent:oligovigil",
+      "prov:type": "softwareAgent",
+      "label": "OligoVigil portal"
+    },
+    {
+      "id": "agent:curation_team",
+      "prov:type": "organization",
+      "label": "OligoVigil human curation workflow"
+    }
+  ],
+  "wasDerivedFrom": [
+    {
+      "generatedEntity": "concern:hematology_platelet",
+      "usedEntity": "release:toxicity_313",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_313",
+      "usedEntity": "source:37951519",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:hematology_platelet",
+      "usedEntity": "release:toxicity_48",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_48",
+      "usedEntity": "source:34760338",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:hematology_platelet",
+      "usedEntity": "release:toxicity_556",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_556",
+      "usedEntity": "source:41290746",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:hematology_platelet",
+      "usedEntity": "candidate:1897",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:hematology_platelet",
+      "usedEntity": "candidate:2224",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:hepatobiliary_toxicity",
+      "usedEntity": "release:toxicity_313",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_313",
+      "usedEntity": "source:37951519",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:hepatobiliary_toxicity",
+      "usedEntity": "release:toxicity_48",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_48",
+      "usedEntity": "source:34760338",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:hepatobiliary_toxicity",
+      "usedEntity": "release:toxicity_556",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_556",
+      "usedEntity": "source:41290746",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:hepatobiliary_toxicity",
+      "usedEntity": "candidate:1897",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:hepatobiliary_toxicity",
+      "usedEntity": "candidate:5499",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:immune_inflammatory",
+      "usedEntity": "release:toxicity_313",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_313",
+      "usedEntity": "source:37951519",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:immune_inflammatory",
+      "usedEntity": "release:toxicity_48",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_48",
+      "usedEntity": "source:34760338",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:immune_inflammatory",
+      "usedEntity": "release:toxicity_556",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_556",
+      "usedEntity": "source:41290746",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:immune_inflammatory",
+      "usedEntity": "candidate:9923",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:immune_inflammatory",
+      "usedEntity": "candidate:1342",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:local_tissue",
+      "usedEntity": "release:toxicity_313",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_313",
+      "usedEntity": "source:37951519",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:local_tissue",
+      "usedEntity": "release:toxicity_48",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_48",
+      "usedEntity": "source:34760338",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:local_tissue",
+      "usedEntity": "release:toxicity_556",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_556",
+      "usedEntity": "source:41290746",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:local_tissue",
+      "usedEntity": "candidate:1897",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:local_tissue",
+      "usedEntity": "candidate:3623",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:renal_toxicity",
+      "usedEntity": "release:toxicity_48",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_48",
+      "usedEntity": "source:34760338",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:renal_toxicity",
+      "usedEntity": "release:toxicity_313",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_313",
+      "usedEntity": "source:37951519",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:renal_toxicity",
+      "usedEntity": "release:toxicity_556",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:toxicity_556",
+      "usedEntity": "source:41290746",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:renal_toxicity",
+      "usedEntity": "candidate:6953",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:renal_toxicity",
+      "usedEntity": "candidate:1508",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:sequence_seed_offtarget",
+      "usedEntity": "release:offtarget_1",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:offtarget_1",
+      "usedEntity": "source:41994868",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:sequence_seed_offtarget",
+      "usedEntity": "release:offtarget_60",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:offtarget_60",
+      "usedEntity": "source:40503175",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:sequence_seed_offtarget",
+      "usedEntity": "release:offtarget_8",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:offtarget_8",
+      "usedEntity": "source:29459660",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:sequence_seed_offtarget",
+      "usedEntity": "candidate:17855",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:sequence_seed_offtarget",
+      "usedEntity": "candidate:20345",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:transcriptome_offtarget",
+      "usedEntity": "release:offtarget_338",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:offtarget_338",
+      "usedEntity": "source:18420656",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:transcriptome_offtarget",
+      "usedEntity": "release:offtarget_4",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:offtarget_4",
+      "usedEntity": "source:41066632",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:transcriptome_offtarget",
+      "usedEntity": "release:offtarget_6",
+      "prov:role": "supported_by"
+    },
+    {
+      "generatedEntity": "release:offtarget_6",
+      "usedEntity": "source:37200862",
+      "prov:role": "has_source"
+    },
+    {
+      "generatedEntity": "concern:transcriptome_offtarget",
+      "usedEntity": "candidate:1028",
+      "prov:role": "candidate_gap"
+    },
+    {
+      "generatedEntity": "concern:transcriptome_offtarget",
+      "usedEntity": "candidate:1030",
+      "prov:role": "candidate_gap"
+    }
+  ],
+  "wasGeneratedBy": [
+    {
+      "entity": "design:query",
+      "activity": "activity:087d159b261b481c"
+    },
+    {
+      "entity": "concern:hematology_platelet",
+      "activity": "activity:087d159b261b481c"
+    },
+    {
+      "entity": "concern:hepatobiliary_toxicity",
+      "activity": "activity:087d159b261b481c"
+    },
+    {
+      "entity": "concern:immune_inflammatory",
+      "activity": "activity:087d159b261b481c"
+    },
+    {
+      "entity": "concern:local_tissue",
+      "activity": "activity:087d159b261b481c"
+    },
+    {
+      "entity": "concern:renal_toxicity",
+      "activity": "activity:087d159b261b481c"
+    },
+    {
+      "entity": "concern:sequence_seed_offtarget",
+      "activity": "activity:087d159b261b481c"
+    },
+    {
+      "entity": "concern:transcriptome_offtarget",
+      "activity": "activity:087d159b261b481c"
+    }
+  ],
+  "api_links": {
+    "dossier": "/api/safety_dossier?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&endpoint=hepatic",
+    "prov_graph": "/api/prov_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&endpoint=hepatic",
+    "evidence_release": "/api/download/evidence_release.csv"
+  }
+}

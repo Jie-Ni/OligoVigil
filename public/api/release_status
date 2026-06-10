@@ -1,0 +1,114 @@
+{
+  "version": "20260604_core_validation_v45",
+  "generated_at": "2026-06-10T22:43:56+00:00",
+  "release_name": "OligoVigil release: 737 human curator-verified safety/off-target evidence rows (626 toxicity + 111 off-target; re-curated from 2003 v1 machine pre-curated candidates); Cohen κ_binary = 0.42 (moderate, drop-abstain) / 0.34 (fair, collapse-abstain) on a 100-row mixed inter-rater study",
+  "release_snapshot": {
+    "verified_release_records": 737,
+    "toxicity_records": 626,
+    "offtarget_records": 111,
+    "benchmark_split_records": 344,
+    "candidate_records": 41114
+  },
+  "access_policy": {
+    "login_required": false,
+    "free_access": true,
+    "bulk_download": true,
+    "candidate_text_policy": "derived_annotations_only_no_raw_abstract_storage"
+  },
+  "maintenance_policy": {
+    "commitment": "Maintained through 2031 after the first public release.",
+    "public_contact_status": "contact address to be exposed on the public HTTPS deployment",
+    "data_freeze_policy": "Versioned CSV/API snapshots keep previous releases reproducible."
+  },
+  "quality_checks": [
+    {
+      "check": "human_verified_release",
+      "status": "pass",
+      "evidence": "737 human curator-verified release rows are available (1345 unsupported v1 machine candidates demoted)."
+    },
+    {
+      "check": "benchmark_splits_available",
+      "status": "pass",
+      "evidence": "344 stored Grade A/B reference split rows are available."
+    },
+    {
+      "check": "stable_public_url",
+      "status": "blocked",
+      "evidence": "Local QA target must be replaced by a real public HTTPS URL before public citation."
+    }
+  ],
+  "readiness_gates": [
+    {
+      "gate": "No-login local access",
+      "status": "pass",
+      "evidence": "Static portal and API endpoints are unauthenticated."
+    },
+    {
+      "gate": "Public HTTPS URL",
+      "status": "blocked",
+      "evidence": "The local QA build must be deployed to a stable public HTTPS URL before public citation."
+    },
+    {
+      "gate": "Download availability",
+      "status": "pass",
+      "evidence": "CSV, benchmark split, ZIP, and manifest downloads are exposed under /api/download and /api/manifest."
+    },
+    {
+      "gate": "Human-verified release evidence",
+      "status": "pass",
+      "evidence": "Human curator-verified accepted release rows: 737; release table rows: 737 (re-curated from 2003 v1 machine pre-curated candidates)."
+    },
+    {
+      "gate": "Reference benchmark reuse",
+      "status": "pass",
+      "evidence": "Stored benchmark split rows available: 344."
+    }
+  ],
+  "public_url_gate": {
+    "status": "blocked_localhost_until_public_https_deployment",
+    "required_for_public_release": true,
+    "evidence": "The current QA target is local; public reuse requires a stable functional URL."
+  },
+  "release_batches": [
+    {
+      "batch": "baseline_verified_release",
+      "status": "promoted",
+      "accepted": 77,
+      "rejected": null,
+      "notes": "Initial curator-verified seed release before scale-up."
+    },
+    {
+      "batch": "batch002_to_batch007",
+      "status": "promoted",
+      "accepted": 425,
+      "rejected": "curation-rejected rows retained outside release tables",
+      "notes": "Expanded toxicity/off-target release evidence to exceed 500 records."
+    },
+    {
+      "batch": "batch009_mega_fast",
+      "status": "promoted",
+      "accepted": 1182,
+      "rejected": 3818,
+      "notes": "Large-scale toxicity/off-target curation batch with A/B benchmark eligibility."
+    },
+    {
+      "batch": "offtarget_B_review",
+      "status": "promoted",
+      "accepted": 235,
+      "rejected": 1023,
+      "notes": "Focused off-target B-grade review promoted as release and benchmark evidence."
+    },
+    {
+      "batch": "20k_offtarget_candidate_pool",
+      "status": "screened_only_not_auto_promoted",
+      "accepted": 56,
+      "rejected": 19944,
+      "notes": "Used as screened candidate pool; not treated as direct verified release evidence."
+    }
+  ],
+  "next_release_requirements": [
+    "Deploy stable public HTTPS URL.",
+    "Freeze release package and archive benchmark/data snapshot with DOI.",
+    "Continue sequence/modification curation to convert sequence search from triage to exact alignment."
+  ]
+}

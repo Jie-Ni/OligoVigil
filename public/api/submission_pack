@@ -1,0 +1,180 @@
+{
+  "version": "20260604_core_validation_v45",
+  "generated_at": "2026-06-10T22:43:59+00:00",
+  "go_no_go": {
+    "status": "go_after_public_url_and_archive_doi",
+    "summary": "The resource is technically usable, curator-audited, and DOI-backed; public citation should wait until the stable HTTPS portal URL resolves."
+  },
+  "submission_snapshot": {
+    "verified_release_evidence": 737,
+    "toxicity_release": 626,
+    "offtarget_release": 111,
+    "benchmark_split_rows": 344,
+    "candidate_records": 41114,
+    "source_documents": 36245,
+    "case_workflows": 5,
+    "core_field_completeness_pct": 100.0,
+    "p0_core_oligo_field_rows": 344,
+    "independent_validation_reviewed_rows": 0,
+    "independent_validation_sample_rows": 500
+  },
+  "adoption_status": {
+    "external_users": "not_claimed_predeployment",
+    "citation_status": "not_claimed_prepublication",
+    "public_usage_analytics": "not_available_before_public_https_deployment",
+    "evidence_to_collect": [
+      "server access logs and download counts",
+      "public issue/correction submissions",
+      "tutorial notebook reuse",
+      "early-user feedback from oligonucleotide safety and ML groups"
+    ]
+  },
+  "public_release_blockers": [
+    {
+      "item": "Stable public HTTPS URL",
+      "status": "blocked",
+      "owner_action": "Deploy the generated Cloudflare Pages package and verify https://oligovigil.pages.dev or the assigned pages.dev URL."
+    },
+    {
+      "item": "Archived data and benchmark DOI",
+      "status": "complete",
+      "owner_action": "Use archived DOI 10.5281/zenodo.20633779; keep release files and checksums unchanged for v1.0.1."
+    },
+    {
+      "item": "Public contact and maintenance page",
+      "status": "pending",
+      "owner_action": "Expose maintainer contact, update policy, and issue/correction route on the public site."
+    },
+    {
+      "item": "External usage evidence",
+      "status": "not_yet_available",
+      "owner_action": "Collect access logs, download counts, GitHub/issue activity, and early-user feedback after deployment."
+    }
+  ],
+  "editor_questions": [
+    {
+      "question": "Why will people use this?",
+      "current_answer": "It unifies verified oligonucleotide safety/off-target evidence, provenance, curation audit, downloads, and benchmark splits in one no-login resource.",
+      "risk": "Usage evidence cannot be claimed before public deployment.",
+      "mitigation": "Use task-oriented workflows, DOI-ready downloads, and post-deployment analytics rather than invented adoption claims."
+    },
+    {
+      "question": "What is new versus RNA/drug databases?",
+      "current_answer": "The release is safety-first and curator-audited, with exact source locations, toxicity/off-target separation, candidate-release boundaries, and reusable benchmark splits.",
+      "risk": "Generic RNA/drug resources may look broader.",
+      "mitigation": "Lead with closest-work matrix and the safety/provenance/benchmark combination rather than raw database breadth."
+    },
+    {
+      "question": "Can records be trusted?",
+      "current_answer": "737 release rows are curator-verified accepted records with audit trails.",
+      "risk": "Sparse sequence, modification, and dose fields can make the resource look like a literature index.",
+      "mitigation": "Expose the P0/P1/P2 core oligo field packet and avoid complete sequence/modification/dose claims until source-verified."
+    },
+    {
+      "question": "Is the curation error rate measured?",
+      "current_answer": "Inter-curator agreement is measured: a blinded second curator (HY) re-scored a 100-row mixed inter-rater sample (KAPPA-2), giving Cohen κ_binary = 0.42 (moderate, drop-abstain, n=92) / 0.34 (fair, collapse-abstain, n=100), raw agreement 66% (66/100). A separate 500-row independent second-review packet (release accept rows plus rejected candidate controls) underwrites the release-row false-accept / false-reject error rates.",
+      "risk": "Cohen kappa is claimed; the release-row false-accept / false-reject error-rate estimates remain pending until the 500-row independent-check packet is complete and adjudicated (A10 third-adjudicator pass still pending).",
+      "mitigation": "Use /api/independent_validation and independent_curation_validation_template.csv as the validation gate."
+    },
+    {
+      "question": "Can ML groups cite it?",
+      "current_answer": "344 Grade A/B rows are exposed through fixed reference splits and task cards.",
+      "risk": "Baseline model results remain pending.",
+      "mitigation": "Ship reference splits now and add transparent baseline result tables after public freeze."
+    },
+    {
+      "question": "Will it stay available?",
+      "current_answer": "The portal supports no-login access, CSV/ZIP downloads, manifests, maintenance commitments, and a DOI-backed archive (10.5281/zenodo.20633779).",
+      "risk": "A stable public HTTPS URL still has to resolve before public reuse can be claimed.",
+      "mitigation": "Deploy the generated Cloudflare Pages package and run the smoke/final checks against the deployed URL."
+    }
+  ],
+  "case_study_cards": [
+    {
+      "title": "GalNAc-siRNA liver safety profile",
+      "audience": "oligonucleotide drug discovery teams",
+      "release_records": 22,
+      "primary_endpoint": "/api/modification_profile?term=galnac",
+      "benchmark_task": "toxicity_safety_v0_1"
+    },
+    {
+      "title": "ASO/gapmer hepatotoxicity review",
+      "audience": "ASO chemistry and safety groups",
+      "release_records": 341,
+      "primary_endpoint": "/api/evidence_records?domain=toxicity&q=hepatotoxicity",
+      "benchmark_task": "toxicity_safety_v0_1"
+    },
+    {
+      "title": "Renal and thrombocytopenia safety scan",
+      "audience": "preclinical safety reviewers",
+      "release_records": 51,
+      "primary_endpoint": "/api/search?q=renal",
+      "benchmark_task": "toxicity_safety_v0_1"
+    },
+    {
+      "title": "siRNA seed/off-target transcriptome evidence",
+      "audience": "RNAi design and transcriptomics groups",
+      "release_records": 44,
+      "primary_endpoint": "/api/evidence_records?domain=offtarget&q=seed",
+      "benchmark_task": "offtarget_safety_v0_1"
+    },
+    {
+      "title": "Benchmark reuse with fixed reference splits",
+      "audience": "ML and computational biology groups",
+      "release_records": 737,
+      "primary_endpoint": "/api/benchmark",
+      "benchmark_task": "toxicity_safety_v0_1 / offtarget_safety_v0_1"
+    }
+  ],
+  "quality_checks": [
+    {
+      "check": "no_login_access",
+      "status": "pass",
+      "evidence": "All API and static portal endpoints are unauthenticated."
+    },
+    {
+      "check": "bulk_download",
+      "status": "pass",
+      "evidence": "CSV tables, populated evidence_release.csv, benchmark_reference_splits.csv, manifests, and all_tables.zip are exposed."
+    },
+    {
+      "check": "candidate_release_separation",
+      "status": "pass",
+      "evidence": "Candidate annotations remain separate from release evidence tables."
+    },
+    {
+      "check": "release_promotion_gate",
+      "status": "pass",
+      "evidence": "Release evidence explorer exposes only curator_verified, accepted A/B/C records; abstract-level generated promotions are excluded."
+    },
+    {
+      "check": "human_verified_release",
+      "status": "pass",
+      "evidence": "737 of 737 release rows carry a human curator-verified accept audit (independent re-curation of 2003 v1 machine pre-curated candidates)."
+    },
+    {
+      "check": "crispr_exclusion",
+      "status": "pass",
+      "evidence": "CRISPR guide RNA remains excluded from core molecule records."
+    },
+    {
+      "check": "stable_public_url",
+      "status": "blocked",
+      "evidence": "Cloudflare Pages export targets https://oligovigil.pages.dev; final pass requires the deployed URL to resolve."
+    }
+  ],
+  "field_completeness_summary": {
+    "core_required_avg_pct": 100.0,
+    "records_with_any_sequence": 0,
+    "records_with_any_chemistry_or_delivery": 0,
+    "sequence_completion_status": "gap",
+    "chemistry_completion_status": "gap",
+    "action_note": "Core provenance fields support citation now; sequence and chemistry fields remain the highest-value expansion path before public submission."
+  },
+  "recommended_next_actions": [
+    "Deploy stable public HTTPS URL and run the same smoke/final checks against it.",
+    "Keep the frozen data bundle tied to DOI 10.5281/zenodo.20633779 and do not mutate the v1.0.1 release files.",
+    "Add baseline result table after DOI freeze without changing reference splits.",
+    "Expand exact sequence/modification curation to make sequence search a primary use case."
+  ]
+}

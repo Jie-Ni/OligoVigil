@@ -1,0 +1,51 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://oligovigil.pages.dev/#overview",
+  "name": "OligoVigil",
+  "description": "Source-localized oligonucleotide (ASO/siRNA) safety and off-target evidence resource. 737 human curator-verified release rows (626 toxicity + 111 off-target), Cohen κ_binary = 0.42 (drop-abstain) / 0.34 (collapse-abstain) from a blinded second-curator 100-row inter-rater study, independently re-curated over source passages from 2003 v1 machine pre-curated candidates (v2 LLM-assisted), with citable provenance, benchmark splits, downloads, and agent-readable access.",
+  "url": "https://oligovigil.pages.dev/",
+  "license": "Derived annotations and source metadata are redistributed under the project data policy; raw third-party article text is not redistributed.",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "oligonucleotide therapeutics",
+    "ASO",
+    "siRNA",
+    "toxicity",
+    "off-target evidence",
+    "curation provenance",
+    "benchmark dataset"
+  ],
+  "measurementTechnique": [
+    "human curation",
+    "source-localized evidence extraction",
+    "curator audit trail",
+    "reference benchmark split generation"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Evidence release CSV",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://oligovigil.pages.dev/api/download/evidence_release.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "All tables ZIP",
+      "encodingFormat": "application/zip",
+      "contentUrl": "https://oligovigil.pages.dev/api/download/all_tables.zip"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "verified release evidence",
+      "value": 737
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "benchmark split rows",
+      "value": 344
+    }
+  ]
+}

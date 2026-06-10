@@ -1,0 +1,34 @@
+{
+  "examples": [
+    {
+      "language": "python",
+      "title": "Load verified evidence release",
+      "code": "import pandas as pd\nbase = \"https://your-public-oligovigil.example.org\"\nevidence = pd.read_csv(f\"{base}/api/download/evidence_release.csv\")\nprint(evidence[['evidence_domain', 'canonical_name', 'evidence_grade']].head())"
+    },
+    {
+      "language": "python",
+      "title": "Fetch one citable record",
+      "code": "import requests\nbase = \"https://your-public-oligovigil.example.org\"\nrecord = requests.get(f\"{base}/api/evidence_detail?domain=toxicity&id=1\", timeout=20).json()\nprint(record['citation']['plain_text'])"
+    },
+    {
+      "language": "shell",
+      "title": "Download reference benchmark splits",
+      "code": "curl -L \"https://your-public-oligovigil.example.org/api/download/benchmark_reference_splits.csv\" -o benchmark_reference_splits.csv"
+    },
+    {
+      "language": "python",
+      "title": "Run sequence-to-evidence triage",
+      "code": "import requests\nbase = \"https://your-public-oligovigil.example.org\"\npayload = requests.get(\n    f\"{base}/api/sequence_search\",\n    params={\"sequence\": \"AUGCUACUGACUGA\", \"modification\": \"GalNAc\", \"target\": \"PCSK9\"},\n    timeout=20,\n).json()\nprint(payload['sequence_features'])\nprint(len(payload['release_hits']))"
+    },
+    {
+      "language": "python",
+      "title": "Generate a safety triage report",
+      "code": "import requests\nbase = \"https://your-public-oligovigil.example.org\"\nreport = requests.get(\n    f\"{base}/api/safety_triage\",\n    params={\n        \"sequence\": \"AUGCUACUGACUGA\",\n        \"target\": \"PCSK9\",\n        \"modification\": \"GalNAc\",\n        \"delivery\": \"GalNAc\",\n        \"endpoint\": \"hepatic\",\n        \"species\": \"human\",\n    },\n    timeout=20,\n).json()\nprint(report['summary'])\nprint(report['triage_policy']['prediction_mode'])"
+    },
+    {
+      "language": "r",
+      "title": "Read benchmark metadata",
+      "code": "library(jsonlite)\nbase <- \"https://your-public-oligovigil.example.org\"\nbenchmark <- fromJSON(paste0(base, \"/api/benchmark\"))\nbenchmark$split_counts"
+    }
+  ]
+}

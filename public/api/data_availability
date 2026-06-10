@@ -1,0 +1,126 @@
+{
+  "version": "20260604_core_validation_v45",
+  "release_snapshot": {
+    "verified_release_records": 737,
+    "toxicity_records": 626,
+    "offtarget_records": 111,
+    "benchmark_split_records": 344,
+    "candidate_records": 41114
+  },
+  "availability_statement_draft": "OligoVigil is provided as a no-login, free web resource. Versioned CSV downloads, checksums, source metadata, curation audit trails, license manifests, and benchmark reference splits are available through the web portal and REST API. Raw article text and PDFs are not redistributed; release tables contain curator-reviewed derived annotations and source links. The frozen v1.0.1 data archive is available at https://doi.org/10.5281/zenodo.20633779. The stable public HTTPS portal URL is assigned during Cloudflare Pages deployment.",
+  "access": {
+    "login_required": false,
+    "free_access": true,
+    "bulk_download": true,
+    "public_https_url_status": "cloudflare_pages_export_ready_pending_project_url",
+    "preferred_public_url": "https://oligovigil.pages.dev",
+    "maintenance_commitment": "Maintain the same public URL for at least 5 years after publication."
+  },
+  "archive": {
+    "doi_status": "10.5281/zenodo.20633779",
+    "archive_ready": true,
+    "archive_url": "https://doi.org/10.5281/zenodo.20633779",
+    "recommended_archive": "Zenodo v1.0.1 data snapshot.",
+    "checksum_manifest": "/api/downloads"
+  },
+  "formats": [
+    {
+      "format": "CSV",
+      "use": "Primary release tables, source metadata, audit trail, benchmark splits, manifests."
+    },
+    {
+      "format": "ZIP",
+      "use": "all_tables.zip reproducible local snapshot."
+    },
+    {
+      "format": "JSON",
+      "use": "REST API responses for record detail, source packets, curation protocol, and benchmark metadata."
+    }
+  ],
+  "redistribution": [
+    {
+      "level": "derived annotations only",
+      "current_use": "Default release mode: source identifiers, source locations, matched terms, and curator decisions are redistributed; raw article text is not."
+    },
+    {
+      "level": "query/link-out only",
+      "current_use": "Used when source document reuse is restricted; OligoVigil links to PMID/DOI/PMCID/source URL."
+    },
+    {
+      "level": "not safe",
+      "current_use": "Excluded from public release downloads until provenance and rights are resolved."
+    }
+  ],
+  "license_summary_endpoint": "/api/curation_protocol",
+  "public_release_files": [
+    {
+      "filename": "evidence_release.csv",
+      "url": "/api/download/evidence_release.csv",
+      "rows": 737,
+      "recommended_use": "Primary citable release evidence table."
+    },
+    {
+      "filename": "source_document.csv",
+      "url": "/api/download/source_document.csv",
+      "rows": 36245,
+      "recommended_use": "Source metadata and source identifiers."
+    },
+    {
+      "filename": "molecule.csv",
+      "url": "/api/download/molecule.csv",
+      "rows": 1012,
+      "recommended_use": "Molecule/cohort context joined to release evidence."
+    },
+    {
+      "filename": "curation_audit.csv",
+      "url": "/api/download/curation_audit.csv",
+      "rows": 32977,
+      "recommended_use": "Audit trail and curator decisions."
+    },
+    {
+      "filename": "benchmark_reference_splits.csv",
+      "url": "/api/download/benchmark_reference_splits.csv",
+      "rows": 344,
+      "recommended_use": "Fixed Grade A/B benchmark split assignments."
+    },
+    {
+      "filename": "license_manifest_v1.csv",
+      "url": "/api/manifest/license_manifest_v1.csv",
+      "rows": 15,
+      "recommended_use": "Source-class redistribution policy."
+    },
+    {
+      "filename": "source_license_manifest_v1.csv",
+      "url": "/api/manifest/source_license_manifest_v1.csv",
+      "rows": 36245,
+      "recommended_use": "Source-level conservative reuse flags."
+    },
+    {
+      "filename": "data_dictionary_v1.csv",
+      "url": "/api/manifest/data_dictionary_v1.csv",
+      "rows": 115,
+      "recommended_use": "Field definitions for public tables."
+    },
+    {
+      "filename": "all_tables.zip",
+      "url": "/api/download/all_tables.zip",
+      "rows": null,
+      "recommended_use": "Full local snapshot; checksums exposed by /api/downloads."
+    }
+  ],
+  "non_citable_or_internal_boundaries": [
+    "curation_candidate and curation_queue rows are derived triage work items and are not verified evidence claims.",
+    "Candidate packets may be downloaded for gap analysis but should not be cited as OligoVigil release evidence.",
+    "Exact sequence alignment claims are deferred until release-grade sequence fields are curator verified."
+  ],
+  "correction_route": {
+    "status": "pending_public_contact_before_submission",
+    "planned_fields": [
+      "source PMID/DOI/URL",
+      "record identifier",
+      "proposed correction",
+      "supporting source location",
+      "submitter contact"
+    ]
+  }
+}

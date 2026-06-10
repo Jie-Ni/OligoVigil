@@ -1,0 +1,133 @@
+{
+  "version": "20260604_core_validation_v45",
+  "doi_status": "10.5281/zenodo.20633779",
+  "archive_url": "https://doi.org/10.5281/zenodo.20633779",
+  "code_release_url": "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1",
+  "archive_ready": true,
+  "archive_ready_after": [
+    "stable public HTTPS URL is deployed and smoke-tested",
+    "Zenodo v1.0.1 metadata is kept aligned with the manuscript and release files"
+  ],
+  "required_files_ready": 8,
+  "required_files_total": 11,
+  "required_files": [
+    {
+      "filename": "all_tables.zip",
+      "status": "ready",
+      "rows": null,
+      "bytes": 11667765,
+      "sha256": "5065937ae3f4b1299b2c69e7b7b074a430921b3f88f9aa247a264d5f2e988640",
+      "purpose": "Bulk reproducible snapshot of core CSV tables."
+    },
+    {
+      "filename": "evidence_release.csv",
+      "status": "ready",
+      "rows": 737,
+      "bytes": 620435,
+      "sha256": "1e75030b03e14f40e87a445af6c96e4b0e189abf78604998767cfe2baa78c775",
+      "purpose": "Unified curator-verified toxicity and off-target release evidence."
+    },
+    {
+      "filename": "benchmark_reference_splits.csv",
+      "status": "ready",
+      "rows": 344,
+      "bytes": 146241,
+      "sha256": "5bf1a917a6acd47ddd0d087723737286873b33c6e7062db5a0009345535079fe",
+      "purpose": "Deterministic Grade A/B reference train/validation/test splits."
+    },
+    {
+      "filename": "benchmark_baseline_results.csv",
+      "status": "ready",
+      "rows": 16,
+      "bytes": 5125,
+      "sha256": "4803c43392607d15fa40e332745753b291a90a17dfa92706014c53f8933af8e1",
+      "purpose": "Deterministic majority, modality-prior, grade-prior, and target-prior baselines for validation/test split sanity checks."
+    },
+    {
+      "filename": "benchmark_task_cards.csv",
+      "status": "ready",
+      "rows": 2,
+      "bytes": 1556,
+      "sha256": "dc90d58981c070cb9009b1b272b24deddd42715ff1dec7694f93a37232a6ddeb",
+      "purpose": "Task definitions, targets, metrics, and leakage policy."
+    },
+    {
+      "filename": "data_dictionary_v1.csv",
+      "status": "ready",
+      "rows": 115,
+      "bytes": 9937,
+      "sha256": "43165ef14577c3208ea694e7710b6cd6c01cb96f288fa9b41c8a121689eea5b5",
+      "purpose": "Column-level schema and field descriptions."
+    },
+    {
+      "filename": "license_manifest_v1.csv",
+      "status": "ready",
+      "rows": 15,
+      "bytes": 3160,
+      "sha256": "57cf736ef103630b0e1ad9e186e31e24f3abba13806a2e347b63a2fdbf93a43b",
+      "purpose": "Source reuse and redistribution policy annotations."
+    },
+    {
+      "filename": "closest_work_matrix_v1.csv",
+      "status": "ready",
+      "rows": 8,
+      "bytes": 3234,
+      "sha256": "7c40276da9074e537079725fd66f0282ba4a871a9652634a1ab3184dbe945705",
+      "purpose": "Comparison against adjacent RNA and oligonucleotide resources."
+    },
+    {
+      "filename": "RELEASE_MANIFEST.json",
+      "purpose": "Human-readable release package manifest.",
+      "status": "generated_by_release_packaging_script",
+      "bytes": null,
+      "sha256": ""
+    },
+    {
+      "filename": "CHECKSUMS_SHA256.txt",
+      "purpose": "Checksum ledger for archived release files.",
+      "status": "generated_by_release_packaging_script",
+      "bytes": null,
+      "sha256": ""
+    },
+    {
+      "filename": "FINAL_QA_REPORT.md",
+      "purpose": "Final local QA evidence for the frozen release.",
+      "status": "generated_by_release_packaging_script",
+      "bytes": null,
+      "sha256": ""
+    }
+  ],
+  "zenodo_metadata_draft": {
+    "title": "OligoVigil: curator-verified oligonucleotide safety and off-target evidence release",
+    "upload_type": "dataset",
+    "publication_date": "2026-06-04",
+    "version": "20260604_core_validation_v45",
+    "creators": [
+      "OligoVigil Consortium"
+    ],
+    "keywords": [
+      "therapeutic oligonucleotides",
+      "antisense oligonucleotides",
+      "siRNA",
+      "toxicity",
+      "off-target effects",
+      "benchmark dataset"
+    ],
+    "description": "Versioned curator-reviewed derived annotations, source metadata, curation audit trails, download manifests, and reference benchmark splits for therapeutic oligonucleotide safety evidence.",
+    "license_note": "Derived annotations and source links are redistributed; raw article text is not redistributed."
+  },
+  "upload_rules": [
+    {
+      "rule": "Upload",
+      "detail": "CSV/ZIP release tables, manifests, checksums, data dictionary, license manifest, and benchmark files."
+    },
+    {
+      "rule": "Do not upload",
+      "detail": "Raw copyrighted article text, full-text PDFs, or unlicensed regulatory documents."
+    },
+    {
+      "rule": "After DOI",
+      "detail": "Use 10.5281/zenodo.20633779 in /api/citation, benchmark release metadata, manuscript data availability, and release announcement."
+    }
+  ]
+}

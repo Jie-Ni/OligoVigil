@@ -1,0 +1,35 @@
+{
+  "overall": "verified_release_ready_public_url_blocked",
+  "gates": [
+    {
+      "gate": "No-login local access",
+      "status": "pass",
+      "evidence": "Static portal and API endpoints are unauthenticated."
+    },
+    {
+      "gate": "Public HTTPS URL",
+      "status": "blocked",
+      "evidence": "The local QA build must be deployed to a stable public HTTPS URL before public citation."
+    },
+    {
+      "gate": "Download availability",
+      "status": "pass",
+      "evidence": "CSV, benchmark split, ZIP, and manifest downloads are exposed under /api/download and /api/manifest."
+    },
+    {
+      "gate": "Candidate/final evidence separation",
+      "status": "pass",
+      "evidence": "Candidate records remain in curation_candidate until curator-verified promotion."
+    },
+    {
+      "gate": "Human-verified release evidence",
+      "status": "pass",
+      "evidence": "Human curator-verified accepted release rows: toxicity=626, offtarget=111, total=737."
+    },
+    {
+      "gate": "Reference benchmark reuse",
+      "status": "pass",
+      "evidence": "Deterministic Grade A/B reference split rows available: 344."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "submission_policy": {
+    "write_api_enabled": false,
+    "reason": "Public release accepts contribution packets through curator-reviewed CSV/email, not anonymous writes.",
+    "human_final_decision_required": true
+  },
+  "required_fields": [
+    {
+      "field": "submitter_name",
+      "type": "text",
+      "purpose": "Correspondence and contributor tracking."
+    },
+    {
+      "field": "submitter_email",
+      "type": "email",
+      "purpose": "Correction follow-up."
+    },
+    {
+      "field": "pmid_or_doi",
+      "type": "text",
+      "purpose": "Resolvable source identifier."
+    },
+    {
+      "field": "source_location",
+      "type": "text",
+      "purpose": "Exact figure, table, paragraph, or supplement location."
+    },
+    {
+      "field": "molecule_or_cohort",
+      "type": "text",
+      "purpose": "Oligonucleotide, comparator, or cohort name."
+    },
+    {
+      "field": "evidence_domain",
+      "type": "enum",
+      "values": "toxicity|offtarget|chemistry|delivery"
+    },
+    {
+      "field": "evidence_label",
+      "type": "text",
+      "purpose": "Endpoint, off-target mechanism, or safety finding."
+    },
+    {
+      "field": "proposed_evidence_grade",
+      "type": "enum",
+      "values": "A|B|C"
+    },
+    {
+      "field": "curator_note",
+      "type": "text",
+      "purpose": "Rationale for accept, reject, or needs-full-text decision."
+    },
+    {
+      "field": "license_or_reuse_note",
+      "type": "text",
+      "purpose": "Redistribution level and raw-content restrictions."
+    }
+  ],
+  "download_templates": {
+    "curator_review_template": "/api/manifest/curator_review_template_v1.csv",
+    "candidate_packet": "/api/download/curation_candidates_filtered.csv",
+    "data_dictionary": "/api/manifest/data_dictionary_v1.csv"
+  }
+}

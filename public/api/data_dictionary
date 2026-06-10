@@ -1,0 +1,692 @@
+[
+  {
+    "table_name": "evidence_release",
+    "column_name": "evidence_domain",
+    "description": "Release evidence domain: toxicity or offtarget",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "entity_table",
+    "description": "Underlying release table: toxicity_endpoint or offtarget_evidence",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "evidence_id",
+    "description": "Stable row identifier within the entity_table",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "canonical_name",
+    "description": "Molecule/cohort/source-derived entity label",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "modality",
+    "description": "Oligonucleotide modality where curated",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "target_gene_symbol",
+    "description": "Target gene symbol where curated; incomplete in current release",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "disease_context",
+    "description": "Disease or biological context where curated",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "sense_sequence",
+    "description": "Sense strand sequence when curator verified; sparse in current release",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "antisense_sequence",
+    "description": "Antisense strand sequence when curator verified; sparse in current release",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "guide_sequence",
+    "description": "Guide strand sequence when curator verified; sparse in current release",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "passenger_sequence",
+    "description": "Passenger strand sequence when curator verified; sparse in current release",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "seed_region",
+    "description": "Seed region when curator verified; sparse in current release",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "backbone_chemistry",
+    "description": "Backbone chemistry annotation when curator verified",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "sugar_modification",
+    "description": "Sugar modification annotation when curator verified",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "base_modification",
+    "description": "Base modification annotation when curator verified",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "conjugate_delivery",
+    "description": "Conjugate or delivery chemistry annotation when curator verified",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "sequence_annotation_status",
+    "description": "Sequence curation status for the linked molecule/cohort",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "modification_annotation_status",
+    "description": "Chemistry/modification curation status for the linked molecule/cohort",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "category",
+    "description": "Toxicity endpoint category or off-target category",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "evidence_label",
+    "description": "Endpoint or off-target evidence label",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "evidence_grade",
+    "description": "Curator-assigned evidence grade A/B/C",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "source_location",
+    "description": "Exact source location supporting the evidence claim",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "source_document_id",
+    "description": "Source identifier matching source_document.id",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "source_title",
+    "description": "Source article/document title",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "pmid",
+    "description": "PubMed identifier where available",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "source_pmcid",
+    "description": "PubMed Central identifier where available",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "doi",
+    "description": "Digital object identifier where available",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "source_url",
+    "description": "Primary source URL or landing page",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "source_license_status",
+    "description": "Conservative source license status inherited from source_document",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "source_reuse_category",
+    "description": "Conservative reuse category inherited from source_document",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "curation_basis",
+    "description": "Derived annotation basis; no raw article text is redistributed",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "raw_quote_included",
+    "description": "Always false for release export",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "is_observed_experimental",
+    "description": "Flag for observed experimental evidence",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "is_computational_prediction",
+    "description": "Flag for computational-only evidence",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "audit_validation_status",
+    "description": "Audit validation status for the release row",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "curator_decision",
+    "description": "Curator decision; release rows must be accept",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "curator_id",
+    "description": "Curator identifier if retained; may be redacted",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "audit_note",
+    "description": "Human audit note supporting the release decision",
+    "release_status": "release"
+  },
+  {
+    "table_name": "evidence_release",
+    "column_name": "audited_at",
+    "description": "Audit timestamp or batch timestamp",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "id",
+    "description": "Internal source identifier",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "source_type",
+    "description": "Source class such as literature or regulatory source",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "source_url",
+    "description": "Primary source URL or landing page",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "pmid",
+    "description": "PubMed identifier where available",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "pmcid",
+    "description": "PubMed Central identifier where available",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "doi",
+    "description": "Digital object identifier where available",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "title",
+    "description": "Source title",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "journal_or_agency",
+    "description": "Journal name or issuing agency",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "publication_year",
+    "description": "Publication or document year",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "license_status",
+    "description": "Conservative source-class license status",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "reuse_category",
+    "description": "Redistribution class for derived/raw use",
+    "release_status": "release"
+  },
+  {
+    "table_name": "source_document",
+    "column_name": "accessed_at",
+    "description": "Source access timestamp",
+    "release_status": "release"
+  },
+  {
+    "table_name": "molecule",
+    "column_name": "id",
+    "description": "Internal molecule/cohort identifier",
+    "release_status": "release"
+  },
+  {
+    "table_name": "molecule",
+    "column_name": "canonical_name",
+    "description": "Molecule or cohort label",
+    "release_status": "release"
+  },
+  {
+    "table_name": "molecule",
+    "column_name": "modality_id",
+    "description": "Foreign key to modality table",
+    "release_status": "release"
+  },
+  {
+    "table_name": "molecule",
+    "column_name": "target_gene_symbol",
+    "description": "Target gene symbol where available",
+    "release_status": "release"
+  },
+  {
+    "table_name": "molecule",
+    "column_name": "disease_context",
+    "description": "Disease context where available",
+    "release_status": "release"
+  },
+  {
+    "table_name": "molecule",
+    "column_name": "therapeutic_status",
+    "description": "Therapeutic or source-derived status label",
+    "release_status": "release"
+  },
+  {
+    "table_name": "toxicity_endpoint",
+    "column_name": "id",
+    "description": "Toxicity endpoint row identifier",
+    "release_status": "release"
+  },
+  {
+    "table_name": "toxicity_endpoint",
+    "column_name": "molecule_id",
+    "description": "Foreign key to molecule",
+    "release_status": "release"
+  },
+  {
+    "table_name": "toxicity_endpoint",
+    "column_name": "assay_id",
+    "description": "Foreign key to assay metadata",
+    "release_status": "release"
+  },
+  {
+    "table_name": "toxicity_endpoint",
+    "column_name": "endpoint_name",
+    "description": "Toxicity or safety endpoint label",
+    "release_status": "release"
+  },
+  {
+    "table_name": "toxicity_endpoint",
+    "column_name": "endpoint_category",
+    "description": "Normalized endpoint category",
+    "release_status": "release"
+  },
+  {
+    "table_name": "toxicity_endpoint",
+    "column_name": "source_location",
+    "description": "Exact source location supporting the toxicity claim",
+    "release_status": "release"
+  },
+  {
+    "table_name": "toxicity_endpoint",
+    "column_name": "evidence_grade",
+    "description": "Curator-assigned evidence grade A/B/C",
+    "release_status": "release"
+  },
+  {
+    "table_name": "offtarget_evidence",
+    "column_name": "id",
+    "description": "Off-target evidence row identifier",
+    "release_status": "release"
+  },
+  {
+    "table_name": "offtarget_evidence",
+    "column_name": "molecule_id",
+    "description": "Foreign key to molecule",
+    "release_status": "release"
+  },
+  {
+    "table_name": "offtarget_evidence",
+    "column_name": "evidence_type",
+    "description": "Off-target evidence category",
+    "release_status": "release"
+  },
+  {
+    "table_name": "offtarget_evidence",
+    "column_name": "match_type",
+    "description": "Seed/mismatch/transcriptome category where curated",
+    "release_status": "release"
+  },
+  {
+    "table_name": "offtarget_evidence",
+    "column_name": "is_observed_experimental",
+    "description": "Flag for observed experimental evidence",
+    "release_status": "release"
+  },
+  {
+    "table_name": "offtarget_evidence",
+    "column_name": "is_computational_prediction",
+    "description": "Flag for computational-only evidence",
+    "release_status": "release"
+  },
+  {
+    "table_name": "offtarget_evidence",
+    "column_name": "source_location",
+    "description": "Exact source location supporting the off-target claim",
+    "release_status": "release"
+  },
+  {
+    "table_name": "offtarget_evidence",
+    "column_name": "evidence_grade",
+    "description": "Curator-assigned evidence grade A/B/C",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_reference_splits",
+    "column_name": "task_name",
+    "description": "Benchmark task name",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_reference_splits",
+    "column_name": "split_name",
+    "description": "Reference split label: train/validation/test",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_reference_splits",
+    "column_name": "entity_table",
+    "description": "Underlying evidence table",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_reference_splits",
+    "column_name": "entity_id",
+    "description": "Underlying evidence row identifier",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_reference_splits",
+    "column_name": "evidence_domain",
+    "description": "Toxicity or off-target task domain",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_reference_splits",
+    "column_name": "evidence_grade",
+    "description": "Evidence grade used for benchmark eligibility",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_reference_splits",
+    "column_name": "leakage_group",
+    "description": "Source/molecule leakage-control group",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_reference_splits",
+    "column_name": "split_strategy",
+    "description": "Deterministic split strategy",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_baseline_results",
+    "column_name": "baseline_model",
+    "description": "Deterministic baseline model name",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_baseline_results",
+    "column_name": "prediction_basis",
+    "description": "Feature/group used by the baseline",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_baseline_results",
+    "column_name": "accuracy",
+    "description": "Accuracy on the evaluation split",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_baseline_results",
+    "column_name": "macro_f1",
+    "description": "Macro-F1 on the evaluation split",
+    "release_status": "release"
+  },
+  {
+    "table_name": "benchmark_baseline_results",
+    "column_name": "coverage",
+    "description": "Evaluation row coverage for the baseline",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_audit",
+    "column_name": "entity_table",
+    "description": "Table audited by the row",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_audit",
+    "column_name": "entity_id",
+    "description": "Identifier audited in entity_table",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_audit",
+    "column_name": "extraction_method",
+    "description": "Extraction or review method",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_audit",
+    "column_name": "extractor_model_or_script",
+    "description": "Script/model/batch source for candidate extraction or promotion",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_audit",
+    "column_name": "validation_status",
+    "description": "Review state",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_audit",
+    "column_name": "curator_decision",
+    "description": "Curator accept/reject/pending decision",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_audit",
+    "column_name": "curator_id",
+    "description": "Curator identifier if retained; may be redacted",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_audit",
+    "column_name": "audit_note",
+    "description": "Human audit note",
+    "release_status": "release"
+  },
+  {
+    "table_name": "curation_candidate",
+    "column_name": "id",
+    "description": "Candidate row identifier; not citable release evidence",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_candidate",
+    "column_name": "evidence_domain",
+    "description": "Candidate curation domain",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_candidate",
+    "column_name": "source_location",
+    "description": "Derived source location pointer",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_candidate",
+    "column_name": "matched_terms",
+    "description": "Rule-derived terms used for candidate triage",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_candidate",
+    "column_name": "candidate_signal",
+    "description": "Derived candidate signal summary",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_candidate",
+    "column_name": "confidence_label",
+    "description": "Triage confidence label; not evidence grade",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_candidate",
+    "column_name": "validation_status",
+    "description": "Review state; candidates are not final evidence",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_queue",
+    "column_name": "id",
+    "description": "Curation queue row identifier",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_queue",
+    "column_name": "evidence_domain",
+    "description": "Curation domain assigned to source",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "curation_queue",
+    "column_name": "extraction_target",
+    "description": "Field to extract during curator pass",
+    "release_status": "candidate_only"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "source_document_id",
+    "description": "Source identifier matching source_document.id",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "article_license",
+    "description": "Conservative article/source license status captured from source metadata",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "release_evidence_rows",
+    "description": "Number of verified release evidence rows linked to the source",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "candidate_rows",
+    "description": "Number of candidate triage rows linked to the source",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "oa_subset_status",
+    "description": "Whether PMCID/OA-like status is present or not verified",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "raw_text_used",
+    "description": "Whether raw source text is stored or redistributed; OligoVigil stores derived annotations only",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "raw_text_stored",
+    "description": "Always false for release package",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "raw_redistribution_allowed",
+    "description": "Whether raw redistribution is claimed; usually false or not claimed",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "derived_annotation_allowed",
+    "description": "Conservative derived annotation reuse status",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "commercial_reuse_allowed",
+    "description": "Commercial reuse status when known; otherwise unknown",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "license_review_status",
+    "description": "Conservative review status for the source row",
+    "release_status": "release_manifest"
+  },
+  {
+    "table_name": "source_license_manifest_v1",
+    "column_name": "restriction_note",
+    "description": "Human-readable redistribution boundary",
+    "release_status": "release_manifest"
+  }
+]

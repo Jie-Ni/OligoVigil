@@ -24,6 +24,10 @@ CURATION_PROTOCOL_SNAPSHOT_PATH = ROOT / "data" / "generated" / "curation_protoc
 AGENT_READY_DIR = ROOT / "agent_ready"
 PORTAL_VERSION = "20260604_core_validation_v45"
 OPENAPI_VERSION = "20260604-core-validation-v45"
+ARCHIVE_DOI = "10.5281/zenodo.20633779"
+ARCHIVE_URL = f"https://doi.org/{ARCHIVE_DOI}"
+CODE_RELEASE_URL = "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1"
+PREFERRED_PUBLIC_URL = "https://oligovigil.pages.dev"
 CORE_OLIGO_FIELD_SUMMARY_PATH = (
     ROOT / "data" / "generated" / "core_oligo_field_curation_packet_v1_summary.json"
 )
@@ -882,7 +886,7 @@ def api_quality() -> dict[str, object]:
             {
                 "check": "stable_public_url",
                 "status": "blocked",
-                "evidence": "Temporary Quick Tunnel is for demonstration only.",
+                "evidence": f"Cloudflare Pages export targets {PREFERRED_PUBLIC_URL}; final pass requires the deployed URL to resolve.",
             },
         ],
     }
@@ -1074,7 +1078,7 @@ def api_citation() -> dict[str, object]:
     plain = (
         f"OligoVigil Consortium. {title}. OligoVigil {version}; 2026. "
         "Curator-verified ASO/siRNA toxicity and off-target release evidence with reference benchmark splits. "
-        "DOI pending public archive."
+        f"Data archive: {ARCHIVE_DOI}."
     )
     bibtex = "\n".join(
         [
@@ -1082,7 +1086,9 @@ def api_citation() -> dict[str, object]:
             f"  title = {{{title}}},",
             "  author = {OligoVigil Consortium},",
             "  year = {2026},",
-            f"  note = {{Version {version}; DOI pending public archive}},",
+            f"  doi = {{{ARCHIVE_DOI}}},",
+            f"  url = {{{ARCHIVE_URL}}},",
+            f"  note = {{Version {version}; data archive}},",
             "  howpublished = {OligoVigil public web resource}",
             "}",
         ]
@@ -1090,7 +1096,9 @@ def api_citation() -> dict[str, object]:
     return {
         "version": version,
         "title": title,
-        "doi_status": "pending_public_archive_before_submission",
+        "doi_status": ARCHIVE_DOI,
+        "archive_url": ARCHIVE_URL,
+        "code_release_url": CODE_RELEASE_URL,
         "preferred_citation": plain,
         "bibtex": bibtex,
         "record_citation_template": (
@@ -1210,7 +1218,7 @@ def api_help() -> dict[str, object]:
                 "summary": "Most confusing cases are caused by release/candidate separation.",
                 "items": [
                     "A candidate hit is not release evidence until accepted by curator audit.",
-                    "A public HTTPS URL and archive DOI remain required before public citation.",
+                    f"Use the archived data DOI ({ARCHIVE_DOI}); cite the public portal only after the Cloudflare Pages HTTPS URL resolves.",
                     "Do not cite localhost screenshots; cite the frozen release version and public record URL after deployment.",
                 ],
             },
@@ -2899,20 +2907,22 @@ def api_data_availability() -> dict[str, object]:
             "checksums, source metadata, curation audit trails, license manifests, and benchmark "
             "reference splits are available through the web portal and REST API. Raw article text "
             "and PDFs are not redistributed; release tables contain curator-reviewed derived "
-            "annotations and source links. A public HTTPS URL and archive DOI must be inserted "
-            "after final deployment and archive freeze."
+            f"annotations and source links. The frozen v1.0.1 data archive is available at {ARCHIVE_URL}. "
+            "The stable public HTTPS portal URL is assigned during Cloudflare Pages deployment."
         ),
         "access": {
             "login_required": False,
             "free_access": True,
             "bulk_download": True,
-            "public_https_url_status": "pending_final_deployment",
+            "public_https_url_status": "cloudflare_pages_export_ready_pending_project_url",
+            "preferred_public_url": PREFERRED_PUBLIC_URL,
             "maintenance_commitment": "Maintain the same public URL for at least 5 years after publication.",
         },
         "archive": {
-            "doi_status": "pending_public_archive_before_submission",
-            "archive_ready": False,
-            "recommended_archive": "Zenodo or Figshare after final public HTTPS deployment and release freeze.",
+            "doi_status": ARCHIVE_DOI,
+            "archive_ready": True,
+            "archive_url": ARCHIVE_URL,
+            "recommended_archive": "Zenodo v1.0.1 data snapshot.",
             "checksum_manifest": "/api/downloads",
         },
         "formats": [
@@ -2964,16 +2974,16 @@ def api_submission_pack() -> dict[str, object]:
     workflows = api_case_workflows().get("case_workflows", [])
     snapshot = release_status.get("release_snapshot", {})
     blockers = [
-        {
-            "item": "Stable public HTTPS URL",
-            "status": "blocked",
-            "owner_action": "Deploy the same Docker release to a persistent public domain before public citation.",
-        },
-        {
-            "item": "Archived data and benchmark DOI",
-            "status": "pending",
-            "owner_action": "Freeze CSV/ZIP/checksum package and archive it with a Zenodo/Figshare DOI.",
-        },
+            {
+                "item": "Stable public HTTPS URL",
+                "status": "blocked",
+                "owner_action": f"Deploy the generated Cloudflare Pages package and verify {PREFERRED_PUBLIC_URL} or the assigned pages.dev URL.",
+            },
+            {
+                "item": "Archived data and benchmark DOI",
+                "status": "complete",
+                "owner_action": f"Use archived DOI {ARCHIVE_DOI}; keep release files and checksums unchanged for v1.0.1.",
+            },
         {
             "item": "Public contact and maintenance page",
             "status": "pending",
@@ -3018,9 +3028,9 @@ def api_submission_pack() -> dict[str, object]:
         },
         {
             "question": "Will it stay available?",
-            "current_answer": "The portal already supports no-login local access, CSV/ZIP downloads, manifests, and maintenance commitments.",
-            "risk": "Localhost and pending DOI block public reuse and citation.",
-            "mitigation": "Treat public deployment and archive DOI as blocking release gates.",
+            "current_answer": f"The portal supports no-login access, CSV/ZIP downloads, manifests, maintenance commitments, and a DOI-backed archive ({ARCHIVE_DOI}).",
+            "risk": "A stable public HTTPS URL still has to resolve before public reuse can be claimed.",
+            "mitigation": "Deploy the generated Cloudflare Pages package and run the smoke/final checks against the deployed URL.",
         },
     ]
     return {
@@ -3028,7 +3038,7 @@ def api_submission_pack() -> dict[str, object]:
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "go_no_go": {
             "status": "go_after_public_url_and_archive_doi",
-            "summary": "The resource is technically usable and curator-audited; public citation should wait until HTTPS deployment and archived DOI are complete.",
+            "summary": "The resource is technically usable, curator-audited, and DOI-backed; public citation should wait until the stable HTTPS portal URL resolves.",
         },
         "submission_snapshot": {
             "verified_release_evidence": snapshot.get("verified_release_records", 0),
@@ -3070,7 +3080,7 @@ def api_submission_pack() -> dict[str, object]:
         "field_completeness_summary": field_completeness.get("summary", {}),
         "recommended_next_actions": [
             "Deploy stable public HTTPS URL and run the same smoke/final checks against it.",
-            "Archive the frozen data bundle and benchmark splits with DOI and checksum manifest.",
+            f"Keep the frozen data bundle tied to DOI {ARCHIVE_DOI} and do not mutate the v1.0.1 release files.",
             "Add baseline result table after DOI freeze without changing reference splits.",
             "Expand exact sequence/modification curation to make sequence search a primary use case.",
         ],
@@ -3133,12 +3143,13 @@ def api_archive_readiness() -> dict[str, object]:
     ready_count = sum(1 for file in required_files if str(file.get("status")).startswith(("ready", "present")))
     return {
         "version": PORTAL_VERSION,
-        "doi_status": "pending_public_archive_before_submission",
-        "archive_ready": False,
+        "doi_status": ARCHIVE_DOI,
+        "archive_url": ARCHIVE_URL,
+        "code_release_url": CODE_RELEASE_URL,
+        "archive_ready": True,
         "archive_ready_after": [
-            "stable public HTTPS URL is deployed",
-            "final release package is uploaded to Zenodo/Figshare or institutional repository",
-            "archive DOI is minted and inserted into citation metadata",
+            "stable public HTTPS URL is deployed and smoke-tested",
+            "Zenodo v1.0.1 metadata is kept aligned with the manuscript and release files",
         ],
         "required_files_ready": ready_count,
         "required_files_total": len(required_files),
@@ -3174,7 +3185,7 @@ def api_archive_readiness() -> dict[str, object]:
             },
             {
                 "rule": "After DOI",
-                "detail": "Update /api/citation, benchmark release metadata, manuscript data availability, and release announcement.",
+                "detail": f"Use {ARCHIVE_DOI} in /api/citation, benchmark release metadata, manuscript data availability, and release announcement.",
             },
         ],
     }
@@ -4717,7 +4728,8 @@ def api_download_manifest() -> dict[str, object]:
     payload: dict[str, object] = {
         "version": PORTAL_VERSION,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-        "doi_status": "pending_public_archive_before_submission",
+        "doi_status": ARCHIVE_DOI,
+        "archive_url": ARCHIVE_URL,
         "license_policy": "Raw article text is not redistributed. Curator-reviewed derived annotations, source metadata, and PMID/DOI links are provided for reuse.",
         "recommended_bundle": "/api/download/all_tables.zip",
         "files": files,
@@ -4774,9 +4786,10 @@ def api_benchmark() -> dict[str, object]:
         "split_strategy_counts": [
             {"split_strategy": strategy, "n": n} for strategy, n in sorted(strategy_counts.items())
         ],
-        "benchmark_release": {
-            "doi_status": "pending_public_archive_before_submission",
-            "recommended_archive": "Zenodo/Figshare DOI after stable HTTPS deployment and final release freeze.",
+            "benchmark_release": {
+            "doi_status": ARCHIVE_DOI,
+            "archive_url": ARCHIVE_URL,
+            "recommended_archive": "Zenodo v1.0.1 data snapshot.",
             "citation_policy": "Cite OligoVigil version, task name, and the reference split CSV checksum.",
             "leakage_control": "stored_source_plus_molecule_grouped_splits",
         },

@@ -1,0 +1,1013 @@
+{
+  "modalities": [
+    {
+      "value": "ASO",
+      "label": "ASO"
+    },
+    {
+      "value": "siRNA",
+      "label": "siRNA"
+    },
+    {
+      "value": "aptamer",
+      "label": "aptamer"
+    },
+    {
+      "value": "ASO/siRNA mixed context",
+      "label": "ASO/siRNA mixed context"
+    },
+    {
+      "value": "miRNA agomir",
+      "label": "miRNA agomir"
+    },
+    {
+      "value": "PMO",
+      "label": "PMO"
+    },
+    {
+      "value": "DNA/RNA heteroduplex oligonucleotide",
+      "label": "DNA/RNA heteroduplex oligonucleotide"
+    },
+    {
+      "value": "DNA nanostructure",
+      "label": "DNA nanostructure"
+    },
+    {
+      "value": "PMOplus",
+      "label": "PMOplus"
+    },
+    {
+      "value": "ASO/RNA mixed context",
+      "label": "ASO/RNA mixed context"
+    },
+    {
+      "value": "CpG oligodeoxynucleotide",
+      "label": "CpG oligodeoxynucleotide"
+    }
+  ],
+  "source_types": [
+    {
+      "value": "literature_discovery",
+      "label": "literature_discovery",
+      "n": 36209
+    },
+    {
+      "value": "review_reference",
+      "label": "review_reference",
+      "n": 13
+    },
+    {
+      "value": "clinical_context",
+      "label": "clinical_context",
+      "n": 5
+    },
+    {
+      "value": "literature_signal",
+      "label": "literature_signal",
+      "n": 5
+    },
+    {
+      "value": "closest_work",
+      "label": "closest_work",
+      "n": 4
+    },
+    {
+      "value": "method_reference",
+      "label": "method_reference",
+      "n": 3
+    },
+    {
+      "value": "tool_reference",
+      "label": "tool_reference",
+      "n": 2
+    },
+    {
+      "value": "challenge_notice",
+      "label": "challenge_notice",
+      "n": 1
+    },
+    {
+      "value": "industry_guidance",
+      "label": "industry_guidance",
+      "n": 1
+    },
+    {
+      "value": "nar_editorial",
+      "label": "nar_editorial",
+      "n": 1
+    },
+    {
+      "value": "nar_guideline",
+      "label": "nar_guideline",
+      "n": 1
+    }
+  ],
+  "source_years": [
+    {
+      "value": "2026",
+      "label": "2026",
+      "n": 4109
+    },
+    {
+      "value": "2025",
+      "label": "2025",
+      "n": 5131
+    },
+    {
+      "value": "2024",
+      "label": "2024",
+      "n": 2474
+    },
+    {
+      "value": "2023",
+      "label": "2023",
+      "n": 1398
+    },
+    {
+      "value": "2022",
+      "label": "2022",
+      "n": 1083
+    },
+    {
+      "value": "2021",
+      "label": "2021",
+      "n": 1104
+    },
+    {
+      "value": "2020",
+      "label": "2020",
+      "n": 1040
+    },
+    {
+      "value": "2019",
+      "label": "2019",
+      "n": 918
+    },
+    {
+      "value": "2018",
+      "label": "2018",
+      "n": 942
+    },
+    {
+      "value": "2017",
+      "label": "2017",
+      "n": 1000
+    },
+    {
+      "value": "2016",
+      "label": "2016",
+      "n": 1087
+    },
+    {
+      "value": "2015",
+      "label": "2015",
+      "n": 1114
+    },
+    {
+      "value": "2014",
+      "label": "2014",
+      "n": 1202
+    },
+    {
+      "value": "2013",
+      "label": "2013",
+      "n": 1295
+    },
+    {
+      "value": "2012",
+      "label": "2012",
+      "n": 1277
+    },
+    {
+      "value": "2011",
+      "label": "2011",
+      "n": 1172
+    },
+    {
+      "value": "2010",
+      "label": "2010",
+      "n": 1104
+    },
+    {
+      "value": "2009",
+      "label": "2009",
+      "n": 1032
+    },
+    {
+      "value": "2008",
+      "label": "2008",
+      "n": 1071
+    },
+    {
+      "value": "2007",
+      "label": "2007",
+      "n": 1026
+    },
+    {
+      "value": "2006",
+      "label": "2006",
+      "n": 930
+    },
+    {
+      "value": "2005",
+      "label": "2005",
+      "n": 1095
+    },
+    {
+      "value": "2004",
+      "label": "2004",
+      "n": 963
+    },
+    {
+      "value": "2003",
+      "label": "2003",
+      "n": 664
+    },
+    {
+      "value": "2002",
+      "label": "2002",
+      "n": 507
+    },
+    {
+      "value": "2001",
+      "label": "2001",
+      "n": 431
+    },
+    {
+      "value": "2000",
+      "label": "2000",
+      "n": 371
+    },
+    {
+      "value": "1999",
+      "label": "1999",
+      "n": 330
+    },
+    {
+      "value": "1998",
+      "label": "1998",
+      "n": 374
+    },
+    {
+      "value": "1993",
+      "label": "1993",
+      "n": 1
+    }
+  ],
+  "candidate_domains": [
+    {
+      "value": "offtarget",
+      "label": "offtarget",
+      "n": 28649
+    },
+    {
+      "value": "toxicity",
+      "label": "toxicity",
+      "n": 6201
+    },
+    {
+      "value": "delivery",
+      "label": "delivery",
+      "n": 2630
+    },
+    {
+      "value": "assay",
+      "label": "assay",
+      "n": 1889
+    },
+    {
+      "value": "chemistry",
+      "label": "chemistry",
+      "n": 1080
+    },
+    {
+      "value": "benchmark",
+      "label": "benchmark",
+      "n": 665
+    }
+  ],
+  "confidence_labels": [
+    {
+      "value": "low_candidate",
+      "label": "low_candidate",
+      "n": 19562
+    },
+    {
+      "value": "medium_candidate",
+      "label": "medium_candidate",
+      "n": 14698
+    },
+    {
+      "value": "high_candidate",
+      "label": "high_candidate",
+      "n": 6854
+    }
+  ],
+  "evidence_grades": [
+    {
+      "value": "A",
+      "label": "A",
+      "n": 233
+    },
+    {
+      "value": "B",
+      "label": "B",
+      "n": 275
+    },
+    {
+      "value": "C",
+      "label": "C",
+      "n": 229
+    }
+  ],
+  "toxicity_categories": [
+    {
+      "value": "hepatic",
+      "label": "hepatic",
+      "n": 337
+    },
+    {
+      "value": "general safety",
+      "label": "general safety",
+      "n": 105
+    },
+    {
+      "value": "renal",
+      "label": "renal",
+      "n": 42
+    },
+    {
+      "value": "toxicity",
+      "label": "toxicity",
+      "n": 34
+    },
+    {
+      "value": "immunotoxicity",
+      "label": "immunotoxicity",
+      "n": 24
+    },
+    {
+      "value": "chemistry",
+      "label": "chemistry",
+      "n": 21
+    },
+    {
+      "value": "delivery",
+      "label": "delivery",
+      "n": 20
+    },
+    {
+      "value": "neurological",
+      "label": "neurological",
+      "n": 15
+    },
+    {
+      "value": "hematologic",
+      "label": "hematologic",
+      "n": 10
+    },
+    {
+      "value": "hematological",
+      "label": "hematological",
+      "n": 6
+    },
+    {
+      "value": "general toxicity",
+      "label": "general toxicity",
+      "n": 5
+    },
+    {
+      "value": "genotoxicity",
+      "label": "genotoxicity",
+      "n": 2
+    },
+    {
+      "value": "hepatic; renal",
+      "label": "hepatic; renal",
+      "n": 2
+    },
+    {
+      "value": "hepatic/renal",
+      "label": "hepatic/renal",
+      "n": 1
+    },
+    {
+      "value": "hepatic/renal/general safety",
+      "label": "hepatic/renal/general safety",
+      "n": 1
+    },
+    {
+      "value": "renal; hepatic",
+      "label": "renal; hepatic",
+      "n": 1
+    }
+  ],
+  "evidence_categories": [
+    {
+      "value": "hepatic",
+      "label": "hepatic",
+      "n": 337
+    },
+    {
+      "value": "general safety",
+      "label": "general safety",
+      "n": 105
+    },
+    {
+      "value": "renal",
+      "label": "renal",
+      "n": 42
+    },
+    {
+      "value": "seed-mediated off-target effect",
+      "label": "seed-mediated off-target effect",
+      "n": 42
+    },
+    {
+      "value": "toxicity",
+      "label": "toxicity",
+      "n": 34
+    },
+    {
+      "value": "hybridization/mismatch off-target effect",
+      "label": "hybridization/mismatch off-target effect",
+      "n": 26
+    },
+    {
+      "value": "immunotoxicity",
+      "label": "immunotoxicity",
+      "n": 24
+    },
+    {
+      "value": "transcriptome-level off-target effect",
+      "label": "transcriptome-level off-target effect",
+      "n": 24
+    },
+    {
+      "value": "chemistry",
+      "label": "chemistry",
+      "n": 21
+    },
+    {
+      "value": "delivery",
+      "label": "delivery",
+      "n": 20
+    },
+    {
+      "value": "neurological",
+      "label": "neurological",
+      "n": 15
+    },
+    {
+      "value": "off-target evidence",
+      "label": "off-target evidence",
+      "n": 12
+    },
+    {
+      "value": "hematologic",
+      "label": "hematologic",
+      "n": 10
+    },
+    {
+      "value": "hematological",
+      "label": "hematological",
+      "n": 6
+    },
+    {
+      "value": "general toxicity",
+      "label": "general toxicity",
+      "n": 5
+    },
+    {
+      "value": "genotoxicity",
+      "label": "genotoxicity",
+      "n": 2
+    },
+    {
+      "value": "hepatic; renal",
+      "label": "hepatic; renal",
+      "n": 2
+    },
+    {
+      "value": "sequence-specificity/off-target evidence",
+      "label": "sequence-specificity/off-target evidence",
+      "n": 2
+    },
+    {
+      "value": "TLR3-mediated off-target immune activation",
+      "label": "TLR3-mediated off-target immune activation",
+      "n": 1
+    },
+    {
+      "value": "hepatic/renal",
+      "label": "hepatic/renal",
+      "n": 1
+    },
+    {
+      "value": "hepatic/renal/general safety",
+      "label": "hepatic/renal/general safety",
+      "n": 1
+    },
+    {
+      "value": "minimal off-target activity",
+      "label": "minimal off-target activity",
+      "n": 1
+    },
+    {
+      "value": "renal; hepatic",
+      "label": "renal; hepatic",
+      "n": 1
+    },
+    {
+      "value": "seed-based off-target suppression",
+      "label": "seed-based off-target suppression",
+      "n": 1
+    },
+    {
+      "value": "seed-mediated off-target",
+      "label": "seed-mediated off-target",
+      "n": 1
+    },
+    {
+      "value": "unexpected cGAS signaling suppression",
+      "label": "unexpected cGAS signaling suppression",
+      "n": 1
+    }
+  ],
+  "audit_statuses": [
+    {
+      "value": "curator_rejected",
+      "label": "curator_rejected",
+      "n": 28908
+    },
+    {
+      "value": "machine_precurated_v1",
+      "label": "machine_precurated_v1",
+      "n": 1983
+    },
+    {
+      "value": "recurated_rejected",
+      "label": "recurated_rejected",
+      "n": 1345
+    },
+    {
+      "value": "curator_verified",
+      "label": "curator_verified",
+      "n": 737
+    },
+    {
+      "value": "verified",
+      "label": "verified",
+      "n": 3
+    },
+    {
+      "value": "curator_abstained",
+      "label": "curator_abstained",
+      "n": 1
+    }
+  ],
+  "targets": [
+    {
+      "value": "STAT3",
+      "label": "STAT3",
+      "n": 5
+    },
+    {
+      "value": "DMD",
+      "label": "DMD",
+      "n": 3
+    },
+    {
+      "value": "BACE1",
+      "label": "BACE1",
+      "n": 2
+    },
+    {
+      "value": "CD274",
+      "label": "CD274",
+      "n": 2
+    },
+    {
+      "value": "EGFR",
+      "label": "EGFR",
+      "n": 2
+    },
+    {
+      "value": "HBV",
+      "label": "HBV",
+      "n": 2
+    },
+    {
+      "value": "LUC",
+      "label": "LUC",
+      "n": 2
+    },
+    {
+      "value": "MALAT1",
+      "label": "MALAT1",
+      "n": 2
+    },
+    {
+      "value": "PCSK9",
+      "label": "PCSK9",
+      "n": 2
+    },
+    {
+      "value": "TGFB1",
+      "label": "TGFB1",
+      "n": 2
+    },
+    {
+      "value": "TTR",
+      "label": "TTR",
+      "n": 2
+    },
+    {
+      "value": "luciferase",
+      "label": "luciferase",
+      "n": 2
+    },
+    {
+      "value": "ACSL1; NR3C1",
+      "label": "ACSL1; NR3C1",
+      "n": 1
+    },
+    {
+      "value": "APOB; NR3C1",
+      "label": "APOB; NR3C1",
+      "n": 1
+    },
+    {
+      "value": "AR",
+      "label": "AR",
+      "n": 1
+    },
+    {
+      "value": "AURKA",
+      "label": "AURKA",
+      "n": 1
+    },
+    {
+      "value": "BACH1",
+      "label": "BACH1",
+      "n": 1
+    },
+    {
+      "value": "BIRC5",
+      "label": "BIRC5",
+      "n": 1
+    },
+    {
+      "value": "CD44",
+      "label": "CD44",
+      "n": 1
+    },
+    {
+      "value": "CEBPB",
+      "label": "CEBPB",
+      "n": 1
+    },
+    {
+      "value": "CLCN7",
+      "label": "CLCN7",
+      "n": 1
+    },
+    {
+      "value": "CTGF",
+      "label": "CTGF",
+      "n": 1
+    },
+    {
+      "value": "CYP3A4",
+      "label": "CYP3A4",
+      "n": 1
+    },
+    {
+      "value": "CYP3A5",
+      "label": "CYP3A5",
+      "n": 1
+    },
+    {
+      "value": "Chordin",
+      "label": "Chordin",
+      "n": 1
+    },
+    {
+      "value": "DMPK",
+      "label": "DMPK",
+      "n": 1
+    },
+    {
+      "value": "DUX4",
+      "label": "DUX4",
+      "n": 1
+    },
+    {
+      "value": "FADD",
+      "label": "FADD",
+      "n": 1
+    },
+    {
+      "value": "G6PD",
+      "label": "G6PD",
+      "n": 1
+    },
+    {
+      "value": "GFP",
+      "label": "GFP",
+      "n": 1
+    },
+    {
+      "value": "HAO1; TTR",
+      "label": "HAO1; TTR",
+      "n": 1
+    },
+    {
+      "value": "HSP47",
+      "label": "HSP47",
+      "n": 1
+    },
+    {
+      "value": "HTT",
+      "label": "HTT",
+      "n": 1
+    },
+    {
+      "value": "HTT; PPIB",
+      "label": "HTT; PPIB",
+      "n": 1
+    },
+    {
+      "value": "IGF1R",
+      "label": "IGF1R",
+      "n": 1
+    },
+    {
+      "value": "IL1B",
+      "label": "IL1B",
+      "n": 1
+    },
+    {
+      "value": "IL4RA",
+      "label": "IL4RA",
+      "n": 1
+    },
+    {
+      "value": "IL6",
+      "label": "IL6",
+      "n": 1
+    },
+    {
+      "value": "IRF5",
+      "label": "IRF5",
+      "n": 1
+    },
+    {
+      "value": "ISG15",
+      "label": "ISG15",
+      "n": 1
+    },
+    {
+      "value": "JAK1",
+      "label": "JAK1",
+      "n": 1
+    },
+    {
+      "value": "KEAP1",
+      "label": "KEAP1",
+      "n": 1
+    },
+    {
+      "value": "LGALS1",
+      "label": "LGALS1",
+      "n": 1
+    },
+    {
+      "value": "LPCAT1",
+      "label": "LPCAT1",
+      "n": 1
+    },
+    {
+      "value": "MIR125A",
+      "label": "MIR125A",
+      "n": 1
+    },
+    {
+      "value": "MIR17",
+      "label": "MIR17",
+      "n": 1
+    },
+    {
+      "value": "MIR21",
+      "label": "MIR21",
+      "n": 1
+    },
+    {
+      "value": "MMP-2/MMP-9",
+      "label": "MMP-2/MMP-9",
+      "n": 1
+    },
+    {
+      "value": "MMP9",
+      "label": "MMP9",
+      "n": 1
+    },
+    {
+      "value": "MSTN; MLYCD",
+      "label": "MSTN; MLYCD",
+      "n": 1
+    },
+    {
+      "value": "Mapt",
+      "label": "Mapt",
+      "n": 1
+    },
+    {
+      "value": "NLRP3",
+      "label": "NLRP3",
+      "n": 1
+    },
+    {
+      "value": "ORF7",
+      "label": "ORF7",
+      "n": 1
+    },
+    {
+      "value": "PCSK9/AGT",
+      "label": "PCSK9/AGT",
+      "n": 1
+    },
+    {
+      "value": "PHD2",
+      "label": "PHD2",
+      "n": 1
+    },
+    {
+      "value": "PPIB",
+      "label": "PPIB",
+      "n": 1
+    },
+    {
+      "value": "PTEN",
+      "label": "PTEN",
+      "n": 1
+    },
+    {
+      "value": "PTK2",
+      "label": "PTK2",
+      "n": 1
+    },
+    {
+      "value": "RHEB; MAPK1",
+      "label": "RHEB; MAPK1",
+      "n": 1
+    },
+    {
+      "value": "Raf-1/PD-L1",
+      "label": "Raf-1/PD-L1",
+      "n": 1
+    },
+    {
+      "value": "SARS-CoV-2 RdRP",
+      "label": "SARS-CoV-2 RdRP",
+      "n": 1
+    },
+    {
+      "value": "SLC31A1",
+      "label": "SLC31A1",
+      "n": 1
+    },
+    {
+      "value": "SLC7A1",
+      "label": "SLC7A1",
+      "n": 1
+    },
+    {
+      "value": "SMN2",
+      "label": "SMN2",
+      "n": 1
+    },
+    {
+      "value": "SNCA",
+      "label": "SNCA",
+      "n": 1
+    },
+    {
+      "value": "SOX9",
+      "label": "SOX9",
+      "n": 1
+    },
+    {
+      "value": "Smad4",
+      "label": "Smad4",
+      "n": 1
+    },
+    {
+      "value": "TET3",
+      "label": "TET3",
+      "n": 1
+    },
+    {
+      "value": "TGFBR1",
+      "label": "TGFBR1",
+      "n": 1
+    },
+    {
+      "value": "TNF",
+      "label": "TNF",
+      "n": 1
+    },
+    {
+      "value": "TNF-alpha",
+      "label": "TNF-alpha",
+      "n": 1
+    },
+    {
+      "value": "TRAF6",
+      "label": "TRAF6",
+      "n": 1
+    },
+    {
+      "value": "TTR; HAO1",
+      "label": "TTR; HAO1",
+      "n": 1
+    },
+    {
+      "value": "Ube3a-AS",
+      "label": "Ube3a-AS",
+      "n": 1
+    },
+    {
+      "value": "VIM",
+      "label": "VIM",
+      "n": 1
+    },
+    {
+      "value": "ZNF416",
+      "label": "ZNF416",
+      "n": 1
+    },
+    {
+      "value": "eGFP",
+      "label": "eGFP",
+      "n": 1
+    },
+    {
+      "value": "long pre-mRNA transcripts",
+      "label": "long pre-mRNA transcripts",
+      "n": 1
+    },
+    {
+      "value": "tdTomato",
+      "label": "tdTomato",
+      "n": 1
+    }
+  ],
+  "modification_terms": [
+    {
+      "value": "galnac",
+      "label": "GalNAc conjugation",
+      "kind": "targeted conjugate"
+    },
+    {
+      "value": "lnp",
+      "label": "Lipid nanoparticle",
+      "kind": "delivery"
+    },
+    {
+      "value": "ps",
+      "label": "Phosphorothioate backbone",
+      "kind": "chemical modification"
+    },
+    {
+      "value": "2ome",
+      "label": "2'-O-methyl",
+      "kind": "chemical modification"
+    },
+    {
+      "value": "2moe",
+      "label": "2'-MOE",
+      "kind": "chemical modification"
+    },
+    {
+      "value": "lna",
+      "label": "Locked nucleic acid",
+      "kind": "chemical modification"
+    },
+    {
+      "value": "pmo",
+      "label": "Phosphorodiamidate morpholino oligomer",
+      "kind": "modality"
+    },
+    {
+      "value": "aso",
+      "label": "Antisense oligonucleotide",
+      "kind": "modality"
+    },
+    {
+      "value": "sirna",
+      "label": "siRNA",
+      "kind": "modality"
+    }
+  ]
+}

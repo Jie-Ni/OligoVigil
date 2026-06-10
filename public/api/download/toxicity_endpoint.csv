@@ -1,0 +1,627 @@
+id,molecule_id,assay_id,endpoint_name,endpoint_category,measured_value,measured_unit,direction,significance_label,is_observed_experimental,source_document_id,source_location,evidence_grade
+1,14,14,DNA damage response,genotoxicity,,,increased,significant,1,1002,Results > ASO treatment cause activation of DNA repair enzymes and these proteins are enriched in ASO-seeded PS bodies; paragraph 15,A
+2,15,15,hepatotoxicity,hepatic,,,increased,significant,1,1035,Results > Tool ASO safety profile characterization in vitro and in vivo; paragraph 32,A
+4,17,17,neurotoxicity,neurological,,,mitigated,significant,1,1028,Results > Gap modification of 5′-CP mitigates cytotoxicity and in vivo neurotoxicity across various PS-ASOs; paragraph 25,A
+5,18,18,hepatotoxicity,hepatic,,,no observed toxicity,non-significant,1,1780,Results > Liver and kidney toxicity assessment of BND6482; paragraph 61,B
+6,19,19,safety/tolerability,general safety,,,no observed toxicity,non-significant,1,1782,Results > Safety assessments reveal L2-Htt is well tolerated in aged mice; paragraph 43,B
+7,20,20,safety/tolerability,general safety,,,mitigated,descriptive,1,1822,RESULTS > Anti-PMM effect of TP-siRC@tHyNPs in vivo; paragraph 30,C
+8,21,21,hepatotoxicity,hepatic,,,no observed toxicity,non-significant,1,1846,Results > Anti–miR-21-SNA Treatment Inhibits Kidney Cyst Growth; paragraph 32,B
+9,22,22,safety/tolerability,general safety,,,increased,descriptive,1,2285,Results > Safety and Tolerability; paragraph 24,A
+10,24,24,neurotoxicity,neurological,,,decreased,significant,1,1413,Result > Nucleobase-dependent effects of hypoxanthine substitution on in vivo CNS toxicity; Fig. 3 caption,A
+11,25,25,cytotoxicity,general safety,,,no significant change,not significant,1,3211,2. Results > 2.6. Knockdown of Endogenously Expressed IL-1β by Nebulized siRNA; paragraph 27,C
+12,26,26,neurotoxicity,neurological,,,increased,,1,1410,Results > CNS toxicity after RGLS4326 treatment in nonclinical toxicity studies; paragraph 7,A
+13,27,27,safety/tolerability,general safety,,,no significant change,,1,2286,Results > Primary Efficacy: Safety; paragraph 27,A
+15,29,29,cytotoxicity,general safety,,,no significant change,,1,3500,Results > PEI/PPI-based nanoparticles reveal low cytotoxic potential and polymer-dependently knock down SNCA mRNA in vitro; paragraph 6,C
+16,30,30,safety/tolerability,general safety,,,no significant change,,1,3517,Results > Safety; paragraph 22,B
+17,31,31,systemic safety,general safety,,,no significant change,,1,3529,Results > In vivo safety access; paragraph 30,B
+18,32,32,cytotoxicity,general safety,,,decreased,,1,3574,"Results > In vitro evaluation of cytotoxicity, homologous targeting, and immune escape; paragraph 32",C
+19,33,33,systemic safety,general safety,,,no significant change,,1,3590,Results > Assessment of biosafety in vivo; paragraph 42,B
+20,34,34,transcriptome toxicity,general safety,,,,,1,3598,Results > Transcriptomic analysis of FSHD myotubes after siRNADUX4 treatment; paragraph 9,C
+21,35,35,systemic safety,general safety,,,no significant change,,1,3740,Results > In vivo Safety of hEV@FAP-siTGFβ1; paragraph 42,B
+22,36,36,immune activation,immunotoxicity,,,no significant change,,1,8490,Results > Safety and immune-response of siRNA-loaded mEVs; paragraph 15,B
+23,37,37,systemic safety,general safety,,,no significant change,,1,12426,Results > In vivo clearance and traceable delivery of supraclusters; paragraph 9,B
+24,38,38,neurotoxicity,neurological,,,decreased,significant,1,1110,Results > G-clamp modification in ASO targeting Malat1 RNA mitigates acute CNS toxicity of ASO; paragraph 11,A
+25,39,39,neurotoxicity,neurological,,,decreased,significant,1,1115,Results > Using aCSF+ reduces the acute neurotoxicity of CNS-administered ASOs; paragraph 26,A
+26,40,40,cytotoxicity,general safety,,,decreased,,1,1417,3. Results > 3.3. Cell Growth Inhibition by Antisense Oligonucleotides; paragraph 21,C
+27,41,41,systemic safety,general safety,,,no significant change,,1,1886,3. Results > 3.7. In vivo toxicity of LNP-siTGFβRI; paragraph 36,B
+28,42,42,safety/tolerability,general safety,,,,,1,2600,Results > Participants in phase I clinical trial; paragraph 55,A
+30,44,44,cytotoxicity,general safety,,,no significant change,,1,3851,Results > Efficacy as siRNA carrier for RNA interference; paragraph 52,C
+31,45,45,apoptosis/cytotoxicity,general safety,,,no significant change,,1,12064,3. Results > 3.6. Caspase 3/7 Activity; paragraph 35,C
+32,46,46,cytotoxicity,general safety,,,decreased,,1,12122,Results > Synthesis and functional validation of P-E/S lip in vitro; paragraph 26,C
+33,47,47,acute systemic safety,general safety,,,no significant change,,1,12435,Results > Significant knock-down efficacy using SWNT-PL-PEG-S-S-siRNA conjugate in a mouse xenograft model; paragraph 19,C
+34,48,48,hepatic and renal toxicity,hepatic; renal,,,increased,,1,1138,2. Results; paragraph 20,B
+35,49,49,cardiac and systemic safety,general safety,,,no significant change,,1,1960,Results > Myocardial I/R swine receiving miR-125a-5p agomir show no alterations in arrhythmic occurrences and serum chemistries; paragraph 23,B
+36,50,50,systemic safety,general safety,,,no significant change,,1,2657,Results > Safety analysis; paragraph 31,B
+37,51,51,immune and systemic safety,immunotoxicity,,,no significant change,,1,4022,Results > Intramuscular delivery of siRNAs using RBCEVs is non-toxic and non-inflammatory; paragraph 22,B
+38,52,52,neurotoxicity,neurological,,,increased,,1,12067,Results > Effect of ASO oligonucleotide sequence and modifications on neurotoxicity; paragraph 16,A
+39,53,53,hepatotoxicity,hepatic,,,decreased,significant,1,1409,RESULTS > Identification of potential nucleobase modifications that reduce LNA gapmer hepatotoxicity; Figure 2. caption,A
+40,54,54,hepatotoxicity,hepatic,,,decreased,significant,1,1411,RESULTS > GNA improves the therapeutic index in rats; paragraph 33,A
+41,55,55,transcriptome toxicity,general safety,,,increased,,1,1427,Results > DLin-MC3-DMA conjugate induces non-specific modulation of gene expression in several tissues; paragraph 35,B
+42,56,56,hepatotoxicity,hepatic,,,increased,,1,1979,Results > A high intravenous dose of ALC-0315 LNPs increases some markers of liver toxicity.; paragraph 21,A
+43,57,57,cytotoxicity and hemolysis,general safety,,,no significant change,,1,2305,3. Results > 3.8. Biocompatibility Assay; paragraph 41,C
+45,59,59,cytotoxicity,general safety,,,no significant change,,1,4073,2. Results > 2.4. Toxicity Assays; paragraph 17,C
+46,60,60,cytotoxicity,general safety,,,no significant change,,1,4096,Results > In vitro bio-safety of NDs; paragraph 33,C
+47,61,61,renal safety,renal,,,no significant change,,1,1471,Results; paragraph 14,B
+48,62,62,renal and hepatic safety,renal; hepatic,,,increased,,1,1632,Results > Evaluating the safety of the GalNAc conjugate in rat; paragraph 15,A
+49,63,63,renal histopathology,renal,,,no significant change,,1,1636,article body; paragraph 10,C
+50,64,64,neurodevelopmental safety,general safety,,,no significant change,,1,1646,Results > Selective suppression of polyQ-expanded AR by i.c.v.-injected LUNAR-REPU910 siRNA; paragraph 12,C
+51,65,65,hepatotoxicity,hepatic,,,increased,,1,1999,3. Results > 3.3. Application for the Delivery of ASO > 3.3.2. Comparison of Hepatotoxicity between ASO and LNPssPalmO-Phe–ASO; paragraph 24,B
+52,66,66,tolerability events,general safety,,,decreased,significant,1,2741,Results > Incidence and percentage of doses leading to adverse events; paragraph 22,C
+53,67,67,systemic safety,general safety,,,no significant change,,1,4106,3. Results > 3.9. Toxicity Assessment; paragraph 31,C
+54,68,68,renal safety,renal,,,no significant change,,1,4112,Results > In Vivo Studies; paragraph 30,B
+55,69,69,local and systemic safety,general safety,,,no significant change,,1,4145,Results > In vivo biocompatibility of PM1(GT/siMMP-910) hydrogel; paragraph 60,B
+56,70,70,cytotoxicity,general safety,,,increased,,1,1423,RESULTS > Biological evaluation of fully Rp and Sp gap modified ASOs; paragraph 18,B
+57,71,71,cytotoxicity,general safety,,,no significant change,,1,1493,Results > Screening the Bioreducible Lipids for ASO Delivery In Vitro; paragraph 16,C
+58,72,72,hepatic and renal safety,hepatic; renal,,,no significant change,,1,2225,Results > Safety Biomarkers at the End of H51(+67)W Treatment; paragraph 14,A
+59,73,73,renal safety,renal,,,decreased,,1,2059,Results > GalNAc Conjugation Masked the In Vivo Nephrotoxicity Potential of AON Drug Candidates; paragraph 7,A
+60,74,74,hepatotoxicity,hepatic,,,decreased,significant,1,2058,Results > Blocking siRNA-loaded RISC activity mitigates hepatotoxicity; paragraph 12,A
+61,75,75,hepatotoxicity,hepatic,,,increased,,1,2319,Results > Apoptosis Induction by Hepatotoxic LNA-ASOs In Vitro Is RNase H1 Dependent; paragraph 8,A
+62,76,76,renal safety,renal,,,increased,,1,2106,Results > Identification of Extracellular EGF as an In Vitro Marker of AON-Induced Tubulotoxicity; paragraph 9,A
+63,77,77,hepatotoxicity,hepatic,,,increased,,1,2061,Results > In vivo hepatotoxicity of gapmers and ‘non-gapmers’; paragraph 8,A
+64,78,78,hepatotoxicity,hepatic,,,increased,,1,2062,RESULTS > Targeted down-regulation of several long pre-mRNA transcripts by mixtures of MOE ASOs mimics LNA ASOs hepatotoxicity; paragraph 39,A
+65,79,79,systemic safety,general safety,,,no significant change,,1,4241,Results > PMO-GF yields long-term efficacy and functional improvement; paragraph 8,B
+66,80,80,hepatotoxicity,hepatic,,,increased,,1,2063,RESULTS > Evaluation of hepatotoxicity in mice; paragraph 14,A
+67,82,82,hepatotoxicity,hepatic,,,,,1,1075,Abstract; paragraph 1,C
+68,83,83,immune activation,immunotoxicity,,,,,1,1476,RESULTS > siFibrinogen did not cause adverse effects; paragraph 23,A
+69,84,84,immune activation,immunotoxicity,,,,,1,6238,Results > Platelet-mediated siRNA delivery exhibits a favorable safety profile; paragraph 32,B
+70,85,85,platelet/bleeding safety,hematologic,,,,,1,1242,Results > Drugs-Loaded GalNac-RBC-EVs Were Non-Toxic to Mice; paragraph 42,A
+71,86,86,platelet/bleeding safety,hematologic,,,,,1,1532,Results > Safety; paragraph 28,A
+72,87,87,renal safety,renal,,,,,1,1815,Results > LNPs biodistribution to the inflamed colon; paragraph 17,B
+74,89,89,immune activation,immunotoxicity,,,,,1,3700,Introduction; paragraph 7,C
+75,90,90,hepatotoxicity,hepatic,,,,,1,7859,Results > Evaluation of the cytotoxicity and siRNA transfection efficiency of LaN; paragraph 27,C
+76,91,91,hepatotoxicity,hepatic,,,,,1,9324,Results > Therapeutic potential of GalNAc-siCIDEB in MASH; paragraph 16,B
+77,92,92,renal safety,renal,,,,,1,12278,Discussion; paragraph 45,C
+78,93,93,hepatotoxicity,hepatic,,,,,1,2609,Results; paragraph 18,A
+79,94,94,platelet/bleeding safety,hematologic,,,,,1,1167,Results > Safety of LNA-i-miR-221; paragraph 28,A
+81,96,96,hepatotoxicity,hepatic,,,,,1,2231,article body; paragraph 5,B
+83,98,98,platelet/bleeding safety,hematologic,,,,,1,8005,Abstract; paragraph 1,C
+84,99,99,platelet/bleeding safety,hematologic,,,,,1,1658,Results > Safety and tolerability > Thrombocytopenia and glomerulonephritis; paragraph 30,A
+85,103,103,immune activation,immunotoxicity,,,,,1,1043,Results > Kinetics of cytokines released in response to PS ASOs vary according to sequence and chemistry; paragraph 30,B
+86,104,104,hepatotoxicity,hepatic,,,,,1,1149,Results > Safety Assessment; paragraph 23,B
+87,105,105,renal safety,renal,,,,,1,1202,Results > Assessing in vivo LNP safety: biochemical indicators and vital organ health; paragraph 29,C
+88,106,106,renal safety,renal,,,,,1,1041,Results > SGLT2-SNA2-ASO suppressed renal SGLT2 expression without severe liver and renal tubular damage; paragraph 12,B
+89,107,107,renal safety,renal,,,,,1,1262,2. Results > 2.4. MSTN-ASO Treatment Does Not Affect Kidney Functions; paragraph 15,B
+90,108,108,immune activation,immunotoxicity,,,,,1,1843,Results > Reduced IFN-I-Related Neurotoxicities after Intracranial Administration of CpG-STAT3dsASO; paragraph 29,B
+91,109,109,immune activation,immunotoxicity,,,,,1,2111,Abstract; paragraph 1,C
+92,110,110,immune activation,immunotoxicity,,,,,1,3396,Discussion; paragraph 29,C
+93,111,111,renal safety,renal,,,,,1,3423,Results > Biodistribution of the nanodevice; paragraph 11,B
+94,112,112,renal safety,renal,,,,,1,3501,Results > In vivo biosafety assessment; paragraph 50,B
+95,113,113,immune activation,immunotoxicity,,,,,1,3685,Methods > Biosafety of nanodrug; paragraph 27,B
+96,114,114,immune activation,immunotoxicity,,,,,1,1565,Results > Short-term liver-targeted Angptl3 and Angptl4 silencing does not induce hepatic inflammation; paragraph 27,A
+97,115,115,renal safety,renal,,,,,1,12439,Results > Biocompatibility of MPDA Nanodrugs; paragraph 43,B
+99,117,117,platelet/bleeding safety,hematologic,,,,,1,1117,Results > D-siRNA has a better safety profile; paragraph 15,B
+100,118,118,safety/tolerability,general safety,,,,,1,1148,RESULTS > Correlations identified using adverse event network analysis; FIGURE 1 caption,A
+101,119,119,neurotoxicity,neurological,,,,,1,1479,Results > LNPs increase TA2 potency in vitro by decreasing lysosomal trafficking or increasing ASO uptake; paragraph 11,B
+102,120,120,renal safety,renal,,,,,1,3970,Results > Gender differences; paragraph 25,B
+104,82,122,hepatotoxicity,hepatic,,,,,1,1460,Discussion; paragraph 52,C
+105,122,123,platelet/bleeding safety,hematologic,,,,,1,2730,Results > 2’MOE ASO (104838 and 501861) and CpG ASO increase platelet P-selectin expression in platelet-rich plasma and whole blood; Figure 1. caption,B
+106,123,124,hepatotoxicity,hepatic,,,,,1,12550,Results > Delivery of antiviral antigens simultaneously in vitro; paragraph 22,B
+107,124,125,renal safety,renal,,,,,1,12615,RESULTS > The chemical nature of the lipid conjugate defines the liver/kidney distribution profile; paragraph 29,B
+108,125,126,immune activation,immunotoxicity,,,,,1,2321,Results > Immunostimulatory effect of ONs; paragraph 44,C
+109,129,130,hepatotoxicity,hepatic,,,,,1,9006,Results > HPssPT delivers siRNA into HCC cells with potent transfection efficiency and favorable safety performance; paragraph 47,C
+110,130,131,renal safety,renal,,,,,1,10207,Results > Safety; paragraph 24,A
+111,130,132,renal safety,renal,,,,,1,2597,Results > Participants; paragraph 20,A
+112,131,133,immune activation,immunotoxicity,,,,,1,10778,Results > The effect of HDO formation on class-related toxicities; paragraph 7,B
+113,132,134,renal safety,renal,,,,,1,1602,RESULTS > Safety; paragraph 21,A
+114,132,135,safety/tolerability,general safety,,,,,1,1621,RESULTS > Safety; paragraph 21,A
+115,133,136,hepatotoxicity,hepatic,,,,,1,1431,Conclusion; paragraph 41,C
+116,93,138,safety/tolerability,general safety,,,,,1,2299,RESULTS > Safety Evaluation; paragraph 46,A
+117,144,148,hepatotoxicity,hepatic,,,,,1,1059,Results > Treatment of Hepatic Spheroids With Chemically Modified GalNAc‐Conjugated siRNA; FIGURE 2 caption,B
+118,145,149,hepatotoxicity,hepatic,,,,,1,1065,3. Results and Discussions > 3.3. In Vitro Delivery of Splice-Switch ASO; paragraph 26,C
+119,146,150,neurotoxicity,neurological,,,,,1,1173,Discussion; paragraph 43,C
+120,147,151,renal safety,renal,,,,,1,1215,Results and Discussion; paragraph 25,C
+121,148,152,renal safety,renal,,,,,1,1744,3. Results and Discussion > 3.12. Assessment of Biochemical Parameters; paragraph 53,C
+123,150,154,immune activation,immunotoxicity,,,,,1,3330,Results and discussion > Biosafety of MnO2 nanozymes; paragraph 22,C
+124,151,155,renal safety,renal,,,,,1,5624,Result and discussion > In vivo safety assessment; paragraph 61,C
+125,152,156,renal safety,renal,,,,,1,1015,Abstract; paragraph 6,C
+126,153,157,renal safety,renal,,,,,1,1030,Introduction; paragraph 4,C
+127,154,158,neurotoxicity,neurological,,,,,1,1040,INTRODUCTION; paragraph 4,C
+128,155,159,neurotoxicity,neurological,,,,,1,1160,Abstract; paragraph 1,C
+129,156,160,renal safety,renal,,,,,1,1408,Results and Discussion > Reduction of Hepatotoxicity by scpBNA Series; paragraph 23,C
+130,157,161,immune activation,immunotoxicity,,,,,1,1791,Results and discussion > Discussion; paragraph 49,C
+131,158,162,hepatotoxicity,hepatic,,,,,1,2096,3. Results and Discussion > 3.3. Cytotoxicity Studies > 3.3.1. MTT Cytotoxicity Assay; paragraph 40,C
+132,159,163,renal safety,renal,,,,,1,2098,3 Results and discussion > 3.7. Sub-acute skin toxicity of PF127 gel > 3.7.5. Assessment of renal function and potential toxicity.; paragraph 102,C
+134,161,165,hepatotoxicity,hepatic,,,,,1,2483,Result and discussion > In-vitro cytotoxicity evaluation of surface-modified USMP; paragraph 45,C
+135,162,166,renal safety,renal,,,,,1,2526,"3. Results and Discussion > 3.7. Toxicity Evaluation of Heart, Kidney, Liver, and Spleen; paragraph 55",C
+136,163,167,hepatotoxicity,hepatic,,,,,1,2538,Results > Safety; paragraph 20,B
+137,164,168,hepatotoxicity,hepatic,,,,,1,3428,Results and discussion > Preparation and characterization of si-Ce6@tLyP-1-NPs; paragraph 13,C
+138,165,169,hepatotoxicity,hepatic,,,,,1,3493,4. Discussion; paragraph 29,C
+140,167,171,renal safety,renal,,,,,1,3666,Results and Discussion > Biochemical Parameter Determination; paragraph 50,C
+141,168,172,hepatotoxicity,hepatic,,,,,1,3749,Results and Discussion > Safety Profile of DDAB-cLNPs on Liver Cancer Cells; paragraph 28,C
+142,109,173,hepatotoxicity,hepatic,,,,,1,3751,Introduction; paragraph 4,C
+143,169,174,immune activation,immunotoxicity,,,,,1,3759,Discussion; paragraph 15,C
+144,93,175,hepatotoxicity,hepatic,,,,,1,8812,Abstract > Methods and results; paragraph 2,C
+145,170,176,renal safety,renal,,,,,1,9437,Results and Discussion > In vivo biosafety evaluation; paragraph 42,C
+147,152,178,platelet/bleeding safety,hematologic,,,,,1,12141,Results > Safety of nusinersen sodium injection for the treatment of SMA; paragraph 41,A
+148,172,179,neurotoxicity,neurological,,,,,1,12342,3. Results and Discussion; paragraph 21,C
+149,173,180,neurotoxicity,neurological,,,,,1,1135,Discussion; paragraph 46,C
+150,174,181,platelet/bleeding safety,hematologic,,,,,1,1286,Results > Primary endpoint: safety results; paragraph 19,A
+151,175,182,hepatotoxicity,hepatic,,,,,1,1290,Results > Clinical trial results > Safety; paragraph 32,A
+152,176,183,renal safety,renal,,,,,1,2104,Results and discussion > Design of gelasomes; paragraph 27,C
+153,177,184,platelet/bleeding safety,hematologic,,,,,1,2297,Abstract; paragraph 1,C
+154,93,185,hepatotoxicity,hepatic,,,,,1,2621,Results; paragraph 46,A
+155,178,186,immune activation,immunotoxicity,,,,,1,3961,Introduction; paragraph 2,C
+156,179,187,immune activation,immunotoxicity,,,,,1,12106,4. Discussion; paragraph 46,C
+157,180,188,hepatotoxicity,hepatic,,,,,1,12433,2. Results and Discussion > 2.3. Biological Activity of Dendrimer/siRNA Complexes > 2.3.3. Cytotoxic Effect of Dendrimers and Their Complexes with siRNAs on HeLa Cells; paragraph 30,C
+158,181,189,immune activation,immunotoxicity,,,,,1,12464,Introduction; paragraph 5,C
+159,182,190,neurotoxicity,neurological,,,,,1,1164,Materials and methods > Lateral i.c.v. catheter and reservoir implantation through new anchoring system; paragraph 37,B
+161,184,192,hepatotoxicity,hepatic,,,no significant change,,1,2195,Abstract; paragraph 1,C
+162,184,193,hepatotoxicity,hepatic,,,no significant change,,1,2198,Abstract; paragraph 1,C
+163,185,194,cell viability/cytotoxicity,general safety,,,no significant change,significant,1,12521,2. Results > 2.5. Cell Viability; paragraph 14,A
+165,187,196,hepatotoxicity,hepatic,,,no significant change,,1,1486,DISCUSSION; paragraph 52,B
+166,185,197,hepatotoxicity,hepatic,,,no significant change,significant,1,1613,"Results and discussion > Characterization of LHHK LNPs for morphology, toxicity, serum stability, and hemolytic assay; paragraph 33",A
+167,188,198,hepatotoxicity,hepatic,,,,,1,1616,Results > Safety and tolerability; paragraph 28,A
+169,190,200,hepatotoxicity,hepatic,,,no significant change,significant,1,4065,Results and discussion > In vitro inhibition of siTNFα; paragraph 21,A
+170,191,201,hepatotoxicity,hepatic,,,,,1,4105,Discussion; paragraph 36,B
+172,193,203,hepatotoxicity,hepatic,,,no significant change,,1,1463,4. Discussion; paragraph 49,B
+173,194,204,hepatotoxicity,hepatic,,,no significant change,significant,1,1639,DISCUSSION; paragraph 40,B
+174,195,205,hepatotoxicity,hepatic,,,no significant change,,1,1641,Results > Cytotoxicity tests; paragraph 28,A
+175,196,206,hepatotoxicity,hepatic,,,no significant change,,1,1643,Discussion; paragraph 36,B
+176,197,207,hepatotoxicity,hepatic,,,increased,significant,1,2257,Abstract; paragraph 1,B
+177,198,208,hepatotoxicity,hepatic,,,no significant change,,1,1430,Abstract; paragraph 1,B
+178,199,209,hepatotoxicity,hepatic,,,no significant change,,1,2784,Discussion; paragraph 23,B
+179,200,210,hepatotoxicity,hepatic,,,decreased,significant,1,4207,Discussion; paragraph 27,B
+180,186,211,hepatotoxicity,hepatic,,,no significant change,,1,2060,DISCUSSION; paragraph 39,B
+181,201,212,hepatotoxicity,hepatic,,,,,1,2230,Abstract > Results; paragraph 3,A
+182,186,213,hepatotoxicity,hepatic,,,,,1,2787,Results and Discussion > Cytotoxicity; paragraph 5,A
+183,202,214,hepatotoxicity,hepatic,,,no significant change,significant,1,2324,DISCUSSION; paragraph 65,B
+184,186,215,hepatotoxicity,hepatic,,,,significant,1,4234,Abstract; paragraph 1,B
+185,203,216,hepatotoxicity,hepatic,,,no significant change,significant,1,2327,Discussion; paragraph 33,B
+186,204,217,hepatotoxicity,hepatic,,,,,1,2812,Results and discussion > PMO delivery in C2C12 myoblast cell lines expressing GFP/hDysE50; paragraph 17,A
+187,205,218,hepatotoxicity,hepatic,,,increased,,1,2328,3. Results > 3.2. Safety results; paragraph 15,A
+188,186,219,hepatotoxicity,hepatic,,,no significant change,,1,4259,Abstract; paragraph 1,B
+189,186,220,hepatotoxicity,hepatic,,,no significant change,,1,4268,Discussion; paragraph 38,C
+190,206,221,hepatotoxicity,hepatic,,,no significant change,significant,1,10925,4. Discussion; paragraph 28,B
+192,208,223,renal safety,renal,,,no significant change,,1,1629,Results > Safety; paragraph 23,A
+193,219,236,hepatotoxicity,hepatic,,,no significant change,significant,1,1152,Discussion; paragraph 52,B
+194,220,237,hepatotoxicity,hepatic,,,no significant change,significant,1,1196,Results > Tolerability and safety profiles; paragraph 24,A
+196,186,239,hepatotoxicity,hepatic,,,no significant change,significant,1,1511,Results and discussion > In vitro anti-fibrotic effect validation of ASO and characterization of ZMO-E5-NPs-ASO properties; paragraph 38,A
+197,221,240,hepatotoxicity,hepatic,,,no significant change,,1,4532,Conclusions; paragraph 92,B
+199,223,242,hepatotoxicity,hepatic,,,no significant change,,1,6205,Discussion; paragraph 44,B
+202,226,245,hepatotoxicity,hepatic,,,no significant change,significant,1,1477,Discussion; paragraph 30,B
+203,185,246,hepatotoxicity,hepatic,,,no significant change,significant,1,1551,3. Results and Discussion > 3.2. Cytotoxicity of LNP-siN.C./siTNF-α and LNP-siN.C./siTNF-α-HCQ; paragraph 26,A
+204,227,247,hepatotoxicity,hepatic,,,decreased,significant,1,1788,3. Discussion; paragraph 24,B
+205,228,248,hepatotoxicity,hepatic,,,no significant change,significant,1,1825,Results and discussion > Cell viability; paragraph 39,A
+207,229,250,immune activation,immunotoxicity,,,no significant change,,1,2155,Abstract; paragraph 2,C
+208,230,251,neurotoxicity,neurological,,,no significant change,,1,2347,Discussion; paragraph 30,B
+209,231,252,hepatotoxicity,hepatic,,,no significant change,,1,2503,Abstract; paragraph 1,B
+210,232,253,hepatotoxicity,hepatic,,,no significant change,significant,1,2522,Results > Integrated safety analysis: AEs; paragraph 26,A
+212,185,255,hepatotoxicity,hepatic,,,no significant change,significant,1,3595,Conclusion; paragraph 65,B
+213,185,256,hepatotoxicity,hepatic,,,no significant change,significant,1,3614,Results and Discussion > In Vivo GFP-pDNA Delivery by TP-SL@PB; paragraph 46,A
+214,185,257,hepatotoxicity,hepatic,,,,significant,1,3626,Results and Discussion > Cell uptake and toxicity of siRNA@NP@ND in vitro; paragraph 12,A
+215,185,258,hepatotoxicity,hepatic,,,no significant change,significant,1,3640,Results and discussion > Anti-metastasis and in vivo biosafety evaluation; paragraph 28,A
+216,185,259,hepatotoxicity,hepatic,,,,significant,1,3690,Results and Discussion > Enhanced Cellular Uptake And Neurospecificity of Targeted Polyplexes; paragraph 14,A
+218,235,261,hepatotoxicity,hepatic,,,no significant change,significant,1,7646,Discussion; paragraph 46,B
+219,236,262,renal safety,renal,,,increased,significant,1,9397,Discussion; paragraph 48,C
+224,93,267,hepatotoxicity,hepatic,,,no significant change,significant,1,2348,3. Discussion > 3.1. Descriptive Analysis; paragraph 18,B
+228,243,271,hepatotoxicity,hepatic,,,no significant change,,1,1458,DISCUSSION; paragraph 37,B
+229,244,272,safety/tolerability,general safety,,,no significant change,,1,2676,Results > Safety outcomes; paragraph 13,A
+230,245,273,renal safety,renal,,,no significant change,,1,2680,Abstract; paragraph 1,B
+231,246,274,hepatotoxicity,hepatic,,,no significant change,,1,2701,Discussion; paragraph 35,B
+235,186,278,hepatotoxicity,hepatic,,,,significant,1,2755,Results > PS- and ME/PS- modified oligonucleotides decrease platelet concentration in vitro; paragraph 29,A
+237,186,280,hepatotoxicity,hepatic,,,increased,significant,1,2768,4. Discussion > 4.2. Supplemented Transfection Medium Stabilizes Nanocomplexes but Harms Human Respiratory Epithelial Cells; paragraph 34,A
+238,251,281,hepatotoxicity,hepatic,,,no significant change,,1,2105,DISCUSSION; paragraph 57,B
+239,186,282,hepatotoxicity,hepatic,,,no significant change,,1,2116,Materials and Methods > AON administration; FIG. 1. caption,A
+240,186,283,hepatotoxicity,hepatic,,,no significant change,significant,1,2322,Discussion; paragraph 36,B
+241,186,284,hepatotoxicity,hepatic,,,no significant change,,1,2237,Discussion; paragraph 26,B
+242,185,285,hepatotoxicity,hepatic,,,no significant change,significant,1,12119,Discussion; paragraph 21,B
+243,186,286,hepatotoxicity,hepatic,,,increased,,1,2329,Abstract; paragraph 1,B
+244,252,287,safety/tolerability,general safety,,,,,1,2611,Results; paragraph 15,A
+245,258,298,hepatotoxicity,hepatic,,,,significant,1,1029,PubMed abstract,C
+246,259,299,hepatotoxicity,hepatic,,,decreased,,1,1033,PubMed abstract,C
+247,260,300,hepatotoxicity,hepatic,,,no significant change,significant,1,1064,PubMed abstract,B
+248,261,301,hepatotoxicity,hepatic,,,no significant change,,1,1150,PubMed abstract,B
+249,262,302,hepatotoxicity,hepatic,,,no significant change,,1,1151,PubMed abstract,C
+250,263,303,safety/tolerability,general safety,,,no significant change,,1,1217,PubMed abstract,B
+251,264,304,hepatotoxicity,hepatic,,,no significant change,significant,1,1218,PubMed abstract,B
+253,6,306,hepatotoxicity,hepatic,,,no significant change,,1,1472,PubMed abstract,C
+254,185,307,hepatotoxicity,hepatic,,,no significant change,,1,1726,PubMed abstract,C
+258,268,311,hepatotoxicity,hepatic,,,increased,significant,1,3272,PubMed abstract,C
+259,269,312,hepatotoxicity,hepatic,,,no significant change,,1,3312,PubMed abstract,C
+260,270,313,hepatotoxicity,hepatic,,,,significant,1,3376,PubMed abstract,C
+262,272,315,hepatotoxicity,hepatic,,,no significant change,significant,1,5189,PubMed abstract,C
+264,252,317,safety/tolerability,general safety,,,no significant change,,1,12078,PubMed abstract,B
+265,186,318,hepatotoxicity,hepatic,,,no significant change,significant,1,8,PubMed abstract,C
+266,274,319,hepatotoxicity,hepatic,,,no significant change,significant,1,1048,PubMed abstract,B
+267,185,320,hepatotoxicity,hepatic,,,,,1,1077,PubMed abstract sentence 5,C
+268,275,321,hepatotoxicity,hepatic,,,decreased,significant,1,1108,PubMed abstract,C
+270,276,323,hepatotoxicity,hepatic,,,no significant change,significant,1,1133,PubMed abstract,B
+271,277,324,hepatotoxicity,hepatic,,,no significant change,significant,1,1425,PubMed abstract,C
+273,279,326,hepatotoxicity,hepatic,,,no significant change,,1,1468,PubMed abstract,B
+278,282,331,hepatotoxicity,hepatic,,,no significant change,significant,1,3484,PubMed abstract,C
+283,284,336,hepatotoxicity,hepatic,,,no significant change,significant,1,3572,PubMed abstract,C
+288,185,341,hepatotoxicity,hepatic,,,increased,,1,3764,PubMed abstract,C
+290,286,343,hepatotoxicity,hepatic,,,increased,significant,1,9647,PubMed abstract,C
+291,287,344,hepatotoxicity,hepatic,,,no significant change,significant,1,9951,PubMed abstract,C
+293,289,346,hepatotoxicity,hepatic,,,,significant,1,10466,PubMed abstract,B
+296,291,349,hepatotoxicity,hepatic,,,no significant change,significant,1,1112,PubMed abstract,B
+297,292,350,hepatotoxicity,hepatic,,,no significant change,,1,1453,PubMed abstract,B
+298,293,351,hepatotoxicity,hepatic,,,no significant change,,1,1454,PubMed abstract,B
+300,295,353,hepatotoxicity,hepatic,,,increased,significant,1,1582,PubMed abstract,C
+301,296,354,hepatotoxicity,hepatic,,,no significant change,significant,1,1878,PubMed abstract,C
+303,298,356,hepatotoxicity,hepatic,,,no significant change,,1,1926,PubMed abstract,C
+304,299,357,hepatotoxicity,hepatic,,,no significant change,significant,1,2630,PubMed abstract,B
+305,299,358,hepatotoxicity,hepatic,,,no significant change,,1,2634,PubMed abstract,B
+308,185,361,hepatotoxicity,hepatic,,,no significant change,,1,3957,PubMed abstract,C
+309,185,362,hepatotoxicity,hepatic,,,no significant change,,1,3959,PubMed abstract,C
+311,185,364,hepatotoxicity,hepatic,,,,,1,10888,PubMed abstract,C
+313,302,366,hepatotoxicity,hepatic,,,no significant change,,1,11712,PubMed abstract,C
+315,185,368,hepatotoxicity,hepatic,,,no significant change,,1,13711,PubMed abstract,C
+316,185,369,toxicity,general toxicity,,,,,1,13881,PubMed abstract sentence 4,C
+318,305,371,renal safety,renal,,,no significant change,,1,1600,PubMed abstract,B
+319,306,372,hepatotoxicity,hepatic,,,increased,,1,1933,PubMed abstract,C
+320,185,373,hepatotoxicity,hepatic,,,no significant change,,1,2304,PubMed abstract,B
+321,307,374,hepatotoxicity,hepatic,,,no significant change,,1,2666,PubMed abstract,B
+322,308,375,hepatotoxicity,hepatic,,,no significant change,significant,1,2669,PubMed abstract,C
+323,309,376,hepatotoxicity,hepatic,,,no significant change,significant,1,2685,PubMed abstract,B
+324,310,377,hepatotoxicity,hepatic,,,no significant change,,1,12177,PubMed abstract,C
+325,311,378,hepatotoxicity,hepatic,,,no significant change,significant,1,12201,PubMed abstract,B
+327,312,380,hepatotoxicity,hepatic,,,,,1,1428,PubMed abstract,B
+328,186,381,hepatotoxicity,hepatic,,,no significant change,,1,1429,PubMed abstract,C
+329,313,382,hepatotoxicity,hepatic,,,no significant change,significant,1,1465,PubMed abstract,B
+330,314,383,hepatotoxicity,hepatic,,,no significant change,significant,1,2754,PubMed abstract,B
+331,315,384,hepatotoxicity,hepatic,,,no significant change,,1,4126,PubMed abstract,C
+333,186,386,hepatotoxicity,hepatic,,,no significant change,,1,1421,PubMed abstract,C
+334,317,387,hepatotoxicity,hepatic,,,no significant change,,1,1422,PubMed abstract,B
+335,185,388,hepatotoxicity,hepatic,,,no significant change,,1,12219,PubMed abstract,C
+338,186,391,safety/tolerability,general safety,,,increased,,1,2082,PubMed abstract,C
+339,257,392,hepatotoxicity,hepatic,,,increased,significant,1,12059,PubMed abstract,C
+341,185,394,hepatotoxicity,hepatic,,,no significant change,significant,1,2083,PubMed abstract,C
+342,320,395,hepatotoxicity,hepatic,,,,,1,2107,PubMed abstract,C
+343,186,396,DNA damage response,genotoxicity,,,,,1,2232,PubMed abstract sentence 2,C
+344,321,397,hepatotoxicity,hepatic,,,no significant change,,1,12641,PubMed abstract,C
+345,186,398,hepatotoxicity,hepatic,,,no significant change,,1,2801,PubMed abstract,B
+346,322,399,hepatotoxicity,hepatic,,,increased,significant,1,2084,PubMed abstract,C
+347,323,400,hepatotoxicity,hepatic,,,no significant change,,1,2821,PubMed abstract,B
+348,186,401,hepatotoxicity,hepatic,,,,,1,2823,PubMed abstract,B
+350,325,403,hepatotoxicity,hepatic,,,no significant change,significant,1,2331,PubMed abstract,C
+352,327,405,hepatotoxicity,hepatic,,,no significant change,significant,1,4277,PubMed abstract,B
+353,186,406,hepatotoxicity,hepatic,,,no significant change,,1,4279,PubMed abstract,C
+354,186,407,hepatotoxicity,hepatic,,,no significant change,significant,1,2066,PubMed abstract,B
+355,186,408,renal safety,renal,,,,,1,2839,PubMed abstract,B
+356,186,409,renal safety,renal,,,,significant,1,2840,PubMed abstract,B
+358,329,412,hepatotoxicity,hepatic,,,no significant change,,1,1051,PubMed abstract,B
+359,330,413,hepatotoxicity,hepatic,,,no significant change,significant,1,1155,PubMed abstract,B
+360,331,414,hepatotoxicity,hepatic,,,no significant change,significant,1,1176,PubMed abstract,C
+361,332,415,hepatotoxicity,hepatic,,,no significant change,significant,1,1179,PubMed abstract,B
+362,333,416,hepatotoxicity,hepatic,,,no significant change,significant,1,1182,PubMed abstract,B
+363,93,417,safety/tolerability,general safety,,,no significant change,significant,1,1201,PubMed abstract,B
+364,334,418,hepatotoxicity,hepatic,,,no significant change,significant,1,1209,PubMed abstract,B
+365,335,419,hepatotoxicity,hepatic,,,no significant change,,1,1308,PubMed abstract,B
+368,338,422,hepatotoxicity,hepatic,,,no significant change,,1,1375,PubMed abstract,C
+369,339,423,hepatotoxicity,hepatic,,,no significant change,significant,1,1392,PubMed abstract,C
+370,340,424,hepatotoxicity,hepatic,,,no significant change,,1,1520,PubMed abstract,C
+371,341,425,hepatotoxicity,hepatic,,,no significant change,,1,1775,PubMed abstract,B
+372,342,426,hepatotoxicity,hepatic,,,no significant change,,1,2417,PubMed abstract,B
+376,345,430,hepatotoxicity,hepatic,,,no significant change,significant,1,7173,PubMed abstract,B
+377,186,431,hepatotoxicity,hepatic,,,no significant change,significant,1,1127,PubMed abstract,C
+378,346,432,hepatotoxicity,hepatic,,,no significant change,significant,1,1274,PubMed abstract,B
+379,186,433,hepatotoxicity,hepatic,,,no significant change,,1,1541,PubMed abstract,B
+380,347,434,hepatotoxicity,hepatic,,,no significant change,significant,1,2097,PubMed abstract,C
+382,349,436,hepatotoxicity,hepatic,,,no significant change,significant,1,2280,PubMed abstract,B
+383,350,437,hepatotoxicity,hepatic,,,no significant change,significant,1,2475,PubMed abstract,C
+384,244,438,safety/tolerability,general safety,,,no significant change,,1,2510,PubMed abstract,B
+385,185,439,hepatotoxicity,hepatic,,,no significant change,significant,1,3747,PubMed abstract,C
+386,196,440,hepatotoxicity,hepatic,,,no significant change,significant,1,7632,PubMed abstract,B
+388,185,442,hepatotoxicity,hepatic,,,no significant change,,1,12427,PubMed abstract,C
+389,352,443,hepatotoxicity,hepatic,,,no significant change,,1,1564,PubMed abstract,B
+390,353,444,hepatotoxicity,hepatic,,,decreased,significant,1,1580,PubMed abstract,B
+391,185,445,hepatotoxicity,hepatic,,,no significant change,,1,1585,PubMed abstract,C
+392,354,446,safety/tolerability,general safety,,,no significant change,,1,2619,PubMed abstract,B
+393,355,447,hepatotoxicity,hepatic,,,no significant change,significant,1,3866,PubMed abstract,B
+394,356,448,hepatotoxicity,hepatic,,,no significant change,,1,10687,PubMed abstract,B
+396,358,450,safety/tolerability,general safety,,,no significant change,,1,1137,PubMed abstract,C
+397,186,451,thrombocytopenia,hematological,,,no significant change,,1,2199,PubMed abstract,C
+398,206,452,hepatotoxicity,hepatic,,,no significant change,,1,2301,PubMed abstract,B
+399,359,453,hepatotoxicity,hepatic,,,no significant change,,1,2303,PubMed abstract,B
+400,360,454,hepatotoxicity,hepatic,,,no significant change,significant,1,2681,PubMed abstract,B
+401,361,455,hepatotoxicity,hepatic,,,no significant change,,1,2697,PubMed abstract,B
+402,276,456,hepatotoxicity,hepatic,,,no significant change,,1,12058,PubMed abstract,B
+407,186,461,thrombocytopenia,hematological,,,no significant change,,1,2314,PubMed abstract,C
+408,365,462,hepatotoxicity,hepatic,,,increased,,1,2318,PubMed abstract,C
+410,366,464,renal safety,renal,,,no significant change,,1,2086,PubMed abstract,C
+411,208,465,hepatotoxicity,hepatic,,,increased,,1,2109,PubMed abstract,B
+412,208,466,hepatotoxicity,hepatic,,,no significant change,significant,1,2110,PubMed abstract,B
+413,186,467,renal safety,renal,,,increased,,1,2269,PubMed abstract,C
+414,371,473,clinical laboratory safety,general safety,,,no significant change,not significant,1,2498,RESULTS > Safety Analysis; paragraph 36,A
+415,372,474,body weight/general tolerability,general safety,,,no significant change,not significant,1,9646,"RESULTS > IL-4Rα silencing in vivo reverses LV remodeling, reduces cardiac fibrosis, and improves neovascularization in HF.; paragraph 25",C
+416,373,475,adverse event reporting,general safety,,,increased,,1,1571,Results > Risk signal detection; paragraph 11,A
+417,371,476,treatment-emergent adverse events,general safety,,,no significant change,not significant,1,2632,Results > Safety; paragraph 23,A
+418,374,477,clinical safety and pharmacokinetics,general safety,,,no significant change,,1,2822,Abstract; paragraph 1,B
+419,375,478,acute neuronal inhibition,neurological,,,increased,significant,1,1044,"Results > Acute inhibition is transient, reversible, and dose-dependent following CNS ASO administration; paragraph 26",A
+420,376,479,nonclinical toxicology and biodistribution safety,general safety,,,no significant change,not significant,1,1069,Discussion; paragraph 17,C
+421,377,480,hemolysis and cytotoxicity,general safety,,,no significant change,not significant,1,1192,Results > Preparation and characterization of TET3 siRNA@αmp-lipo; paragraph 95,A
+423,379,482,cell viability/cytotoxicity,general safety,,,decreased,significant,1,1735,Results and discussion > Fabrication of CaP-siSlc31a1 for efficient cellular uptake and gene silencing; paragraph 13,A
+424,380,483,hematology/clinical chemistry/histology safety,general safety,,,no significant change,not significant,1,1741,Results > In Vivo Biosafety of FW-LP@siIRF5; paragraph 46,A
+425,381,484,systemic exposure and immunogenicity safety,general safety,,,no significant change,not significant,1,1750,"Results > Intradermal administration of conjugated JAK13033 siRNAs in pigs demonstrates durable skin retention for at least 2 months, minimal systemic exposure, and a favorable safety profile; paragraph 12",A
+426,382,485,cell viability/cytotoxicity,general safety,,,increased,significant,1,2428,Results > Cytotoxicity of siRNA nanocarriers; paragraph 24,A
+427,383,486,systemic toxicity/histology/body weight,general safety,,,no significant change,not significant,1,3228,Results > In Vivo Antitumor Efficacy Evaluation of DP‐EVs/siPD‐L1; paragraph 28,A
+429,385,488,hepatotoxicity and kidney function,hepatic/renal,,,no significant change,not significant,1,3262,Results and discussion > Assessment of hepatotoxicity and kidney function; paragraph 15,A
+430,386,489,systemic toxicity,general safety,,,no significant change,,1,3263,Conclusion.; paragraph 24,C
+432,388,491,cell viability/biocompatibility,general safety,,,no significant change,,1,3276,Results > PLGA NPs are suitable biocompatible nanocarriers for siRNAs delivery in CMSCs; paragraph 53,A
+434,390,493,in vivo biosafety/hepatic renal and local nasal toxicity,general safety,,,no significant change,not significant,1,3297,Results and discussion > In vivo biosafety assessment; paragraph 52,A
+435,391,494,hemolysis/blood compatibility,general safety,,,no significant change,,1,3316,Results and Discussion > Curcumin coacervates enrich in the tumor site through tail vein injection; paragraph 31,A
+436,392,495,histology and serum biochemistry safety,hepatic/renal/general safety,,,no significant change,not significant,1,3325,Result > In vivo safety assessment of siRNA@VG-Exos; paragraph 31,A
+437,393,496,organ morphology/body weight/cytokine safety,general safety,,,no significant change,not significant,1,6668,Results > Lipid nanoparticle delivery of SNORA49 and ASOs against SOX9 exerts synergistic antitumor effect on HCC tumors; paragraph 25,B
+438,394,497,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,6682,Results and discussion > In vitro targeting of inflammatory macrophages and nerve cells; paragraph 11,A
+439,395,498,in vivo biocompatibility/clinical chemistry,general safety,,,no significant change,not significant,1,6684,Results > pMSNC@ISG15 siRNA exhibits favorable in vivo biocompatibility and cardiac tissue targeting; paragraph 78,A
+440,396,499,systemic toxicity/repeat-dose tolerability,general safety,,,no significant change,,1,6833,Results > Systemic delivery of SANGs is minimally toxic; paragraph 20,A
+441,397,500,cell viability/cytotoxicity,general safety,,,dose-dependent,significant,1,12337,Results > Cytotoxicity of cationic and anionic siRNA lipoplexes; paragraph 27,A
+442,398,501,thrombocytopenia,hematological,,,increased,significant,1,1131,Abstract; paragraph 1,B
+443,399,502,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,1538,Results and Discussion > Characterizing the In Vitro Anti‐Inflammatory Effect of LNP TNF‐α siRNA; paragraph 11,A
+444,400,503,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,1829,Results and Discussion > Analysis of the Gene Silencing Effect Exerted of siRNA Delivered Using H2.1MS1KN and H2.1MS1:MS2KN Spheres; paragraph 47,B
+446,402,505,cytocompatibility/erythrocompatibility,general safety,,,dose-dependent,,1,3695,Results and Discussion > Cell Compatibility; paragraph 50,A
+447,403,506,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,9471,3. Results > 3.1. The Use of NLP-EXOSOME COMPLEX Nanoparticles Results in the Production of Reliable and Efficient Formulations for Delivering siRNA; paragraph 29,C
+448,404,507,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,9935,Results and Discussion > FADD Knockdown in Human Cardiomyocytes Using PEGylated pH-Sensitive WRAP5 Nanoparticles at pH 5; paragraph 53,B
+449,405,508,immune activation,immunotoxicity,,,no significant change,not significant,1,9961,Results > Brain-targeted delivery of siBACE1 by BE-ST for AD treatment; paragraph 18,A
+450,406,509,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,12938,Results > Biological effects of PEI/PHD2 SiRNA complexes on HUVECs; paragraph 36,A
+451,407,510,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,13359,"Results and Discussion > Synthesis, Characterization, and Safety Assessment of PLGA-CpG@ID8-M Nanovaccine; paragraph 9",A
+452,408,511,systemic safety/tolerability,general safety,,,no significant change,not significant,1,2577,Results > SORT LNPs enable robust silencing of tissue-enriched endogenous gene targets and are well tolerated in vivo.; paragraph 12,A
+453,409,512,hepatotoxicity,hepatic,,,increased,significant,1,2614,Results > Analysis of potential toxicities of ASO exposure in dams; paragraph 15,A
+454,410,513,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,10973,3. Results > 3.4. siRNA Delivery Cytotoxicity of Complexes Developed in This Study; paragraph 24,A
+455,411,514,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,12161,"Results > In vitro characterization of Phe-NPs/ASO: Cellular uptake, endosomal escape, cell viability, and cytotoxicity; paragraph 11",A
+456,412,515,immune activation,immunotoxicity,,,no significant change,not significant,1,12475,Results and discussion > Safety profiles; paragraph 46,A
+457,413,516,systemic safety/tolerability,general safety,,,no significant change,not significant,1,12485,Results and discussion > Safety assessment of TPNs-siRNA; paragraph 67,A
+459,415,518,hepatotoxicity,hepatic,,,no significant change,not significant,1,4035,Results > Safety evaluation; paragraph 19,A
+460,416,519,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,12511,Results > Preparation and characterization of flexible nano-liposomes; paragraph 18,B
+461,417,520,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,12533,Results > Cytotoxicity; paragraph 19,A
+462,418,521,systemic safety/tolerability,general safety,,,no significant change,not significant,1,12545,Results > Administration of ZNF416 siRNA-loaded liposomes attenuates pulmonary fibrosis in experimental mouse models; paragraph 41,A
+463,419,522,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,4114,3. Results and Discussion > 3.4. Cytotoxicity Test on Human CD14+ Monocytes from Peripheral Blood; paragraph 23,A
+465,421,524,hepatotoxicity,hepatic,,,no significant change,not significant,1,4197,3. Results and Discussion; paragraph 27,A
+469,425,528,systemic safety/tolerability,general safety,,,no significant change,not significant,1,12636,RESULTS > Full chemical stabilization enables productive silencing in vivo.; paragraph 35,B
+470,426,529,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,12658,Results > PMO conjugation and cellular assays as measures of cell uptake ability; paragraph 25,A
+474,430,533,thrombocytopenia,hematological,,,increased,significant,1,2090,PubMed abstract,B
+475,494,752,hepatotoxicity,hepatic,,,,,1,1055,Results > Safety evaluation; paragraph 25,A
+476,1005,753,systemic safety/tolerability,general safety,,,no significant change,not significant,1,1058,Results > Safety characterization and IND-enabling studies; paragraph 15,A
+477,1006,754,hepatotoxicity,hepatic,,,increased,,1,1062,Results; paragraph 24,A
+478,1007,755,hepatotoxicity,hepatic,,,no significant change,not significant,1,1185,Results > F-ASO gapmers reduce disease-associated repeat RNA foci in patient-derived NSCs; paragraph 32,A
+479,507,756,hepatotoxicity,hepatic,,,decreased,,1,1193,Results > In Vivo Therapeutic Efficacy Evaluation in Various Mouse Models; paragraph 39,A
+480,508,757,cell viability/cytotoxicity,general safety,,,,,1,1210,Materials and methods > Assessment of oligonucleotide toxicity (LD50) using the MTT assay; paragraph 13,A
+481,1008,758,hepatotoxicity,hepatic,,,no significant change,not significant,1,1368,Results > Cytotoxicity of mPEG-Azo-PEI; paragraph 50,A
+482,985,759,hepatotoxicity,hepatic,,,increased,,1,1773,Results and Discussion > Synergistic Effect of Ferroptosis Induction via GPX4 Inhibition and PDT; paragraph 15,C
+483,985,760,hepatotoxicity,hepatic,,,no significant change,not significant,1,2412,RESULTS > siPAI-1 does not elicit overt toxicity in vivo.; paragraph 22,A
+485,985,762,hepatotoxicity,hepatic,,,no significant change,not significant,1,3294,Results > The siLin28b Plus BMN673 Combination Inhibits the Deterioration of Vascular Permeability; paragraph 44,A
+492,1009,769,hepatotoxicity,hepatic,,,increased,,1,5375,Results > Treatment continuation; paragraph 33,A
+499,514,776,systemic safety/tolerability,general safety,,,increased,,1,6390,Results > Safety; paragraph 35,A
+500,1010,777,hepatotoxicity,hepatic,,,no significant change,not significant,1,6475,Results > Safety evaluation through serum biochemistry; paragraph 22,A
+509,985,786,hepatotoxicity,hepatic,,,,,1,7065,Results and Discussion > Cytotoxicity Assessment of Dendrimers; paragraph 43,C
+510,988,787,hepatotoxicity,hepatic,,,no significant change,not significant,1,7129,Results and Discussion > In Vitro Photo‐Controlled Activation and Cytotoxicity of PURH; paragraph 13,C
+511,985,788,cell viability/cytotoxicity,general safety,,,decreased,,1,7336,Results > PDL E inhibits viability of MDA-MB-231 DOX RT cells in 2D and 3D cultures; paragraph 36,A
+512,1066,789,hepatotoxicity,hepatic,,,,,1,1013,Methods > Patient eligibility; paragraph 16,B
+513,1011,790,hepatotoxicity,hepatic,,,decreased,,1,1020,Results > ASO 8–3419 Enhances the Therapeutic Effect of Cisplatin in Xenografted HCT116 Tumors in Nude Mice; paragraph 26,A
+514,986,791,hepatotoxicity,hepatic,,,no significant change,not significant,1,1233,Results > Subcutaneous administration allows for optimal distribution and is not toxic to mice; paragraph 14,A
+516,521,793,hepatotoxicity,hepatic,,,increased,,1,1254,Abstract > Methods; paragraph 2,B
+517,299,794,systemic safety/tolerability,general safety,,,,,1,1256,RESULTS > Prenatal IA ASO administration enhances therapeutic efficacy in SMAΔ7 mice; paragraph 10,A
+518,522,795,hepatotoxicity,hepatic,,,increased,,1,1270,Results > Safety > AZD8701 monotherapy; paragraph 39,A
+520,1012,797,hepatotoxicity,hepatic,,,no significant change,not significant,1,1783,Results > Safety evaluation of Chol-HDO[PMO]; paragraph 27,A
+522,1013,799,hepatotoxicity,hepatic,,,no significant change,not significant,1,1803,Results > GMP grade exosomes for siRNA delivery showed no toxicity in preclinical studies; paragraph 6,A
+527,1067,804,hepatotoxicity,hepatic,,,,,1,2535,Abstract > Methods; paragraph 3,B
+528,1082,805,hepatotoxicity,hepatic,,,no significant change,not significant,1,3399,3. Results and Discussion > 3.12. Safety Evaluation; paragraph 56,C
+529,1014,806,hepatotoxicity,hepatic,,,,,1,3402,"RESULTS > D-siRNA supports safe, potent and durable activity in the CNS; paragraph 24",A
+530,435,807,hepatotoxicity,hepatic,,,decreased,,1,3407,Results > Muscle-optimal siRNA scaffold achieves systemic muscle effects and has a favorable safety profile; Figure 6. caption,A
+531,525,808,hepatotoxicity,hepatic,,,increased,,1,3426,Results > Safety profiles of KC13-M2G2 in SD rats and cynomolgus monkeys; paragraph 19,A
+533,1015,810,cell viability/cytotoxicity,general safety,,,,,1,3472,2. Results > 2.2. Cytotoxicity of CPP–PNA Conjugates in Mammalian Cells; paragraph 7,A
+538,1068,815,cell viability/cytotoxicity,general safety,,,,,1,3573,OBSERVATION; Fig 1 caption,B
+539,985,816,cell viability/cytotoxicity,general safety,,,increased,,1,3596,Results and Discussion > Biocompatibility of Cleavable Dendrimers; paragraph 51,C
+540,1016,817,hepatotoxicity,hepatic,,,no significant change,not significant,1,3619,Results > L2-siRNA does not induce hallmarks of toxicity; paragraph 54,A
+543,1017,820,hepatotoxicity,hepatic,,,no significant change,not significant,1,3710,Results > Anti-Tumor Efficacy and Safety Evaluation in Vivo; paragraph 63,A
+544,1018,821,cell viability/cytotoxicity,general safety,,,,,1,3725,2. Materials and Methods > 2.8. Acute Toxicity (LDH Release); paragraph 25,A
+545,1083,822,hepatotoxicity,hepatic,,,increased,,1,3765,Conclusion; paragraph 41,C
+546,985,823,renal safety,renal,,,,,1,3771,2. Materials and Methods > 2.8. Toxicity Pathways Evaluation; paragraph 22,A
+548,435,825,hepatotoxicity,hepatic,,,increased,,1,3801,RESULTS > Reduced 5’ end- and -2’- fluoro modification design; paragraph 37,A
+551,528,828,hepatotoxicity,hepatic,,,increased,,1,7559,Results and Discussion > Specific Gene Silencing Studies; paragraph 21,C
+556,1019,833,hepatotoxicity,hepatic,,,,,1,7717,Results > NP containing PCSK9 siRNA and STING agonists enable safe and effective cancer immunotherapy; paragraph 17,A
+560,1020,837,hepatotoxicity,hepatic,,,no significant change,not significant,1,7835,2. Results > 2.4. Evaluation of the Cytotoxic Effects of Ternary Polyplexes; paragraph 22,A
+565,1069,842,hepatotoxicity,hepatic,,,,,1,8330,article body; paragraph 6,B
+566,531,843,hepatotoxicity,hepatic,,,increased,,1,8508,Results > Inhalation of mscFv/siPD-L1@LNP drives TME reconfiguration in orthotopic lung tumors; paragraph 15,A
+568,1070,845,cell viability/cytotoxicity,general safety,,,,,1,8603,Materials and methods > Cell viability assay; paragraph 25,B
+571,443,848,hepatotoxicity,hepatic,,,no significant change,not significant,1,9021,Discussion; paragraph 11,C
+572,1084,849,hepatotoxicity,hepatic,,,no significant change,not significant,1,9102,Discussion; paragraph 48,C
+574,986,851,hepatotoxicity,hepatic,,,increased,,1,9180,Abstract; paragraph 1,B
+576,1085,853,hepatotoxicity,hepatic,,,no significant change,not significant,1,9274,Discussion; paragraph 47,C
+578,1021,855,hepatotoxicity,hepatic,,,increased,,1,9560,Results > DG9-PMO facilitates enhanced cellular uptake and efficacious nuclear localization; paragraph 9,A
+581,1022,858,hepatotoxicity,hepatic,,,,,1,9662,Results > In vitro Antitumor Effect of E-cLip-DTX / Si; paragraph 46,A
+583,1086,860,hepatotoxicity,hepatic,,,increased,,1,9750,Results and discussion > In vivo anti-tumor activity of DS-ARGN; paragraph 25,C
+586,1071,863,toxicity,general toxicity,,,,,1,9792,Abstract > Methods; paragraph 2,B
+587,299,864,renal safety,renal,,,no significant change,not significant,1,9966,Results > Three-month rat toxicology study; paragraph 38,A
+588,1087,865,hepatotoxicity,hepatic,,,increased,,1,10132,Results and discussion > Effect of Dox-loaded AS-T9/U4_MH on cell proliferation; paragraph 31,C
+589,1023,866,hepatotoxicity,hepatic,,,no significant change,not significant,1,10245,Results > Safety aspects of the lead candidate AON; paragraph 43,A
+598,1024,875,hepatotoxicity,hepatic,,,,,1,1282,Results > Pre-saturation with calcium reduces acute neurotoxicity; paragraph 25,A
+600,1025,877,hepatotoxicity,hepatic,,,increased,,1,1562,Methods > End-points > Safety; paragraph 13,A
+601,545,878,hepatotoxicity,hepatic,,,increased,,1,2556,DISCUSSION > Risk of adverse effects; paragraph 53,C
+602,472,879,hepatotoxicity,hepatic,,,no significant change,not significant,1,2588,Results > siRNA-LNPs displayed a low risk of CARPA and other toxicities; paragraph 9,A
+603,1072,880,hepatotoxicity,hepatic,,,decreased,,1,2618,Abstract; paragraph 1,B
+604,1088,881,hepatotoxicity,hepatic,,,no significant change,not significant,1,3813,RESULTS AND DISCUSSION; paragraph 20,C
+605,1073,882,hepatotoxicity,hepatic,,,increased,,1,3848,Abstract; paragraph 1,B
+607,1026,884,hepatotoxicity,hepatic,,,increased,,1,3903,3. Results > 3.3. Intrinsic Toxicity and Transfection Efficiency of TRIFAPYs; paragraph 31,A
+608,1027,885,cell viability/cytotoxicity,general safety,,,no significant change,not significant,1,3912,Results > Biocompatibility Test of Different Scaffolds; paragraph 34,A
+609,1074,886,renal safety,renal,,,,,1,3913,Materials and methods > Animal experiments; paragraph 12,B
+611,1089,888,hepatotoxicity,hepatic,,,,,1,10547,Discussion; paragraph 31,C
+615,1090,892,hepatotoxicity,hepatic,,,increased,,1,10648,5. Conclusions; paragraph 51,C
+616,299,893,hepatotoxicity,hepatic,,,increased,,1,11036,2. Materials and Methods > 2.3. Functional and Safety Assessments; paragraph 10,A
+622,493,899,immune activation,immunotoxicity,,,no significant change,not significant,1,11357,Discussion; paragraph 9,C
+623,551,900,hepatotoxicity,hepatic,,,increased,,1,11416,Results > Safety; paragraph 27,A
+625,435,902,hepatotoxicity,hepatic,,,decreased,,1,11479,Discussion; paragraph 62,C
+627,472,904,hepatotoxicity,hepatic,,,increased,,1,12444,RESULTS AND DISCUSSION > Evaluation of the efficacy of gene silencing with in vitro RT-PCR; paragraph 45,C
+628,1028,905,hepatotoxicity,hepatic,,,no significant change,not significant,1,12446,Results > Influence of Nanoparticles on Tumor Growth and Survival Time in Orthotopic Glioblastoma Mice and Its Evaluation of Immunogenicity and Toxicity; paragraph 53,A
+629,1091,906,hepatotoxicity,hepatic,,,no significant change,not significant,1,12453,Results and Discussion > Toxicity of cRGD-PEG-siRNA to Renal Tubular Epithelial Cells; paragraph 11,C
+631,985,908,hepatotoxicity,hepatic,,,increased,,1,12500,Results and discussion > Inflammatory inhibition effect of the hybrid nanocomposite; paragraph 40,C
+634,1075,911,cell viability/cytotoxicity,general safety,,,,,1,13678,Abstract > Methods; paragraph 2,B
+639,1029,916,hepatotoxicity,hepatic,,,increased,,1,1136,Results > Optimized BROTHERS architectures mitigate hepatotoxicity without affecting antisense activity; paragraph 11,A
+640,185,917,cell viability/cytotoxicity,general safety,,,,,1,1292,4. Materials and Methods > 4.8. Cytotoxicity Assay; paragraph 37,A
+641,494,918,hepatotoxicity,hepatic,,,increased,,1,1955,Abstract > Methods; paragraph 2,B
+642,1030,919,hepatotoxicity,hepatic,,,no significant change,not significant,1,1958,RESULTS > SH-BC-893 increases ASO delivery and activity in vitro; paragraph 20,A
+643,435,920,hepatotoxicity,hepatic,,,decreased,,1,11811,Discussion; paragraph 24,C
+644,1031,921,hepatotoxicity,hepatic,,,,,1,11827,Results > Design of locked nucleic acid (LNA) ASO gapmers targeting Atp1a2; Fig 1 caption,A
+646,1032,923,hepatotoxicity,hepatic,,,no significant change,not significant,1,11931,Results > CPP-PMO antimiRs improve histopathology signs and muscle function in HSALR; paragraph 15,A
+648,1033,925,hepatotoxicity,hepatic,,,no significant change,not significant,1,12175,RESULTS > Effect of Notch3 ASOs on Notch3 Expression in Cells of the Osteoblast Lineage; paragraph 17,A
+650,1034,927,hepatotoxicity,hepatic,,,no significant change,not significant,1,13969,Results > Synergistic antitumor effects in vivo; paragraph 29,A
+651,557,928,renal safety,renal,,,increased,,1,13975,Abstract; paragraph 1,B
+652,443,929,hepatotoxicity,hepatic,,,increased,,1,14031,Discussion; paragraph 14,C
+654,1035,931,hepatotoxicity,hepatic,,,increased,,1,14152,RESULTS > Safety; paragraph 27,A
+656,443,933,hepatotoxicity,hepatic,,,increased,,1,14195,DISCUSSION; paragraph 60,C
+657,559,934,hepatotoxicity,hepatic,,,increased,,1,14202,Abstract; paragraph 1,B
+658,1036,935,immune activation,immunotoxicity,,,no significant change,not significant,1,14276,Results > DG9-PMO treatment rescues the SMA phenotype without apparent toxicity.; paragraph 19,A
+659,1037,936,hepatotoxicity,hepatic,,,increased,,1,14302,2. Results > 2.6. CCK-BR Targeted NPs Exhibit Broad Safety Profile and Lack off Target Toxicity; paragraph 15,A
+660,1038,937,hepatotoxicity,hepatic,,,decreased,,1,1485,"Results > MsPA backbone improves potency, whereas gap2 OMe reduces toxicity in cytotoxic PS ASOs; FIG. 1. caption",A
+661,1039,938,hepatotoxicity,hepatic,,,no significant change,not significant,1,1615,Results > Initial tiling screen identified a parental ASO targeting the 3′ UTR of MAPT with high cross-species reactivity; paragraph 6,A
+662,561,939,hepatotoxicity,hepatic,,,no significant change,not significant,1,1617,Results > Single-dose tolerability study of lead ASO candidates in cynomolgus monkeys; paragraph 17,A
+664,1040,941,hepatotoxicity,hepatic,,,,,1,1964,Results > LNP containing DSPS can reach the cytoplasm of cells without detectable cytotoxicity; paragraph 14,A
+665,1092,942,hepatotoxicity,hepatic,,,no significant change,not significant,1,1980,Results and Discussion > Cell Toxicity of Dendron–PNAs; paragraph 13,C
+666,1041,943,hepatotoxicity,hepatic,,,increased,,1,1981,Results > Safety; paragraph 28,A
+668,1042,945,hepatotoxicity,hepatic,,,decreased,,1,2727,Results > PS reduction optimizes ASO5 safety and activity in mice; paragraph 15,A
+670,1043,947,hepatotoxicity,hepatic,,,no significant change,not significant,1,4051,Materials and Methods > The Cytotoxicity Studies of iRGD Functionalized Lipopolysaccharide-Amine Nanopolymersomes to Mesenchymal Stem Cells; paragraph 11,A
+671,1093,948,hepatotoxicity,hepatic,,,,,1,4091,Results and discussion > In vivo anticancer activity and safety evaluation; paragraph 49,C
+672,562,949,hepatotoxicity,hepatic,,,increased,,1,4092,RESULTS AND DISCUSSION > Hairpin-like Design Increases Serum Nuclease Resistance and Decreases SNA Cytotoxicity.; paragraph 12,C
+676,1044,953,hepatotoxicity,hepatic,,,increased,,1,14660,Results > ASO1-cEt/DNA inhibits HCC cell growth; paragraph 29,A
+677,485,954,hepatotoxicity,hepatic,,,decreased,,1,1635,4. Discussion; paragraph 36,C
+678,563,955,hepatotoxicity,hepatic,,,,,1,1638,Abstract; paragraph 1,B
+679,299,956,hepatotoxicity,hepatic,,,no significant change,not significant,1,1645,Results > In Vivo Effects of NVP-13 on Target Regulation and Intracellular Pathways: NVP-13 is a Safe and Effective Compound in Cynomolgus Monkeys; paragraph 8,A
+680,1094,957,hepatotoxicity,hepatic,,,no significant change,not significant,1,1992,Discussion; paragraph 25,C
+684,1095,961,hepatotoxicity,hepatic,,,increased,,1,14708,5. Conclusions; paragraph 30,C
+686,1045,963,hepatotoxicity,hepatic,,,no significant change,not significant,1,14741,Results > Safety of Combined Therapy with CpG and the mRNA Vaccine; paragraph 28,A
+687,1076,964,hepatotoxicity,hepatic,,,,,1,14753,2. Materials and Methods > 2.4. Method for Measuring Cytotoxic Effect of Compounds; paragraph 9,B
+690,569,967,toxicity,general toxicity,,,,,1,14789,Abstract; paragraph 2,B
+693,563,970,hepatotoxicity,hepatic,,,,,1,14905,"RESULTS > Effect of site-specific incorporation of R- and S-5′-methyl DNA on duplex thermal stability, ASO activity and toxicity in cells; Figure 3. caption",A
+694,1046,971,hepatotoxicity,hepatic,,,no significant change,not significant,1,14926,Results > PMO‐M improves muscle pathologies without detectable toxicity in mdx mice; paragraph 20,A
+695,1047,972,hepatotoxicity,hepatic,,,,,1,1492,2. Results > 2.1. Discovery Process; paragraph 7,A
+696,1048,973,hepatotoxicity,hepatic,,,increased,,1,1660,Results > Toxicity status of chimeric LNA/2′OMe ASOs in vivo; paragraph 34,A
+700,1049,977,hepatotoxicity,hepatic,,,no significant change,not significant,1,14986,"Results > MYC ASO Treatment Is Not Associated with Morbidity, Mortality, or Toxicity; paragraph 12",A
+702,1050,979,hepatotoxicity,hepatic,,,increased,,1,2782,Results > Evaluation of in vitro cytotoxicity of the 2′-F modified AOs; paragraph 10,A
+703,563,980,hepatotoxicity,hepatic,,,,,1,3148,RESULTS > A single MOP linkage at position 2 in the DNA gap reduces toxicity for multiple ASOs; paragraph 46,A
+705,990,982,hepatotoxicity,hepatic,,,no significant change,not significant,1,4213,Results > Di-siRNA are safe and well-tolerated in mice; paragraph 21,A
+706,1051,983,hepatotoxicity,hepatic,,,increased,,1,12610,Results > Phase I study results > Safety and tolerability; paragraph 45,A
+708,1052,985,hepatotoxicity,hepatic,,,no significant change,not significant,1,15084,Results > BMSP-PMO-GF Does Not Evoke Any Overt Toxicity in Adult mdx Mice; paragraph 14,A
+717,1077,994,hepatotoxicity,hepatic,,,no significant change,not significant,1,2323,Abstract; paragraph 1,B
+723,575,1000,cell viability/cytotoxicity,general safety,,,,,1,12648,2. Materials and Methods > 2.10. Cytotoxicity study; paragraph 19,A
+727,1053,1004,hepatotoxicity,hepatic,,,no significant change,not significant,1,4239,Results > P27 is upregulated in mouse tissues after LNA-i-miR-221 treatment; paragraph 8,A
+729,1054,1006,hepatotoxicity,hepatic,,,,,1,12672,Results > Mstn siRNA cholesterol conjugate shows dose-dependent and sustained knockdown of Mstn mRNA in muscle and in circulating protein levels; paragraph 7,A
+731,578,1008,hepatotoxicity,hepatic,,,decreased,,1,15206,Results; paragraph 6,A
+736,494,1013,toxicity,general toxicity,,,,,1,4256,Abstract > Methods; paragraph 2,B
+742,986,1019,hepatotoxicity,hepatic,,,decreased,,1,4288,Abstract; paragraph 1,B
+743,986,1020,systemic safety/tolerability,general safety,,,increased,,1,1063,PubMed abstract,B
+754,583,1031,hepatotoxicity,hepatic,,,,,1,3333,PubMed abstract,B
+759,986,1036,hepatotoxicity,hepatic,,,no significant change,not significant,1,4787,PubMed abstract,B
+812,986,1089,hepatotoxicity,hepatic,,,no significant change,not significant,1,1014,PubMed abstract,B
+813,599,1090,hepatotoxicity,hepatic,,,increased,,1,1161,PubMed abstract,C
+819,986,1096,hepatotoxicity,hepatic,,,increased,,1,1842,PubMed abstract,B
+829,985,1106,hepatotoxicity,hepatic,,,,,1,3789,PubMed abstract,C
+830,985,1107,hepatotoxicity,hepatic,,,decreased,,1,3790,PubMed abstract,B
+903,985,1180,hepatotoxicity,hepatic,,,increased,,1,1166,PubMed abstract,B
+905,985,1182,hepatotoxicity,hepatic,,,no significant change,not significant,1,4042,PubMed abstract,B
+909,619,1186,hepatotoxicity,hepatic,,,no significant change,not significant,1,12017,PubMed abstract,B
+947,1096,1224,hepatotoxicity,hepatic,,,increased,,1,2807,PubMed abstract,C
+950,299,1227,hepatotoxicity,hepatic,,,increased,,1,15203,PubMed abstract,B
+952,631,1229,cell viability/cytotoxicity,general safety,,,,,1,4257,PubMed abstract sentence 5,C
+958,633,1235,cell viability/cytotoxicity,general safety,,,,,1,1213,Materials and methods > Cell viability assay; paragraph 31,B
+966,1055,1243,hepatotoxicity,hepatic,,,no significant change,not significant,1,1776,Results > Evaluation of the Toxicity and Safety of IVSA‐siRNA Targeting MSTN; paragraph 28,A
+969,1056,1246,hepatotoxicity,hepatic,,,,,1,3251,"Results > IC50, time course, and viability analysis; paragraph 10",A
+974,994,1251,hepatotoxicity,hepatic,,,decreased,,1,3301,Results > S9-SNA ameliorated the phenotype of SBMA mice; paragraph 12,A
+1039,1057,1316,hepatotoxicity,hepatic,,,increased,,1,1497,Results > Alkyl phosphonate at positions 6–7 enhances the therapeutic profile and reduces hepatotoxicity of Ttr and Marc1 siRNAs; paragraph 65,A
+1043,986,1320,thrombocytopenia,hematological,,,no significant change,not significant,1,1828,Abstract > Results:; paragraph 3,A
+1057,652,1334,toxicity,general toxicity,,,no significant change,not significant,1,3701,RESULTS > Lead MECP2-targeting siRNAs tune MECP2 levels in wildtype mice for up to four months; paragraph 16,A
+1060,652,1337,systemic safety/tolerability,general safety,,,increased,,1,3717,RESULTS > Single injection of non-isoform selective 1764_S1 but not E1 selective 112_S1 induces mixed behavioral effects in Tg1 mice; paragraph 36,A
+1083,660,1360,hepatotoxicity,hepatic,,,,,1,8415,Methods > Lactate dehydrogenase cytotoxicity assay; paragraph 31,A
+1087,985,1364,cell viability/cytotoxicity,general safety,,,increased,,1,8595,Results and Discussion > Uptake and Conditional Gene Silencing in 3D Spheroids; paragraph 19,C
+1117,986,1394,hepatotoxicity,hepatic,,,no significant change,not significant,1,10025,Results > Stk25-Targeting ASO Therapy Hinders the Development and Progression of MASH-Related HCC in a Mouse Model; paragraph 16,A
+1124,600,1401,hepatotoxicity,hepatic,,,,,1,10126,Results and Discussion > Gene Silencing Effects of the ASO/CDs; paragraph 39,C
+1131,985,1408,renal safety,renal,,,no significant change,not significant,1,12392,2. Results > 2.7. In Vivo Anticancer Activity and Safety Evaluation; paragraph 16,A
+1141,1058,1418,hepatotoxicity,hepatic,,,decreased,,1,13436,Results > Construction and characterization of the BRCA primary cell-derived engineered exosomes; paragraph 14,A
+1156,1059,1433,hepatotoxicity,hepatic,,,,,1,3958,Results > The structure and chemical configuration of the siRNA affects the distribution pattern in mouse retinas; paragraph 7,A
+1161,231,1438,hepatotoxicity,hepatic,,,increased,,1,10566,3. Results > 3.4. Safety > Adverse Events; paragraph 37,A
+1172,985,1449,hepatotoxicity,hepatic,,,no significant change,not significant,1,10988,RESULTS > Extensive screening identifies a potent chemically stabilized SOD1-targeting siRNA; paragraph 11,A
+1179,1078,1456,hepatotoxicity,hepatic,,,,,1,11191,Materials and methods > Cell viability assay; paragraph 15,B
+1180,299,1457,systemic safety/tolerability,general safety,,,increased,,1,11199,Abstract > Methods; paragraph 2,B
+1198,1097,1475,hepatotoxicity,hepatic,,,,,1,13888,Results and Discussion > Multifunctional Validation of siRNA‐CaP@PD1‐NVs In Vitro; paragraph 15,C
+1203,1060,1480,hepatotoxicity,hepatic,,,increased,,1,1481,Results > RNA-seq reveals activation of the interferon response by all ASOs and additional off-target effects on gene expression by the repeat gapmer; paragraph 19,A
+1214,1061,1491,hepatotoxicity,hepatic,,,increased,,1,3979,Results > si3033 has a good safety profile and enables JAK1 silencing in mouse skin over 5 weeks; paragraph 11,A
+1220,599,1497,systemic safety/tolerability,general safety,,,increased,,1,11924,PubMed abstract,B
+1240,986,1517,hepatotoxicity,hepatic,,,,,1,1619,Materials and methods > Animal studies > Study 1; paragraph 15,B
+1244,1062,1521,hepatotoxicity,hepatic,,,decreased,,1,2210,"Results > PMOs, or Double-Stranded 2′ O-methyl Phosphorothioate AOs, Do Not Form Nuclear Inclusions, Protecting From Cellular Toxicity and Off-Target Transcript Effects; paragraph 53",A
+1247,1063,1524,hepatotoxicity,hepatic,,,decreased,,1,4069,Results > Systematic chemical optimization of sFLT1-targeting siRNAs improves placental accumulation and degree of sFLT1 silencing with a better safety profile; paragraph 30,A
+1257,599,1534,thrombocytopenia,hematological,,,no significant change,not significant,1,14599,RESULTS > Safety and tolerability; paragraph 21,A
+1263,695,1540,hepatotoxicity,hepatic,,,,,1,1996,Results > Safety and Tolerability; FIG. 3 caption,A
+1270,435,1547,hepatotoxicity,hepatic,,,increased,,1,12553,Results > In vitro cytotoxicity assay; paragraph 10,A
+1289,1098,1566,hepatotoxicity,hepatic,,,,,1,4212,Results and Discussion; paragraph 10,C
+1292,1079,1569,hepatotoxicity,hepatic,,,increased,,1,12604,Abstract; paragraph 1,B
+1293,435,1570,hepatotoxicity,hepatic,,,decreased,,1,12616,RESULTS > Lipid-hsiRNAs elicit sustained systemic in vivo gene silencing after a single injection > Liver; paragraph 26,A
+1297,986,1574,hepatotoxicity,hepatic,,,no significant change,not significant,1,12621,Results > Identification of Lead Oligonucleotide Targeting the CEP290 c.2991+1655A>G Mutation; paragraph 6,A
+1306,1080,1583,hepatotoxicity,hepatic,,,,,1,4261,MATERIALS AND METHODS > In vivo anticancer efficacy; paragraph 31,B
+1317,1081,1594,hepatotoxicity,hepatic,,,increased,,1,1737,PubMed abstract,B
+1329,985,1606,hepatotoxicity,hepatic,,,no significant change,not significant,1,4516,PubMed abstract,B
+1387,985,1664,hepatotoxicity,hepatic,,,no significant change,not significant,1,1478,PubMed abstract,B
+1388,208,,intraocular pressure spike / ocular safety,toxicity,,,,,1,3960,PubMed abstract sentence 3,B
+1389,208,,no adverse effects in chronic rodent dosing,toxicity,,,,,1,4253,PubMed abstract sentence 6,C
+1390,208,,chemical-modification off-target reduction,chemistry,,,,,1,1003,PubMed abstract sentence 7,C
+1391,208,,PANAC GalNAc-siRNA conjugation improves gene silencing,chemistry,,,,,1,1049,PubMed abstract sentence 3,C
+1392,208,,2-prime ribose modification improves silencing and reduces off-targets,chemistry,,,,,1,1154,PubMed abstract sentence 1,C
+1393,208,,seed-region modification reduces off-target binding,chemistry,,,,,1,1157,PubMed abstract sentence 1,C
+1394,208,,LNA modification alters antiviral oligonucleotide activity,chemistry,,,,,1,1210,PubMed abstract sentence 10,C
+1395,208,,scpBNA/scpBNA2 nuclease-stability and activity profile,chemistry,,,,,1,1408,PubMed abstract sentence 2,C
+1396,208,,nucleobase modification reduces ASO hepatotoxicity,chemistry,,,,,1,1409,PubMed abstract sentence 2,C
+1397,208,,GalNAc3 conjugation potency increase,chemistry,,,,,1,1465,PubMed abstract sentence 4,B
+1398,208,,alkyl phosphonate seed modification improves specificity,chemistry,,,,,1,1497,PubMed abstract sentence 2,C
+1399,208,,GNA isonucleotides improve activity/off-target profile,chemistry,,,,,1,2309,PubMed abstract sentence 1,C
+1400,208,,3' terminal 2'-O-methyl activity reduction,chemistry,,,,,1,2762,PubMed abstract sentence 3,C
+1401,208,,VHP peptide modification targeted siRNA-exosome delivery,chemistry,,,,,1,3325,PubMed abstract sentence 4,B
+1402,208,,PDA/CD11b modification improves siRNA nanoparticle release and uptake,chemistry,,,,,1,3501,PubMed title,B
+1403,208,,fluorocarbon/aptamer comodification enhances siRNA delivery,chemistry,,,,,1,3571,PubMed abstract sentence 4,B
+1404,208,,cholesterol-siRNA conjugate liver macrophage delivery,chemistry,,,,,1,4047,PubMed abstract sentence 7,B
+1405,208,,chemically modified siRNA allele-specific silencing,chemistry,,,,,1,4061,PubMed abstract sentence 2,B
+1406,208,,2'-O-methyl/5' stabilization improves placental siRNA,chemistry,,,,,1,4069,PubMed abstract sentence 4,B
+1407,208,,Pip6a conjugation enhances PMO muscle delivery,chemistry,,,,,1,4212,PubMed abstract sentence 4,B
+1408,208,,sgc8 aptamer conjugation improves siRNA nanoparticle targeting,chemistry,,,,,1,12442,PubMed abstract sentence 5,B
+1409,208,,fully modified siRNA improves tissue retention,chemistry,,,,,1,12636,PubMed abstract sentence 4,B
+1410,208,,5'-vinylphosphonate improves siRNA accumulation/silencing,chemistry,,,,,1,12652,PubMed abstract sentence 4,B
+1411,208,,TfR antibody-ASO brain transcytosis delivery,delivery,,,,,1,1080,PubMed abstract sentence 2,C
+1412,208,,PEG-(GK)10 ASO polyplex sentinel lymph node delivery,delivery,,,,,1,1246,PubMed abstract sentence 3,C
+1413,208,,PNMVA lipid carrier siRNA uptake/endosomal escape,delivery,,,,,1,1926,PubMed abstract sentence 2,C
+1414,208,,aptamer-mediated tumor accumulation of cisplatin conjugate,delivery,,,,,1,2204,PubMed abstract sentence 4,C
+1415,208,,PLGA/GelMA hydrogel siRNA cytoplasmic delivery,delivery,,,,,1,3276,PubMed abstract sentence 4,C
+1416,208,,scFv macrophage-membrane liposome siRNA uptake,delivery,,,,,1,3529,PubMed title,C
+1417,208,,hydrophobically modified peptide lung siRNA delivery,delivery,,,,,1,3950,PubMed abstract sentence 1,C
+1418,208,,PAMAM dendrimer morpholino cellular delivery,delivery,,,,,1,4246,PubMed abstract sentence 1,C
+1419,208,,RGD/KA26 nanoparticle NSUN2 siRNA uptake,delivery,,,,,1,4844,PubMed abstract sentence 1,C
+1420,208,,SANG tumor RNAi payload delivery,delivery,,,,,1,6833,PubMed abstract sentence 2,C
+1421,208,,recNANP conditional RNAi inducer release,delivery,,,,,1,8595,PubMed abstract sentence 5,C
+1422,208,,DNA nanohydrogel ASO release after uptake,delivery,,,,,1,9651,PubMed abstract sentence 1,C
+1423,208,,hyaluronic acid nanocarrier siGLUT1 tumor delivery,delivery,,,,,1,9875,PubMed title,C
+1424,208,,mannosylated peptidyl lipid siG12S tumor delivery,delivery,,,,,1,9951,PubMed abstract sentence 1,C
+1425,208,,lysine-modified chitosan siRNA uptake,delivery,,,,,1,12104,PubMed abstract sentence 1,C
+1426,208,,modified PEI nanoparticle siRNA transfection efficacy,delivery,,,,,1,12538,PubMed title,C
+1427,208,,ZNF416 siRNA liposome fibrotic lung targeting,delivery,,,,,1,12545,PubMed abstract sentence 8,C
+1428,208,,pH-responsive NP siRNA-prodrug tumor release,delivery,,,,,1,12601,PubMed abstract sentence 1,C
+1429,208,,cysteamine gold nanoparticle siRNA delivery,delivery,,,,,1,13711,PubMed abstract sentence 7,C
+1430,208,,magnetic hyperthermia siRNA transfection,delivery,,,,,1,13877,PubMed abstract sentence 2,C
+1431,208,,hepatic innate immune cytokine induction,toxicity,,,,,1,4262,source title,C
+1432,208,,general in vivo safety profile,toxicity,,,,,1,1900,PubMed abstract sentence 6,C
+1433,208,,mouse nontoxicity,toxicity,,,,,1,2002,PubMed abstract sentence 1,C
+1434,208,,no adverse effects,toxicity,,,,,1,2009,PubMed abstract sentence 5,C
+1435,208,,reduced side effects,toxicity,,,,,1,2015,PubMed abstract sentence 1,B
+1436,208,,cell cytotoxicity absence,toxicity,,,,,1,2644,PubMed abstract sentence 13,C
+1437,208,,adverse events,toxicity,,,,,1,2652,PubMed abstract sentence 3,B
+1438,208,,IL-6 and CRP immune activation,toxicity,,,,,1,2712,PubMed abstract sentence 3,B
+1439,208,,adverse drug reactions,toxicity,,,,,1,2789,PubMed abstract sentence 4,B
+1440,208,,clinical tolerability,toxicity,,,,,1,2804,PubMed abstract sentence 6,B
+1441,208,,renal tubular degeneration and glomerulopathy,toxicity,,,,,1,2825,PubMed abstract sentence 1,B
+1442,208,,genotoxicity/mutagenesis,toxicity,,,,,1,2831,PubMed abstract sentence 3,C
+1443,208,,absence of adverse systemic effects,toxicity,,,,,1,3865,PubMed abstract sentence 4,B
+1444,208,,reduced adverse reactions,toxicity,,,,,1,3922,PubMed abstract sentence 2,C
+1445,208,,ALT elevations,toxicity,,,,,1,4000,PubMed abstract sentence 4,B
+1446,208,,transaminase increases,toxicity,,,,,1,4216,PubMed abstract sentence 1,B
+1447,208,,infusion reactions adverse events,toxicity,,,,,1,4227,PubMed abstract sentence 13,B
+1448,208,,adverse events/tolerability,toxicity,,,,,1,10468,PubMed abstract sentence 10,B
+1449,208,,minor toxic side effects,toxicity,,,,,1,10550,PubMed abstract sentence 11,C
+1450,208,,pulmonary surfactant biophysical function,toxicity,,,,,1,10623,PubMed abstract sentence 1,C
+1451,208,,safety profile/minimal off-target effects,toxicity,,,,,1,10686,PubMed abstract sentence 6,C
+1452,208,,cytokine release/immunostimulation,toxicity,,,,,1,10749,PubMed abstract sentence 1,B
+1453,208,,biosafety,toxicity,,,,,1,11005,PubMed abstract sentence 8,C
+1454,208,,hemolysis/no toxic manifestations,toxicity,,,,,1,11219,PubMed abstract sentence 7,C
+1455,208,,minimal side effects,toxicity,,,,,1,11250,PubMed abstract sentence 4,B
+1456,208,,acceptable safety,toxicity,,,,,1,11345,PubMed abstract sentence 1,B
+1457,208,,safety profile in AS mouse model,toxicity,,,,,1,11551,PubMed abstract sentence 4,C
+1458,208,,non-toxic gene silencing,toxicity,,,,,1,11863,PubMed abstract sentence 8,C
+1459,208,,adjacent T-cell sparing,toxicity,,,,,1,12389,PubMed abstract sentence 7,C
+1460,208,,promising drug safety in mice,toxicity,,,,,1,12451,PubMed abstract sentence 6,C
+1461,208,,biocompatibility/biosafety in vitro and in vivo,toxicity,,,,,1,13796,PubMed abstract sentence 6,C
+1462,208,,CSF leukocyte count increase,toxicity,,,,,1,14317,PubMed abstract sentence 4,B

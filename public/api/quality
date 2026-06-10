@@ -1,0 +1,45 @@
+{
+  "release_evidence_records": 737,
+  "curator_verified_release_records": 737,
+  "candidate_records": 41114,
+  "candidate_to_release_ratio": 55.79,
+  "source_documents": 36245,
+  "active_manifest": "source_candidates_v6.csv",
+  "checks": [
+    {
+      "check": "no_login_access",
+      "status": "pass",
+      "evidence": "All API and static portal endpoints are unauthenticated."
+    },
+    {
+      "check": "bulk_download",
+      "status": "pass",
+      "evidence": "CSV tables, populated evidence_release.csv, benchmark_reference_splits.csv, manifests, and all_tables.zip are exposed."
+    },
+    {
+      "check": "candidate_release_separation",
+      "status": "pass",
+      "evidence": "Candidate annotations remain separate from release evidence tables."
+    },
+    {
+      "check": "release_promotion_gate",
+      "status": "pass",
+      "evidence": "Release evidence explorer exposes only curator_verified, accepted A/B/C records; abstract-level generated promotions are excluded."
+    },
+    {
+      "check": "human_verified_release",
+      "status": "pass",
+      "evidence": "737 of 737 release rows carry a human curator-verified accept audit (independent re-curation of 2003 v1 machine pre-curated candidates)."
+    },
+    {
+      "check": "crispr_exclusion",
+      "status": "pass",
+      "evidence": "CRISPR guide RNA remains excluded from core molecule records."
+    },
+    {
+      "check": "stable_public_url",
+      "status": "blocked",
+      "evidence": "Cloudflare Pages export targets https://oligovigil.pages.dev; final pass requires the deployed URL to resolve."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "version": "20260604_core_validation_v45",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "summary": "OligoVigil is a no-login resource for ASO/siRNA safety evidence, provenance, and benchmark reuse.",
+      "items": [
+        "Release evidence is separated from machine-derived candidates.",
+        "Accepted release rows require curator verification and source-level provenance.",
+        "Grade A/B rows are eligible for reference benchmark splits; Grade C rows remain contextual evidence."
+      ]
+    },
+    {
+      "title": "Getting started",
+      "summary": "Start from a safety question, a sequence/design question, or a benchmark reuse question.",
+      "items": [
+        "Use the Overview search box for molecule, target, endpoint, PMID, DOI, chemistry, or off-target mechanism.",
+        "Use Examples for one-click GalNAc, seed off-target, ASO/gapmer hepatotoxicity, and benchmark workflows.",
+        "Use Record pages when you need a citable source/audit packet."
+      ]
+    },
+    {
+      "title": "Input data",
+      "summary": "The portal accepts text terms and sequence-like strings for evidence lookup, not anonymous writes.",
+      "items": [
+        "Sequence workbench accepts A/C/G/T/U/N characters and reports seed windows.",
+        "Safety Triage accepts sequence, target, chemistry, delivery, endpoint, species, and cell-type terms.",
+        "Evidence filters accept domain, grade, modality, endpoint/category, and free-text query.",
+        "Contribution packets use curator_review_template_v1.csv and require exact source location."
+      ]
+    },
+    {
+      "title": "Safety Triage Report",
+      "summary": "The report converts a design question into a provenance-first evidence packet.",
+      "items": [
+        "It is not a de novo safety predictor and does not label an oligo as clinically safe.",
+        "Each concern is marked as release-supported, candidate-gap-supported, mixed, or not assessable from current release.",
+        "Matched release records are citable; candidate gaps are only used to prioritize additional curation."
+      ]
+    },
+    {
+      "title": "Evidence grades",
+      "summary": "Grades are defensive evidence strata for database reuse, not clinical recommendations.",
+      "items": [
+        "Grade A: direct experimental or regulatory safety/off-target evidence with strong provenance.",
+        "Grade B: relevant observed evidence with lower granularity or indirect but defensible linkage.",
+        "Grade C: contextual evidence retained for discovery, excluded from benchmark reference splits."
+      ]
+    },
+    {
+      "title": "Exploring results",
+      "summary": "Use source packets and record pages to move from aggregate counts to exact evidence.",
+      "items": [
+        "Open a record to inspect source, audit trail, source location, citation text, and BibTeX.",
+        "Open source detail to view linked queue tasks, candidate signals, and verified evidence.",
+        "Use Coverage and Release pages to inspect gaps before drawing claims."
+      ]
+    },
+    {
+      "title": "Benchmark reuse",
+      "summary": "Benchmark splits are a supplement to the database, not the main claim.",
+      "items": [
+        "Download benchmark_reference_splits.csv and benchmark_task_cards.csv together.",
+        "Group leakage is controlled by source identifier plus molecule/cohort name.",
+        "Report AUROC, AUPRC, macro-F1, PCC/Spearman, or MSE according to task card target."
+      ]
+    },
+    {
+      "title": "Downloads and API",
+      "summary": "All release tables and manifests are available without login.",
+      "items": [
+        "Use /api/download/evidence_release.csv for the unified verified release.",
+        "Use /api/download/all_tables.zip for a full reproducible snapshot.",
+        "Use /api/openapi.json for endpoint discovery and lightweight client generation."
+      ]
+    },
+    {
+      "title": "Audit path",
+      "summary": "Use the Trust page to reproduce the release boundary before citing or reusing the resource.",
+      "items": [
+        "Open /#trust or /api/curation_protocol to inspect release/candidate separation, audit coverage, and redistribution policy.",
+        "Join evidence_release.csv to curation_audit.csv by entity_table and evidence_id/entity_id.",
+        "Use source_license_manifest_v1.csv before making source-level redistribution claims."
+      ]
+    },
+    {
+      "title": "Contribution and correction",
+      "summary": "Corrections and new evidence must preserve source provenance and the curation decision trail. Release rows are human curator-verified (AI-assisted: a primary human curator adjudicated v2 LLM proposals over the source passages, re-curating the v1 machine pre-curated candidates — not blind; a blinded second curator (HY) independently re-scored a 100-row mixed inter-rater sample, giving Cohen κ_binary = 0.42 (moderate, Landis-Koch) under the drop-abstain convention (n=92 non-abstain rows) and 0.34 (fair) under the safety-conservative collapse-abstain convention (n=100), raw agreement 66% (66/100); a third-adjudicator consensus pass is in progress); machine-only candidates are labelled machine_precurated_v1 and are not release evidence.",
+      "items": [
+        "Use /#submit or curator_review_template_v1.csv for proposed new records.",
+        "Required fields include source PMID/DOI/URL, exact source location, proposed evidence label, evidence grade, and curator note.",
+        "Candidate rows remain non-citable until accepted by curator audit and promoted through the release gate."
+      ]
+    },
+    {
+      "title": "FAQ and troubleshooting",
+      "summary": "Most confusing cases are caused by release/candidate separation.",
+      "items": [
+        "A candidate hit is not release evidence until accepted by curator audit.",
+        "Use the archived data DOI (10.5281/zenodo.20633779); cite the public portal only after the Cloudflare Pages HTTPS URL resolves.",
+        "Do not cite localhost screenshots; cite the frozen release version and public record URL after deployment."
+      ]
+    },
+    {
+      "title": "Citation",
+      "summary": "Cite the resource version, exact record pages for claims, and benchmark split checksums for ML reuse.",
+      "items": [
+        "Use the Cite page for global citation text and BibTeX.",
+        "Use record-level BibTeX for individual evidence claims.",
+        "Use benchmark task cards when reporting model baselines."
+      ]
+    }
+  ],
+  "quick_links": {
+    "examples": "/#examples",
+    "trust": "/#trust",
+    "release_status": "/#release",
+    "citation": "/#cite",
+    "openapi": "/api/openapi.json",
+    "downloads": "/#downloads",
+    "data_availability": "/api/data_availability"
+  }
+}

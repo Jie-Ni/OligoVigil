@@ -1,0 +1,445 @@
+{
+  "source_years": [
+    {
+      "label": "2026",
+      "n": 4109
+    },
+    {
+      "label": "2025",
+      "n": 5131
+    },
+    {
+      "label": "2024",
+      "n": 2474
+    },
+    {
+      "label": "2023",
+      "n": 1398
+    },
+    {
+      "label": "2022",
+      "n": 1083
+    },
+    {
+      "label": "2021",
+      "n": 1104
+    },
+    {
+      "label": "2020",
+      "n": 1040
+    },
+    {
+      "label": "2019",
+      "n": 918
+    },
+    {
+      "label": "2018",
+      "n": 942
+    },
+    {
+      "label": "2017",
+      "n": 1000
+    },
+    {
+      "label": "2016",
+      "n": 1087
+    },
+    {
+      "label": "2015",
+      "n": 1114
+    },
+    {
+      "label": "2014",
+      "n": 1202
+    },
+    {
+      "label": "2013",
+      "n": 1295
+    },
+    {
+      "label": "2012",
+      "n": 1277
+    },
+    {
+      "label": "2011",
+      "n": 1172
+    }
+  ],
+  "top_journals": [
+    {
+      "label": "PLoS One",
+      "n": 876
+    },
+    {
+      "label": "Methods Mol Biol",
+      "n": 704
+    },
+    {
+      "label": "Nucleic Acids Res",
+      "n": 617
+    },
+    {
+      "label": "Sci Rep",
+      "n": 523
+    },
+    {
+      "label": "Int J Mol Sci",
+      "n": 443
+    },
+    {
+      "label": "Proc Natl Acad Sci U S A",
+      "n": 441
+    },
+    {
+      "label": "J Biol Chem",
+      "n": 299
+    },
+    {
+      "label": "Biochem Biophys Res Commun",
+      "n": 288
+    },
+    {
+      "label": "J Control Release",
+      "n": 273
+    },
+    {
+      "label": "Anal Chem",
+      "n": 271
+    },
+    {
+      "label": "Mol Ther Nucleic Acids",
+      "n": 268
+    },
+    {
+      "label": "Nat Commun",
+      "n": 259
+    },
+    {
+      "label": "BMC Genomics",
+      "n": 255
+    },
+    {
+      "label": "Dev Biol",
+      "n": 248
+    },
+    {
+      "label": "Nucleic Acid Ther",
+      "n": 223
+    },
+    {
+      "label": "Cancer Res",
+      "n": 212
+    }
+  ],
+  "candidate_domain_modality": [
+    {
+      "evidence_domain": "assay",
+      "candidate_modality": "ASO/siRNA",
+      "n": 1423
+    },
+    {
+      "evidence_domain": "assay",
+      "candidate_modality": "ASO",
+      "n": 270
+    },
+    {
+      "evidence_domain": "assay",
+      "candidate_modality": "siRNA",
+      "n": 196
+    },
+    {
+      "evidence_domain": "benchmark",
+      "candidate_modality": "ASO/siRNA",
+      "n": 474
+    },
+    {
+      "evidence_domain": "benchmark",
+      "candidate_modality": "ASO",
+      "n": 99
+    },
+    {
+      "evidence_domain": "benchmark",
+      "candidate_modality": "siRNA",
+      "n": 92
+    },
+    {
+      "evidence_domain": "chemistry",
+      "candidate_modality": "ASO/siRNA",
+      "n": 592
+    },
+    {
+      "evidence_domain": "chemistry",
+      "candidate_modality": "ASO",
+      "n": 284
+    },
+    {
+      "evidence_domain": "chemistry",
+      "candidate_modality": "siRNA",
+      "n": 204
+    },
+    {
+      "evidence_domain": "delivery",
+      "candidate_modality": "ASO/siRNA",
+      "n": 1520
+    },
+    {
+      "evidence_domain": "delivery",
+      "candidate_modality": "siRNA",
+      "n": 784
+    },
+    {
+      "evidence_domain": "delivery",
+      "candidate_modality": "ASO",
+      "n": 326
+    },
+    {
+      "evidence_domain": "offtarget",
+      "candidate_modality": "siRNA",
+      "n": 17659
+    },
+    {
+      "evidence_domain": "offtarget",
+      "candidate_modality": "ASO",
+      "n": 9681
+    },
+    {
+      "evidence_domain": "offtarget",
+      "candidate_modality": "ASO/siRNA",
+      "n": 872
+    },
+    {
+      "evidence_domain": "offtarget",
+      "candidate_modality": "ASO/siRNA mixed context",
+      "n": 437
+    },
+    {
+      "evidence_domain": "toxicity",
+      "candidate_modality": "ASO/siRNA",
+      "n": 2623
+    },
+    {
+      "evidence_domain": "toxicity",
+      "candidate_modality": "siRNA",
+      "n": 2021
+    },
+    {
+      "evidence_domain": "toxicity",
+      "candidate_modality": "ASO",
+      "n": 1557
+    }
+  ],
+  "candidate_confidence_domain": [
+    {
+      "evidence_domain": "assay",
+      "confidence_label": "high_candidate",
+      "n": 404
+    },
+    {
+      "evidence_domain": "assay",
+      "confidence_label": "low_candidate",
+      "n": 308
+    },
+    {
+      "evidence_domain": "assay",
+      "confidence_label": "medium_candidate",
+      "n": 1177
+    },
+    {
+      "evidence_domain": "benchmark",
+      "confidence_label": "high_candidate",
+      "n": 71
+    },
+    {
+      "evidence_domain": "benchmark",
+      "confidence_label": "low_candidate",
+      "n": 13
+    },
+    {
+      "evidence_domain": "benchmark",
+      "confidence_label": "medium_candidate",
+      "n": 581
+    },
+    {
+      "evidence_domain": "chemistry",
+      "confidence_label": "high_candidate",
+      "n": 363
+    },
+    {
+      "evidence_domain": "chemistry",
+      "confidence_label": "low_candidate",
+      "n": 54
+    },
+    {
+      "evidence_domain": "chemistry",
+      "confidence_label": "medium_candidate",
+      "n": 663
+    },
+    {
+      "evidence_domain": "delivery",
+      "confidence_label": "high_candidate",
+      "n": 1077
+    },
+    {
+      "evidence_domain": "delivery",
+      "confidence_label": "low_candidate",
+      "n": 291
+    },
+    {
+      "evidence_domain": "delivery",
+      "confidence_label": "medium_candidate",
+      "n": 1262
+    },
+    {
+      "evidence_domain": "offtarget",
+      "confidence_label": "high_candidate",
+      "n": 2919
+    },
+    {
+      "evidence_domain": "offtarget",
+      "confidence_label": "low_candidate",
+      "n": 17504
+    },
+    {
+      "evidence_domain": "offtarget",
+      "confidence_label": "medium_candidate",
+      "n": 8226
+    },
+    {
+      "evidence_domain": "toxicity",
+      "confidence_label": "high_candidate",
+      "n": 2020
+    },
+    {
+      "evidence_domain": "toxicity",
+      "confidence_label": "low_candidate",
+      "n": 1392
+    },
+    {
+      "evidence_domain": "toxicity",
+      "confidence_label": "medium_candidate",
+      "n": 2789
+    }
+  ],
+  "queue_priority_domain": [
+    {
+      "evidence_domain": "assay",
+      "priority": "high",
+      "n": 2066
+    },
+    {
+      "evidence_domain": "benchmark",
+      "priority": "medium",
+      "n": 708
+    },
+    {
+      "evidence_domain": "chemistry",
+      "priority": "high",
+      "n": 1219
+    },
+    {
+      "evidence_domain": "delivery",
+      "priority": "medium",
+      "n": 2775
+    },
+    {
+      "evidence_domain": "molecule_identity",
+      "priority": "high",
+      "n": 14239
+    },
+    {
+      "evidence_domain": "offtarget",
+      "priority": "high",
+      "n": 3644
+    },
+    {
+      "evidence_domain": "offtarget",
+      "priority": "medium",
+      "n": 25055
+    },
+    {
+      "evidence_domain": "source_provenance",
+      "priority": "high",
+      "n": 14239
+    },
+    {
+      "evidence_domain": "toxicity",
+      "priority": "high",
+      "n": 4538
+    },
+    {
+      "evidence_domain": "toxicity",
+      "priority": "medium",
+      "n": 1800
+    }
+  ],
+  "release_grade_domain": [
+    {
+      "evidence_domain": "offtarget",
+      "evidence_grade": "A",
+      "n": 33
+    },
+    {
+      "evidence_domain": "offtarget",
+      "evidence_grade": "B",
+      "n": 65
+    },
+    {
+      "evidence_domain": "offtarget",
+      "evidence_grade": "C",
+      "n": 13
+    },
+    {
+      "evidence_domain": "toxicity",
+      "evidence_grade": "A",
+      "n": 200
+    },
+    {
+      "evidence_domain": "toxicity",
+      "evidence_grade": "B",
+      "n": 210
+    },
+    {
+      "evidence_domain": "toxicity",
+      "evidence_grade": "C",
+      "n": 216
+    }
+  ],
+  "candidate_release_gap": [
+    {
+      "evidence_domain": "assay",
+      "candidate_records": 1889,
+      "release_records": 0,
+      "gap": 1889
+    },
+    {
+      "evidence_domain": "benchmark",
+      "candidate_records": 665,
+      "release_records": 0,
+      "gap": 665
+    },
+    {
+      "evidence_domain": "chemistry",
+      "candidate_records": 1080,
+      "release_records": 0,
+      "gap": 1080
+    },
+    {
+      "evidence_domain": "delivery",
+      "candidate_records": 2630,
+      "release_records": 0,
+      "gap": 2630
+    },
+    {
+      "evidence_domain": "offtarget",
+      "candidate_records": 28649,
+      "release_records": 111,
+      "gap": 28538
+    },
+    {
+      "evidence_domain": "toxicity",
+      "candidate_records": 6201,
+      "release_records": 626,
+      "gap": 5575
+    }
+  ]
+}

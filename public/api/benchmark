@@ -1,0 +1,509 @@
+{
+  "version": "20260604_core_validation_v45",
+  "release_records": 737,
+  "benchmark_eligible_records": 344,
+  "eligibility_rule": "Curator-verified accepted Grade A/B toxicity or off-target release evidence.",
+  "leakage_policy": "Stored reference splits group records by source identifier plus molecule/cohort name.",
+  "tasks": [
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "prediction_target": "toxicity endpoint category/label and evidence-grade-aware safety triage",
+      "recommended_metrics": [
+        "AUROC",
+        "AUPRC",
+        "macro-F1",
+        "MSE for numeric toxicity endpoints when available"
+      ]
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "prediction_target": "off-target evidence type or binary observed off-target signal",
+      "recommended_metrics": [
+        "AUROC",
+        "AUPRC",
+        "PCC",
+        "Spearman"
+      ]
+    }
+  ],
+  "grade_counts": [
+    {
+      "evidence_grade": "A",
+      "n": 233
+    },
+    {
+      "evidence_grade": "B",
+      "n": 275
+    },
+    {
+      "evidence_grade": "C",
+      "n": 229
+    }
+  ],
+  "split_counts": [
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "split_name": "test",
+      "n": 10
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "split_name": "train",
+      "n": 66
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "split_name": "validation",
+      "n": 5
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "split_name": "test",
+      "n": 22
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "split_name": "train",
+      "n": 218
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "split_name": "validation",
+      "n": 23
+    }
+  ],
+  "split_strategy_counts": [
+    {
+      "split_strategy": "source_plus_molecule_grouped_hash_v1",
+      "n": 211
+    },
+    {
+      "split_strategy": "source_plus_molecule_grouped_manual_v1",
+      "n": 133
+    }
+  ],
+  "benchmark_release": {
+    "doi_status": "10.5281/zenodo.20633779",
+    "archive_url": "https://doi.org/10.5281/zenodo.20633779",
+    "recommended_archive": "Zenodo v1.0.1 data snapshot.",
+    "citation_policy": "Cite OligoVigil version, task name, and the reference split CSV checksum.",
+    "leakage_control": "stored_source_plus_molecule_grouped_splits"
+  },
+  "task_cards": [
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "version": "20260604_resource_depth_v42",
+      "doi_status": "pending_public_archive_before_submission",
+      "prediction_target": "oligonucleotide safety endpoint triage from molecule/modality/provenance fields",
+      "label_source": "toxicity_endpoint.endpoint_category and endpoint_name",
+      "eligibility_rule": "curator_verified accept evidence_grade in A/B",
+      "split_strategy": "stored_source_plus_molecule_grouped_splits",
+      "train_rows": "218",
+      "validation_rows": "23",
+      "test_rows": "22",
+      "grade_a_rows": "180",
+      "grade_b_rows": "83",
+      "metrics": "AUROC; AUPRC; macro-F1; PCC/Spearman or MSE only for numeric toxicity values",
+      "baseline_models": "train-majority; modality-prior; evidence-grade-prior; target-prior deterministic baselines",
+      "leakage_policy": "stored splits keep records sharing source identifier and molecule/cohort in one split",
+      "download_reference_splits": "/api/download/benchmark_reference_splits.csv",
+      "download_task_cards": "/api/manifest/benchmark_task_cards_v1.csv"
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "version": "20260604_resource_depth_v42",
+      "doi_status": "pending_public_archive_before_submission",
+      "prediction_target": "observed off-target signal or off-target evidence type",
+      "label_source": "offtarget_evidence.evidence_type and is_computational_prediction",
+      "eligibility_rule": "curator_verified accept evidence_grade in A/B",
+      "split_strategy": "stored_source_plus_molecule_grouped_splits",
+      "train_rows": "66",
+      "validation_rows": "5",
+      "test_rows": "10",
+      "grade_a_rows": "32",
+      "grade_b_rows": "49",
+      "metrics": "AUROC; AUPRC; macro-F1; PCC/Spearman for ranked off-target risk",
+      "baseline_models": "train-majority; modality-prior; evidence-grade-prior; target-prior deterministic baselines",
+      "leakage_policy": "stored splits keep records sharing source identifier and molecule/cohort in one split",
+      "download_reference_splits": "/api/download/benchmark_reference_splits.csv",
+      "download_task_cards": "/api/manifest/benchmark_task_cards_v1.csv"
+    }
+  ],
+  "downloads": {
+    "reference_splits": "/api/download/benchmark_reference_splits.csv",
+    "task_cards": "/api/download/benchmark_task_cards.csv",
+    "evidence_release": "/api/download/evidence_release.csv",
+    "all_tables": "/api/download/all_tables.zip"
+  },
+  "download_artifacts": [
+    {
+      "category": "Core release",
+      "filename": "evidence_release.csv",
+      "url": "/api/download/evidence_release.csv",
+      "purpose": "Unified curator-verified toxicity and off-target release evidence.",
+      "recommended_use": "Primary citation and evidence reuse table.",
+      "rows": 737,
+      "bytes": 620435,
+      "sha256": "1e75030b03e14f40e87a445af6c96e4b0e189abf78604998767cfe2baa78c775",
+      "schema": "data_dictionary_v1.csv",
+      "license": "Curator-reviewed derived annotations and source identifiers; raw article text/PDFs are not redistributed.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "category": "Benchmark",
+      "filename": "benchmark_reference_splits.csv",
+      "url": "/api/download/benchmark_reference_splits.csv",
+      "purpose": "Deterministic Grade A/B reference train/validation/test splits.",
+      "recommended_use": "Canonical ML benchmark split file.",
+      "rows": 344,
+      "bytes": 146241,
+      "sha256": "5bf1a917a6acd47ddd0d087723737286873b33c6e7062db5a0009345535079fe",
+      "schema": "benchmark_task_cards_v1.csv",
+      "license": "Derived benchmark split assignments over Grade A/B release evidence; cite version and checksum.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "category": "Benchmark",
+      "filename": "benchmark_task_cards.csv",
+      "url": "/api/download/benchmark_task_cards.csv",
+      "purpose": "Task definitions, targets, metrics, and leakage policy.",
+      "recommended_use": "Cite task name, version, and checksum with benchmark results.",
+      "rows": 2,
+      "bytes": 1556,
+      "sha256": "dc90d58981c070cb9009b1b272b24deddd42715ff1dec7694f93a37232a6ddeb",
+      "schema": "benchmark_task_cards_v1.csv",
+      "license": "Derived task metadata for benchmark reuse; cite task name, version, and checksum.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "category": "Benchmark",
+      "filename": "benchmark_baseline_results.csv",
+      "url": "/api/download/benchmark_baseline_results.csv",
+      "purpose": "Deterministic majority, modality-prior, grade-prior, and target-prior baselines for validation/test split sanity checks.",
+      "recommended_use": "Reference baselines before reporting trained model comparisons.",
+      "rows": 16,
+      "bytes": 5125,
+      "sha256": "4803c43392607d15fa40e332745753b291a90a17dfa92706014c53f8933af8e1",
+      "schema": "benchmark_task_cards_v1.csv",
+      "license": "Derived deterministic baseline metrics over fixed splits.",
+      "version": "20260604_core_validation_v45"
+    }
+  ],
+  "baseline_models": [
+    {
+      "model": "train_majority_class",
+      "features": "task-level training label prior",
+      "loss": "reported as accuracy and macro-F1 on validation/test splits"
+    },
+    {
+      "model": "modality_prior_class",
+      "features": "modality-specific training label prior with global fallback",
+      "loss": "reported as accuracy and macro-F1 on validation/test splits"
+    },
+    {
+      "model": "evidence_grade_prior_class",
+      "features": "A/B evidence-grade training label prior",
+      "loss": "reported as accuracy and macro-F1 on validation/test splits"
+    },
+    {
+      "model": "target_prior_class",
+      "features": "target-gene training label prior with global fallback",
+      "loss": "reported with coverage to expose unseen target groups"
+    }
+  ],
+  "baseline_status": {
+    "status": "deterministic_baselines_completed",
+    "reason": "Four leakage-aware deterministic baselines are computed from the fixed reference splits: global majority, modality prior, evidence-grade prior, and target-gene prior.",
+    "result_table_policy": "Report benchmark_baseline_results.csv as transparent reference baselines; trained model comparisons can be added without changing the split contract."
+  },
+  "baseline_result_rows": [
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "train_majority_class",
+      "evaluation_split": "validation",
+      "train_rows": 66,
+      "evaluation_rows": 5,
+      "train_label_count": 5,
+      "majority_label": "seed-mediated off-target effect",
+      "majority_fraction_train": 0.3788,
+      "accuracy": 0.2,
+      "macro_f1": 0.1111,
+      "prediction_basis": "global training-set category prior",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Sanity baseline: predicts the most common training category for the task.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "modality_prior_class",
+      "evaluation_split": "validation",
+      "train_rows": 66,
+      "evaluation_rows": 5,
+      "train_label_count": 5,
+      "majority_label": "seed-mediated off-target effect",
+      "majority_fraction_train": 0.3788,
+      "accuracy": 0.2,
+      "macro_f1": 0.125,
+      "prediction_basis": "training-set majority category within the same modality",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "evidence_grade_prior_class",
+      "evaluation_split": "validation",
+      "train_rows": 66,
+      "evaluation_rows": 5,
+      "train_label_count": 5,
+      "majority_label": "seed-mediated off-target effect",
+      "majority_fraction_train": 0.3788,
+      "accuracy": 0.2,
+      "macro_f1": 0.1111,
+      "prediction_basis": "training-set majority category within the same evidence grade",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Uses only A/B grade labels already present in the fixed reference split.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "target_prior_class",
+      "evaluation_split": "validation",
+      "train_rows": 66,
+      "evaluation_rows": 5,
+      "train_label_count": 5,
+      "majority_label": "seed-mediated off-target effect",
+      "majority_fraction_train": 0.3788,
+      "accuracy": 0.2,
+      "macro_f1": 0.1111,
+      "prediction_basis": "training-set majority category within the same target gene",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "train_majority_class",
+      "evaluation_split": "test",
+      "train_rows": 66,
+      "evaluation_rows": 10,
+      "train_label_count": 5,
+      "majority_label": "seed-mediated off-target effect",
+      "majority_fraction_train": 0.3788,
+      "accuracy": 0.4,
+      "macro_f1": 0.1429,
+      "prediction_basis": "global training-set category prior",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Sanity baseline: predicts the most common training category for the task.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "modality_prior_class",
+      "evaluation_split": "test",
+      "train_rows": 66,
+      "evaluation_rows": 10,
+      "train_label_count": 5,
+      "majority_label": "seed-mediated off-target effect",
+      "majority_fraction_train": 0.3788,
+      "accuracy": 0.6,
+      "macro_f1": 0.3667,
+      "prediction_basis": "training-set majority category within the same modality",
+      "coverage": 0.9,
+      "status": "completed_deterministic_baseline",
+      "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "evidence_grade_prior_class",
+      "evaluation_split": "test",
+      "train_rows": 66,
+      "evaluation_rows": 10,
+      "train_label_count": 5,
+      "majority_label": "seed-mediated off-target effect",
+      "majority_fraction_train": 0.3788,
+      "accuracy": 0.4,
+      "macro_f1": 0.1429,
+      "prediction_basis": "training-set majority category within the same evidence grade",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Uses only A/B grade labels already present in the fixed reference split.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "offtarget_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "target_prior_class",
+      "evaluation_split": "test",
+      "train_rows": 66,
+      "evaluation_rows": 10,
+      "train_label_count": 5,
+      "majority_label": "seed-mediated off-target effect",
+      "majority_fraction_train": 0.3788,
+      "accuracy": 0.4,
+      "macro_f1": 0.1429,
+      "prediction_basis": "training-set majority category within the same target gene",
+      "coverage": 0.9,
+      "status": "completed_deterministic_baseline",
+      "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "train_majority_class",
+      "evaluation_split": "validation",
+      "train_rows": 218,
+      "evaluation_rows": 23,
+      "train_label_count": 12,
+      "majority_label": "hepatic",
+      "majority_fraction_train": 0.4954,
+      "accuracy": 0.6087,
+      "macro_f1": 0.1261,
+      "prediction_basis": "global training-set category prior",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Sanity baseline: predicts the most common training category for the task.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "modality_prior_class",
+      "evaluation_split": "validation",
+      "train_rows": 218,
+      "evaluation_rows": 23,
+      "train_label_count": 12,
+      "majority_label": "hepatic",
+      "majority_fraction_train": 0.4954,
+      "accuracy": 0.5652,
+      "macro_f1": 0.1204,
+      "prediction_basis": "training-set majority category within the same modality",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "evidence_grade_prior_class",
+      "evaluation_split": "validation",
+      "train_rows": 218,
+      "evaluation_rows": 23,
+      "train_label_count": 12,
+      "majority_label": "hepatic",
+      "majority_fraction_train": 0.4954,
+      "accuracy": 0.6087,
+      "macro_f1": 0.1261,
+      "prediction_basis": "training-set majority category within the same evidence grade",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Uses only A/B grade labels already present in the fixed reference split.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "target_prior_class",
+      "evaluation_split": "validation",
+      "train_rows": 218,
+      "evaluation_rows": 23,
+      "train_label_count": 12,
+      "majority_label": "hepatic",
+      "majority_fraction_train": 0.4954,
+      "accuracy": 0.6087,
+      "macro_f1": 0.1261,
+      "prediction_basis": "training-set majority category within the same target gene",
+      "coverage": 0.9565,
+      "status": "completed_deterministic_baseline",
+      "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "train_majority_class",
+      "evaluation_split": "test",
+      "train_rows": 218,
+      "evaluation_rows": 22,
+      "train_label_count": 12,
+      "majority_label": "hepatic",
+      "majority_fraction_train": 0.4954,
+      "accuracy": 0.6364,
+      "macro_f1": 0.2593,
+      "prediction_basis": "global training-set category prior",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Sanity baseline: predicts the most common training category for the task.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "modality_prior_class",
+      "evaluation_split": "test",
+      "train_rows": 218,
+      "evaluation_rows": 22,
+      "train_label_count": 12,
+      "majority_label": "hepatic",
+      "majority_fraction_train": 0.4954,
+      "accuracy": 0.5909,
+      "macro_f1": 0.2476,
+      "prediction_basis": "training-set majority category within the same modality",
+      "coverage": 0.9545,
+      "status": "completed_deterministic_baseline",
+      "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "evidence_grade_prior_class",
+      "evaluation_split": "test",
+      "train_rows": 218,
+      "evaluation_rows": 22,
+      "train_label_count": 12,
+      "majority_label": "hepatic",
+      "majority_fraction_train": 0.4954,
+      "accuracy": 0.6364,
+      "macro_f1": 0.2593,
+      "prediction_basis": "training-set majority category within the same evidence grade",
+      "coverage": 1.0,
+      "status": "completed_deterministic_baseline",
+      "notes": "Uses only A/B grade labels already present in the fixed reference split.",
+      "version": "20260604_core_validation_v45"
+    },
+    {
+      "task_name": "toxicity_safety_v0_1",
+      "target_field": "category",
+      "baseline_model": "target_prior_class",
+      "evaluation_split": "test",
+      "train_rows": 218,
+      "evaluation_rows": 22,
+      "train_label_count": 12,
+      "majority_label": "hepatic",
+      "majority_fraction_train": 0.4954,
+      "accuracy": 0.6364,
+      "macro_f1": 0.2593,
+      "prediction_basis": "training-set majority category within the same target gene",
+      "coverage": 0.7727,
+      "status": "completed_deterministic_baseline",
+      "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
+      "version": "20260604_core_validation_v45"
+    }
+  ]
+}

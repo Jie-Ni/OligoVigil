@@ -1,0 +1,315 @@
+{
+  "version": "20260604_core_validation_v45",
+  "scope_note": "Off-target classes are mechanism-oriented evidence buckets for browsing and benchmark reuse; they are not de novo off-target predictions for a submitted sequence.",
+  "release_records": 111,
+  "benchmark_records": 81,
+  "candidate_records": 28649,
+  "classes": [
+    {
+      "key": "seed_mediated",
+      "label": "Seed-mediated / miRNA-like",
+      "definition": "Evidence mentions seed region, 3'UTR seed matching, miRNA-like repression, or seed-driven transcriptome effects.",
+      "synonyms": [
+        "seed",
+        "3'utr",
+        "3 utr",
+        "mirna",
+        "microrna",
+        "seed-mediated",
+        "seed match"
+      ],
+      "release_records": 47,
+      "benchmark_records": 32,
+      "candidate_records": 1259,
+      "grade_counts": [
+        {
+          "grade": "A",
+          "n": 12
+        },
+        {
+          "grade": "B",
+          "n": 24
+        },
+        {
+          "grade": "C",
+          "n": 11
+        }
+      ],
+      "examples": [
+        {
+          "record": "offtarget_evidence:1",
+          "canonical_name": "SNA-modified GalNAc-siRNA panel from PMID 41994868",
+          "evidence_label": "seed-mediated off-target effect",
+          "evidence_grade": "A",
+          "pmid": "41994868"
+        },
+        {
+          "record": "offtarget_evidence:2",
+          "canonical_name": "siVIM-270 chemical modification panel from PMID 41467115",
+          "evidence_label": "seed-mediated off-target effect",
+          "evidence_grade": "A",
+          "pmid": "41467115"
+        },
+        {
+          "record": "offtarget_evidence:7",
+          "canonical_name": "ALN-HBV/ALN-HBV02 GalNAc-siRNA panel from PMID 35736224",
+          "evidence_label": "seed-mediated off-target effect",
+          "evidence_grade": "A",
+          "pmid": "35736224"
+        },
+        {
+          "record": "offtarget_evidence:8",
+          "canonical_name": "GalNAc-siRNA panel from PMID 29459660",
+          "evidence_label": "seed-mediated off-target effect",
+          "evidence_grade": "A",
+          "pmid": "29459660"
+        }
+      ],
+      "endpoint": "/api/evidence_records?domain=offtarget&q=seed"
+    },
+    {
+      "key": "hybridization_mismatch",
+      "label": "Hybridization or mismatch",
+      "definition": "Evidence concerns partial complementarity, mismatch tolerance, hybridization-driven off-targeting, or unintended RNA binding.",
+      "synonyms": [
+        "hybridization",
+        "mismatch",
+        "partial complementarity",
+        "complementarity",
+        "unintended binding"
+      ],
+      "release_records": 30,
+      "benchmark_records": 27,
+      "candidate_records": 1586,
+      "grade_counts": [
+        {
+          "grade": "A",
+          "n": 10
+        },
+        {
+          "grade": "B",
+          "n": 19
+        },
+        {
+          "grade": "C",
+          "n": 1
+        }
+      ],
+      "examples": [
+        {
+          "record": "offtarget_evidence:4",
+          "canonical_name": "APP-AON/ATXN3-AON/HTT-AON panel from PMID 41066632",
+          "evidence_label": "hybridization/mismatch off-target effect",
+          "evidence_grade": "A",
+          "pmid": "41066632"
+        },
+        {
+          "record": "offtarget_evidence:5",
+          "canonical_name": "PNA-braced ASO panel from PMID 38042877",
+          "evidence_label": "hybridization/mismatch off-target effect",
+          "evidence_grade": "A",
+          "pmid": "38042877"
+        },
+        {
+          "record": "offtarget_evidence:10",
+          "canonical_name": "GSK2910546A ASO gapmer panel from PMID 26338776",
+          "evidence_label": "hybridization/mismatch off-target effect",
+          "evidence_grade": "A",
+          "pmid": "26338776"
+        },
+        {
+          "record": "offtarget_evidence:13",
+          "canonical_name": "ASO candidate from PMID 36229039",
+          "evidence_label": "hybridization/mismatch off-target effect",
+          "evidence_grade": "B",
+          "pmid": "36229039"
+        }
+      ],
+      "endpoint": "/api/evidence_records?domain=offtarget&q=hybridization"
+    },
+    {
+      "key": "transcriptome_level",
+      "label": "Transcriptome-level observation",
+      "definition": "Evidence is supported by expression profiling, RNA-seq, microarray, transcriptome-wide readout, or gene-expression signatures.",
+      "synonyms": [
+        "rna-seq",
+        "rnaseq",
+        "transcriptome",
+        "microarray",
+        "expression profiling",
+        "gene expression"
+      ],
+      "release_records": 19,
+      "benchmark_records": 13,
+      "candidate_records": 3064,
+      "grade_counts": [
+        {
+          "grade": "A",
+          "n": 9
+        },
+        {
+          "grade": "B",
+          "n": 10
+        }
+      ],
+      "examples": [
+        {
+          "record": "offtarget_evidence:6",
+          "canonical_name": "DM1 ASO panel from PMID 37200862",
+          "evidence_label": "transcriptome-level off-target effect",
+          "evidence_grade": "A",
+          "pmid": "37200862"
+        },
+        {
+          "record": "offtarget_evidence:36",
+          "canonical_name": "CCND1; Drisapersen; Mipomersen",
+          "evidence_label": "transcriptome-level off-target effect",
+          "evidence_grade": "B",
+          "pmid": "35464859"
+        },
+        {
+          "record": "offtarget_evidence:44",
+          "canonical_name": "unspecified antisense oligonucleotide",
+          "evidence_label": "transcriptome-level off-target effect",
+          "evidence_grade": "B",
+          "pmid": "37310350"
+        },
+        {
+          "record": "offtarget_evidence:47",
+          "canonical_name": "unspecified antisense oligonucleotide",
+          "evidence_label": "transcriptome-level off-target effect",
+          "evidence_grade": "B",
+          "pmid": "33314011"
+        }
+      ],
+      "endpoint": "/api/evidence_records?domain=offtarget&q=rna-seq"
+    },
+    {
+      "key": "general_offtarget",
+      "label": "General off-target",
+      "definition": "Curated off-target evidence where the source does not cleanly specify one of the higher-resolution mechanisms.",
+      "synonyms": [
+        "off-target",
+        "off target",
+        "offtarget",
+        "unintended"
+      ],
+      "release_records": 12,
+      "benchmark_records": 8,
+      "candidate_records": 21945,
+      "grade_counts": [
+        {
+          "grade": "A",
+          "n": 2
+        },
+        {
+          "grade": "B",
+          "n": 10
+        }
+      ],
+      "examples": [
+        {
+          "record": "offtarget_evidence:3",
+          "canonical_name": "RGLS4326",
+          "evidence_label": "off-target evidence",
+          "evidence_grade": "B",
+          "pmid": "41315228"
+        },
+        {
+          "record": "offtarget_evidence:15",
+          "canonical_name": "siRNA candidate from PMID 29246303",
+          "evidence_label": "off-target evidence",
+          "evidence_grade": "B",
+          "pmid": "29246303"
+        },
+        {
+          "record": "offtarget_evidence:16",
+          "canonical_name": "siRNA candidate from PMID 41897327",
+          "evidence_label": "sequence-specificity/off-target evidence",
+          "evidence_grade": "B",
+          "pmid": "41897327"
+        },
+        {
+          "record": "offtarget_evidence:40",
+          "canonical_name": "SPC2996; PC3; CaCo2",
+          "evidence_label": "off-target evidence",
+          "evidence_grade": "A",
+          "pmid": "19854938"
+        }
+      ],
+      "endpoint": "/api/evidence_records?domain=offtarget&q=off-target"
+    },
+    {
+      "key": "immune_like",
+      "label": "Immune-like off-target signal",
+      "definition": "Evidence indicates immune stimulation or pattern-recognition activation treated as off-target safety context.",
+      "synonyms": [
+        "immune",
+        "tlr",
+        "cytokine",
+        "interferon",
+        "inflammatory",
+        "immunostimulation"
+      ],
+      "release_records": 3,
+      "benchmark_records": 1,
+      "candidate_records": 624,
+      "grade_counts": [
+        {
+          "grade": "B",
+          "n": 2
+        },
+        {
+          "grade": "C",
+          "n": 1
+        }
+      ],
+      "examples": [
+        {
+          "record": "offtarget_evidence:229",
+          "canonical_name": "MC3 LNP-siRNA (recovered B2 from PMID:41708903, curator:CM)",
+          "evidence_label": "off-target evidence",
+          "evidence_grade": "B",
+          "pmid": "41708903"
+        },
+        {
+          "record": "offtarget_evidence:441",
+          "canonical_name": "T39 ASO",
+          "evidence_label": "off-target evidence",
+          "evidence_grade": "B",
+          "pmid": "32180554"
+        },
+        {
+          "record": "offtarget_evidence:539",
+          "canonical_name": "unspecified oligonucleotide",
+          "evidence_label": "TLR3-mediated off-target immune activation",
+          "evidence_grade": "C",
+          "pmid": "36365241"
+        }
+      ],
+      "endpoint": "/api/evidence_records?domain=offtarget&q=immune"
+    },
+    {
+      "key": "computational_only",
+      "label": "Computational prediction only",
+      "definition": "Evidence is computational or in silico and should not be cited as experimentally observed off-target toxicity.",
+      "synonyms": [
+        "computational",
+        "prediction",
+        "in silico",
+        "algorithm",
+        "predicted"
+      ],
+      "release_records": 0,
+      "benchmark_records": 0,
+      "candidate_records": 171,
+      "grade_counts": [],
+      "examples": [],
+      "endpoint": "/api/evidence_records?domain=offtarget&q=computational"
+    }
+  ],
+  "downloads": {
+    "evidence_release": "/api/download/evidence_release.csv",
+    "benchmark_splits": "/api/download/benchmark_reference_splits.csv"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "20260604_core_validation_v45",
+  "title": "OligoVigil: a curated safety and off-target evidence resource with benchmark-ready data for therapeutic oligonucleotides",
+  "doi_status": "10.5281/zenodo.20633779",
+  "archive_url": "https://doi.org/10.5281/zenodo.20633779",
+  "code_release_url": "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1",
+  "preferred_citation": "OligoVigil Consortium. OligoVigil: a curated safety and off-target evidence resource with benchmark-ready data for therapeutic oligonucleotides. OligoVigil 20260604_core_validation_v45; 2026. Curator-verified ASO/siRNA toxicity and off-target release evidence with reference benchmark splits. Data archive: 10.5281/zenodo.20633779.",
+  "bibtex": "@misc{OligoVigil_20260604_core_validation_v45,\n  title = {OligoVigil: a curated safety and off-target evidence resource with benchmark-ready data for therapeutic oligonucleotides},\n  author = {OligoVigil Consortium},\n  year = {2026},\n  doi = {10.5281/zenodo.20633779},\n  url = {https://doi.org/10.5281/zenodo.20633779},\n  note = {Version 20260604_core_validation_v45; data archive},\n  howpublished = {OligoVigil public web resource}\n}",
+  "record_citation_template": "Use /api/evidence_detail?domain={toxicity|offtarget}&id={id} and cite the returned citation.plain_text plus the source PMID/DOI.",
+  "benchmark_citation_template": "Cite OligoVigil version, benchmark task name, benchmark_reference_splits.csv, and the release-package checksum.",
+  "downloads": {
+    "evidence_release": "/api/download/evidence_release.csv",
+    "benchmark_splits": "/api/download/benchmark_reference_splits.csv",
+    "task_cards": "/api/download/benchmark_task_cards.csv",
+    "all_tables": "/api/download/all_tables.zip"
+  }
+}

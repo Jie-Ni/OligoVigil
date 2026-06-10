@@ -1,0 +1,121 @@
+{
+  "version": "20260604_core_validation_v45",
+  "claim_status": "not_claimable",
+  "claim_boundary": "Cohen kappa is now claimed from the completed 100-row mixed inter-rater study (KAPPA-2; see kappa_claimed below). This separate 500-row independent second-review packet underwrites the release-row false-accept / false-reject ERROR-RATE estimates, which remain pending until reviewer2_decision is filled and adjudicated; the live agreement/kappa fields in this endpoint are computed from that 500-row packet and are null until it is filled.",
+  "kappa_claimed": {
+    "status": "claimed",
+    "study": "100-row mixed inter-rater study (KAPPA-2), second curator HY (blinded, no manuscript exposure)",
+    "cohen_kappa_binary_drop_abstain": 0.42,
+    "cohen_kappa_binary_drop_abstain_detail": "moderate (Landis-Koch); drop-abstain convention, n=92 non-abstain rows",
+    "cohen_kappa_binary_collapse_abstain": 0.34,
+    "cohen_kappa_binary_collapse_abstain_detail": "fair (Landis-Koch); safety-conservative collapse-abstain convention, n=100",
+    "cohen_kappa_3class": 0.37,
+    "cohen_kappa_grade": 0.39,
+    "raw_agreement": 0.66,
+    "raw_agreement_detail": "66% (66/100), 3-class accept/reject/abstain",
+    "second_curator": "HY, blinded, no manuscript exposure; systematically stricter (92% reject-confirm, 40% accept-confirm) — conservative direction for a safety database",
+    "third_adjudicator": "A10 third-adjudicator consensus pass is in progress (not yet returned); will further refine kappa once adjudicated."
+  },
+  "sample": {
+    "sample_rows": 500,
+    "reviewed_rows": 0,
+    "comparable_rows": 0,
+    "release_accept_rows": 250,
+    "candidate_reject_control_rows": 250,
+    "completion_pct": 0.0
+  },
+  "metrics": {
+    "raw_agreement": null,
+    "cohen_kappa": null,
+    "false_accept_rate_release_rows": null,
+    "false_reject_rate_reject_controls": null,
+    "source_location_disagreement_rows": 0
+  },
+  "sampling_breakdown": [
+    {
+      "item_type": "candidate_reject_control",
+      "rows": 250
+    },
+    {
+      "item_type": "release_accept",
+      "rows": 250
+    }
+  ],
+  "top_strata": [
+    {
+      "stratum": "candidate_reject_control/offtarget/C/siRNA",
+      "rows": 93
+    },
+    {
+      "stratum": "release_accept/toxicity_endpoint/C/no",
+      "rows": 70
+    },
+    {
+      "stratum": "release_accept/toxicity_endpoint/A/yes",
+      "rows": 64
+    },
+    {
+      "stratum": "candidate_reject_control/offtarget/B/siRNA",
+      "rows": 48
+    },
+    {
+      "stratum": "release_accept/toxicity_endpoint/B/no",
+      "rows": 40
+    },
+    {
+      "stratum": "candidate_reject_control/offtarget/C/ASO",
+      "rows": 37
+    },
+    {
+      "stratum": "release_accept/toxicity_endpoint/B/yes",
+      "rows": 29
+    },
+    {
+      "stratum": "candidate_reject_control/offtarget/B/ASO",
+      "rows": 25
+    },
+    {
+      "stratum": "release_accept/offtarget_evidence/B/yes",
+      "rows": 17
+    },
+    {
+      "stratum": "release_accept/offtarget_evidence/A/yes",
+      "rows": 11
+    },
+    {
+      "stratum": "candidate_reject_control/toxicity/B/ASO/siRNA",
+      "rows": 11
+    },
+    {
+      "stratum": "candidate_reject_control/toxicity/B/ASO",
+      "rows": 8
+    }
+  ],
+  "review_fields": [
+    {
+      "field": "reviewer2_decision",
+      "allowed_values": "accept | reject",
+      "use": "Independent second reviewer repeats the release/reject decision from source evidence."
+    },
+    {
+      "field": "reviewer2_evidence_grade",
+      "allowed_values": "A | B | C | reject",
+      "use": "Grade disagreement is counted separately from accept/reject disagreement."
+    },
+    {
+      "field": "reviewer2_source_location_verified",
+      "allowed_values": "yes | no",
+      "use": "Checks whether the cited source location actually supports the evidence claim."
+    },
+    {
+      "field": "reviewer2_error_type",
+      "allowed_values": "scope_error | source_location_error | grade_error | duplicate | extraction_error | none",
+      "use": "Feeds the manuscript error-rate estimate after adjudication."
+    }
+  ],
+  "downloads": {
+    "independent_validation_template": "/api/download/independent_curation_validation_template.csv",
+    "independent_validation_manifest": "/api/manifest/independent_curation_validation_template_v1.csv",
+    "curation_audit": "/api/download/curation_audit.csv"
+  }
+}

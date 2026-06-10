@@ -1,0 +1,985 @@
+molecule_id,canonical_name,modality,target_gene_symbol,disease_context,therapeutic_status,sense_sequence,antisense_sequence,guide_sequence,passenger_sequence,seed_region,backbone_chemistry,sugar_modification,base_modification,conjugate_delivery,sequence_annotation_status,modification_annotation_status,source_pmid,source_doi,source_url,source_location_verified,curator_decision,validation_status,reviewer_note,updated_at
+1,ASO toxicity study cohort from Bhamra 2025,ASO,,,study_cohort,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+2,siRNAEfficacyDB source cohort,siRNA,,,closest_work_context,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+3,CMsiRNAdb source cohort,siRNA,,,closest_work_context,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+4,SNA-modified GalNAc-siRNA panel from PMID 41994868,siRNA,TTR,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+5,siVIM-270 chemical modification panel from PMID 41467115,siRNA,VIM,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+6,RGLS4326,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+7,APP-AON/ATXN3-AON/HTT-AON panel from PMID 41066632,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+8,PNA-braced ASO panel from PMID 38042877,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+9,DM1 ASO panel from PMID 37200862,ASO,DMPK,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+10,ALN-HBV/ALN-HBV02 GalNAc-siRNA panel from PMID 35736224,siRNA,HBV,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+11,GalNAc-siRNA panel from PMID 29459660,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+12,negative-control siRNA panel from PMID 29860520,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+13,GSK2910546A ASO gapmer panel from PMID 26338776,ASO,BACH1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+14,phosphorothioate ASO panel from PMID 41760661,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+15,tool ASO safety panel from PMID 41918821,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+16,GalNAc-siCEBP?,siRNA,CEBPB,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+17,5?-CP-modified PS-ASO panel from PMID 41467114,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+18,BND6482,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+19,L2-Htt,siRNA,HTT,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+20,TP-siRC@tHyNPs (CYP3A4-siRNA),siRNA,CYP3A4,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+21,anti-miR-21-SNA,ASO,MIR21,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+22,LEM-S401,siRNA,CTGF,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+23,2'-diol and 3'-overhang modified STAT3 siRNA panel from PMID 41755844,siRNA,STAT3,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+24,hypoxanthine-substituted LNA-gapmer ASO1 panel from PMID 41928909,ASO,Mapt,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+25,nebulized siIL-1beta.2 from PMID 41898774,siRNA,IL1B,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+26,RGLS4326 anti-miR-17 ASO,ASO,MIR17,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+27,SNS812,siRNA,SARS-CoV-2 RdRP,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+28,PNAT524 biomolecule-conjugated ASO panel from PMID 41220634,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+29,siSNCA PEI/PPI nanoparticle panel from PMID 40978531,siRNA,SNCA,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+30,JNJ-3989/JNJ-73763989 GalNAc-siRNA regimen from PMID 40919077,siRNA,HBV,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+31,scFv-MML@LPCAT1si from PMID 40898177,siRNA,LPCAT1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+32,Cet/siFAK@ZIF-8@TCM from PMID 40735032,siRNA,PTK2,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+33,EM/siKEAP1@Fe-MOF@HA from PMID 40688667,siRNA,KEAP1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+34,DCA-siRNADUX4/DU01 from PMID 40673060,siRNA,DUX4,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+35,hEV@FAP-siTGFbeta1 from PMID 40046817,siRNA,TGFB1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+36,siAURKA-loaded milk extracellular vesicles from PMID 40896585,siRNA,AURKA,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+37,BSCgal gold-siRNA supracluster from PMID 39448881,siRNA,LGALS1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+38,G-clamp/BNAP-AEO modified Malat1 ASO panel from PMID 38978695,ASO,MALAT1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+39,aCSF+-formulated CNS ASO/di-siRNA panel from PMID 39554992,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+40,pVEC-ASO panel from PMID 38391508,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+41,LNP-siTGFbetaRI from PMID 39264964,siRNA,TGFBR1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+42,CT102,ASO,IGF1R,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+43,LKA-LP@STAT3-siRNA from PMID 40074308,siRNA,STAT3,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+44,GxS5/siRNA polyplexes from PMID 39263399,siRNA,tdTomato,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+45,GBE-PLL/H2O-PLL solid lipid nanoparticle siRNA carriers from PMID 39684010,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+46,P-E/S Lip PD-L1 siRNA nanovesicle from PMID 39068444,siRNA,CD274,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+47,SWNT-PL-PEG-S-S-siLUC conjugate from PMID 39627280,siRNA,LUC,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+48,OligoA-11/Skeen-11 phosphorothioate oligonucleotide panel from PMID 37185731,ASO,G6PD,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+49,miR-125a-5p agomir from PMID 36632217,miRNA agomir,MIR125A,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+50,CLCN7G215R-siRNA-SiS12 formulation from PMID 37680985,siRNA,CLCN7,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+51,RBCEV-delivered siMstn and siMlycd from PMID 37016578,siRNA,MSTN; MLYCD,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+52,ASO1-ASO3 modified ASO panel from PMID 36700050,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+53,TS1-ASO nucleobase modification panel from PMID 35801870,ASO,TTR,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+54,ESC+ GalNAc-siRNA D1/D4/D6/D9 panel from PMID 35736224,siRNA,TTR; HAO1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+55,DLin-MC3-DMA-conjugated siRNA panel from PMID 35917865,siRNA,HTT; PPIB,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+56,siLuc-ALC-0315 LNP from PMID 35642083,siRNA,LUC,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+57,PEG-SSN/siRNA nanoparticle formulation from PMID 36412852,siRNA,EGFR,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+58,AMC11 CDplex siRNA panel from PMID 36365241,siRNA,RHEB; MAPK1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+59,GalNAc-G-quadruplex oligonucleotide panel from PMID 35745067,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+60,A10-3.2/siCAT-1/3WJ nanodroplets from PMID 35037525,siRNA,SLC7A1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+61,CYP3A5 PMO/PSO panel from PMID 33633318,ASO,CYP3A5,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+62,HsPCSK9-1811-LNA/GalNAc ASO panel from PMID 34760338,ASO,PCSK9,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+63,LNA-ASO renal histopathology panel from PMID 34629736,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+64,LUNAR-REPU910 siRNA from PMID 33738134,siRNA,AR,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+65,LNPssPalmO-Phe-ASOap/ASOgr from PMID 33924589,ASO,APOB; NR3C1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+66,2'-O-methoxyethyl chimeric ASO tolerability dataset from PMID 34242101,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+67,dual-RGD/EGFR siRNA protein nanocarrier from PMID 34959463,siRNA,EGFR,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+68,PMO-P6 conjugate from PMID 34841414,ASO,DMD,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+69,PM1(GT/siMMP-9) hydrogel from PMID 33952251,siRNA,MMP9,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+70,stereocontrolled cEt gapmer ASO panel from PMID 31980820,ASO,MALAT1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+71,306-O12B-3 ASO/LNP formulation from PMID 32160706,ASO,GFP,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+72,H51(+67)W tcDNA-ASO from PMID 31881528,ASO,DMD,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+73,GalNAc AON-B/D/E panel from PMID 30583097,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+74,GalNAc-siRNA hepatotoxicity panel with REVERSIR from PMID 29459660,siRNA,HAO1; TTR,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+75,236-LNA-ASO hepatotoxicity screening panel from PMID 29499955,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+76,nephrotoxic AON A/B/C panel from PMID 28325303,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+77,Acsl1/GR LNA gapmer panel from PMID 27461380,ASO,ACSL1; NR3C1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+78,toxic LNA/MOE gapmer ASO panel from PMID 26553810,ASO,long pre-mRNA transcripts,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+79,PMO-GF formulation from PMID 26964641,ASO,DMD,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+80,3-8-3 LNA gapmer hepatotoxicity panel from PMID 24550163,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+81,siRNA candidate from PMID 41020503,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+82,Bepirovirsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+83,siRNA candidate from PMID 41076269,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+84,siRNA candidate from PMID 41716677,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+85,siRNA candidate from PMID 40692538,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+86,Plozasiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+87,siRNA candidate from PMID 40825982,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+88,siRNA candidate from PMID 40574039,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+89,siRNA candidate from PMID 40314193,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+90,siRNA candidate from PMID 41214041,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+91,siRNA candidate from PMID 40503175,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+92,siRNA candidate from PMID 39896757,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+93,Inclisiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+94,ASO candidate from PMID 37365583,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+95,siRNA candidate from PMID 36302886,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+96,ASO candidate from PMID 28853853,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+97,PMO candidate from PMID 24806225,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+98,Imetelstat,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+99,Inotersen,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+100,ASO candidate from PMID 36229039,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+101,ASO candidate from PMID 29499955,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+102,siRNA candidate from PMID 29246303,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+103,ASO candidate from PMID 41978261,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+104,SRN001,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+105,Alox15-targeting siRNA from PMID 41847300,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+106,ASO candidate from PMID 39850319,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+107,ASO candidate from PMID 40243849,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+108,TLR9-targeted; STAT3; PD1-targeting ASO from PMID 40214214,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+109,Imetelstat,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+110,siRNA candidate from PMID 41625362,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+111,siRNA candidate from PMID 41360814,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+112,CD11b-modified-targeting siRNA from PMID 40977834,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+113,siRNA candidate from PMID 40380202,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+114,Angptl4-targeting ASO from PMID 39259836,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+115,siRNA candidate from PMID 39606561,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+116,siRNA candidate from PMID 39065632,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+117,siRNA candidate from PMID 38089931,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+118,ASO candidate from PMID 36631935,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+119,ASO candidate from PMID 37346977,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+120,siRNA candidate from PMID 38168301,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+121,siRNA candidate from PMID 37273265,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+122,ASO candidate from PMID 33567808,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+123,siRNA candidate from PMID 35992044,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+124,siRNA candidate from PMID 30544191,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+125,ASO candidate from PMID 29107969,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+126,siRNA candidate from PMID 41897327,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+127,siRNA candidate from PMID 41743270,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+128,ASO candidate from PMID 25539920,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+129,siRNA candidate from PMID 40654369,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+130,Nedosiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+131,DNA/RNA heteroduplex oligonucleotide candidate from PMID 39252874,DNA/RNA heteroduplex oligonucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+132,Viltolarsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+133,ASO candidate from PMID 32530964,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+134,siRNA candidate from PMID 40737088,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+135,siRNA candidate from PMID 41646886,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+136,siRNA candidate from PMID 39813044,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+137,siRNA candidate from PMID 39231537,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+138,siRNA candidate from PMID 35921401,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+139,siRNA candidate from PMID 35071927,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+140,siRNA candidate from PMID 35205363,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+141,ASO candidate from PMID 34388351,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+142,siRNA candidate from PMID 29450406,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+143,siRNA candidate from PMID 21687525,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+144,siRNA candidate from PMID 41949334,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+145,ASO candidate from PMID 41754970,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+146,Vutrisiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+147,ASO candidate from PMID 41399312,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+148,siRNA candidate from PMID 41755009,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+149,siRNA candidate from PMID 41810468,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+150,siRNA candidate from PMID 41477663,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+151,siRNA candidate from PMID 41896932,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+152,Nusinersen,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+153,Pelacarsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+154,RO7239958,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+155,ASO candidate from PMID 40654713,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+156,ASO candidate from PMID 41169576,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+157,ASO/siRNA mixed context candidate from PMID 41268339,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+158,siRNA candidate from PMID 41439881,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+159,siRNA candidate from PMID 40911569,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+160,siRNA candidate from PMID 41256914,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+161,ASO candidate from PMID 40604820,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+162,siRNA candidate from PMID 40006524,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+163,Fitusiran,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+164,Ce6-targeting siRNA from PMID 41299672,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+165,siRNA candidate from PMID 41007671,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+166,siRNA candidate from PMID 40573259,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+167,siRNA candidate from PMID 40433119,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+168,siRNA candidate from PMID 39990947,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+169,siRNA candidate from PMID 39934917,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+170,siRNA candidate from PMID 40444266,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+171,siRNA candidate from PMID 39829590,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+172,siRNA candidate from PMID 41304812,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+173,PMO candidate from PMID 39119918,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+174,Olezarsen,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+175,ASO/siRNA mixed context candidate from PMID 38271438,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+176,siRNA candidate from PMID 39539730,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+177,Fesomersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+178,siRNA candidate from PMID 38126895,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+179,siRNA candidate from PMID 39274180,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+180,siRNA candidate from PMID 39684325,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+181,ASO candidate from PMID 39329032,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+182,ASO candidate from PMID 37920238,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+183,PMO candidate from PMID 37538053,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+184,wireframe DNA origami NANP,DNA nanostructure,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+185,unspecified siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+186,unspecified antisense oligonucleotide,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+187,SLN360,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+188,inotersen,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+189,HeyA8; seed13; GL261,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+190,RAW264; cck8,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+191,SKOV3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+192,HER2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+193,RTR5001,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+194,casimersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+195,HepG2; LO2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+196,Nusinersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+197,Foxp3,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+198,Revusiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+199,Stk25,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+200,Huh7; MCF7; nanoparticles43,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+201,radavirsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+202,RTR3649; RTR5001; RTR4955,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+203,TLR3; TLR7; TLR8,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+204,hDysE50,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+205,drisapersen,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+206,Inclisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+207,fomivirsen; mipomersen; nusinersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+208,unspecified oligonucleotide,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+209,SKP2; Ago2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+210,HN1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+211,siFmr1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+212,ADO2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+213,HEK293T,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+214,TREM2; PI3K,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+215,CCND1; Drisapersen; Mipomersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+216,Klf15,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+217,HEK293-derived; CD34,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+218,SPC2996; PC3; CaCo2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+219,MKK4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+220,MC3-based,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+221,Gb3S; MC3-containing; Gb3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+222,SLC15A2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+223,FN1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+224,SIRT1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+225,siPAX2; siPAX8; WT9,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+226,si097-DV29PG5; si061-DV27PG5,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+227,AS456; IC50; TRL7,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+228,RAW264; HepG2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+229,STAT3-targeted,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+230,Tofersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+231,givosiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+232,fitusiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+233,METTL3; Smad3,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+234,Trp53; Cy5-labeled; Mcp1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+235,APP36; Iba1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+236,Loop3,aptamer,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+237,Cyr61,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+238,CD248,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+239,Trim21; Trim21-ASOs,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+240,THP1-Dual,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+241,unspecified aptamer,aptamer,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+242,Pkd1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+243,HSP47,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+244,inclisiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+245,PF4,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+246,lumasiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+247,ALKBH5,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+248,ANGPTL3,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+249,BAY2306001; BAY2976217,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+250,iC3b; CR3-dependent; CR3-DCC,aptamer,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+251,revusiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+252,nusinersen,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+253,TNRC6; GW182; AGO2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+254,AGO2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+255,Ago2-binding; TLR7; TLR9-associated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+256,siF12; siF12-A; siF12-AC9,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+257,Malat1-targeting,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+258,SPC5001,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+259,ApoB11; ApoB11-conjugated,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+260,SMN2; Nusinersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+261,LRP4; NCT05070858; cemdisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+262,RyR2; Cy5-labeled; RyR2-targeting,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+263,PCSK9; Inclisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+264,patisiran; givosiran; vutrisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+265,HepG2; ARPE19,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+266,Nrf2; Keap1; GPX4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+267,GSTK1; OSBPL8; DGAT1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+268,PEG6000,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+269,Cy5-siRNA; HepG2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+270,PEG2000,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+271,NCT05030428; inclisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+272,CCL2; MMP9,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+273,CT26,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+274,PNPLA3; rs738409; PNPLA3I148M,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+275,Atp5o,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+276,SPL84,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+277,NS102; ED50,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+278,AlphaFold3; sgc8c; PTK7,aptamer,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+279,TfR1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+280,HepG2; ACSL4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+281,CD44,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+282,LP5-SeNP; LP1-SeNP,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+283,KAZ3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+284,TUBB3; TUBB3-siRNA; TUBB3-LNPs,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+285,Fe3O4; CD44; IC50,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+286,miRNA34a; LNA34a; NOTCH1,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+287,siG12Ss; siG12S; KRASG12S,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+288,siBACE1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+289,NCT05089084; Plozasiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+290,VP28; VP19,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+291,GalNAc3; GalNAc3-conjugated,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+292,SYT13; Syt13-deficient; Syt13-deficiency,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+293,BIIB078; NCT03626012; BIIB078-treated,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+294,CCA12; ETD12,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+295,SMN2; BPP8-PMO; Cy7,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+296,Ki67,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+297,PLK1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+298,PNMVA24,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+299,nusinersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+300,MCT4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+301,LY96; SY5Y; CD4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+302,PCSK9; GN3; MC3-LNP,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+303,CYP2E1; AML12,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+304,HT29,aptamer,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+305,NCT03218995,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+306,HepG2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+307,NCT03338816; givosiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+308,BldA50M50; MixA50; MixD50,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+309,NCT03417102; fitusiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+310,CpG55; rH7HA,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+311,pelacarsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+312,CL1H6; CL1H6-LNP,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+313,GalNAc3; GalNAc3-MOE; GalNAc3-conjugated,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+314,NCT02300233; volanesorsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+315,TPPS2a; TPPS2a-,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+316,PNPLA3; rs738409; Pnpla3-deficient,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+317,NCT01737398; Inotersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+318,BK12,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+319,Bcl2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+320,HepG2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+321,KL4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+322,Myo1E,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+323,NCT01153932; drisapersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+324,DM1; MBNL1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+325,STAT3,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+326,CD40; CD86,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+327,Myd88-deficient; MDA5; LGP2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+328,ARL4C; ARL4C-targeting; CP8,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+329,log10; NCT06115993; CTR20232098,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+330,PCSK9; NCT04652726; inclisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+331,DUX4; iDUX4pA,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+332,PCSK9; inclisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+333,AUC0-inf; Zerlasiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+334,MC3; MC3-based,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+335,NCT04014335; RO7434656; sefaxersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+336,ED50,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+337,Cy3; HEK293,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+338,MC3-LNP,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+339,ABCG2; HCC1937; Ki67,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+340,GATHER2; NCT04435366; mm2,aptamer,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+341,NCT04439539; FUW48; log10IU,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+342,NCT05618379; Nusinersen,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+343,EC50; HEK293; SY5Y,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+344,Carm1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+345,CORE2-TIMI; NCT05079919; NCT05552326,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+346,viltolarsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+347,GPC3-LPPEI; GPC3-targeting; GPC3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+348,NCT05192941; inclisiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+349,PCSK9; NCT05763875; Inclisiran,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+350,SOX9; MC3-DMA; siSOX9,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+351,CXCL5; PC9,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+352,NCT04971928; AUC0; Bepirovirsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+353,NCT05139810,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+354,CDR132L,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+355,caspase3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+356,NCT03672188; log10; elebsiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+357,SN38; AS1411; SN38-loaded,aptamer,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+358,Ago2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+359,NCT03982186,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+360,Volanesorsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+361,PCSK9; NCT03060577; inclisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+362,Malat1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+363,APOC3; ANGPTL3; ANG3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+364,ANGPTL3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+365,antiPF4,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+366,SGLT2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+367,GCD2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+368,Mo2; Mo3; Argonaute2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+369,PDCD4,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+370,PDIA3; oblimersen,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+371,Inclisiran,siRNA,PCSK9,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+372,IL-4Ralpha ASO,ASO,IL4RA,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+373,Nusinersen,ASO,SMN2,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+374,AVI-6002/AVI-6003 PMOplus,PMOplus,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+375,phosphorothioate ASO panel,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+376,G5-GalNAc siRNA platform,siRNA,PCSK9/AGT,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+377,TET3 siRNA lipid nanoparticles,siRNA,TET3,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+378,luciferase siRNA LNPs with beta-triketone ionizable lipids,siRNA,luciferase,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+379,CaP-siSlc31a1,siRNA,SLC31A1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+380,FW-LP@siIRF5,siRNA,IRF5,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+381,DCA-JAK13033 siRNA,siRNA,JAK1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+382,siRNA nanocarriers/lipoplexes,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+383,DP-EVs/siPD-L1,siRNA,CD274,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+384,MSC-NVs-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+385,TGF-beta siRNA PMNP,siRNA,TGFB1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+386,siRNA polyplexes,siRNA,Raf-1/PD-L1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+387,NLRP3 siRNA autonomous delivery system,siRNA,NLRP3,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+388,siRNA-loaded CaP-NP/cGM formulation,siRNA,Chordin,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+389,prazosin-siRNA/antibody conjugate,siRNA,PTEN,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+390,siB/QU@L-OL,siRNA,BACE1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+391,curcumin coacervate siRNA formulation,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+392,siRNA@VG-Exos,siRNA,IL6,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+393,LNP-SNORA49 RNA/SOX9 ASO,ASO/RNA mixed context,SOX9,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+394,pPB-siRNATRAF6/NMm-pPB-siRNATRAF6,siRNA,TRAF6,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+395,pMSNC@ISG15 siRNA,siRNA,ISG15,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+396,SANG-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+397,cationic/anionic siRNA lipoplexes,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+398,ISIS 405879,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+399,LNP TNF-alpha siRNA,siRNA,TNF,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+400,siSTAT3 silk sphere formulation,siRNA,STAT3,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+401,GalNAc multimeric siRNA conjugate,siRNA,PPIB,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+402,CDs-pDEAEMA/BIRC5 siRNA,siRNA,BIRC5,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+403,NLP-exosome complex STAT3 siRNA,siRNA,STAT3,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+404,P-HyOMe-WRAP5:siF3 nanoparticles,siRNA,FADD,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+405,BE-ST@siBACE1 / BE-ST@siRNA,siRNA,BACE1,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+406,PEI/PHD2 siRNA nanocomplexes,siRNA,PHD2,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+407,PLGA-CpG@ID8-M nanovaccine,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+408,siRNA SORT LNPs,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+409,Ube3a-AS ASO,ASO,Ube3a-AS,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+410,CD44 siRNA nanoplexes,siRNA,CD44,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+411,Phe-NPs/ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+412,DOTAP/siSmad4@EM,siRNA,Smad4,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+413,TPNs-siRNA,siRNA,MMP-2/MMP-9,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+414,CAP-siRNA complexes,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+415,AA-T3A-C12/siHSP47 LNP,siRNA,HSP47,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+416,r/si-ORF7 flexible nano-liposomes,siRNA,ORF7,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+417,MPLN siRNA nanoparticles,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+418,ZNF416 siRNA-loaded liposomes,siRNA,ZNF416,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+419,CS-OA coated PLGA siRNA nanoparticles,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+420,photocrosslinked bioreducible siRNA nanoparticles (XbNPs),siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+421,siSTAT3/DoCh LNP,siRNA,STAT3,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+422,GNP-delivered ASO/Ps-ASO single-strand oligonucleotides,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+423,customizable siRNA LNP materials,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+424,chitosan-mangafodipir mNP anti-eGFP siRNA,siRNA,eGFP,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+425,fully chemically modified hsiRNAs,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+426,Br-ApoE(K->A)-PMO and related P-PMO conjugates,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+427,polyester-siLuc nanoparticles,siRNA,luciferase,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+428,L2-3@siTNF-alpha LNP,siRNA,TNF-alpha,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+429,elebsiran (BRII-835),siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+430,ISIS 405879 2'-MOE ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+431,SiHa,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+432,size,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+433,similar,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+434,siRNA-based,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+435,siRNAs,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+436,siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+437,significantly,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+438,LNA ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+439,silence,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+440,silencing,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+441,designated ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+442,single,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+443,inclisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+444,single,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+445,silico,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+446,inclisiran,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+447,situ,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+448,Silk,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+449,significantly,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+450,significance,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+451,Single-cell,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+452,single-nucleotide,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+453,Since,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+454,single-cell,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+455,IC50,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+456,siTGF-,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+457,signalling,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+458,silenced,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+459,Single,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+460,signal,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+461,significant,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+462,siRNA,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+463,simultaneous,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+464,siRNA-DegradaBALL,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+465,signaling,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+466,Cas6-CBS,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+467,situ,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+468,siNTC,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+469,significant,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+470,Simply,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+471,similar,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+472,siRNA-mediated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+473,simulations,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+474,significance,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+475,similarity,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+476,silencing,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+477,sites,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+478,silences,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+479,signaling,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+480,signatures,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+481,sink,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+482,signaling,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+483,sites,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+484,significant,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+485,siRNA-Loaded,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+486,Sirius,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+487,unspecified CpG oligodeoxynucleotide,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+488,Single,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+489,significantly,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+490,silencing,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+491,single-strand,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+492,single-stranded,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+493,patisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+494,unspecified ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+495,site-specific,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+496,YBX1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+497,Since,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+498,silica,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+499,signature,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+500,simultaneously,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+501,after ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+502,site,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+503,simulations,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+504,side,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+505,signaling-particularly,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+506,siRNA-treated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+507,siRNA-Lipid,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+508,CO2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+509,SiRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+510,Silencing,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+511,Similarly,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+512,Signaling,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+513,size,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+514,tofersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+515,Signal,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+516,AAV8,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+517,MnO2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+518,SMARCAL1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+519,significantly,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+520,sizes,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+521,single-patient,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+522,AZD8701,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+523,Sigma-Aldrich,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+524,SARM1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+525,elebsiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+526,siRNA-Silencing,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+527,SiRNA-Loaded,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+528,Silica,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+529,siRNA-induced,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+530,similarly,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+531,siPD-L1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+532,CHO2353,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+533,signatures-driven,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+534,side,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+535,CD107a,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+536,CD8,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+537,simultaneous,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+538,Single-guide,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+539,significant,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+540,CD19-targeted,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+541,silico,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+542,nM ASO,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+543,since,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+544,signs,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+545,Site-blocking,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+546,signals,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+547,adult ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+548,simple,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+549,IC50,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+550,Sigma,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+551,fitusiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+552,siRNAGEM,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+553,SIM-guided,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+554,Simultaneous,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+555,Silver-Enhanced,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+556,with ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+557,single-chain,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+558,signalling,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+559,single-ascending,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+560,site,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+561,single-dose,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+562,siRNA-Based,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+563,Site-specific,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+564,mdx52,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+565,similar,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+566,signal,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+567,siATF2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+568,unspecified PMO,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+569,sided,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+570,PS ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+571,simulate,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+572,Na2SO4,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+573,CDKL5,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+574,single,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+575,silk,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+576,signal,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+577,similarly,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+578,DUX4,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+579,CO2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+580,NC1,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+581,silences,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+582,sinus,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+583,siRNA-micelles,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+584,singleton,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+585,Silver,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+586,siRNAs,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+587,RAC1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+588,simulations,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+589,SIRT1-regulated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+590,side,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+591,Hsc70-Bim,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+592,silence,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+593,Silencers,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+594,single-walled,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+595,Rab3a-directed,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+596,siMDR1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+597,simulate,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+598,silenced,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+599,inotersen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+600,the ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+601,Significant,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+602,signaling,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+603,siRNA-Mediated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+604,silk,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+605,SIRT4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+606,SiRNA-mediated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+607,siRNA-silenced,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+608,silencing,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+609,Similar,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+610,SIRT6-mediated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+611,simulation,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+612,silico,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+613,multifunctional ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+614,similar,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+615,Siderophore,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+616,Signaling,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+617,sized,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+618,siRNA-MANF,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+619,single-dose,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+620,of ASO,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+621,siRNA-Bckdhb,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+622,Since,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+623,SIGNIFICANCE,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+624,sidechain,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+625,situ,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+626,vutrisiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+627,which ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+628,Silencing,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+629,PS-ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+630,CP05,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+631,AMO122,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+632,two ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+633,SQY51,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+634,siDUX4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+635,Atxn2-CAG100-Knockin,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+636,unconjugated ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+637,silver-based,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+638,site,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+639,sizes,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+640,SIRT2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+641,site-1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+642,CD36,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+643,ARS2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+644,BIIB078-treated,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+645,PCSK9,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+646,kgHordeolum000001,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+647,single-base,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+648,Simulations,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+649,size,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+650,siRNA-Biopolymer,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+651,signals,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+652,Single-dose,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+653,CgALDH6A1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+654,simplified,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+655,Situ,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+656,following ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+657,olezarsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+658,significance,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+659,signifies,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+660,BHF7,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+661,silencer,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+662,Cyp2e1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+663,lumasiran,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+664,Sialic,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+665,Signaling,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+666,Single-Cell,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+667,bepirovirsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+668,Tox2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+669,Single-Dose,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+670,The ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+671,TREM2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+672,Similarly,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+673,pTrc99a,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+674,siFibrinogen,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+675,SIRT2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+676,signatures,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+677,NPM1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+678,volanesorsen,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+679,and ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+680,hDMDdel52,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+681,ABCA4,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+682,similarity,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+683,AD3-CL1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+684,HEK293,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+685,Both ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+686,Simple,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+687,MBNL1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+688,some ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+689,single-center,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+690,Single,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+691,SDP1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+692,siRBM3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+693,siPLK1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+694,sites,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+695,Single-Stranded,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+696,PS-cEt ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+697,pathology19,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+698,TCID50,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+699,antimiR132,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+700,Simultaneous,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+701,CD8,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+702,Side,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+703,components1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+704,of ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+705,Simplifying,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+706,TLR9,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+707,silica-based,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+708,siRNA,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+709,silences,CpG oligodeoxynucleotide,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+710,simple,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+711,since,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+712,Sixty-five,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+713,single-ascending-dose,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+714,Sirtuin,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+715,simulated,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+716,nusinersen,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+717,DG9-Conjugated,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+718,Site,PMO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+719,SIRT1-mediated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+720,Single-cell,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+721,silencing-guided,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+722,NCT05392114,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+723,simplification,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+724,SIRT6-regulated,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+725,siHIF-,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+726,simplification,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+727,single-ascending-dose,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+728,sli-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+729,CCR5 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+730,hAgo2-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+731,e8-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+732,DICER siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+733,bulge-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+734,P2Y siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+735,GFP siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+736,TNFR1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+737,siCD46,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+738,MED-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+739,HBV siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+740,SNCG siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+741,siDirect2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+742,siMek1s,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+743,EGFP siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+744,RTP801 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+745,fork-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+746,SARS- siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+747,PE- siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+748,SNRPD3 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+749,PCBP2 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+750,INCENP siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+751,HCV siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+752,dicer-substrate-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+753,rnd-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+754,RAS siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+755,Peptide-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+756,ss-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+757,PARP1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+758,NET1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+759,SNF2H siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+760,E6 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+761,RANK siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+762,NR1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+763,MEK siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+764,short ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+765,LEDGF siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+766,siRNA-4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+767,apoCIII-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+768,siRNA-7,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+769,BRAFV600E siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+770,EV siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+771,ALS- siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+772,siRNA45,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+773,EV71 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+774,TAK1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+775,siRNA-M184V,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+776,WNV siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+777,DNP-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+778,F7-1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+779,DNA-modified siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+780,ATXN3-AON,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+781,modified duplex,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+782,UNA-T siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+783,siCD46 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+784,BTK siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+785,GR18-3 ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+786,PCSK9 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+787,ss-siRNA,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+788,SOD-1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+789,VIR-2218,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+790,siRNA-5,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+791,LNA-PS ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+792,SCR ASO,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+793,siRNA-604,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+794,DCA-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+795,THP-1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+796,siVIM-270,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+797,RAB18,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+798,SOD1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+799,STAT3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+800,DM1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+801,199-401,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+802,RILP shRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+803,siNT-1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+804,siVwf5,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+805,shS1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+806,siCtle1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+807,70 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+808,siSdf1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+809,siCdc2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+810,RIsearch2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+811,shR6,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+812,CDCA7L shRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+813,27-32,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+814,AF9,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+815,60 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+816,HoxA1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+817,353 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+818,IDH1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+819,siR-04,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+820,si2A-AF555,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+821,H1-shRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+822,EIF-5A-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+823,shRNA18,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+824,000 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+825,TGFBR2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+826,siEGFP1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+827,Ago2; Ago1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+828,MBD6 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+829,TNFR1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+830,siGL3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+831,14-8 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+832,10-5,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+833,TS1-ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+834,S10-1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+835,SNA2-ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+836,TMEM16a,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+837,JQ1-ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+838,SNORA13,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+839,GNAO1-neurodevelopmental,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+840,SSR-5,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+841,APOE-1 ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+842,MeCP2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+843,L858R ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+844,STAT6-targeting,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+845,PC-3,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+846,STAT6,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+847,T0 ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+848,TGFBR2-A,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+849,45-47,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+850,CD-1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+851,WRN-108,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+852,KCNT1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+853,HIV-1,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+854,PS-ASO,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+855,BLOC1S1,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+856,siRNA-3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+857,DFNA2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+858,NRAS ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+859,ASO-1570,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+860,1504-818,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+861,MECP2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+862,CALM2 ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+863,siTie2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+864,IGF-1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+865,PRNP ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+866,shRPL9,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+867,MALAT1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+868,11-15,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+869,ASO-001933,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+870,GAAA-3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+871,WT siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+872,BCL-2,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+873,T39 ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+874,NR2E3-Associated,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+875,SSO-1,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+876,CTGTAGGCACCATCAAT-3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+877,F5-3,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+878,VEGF siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+879,42-49,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+880,PCSK9 ASO,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+881,HTT siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+882,IGF2BP2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+883,AAV9; CMT1A,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+884,FGFR2 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+885,IRS2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+886,modified siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+887,LNP-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+888,PKM-ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+889,AsOBP21f,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+890,shRNA-GNEM743T,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+891,PSMD1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+892,si098-DV29P,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+893,YAP1; WWTR1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+894,ACTB ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+895,TNF ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+896,EGFR siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+897,A4GALT-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+898,15 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+899,CD47,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+900,EGFR-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+901,BACE1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+902,UU-3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+903,NSUN4; CD8,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+904,sFRP2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+905,siSmyd3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+906,DUX4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+907,CD39,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+908,siRNA2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+909,siRNA8,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+910,CD81 ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+911,CXCR4-Targeted,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+912,SMILR siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+913,KRAS siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+914,SSEA-2,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+915,0001 ASO,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+916,siSTT1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+917,PA5-78644,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+918,STAT3,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+919,EZH2-driven,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+920,JAK1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+921,PH-762,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+922,CCL7,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+923,HIF-1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+924,APOE ASO,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+925,Il6,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+926,BC-893,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+927,JAK1-selective,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+928,RBCEV siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+929,modified siRNA,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+930,Atp1a2; SOD1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+931,C5-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+932,siIGF1R-1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+933,TR-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+934,A01406-33,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+935,siT10,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+936,siCpWnt3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+937,KCNQ1; QT1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+938,siHJ1D8,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+939,LINC01257,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+940,CAG-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+941,ORF1ab,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+942,siUC7,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+943,siCoV3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+944,207 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+945,AS-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+946,ADAR1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+947,TPPP siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+948,eIF3m,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+949,85 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+950,SMARCB1,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+951,Serpinh1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+952,CEP290; LCA10,ASO/siRNA mixed context,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+953,GluN3A,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+954,7C1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+955,Upf3b,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+956,89E-06,ASO,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+957,LNA-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+958,shRT5,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+959,siCIP2A,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+960,MORC-1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+961,HMGB1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+962,000 shRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+963,TLR-3,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+964,80 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+965,OVCAR-8,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+966,PINK1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+967,siRND4,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+968,THIOMAB-siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+969,20-70,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+970,IKK1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+971,siEphA2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+972,HIV-1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+973,GAPDH siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+974,DARPP-32 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+975,NRF2; KEAP1; CCL11,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+976,2016-27,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+977,CSNK2A1 siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+978,PEG-2000,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+979,SSB siRNA,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+980,QGP-1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+981,STAT6,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+982,LFA-1,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+983,LRRK2,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00
+984,21-5,siRNA,,,,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation,,,,,,needs_curator_verification,,2026-06-02T21:11:39+00:00

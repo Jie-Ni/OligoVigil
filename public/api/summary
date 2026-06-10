@@ -1,0 +1,268 @@
+{
+  "modality": [
+    {
+      "label": "siRNA",
+      "n": 581
+    },
+    {
+      "label": "ASO",
+      "n": 330
+    },
+    {
+      "label": "ASO/siRNA mixed context",
+      "n": 40
+    },
+    {
+      "label": "PMO",
+      "n": 34
+    },
+    {
+      "label": "CpG oligodeoxynucleotide",
+      "n": 13
+    },
+    {
+      "label": "aptamer",
+      "n": 7
+    },
+    {
+      "label": "miRNA agomir",
+      "n": 3
+    },
+    {
+      "label": "ASO/RNA mixed context",
+      "n": 1
+    },
+    {
+      "label": "DNA nanostructure",
+      "n": 1
+    },
+    {
+      "label": "DNA/RNA heteroduplex oligonucleotide",
+      "n": 1
+    },
+    {
+      "label": "PMOplus",
+      "n": 1
+    }
+  ],
+  "sources_by_type": [
+    {
+      "label": "literature_discovery",
+      "n": 36209
+    },
+    {
+      "label": "review_reference",
+      "n": 13
+    },
+    {
+      "label": "clinical_context",
+      "n": 5
+    },
+    {
+      "label": "literature_signal",
+      "n": 5
+    },
+    {
+      "label": "closest_work",
+      "n": 4
+    },
+    {
+      "label": "method_reference",
+      "n": 3
+    },
+    {
+      "label": "tool_reference",
+      "n": 2
+    },
+    {
+      "label": "challenge_notice",
+      "n": 1
+    },
+    {
+      "label": "industry_guidance",
+      "n": 1
+    },
+    {
+      "label": "nar_editorial",
+      "n": 1
+    },
+    {
+      "label": "nar_guideline",
+      "n": 1
+    }
+  ],
+  "sources_by_year": [
+    {
+      "label": "2026",
+      "n": 4109
+    },
+    {
+      "label": "2025",
+      "n": 5131
+    },
+    {
+      "label": "2024",
+      "n": 2474
+    },
+    {
+      "label": "2023",
+      "n": 1398
+    },
+    {
+      "label": "2022",
+      "n": 1083
+    },
+    {
+      "label": "2021",
+      "n": 1104
+    },
+    {
+      "label": "2020",
+      "n": 1040
+    },
+    {
+      "label": "2019",
+      "n": 918
+    },
+    {
+      "label": "2018",
+      "n": 942
+    },
+    {
+      "label": "2017",
+      "n": 1000
+    }
+  ],
+  "candidate_by_domain": [
+    {
+      "label": "offtarget",
+      "n": 28649
+    },
+    {
+      "label": "toxicity",
+      "n": 6201
+    },
+    {
+      "label": "delivery",
+      "n": 2630
+    },
+    {
+      "label": "assay",
+      "n": 1889
+    },
+    {
+      "label": "chemistry",
+      "n": 1080
+    },
+    {
+      "label": "benchmark",
+      "n": 665
+    }
+  ],
+  "candidate_by_confidence": [
+    {
+      "label": "low_candidate",
+      "n": 19562
+    },
+    {
+      "label": "medium_candidate",
+      "n": 14698
+    },
+    {
+      "label": "high_candidate",
+      "n": 6854
+    }
+  ],
+  "toxicity_by_category": [
+    {
+      "label": "hepatic",
+      "n": 337
+    },
+    {
+      "label": "general safety",
+      "n": 105
+    },
+    {
+      "label": "renal",
+      "n": 42
+    },
+    {
+      "label": "toxicity",
+      "n": 34
+    },
+    {
+      "label": "immunotoxicity",
+      "n": 24
+    },
+    {
+      "label": "chemistry",
+      "n": 21
+    },
+    {
+      "label": "delivery",
+      "n": 20
+    },
+    {
+      "label": "neurological",
+      "n": 15
+    },
+    {
+      "label": "hematologic",
+      "n": 10
+    },
+    {
+      "label": "hematological",
+      "n": 6
+    },
+    {
+      "label": "general toxicity",
+      "n": 5
+    },
+    {
+      "label": "genotoxicity",
+      "n": 2
+    }
+  ],
+  "offtarget_by_type": [
+    {
+      "label": "seed-mediated off-target effect",
+      "n": 42
+    },
+    {
+      "label": "hybridization/mismatch off-target effect",
+      "n": 26
+    },
+    {
+      "label": "transcriptome-level off-target effect",
+      "n": 24
+    },
+    {
+      "label": "off-target evidence",
+      "n": 12
+    },
+    {
+      "label": "sequence-specificity/off-target evidence",
+      "n": 2
+    },
+    {
+      "label": "TLR3-mediated off-target immune activation",
+      "n": 1
+    },
+    {
+      "label": "minimal off-target activity",
+      "n": 1
+    },
+    {
+      "label": "seed-based off-target suppression",
+      "n": 1
+    },
+    {
+      "label": "seed-mediated off-target",
+      "n": 1
+    },
+    {
+      "label": "unexpected cGAS signaling suppression",
+      "n": 1
+    }
+  ]
+}

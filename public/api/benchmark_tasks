@@ -1,0 +1,40 @@
+[
+  {
+    "task_name": "toxicity_safety_v0_1",
+    "version": "20260604_resource_depth_v42",
+    "doi_status": "pending_public_archive_before_submission",
+    "prediction_target": "oligonucleotide safety endpoint triage from molecule/modality/provenance fields",
+    "label_source": "toxicity_endpoint.endpoint_category and endpoint_name",
+    "eligibility_rule": "curator_verified accept evidence_grade in A/B",
+    "split_strategy": "stored_source_plus_molecule_grouped_splits",
+    "train_rows": "218",
+    "validation_rows": "23",
+    "test_rows": "22",
+    "grade_a_rows": "180",
+    "grade_b_rows": "83",
+    "metrics": "AUROC; AUPRC; macro-F1; PCC/Spearman or MSE only for numeric toxicity values",
+    "baseline_models": "train-majority; modality-prior; evidence-grade-prior; target-prior deterministic baselines",
+    "leakage_policy": "stored splits keep records sharing source identifier and molecule/cohort in one split",
+    "download_reference_splits": "/api/download/benchmark_reference_splits.csv",
+    "download_task_cards": "/api/manifest/benchmark_task_cards_v1.csv"
+  },
+  {
+    "task_name": "offtarget_safety_v0_1",
+    "version": "20260604_resource_depth_v42",
+    "doi_status": "pending_public_archive_before_submission",
+    "prediction_target": "observed off-target signal or off-target evidence type",
+    "label_source": "offtarget_evidence.evidence_type and is_computational_prediction",
+    "eligibility_rule": "curator_verified accept evidence_grade in A/B",
+    "split_strategy": "stored_source_plus_molecule_grouped_splits",
+    "train_rows": "66",
+    "validation_rows": "5",
+    "test_rows": "10",
+    "grade_a_rows": "32",
+    "grade_b_rows": "49",
+    "metrics": "AUROC; AUPRC; macro-F1; PCC/Spearman for ranked off-target risk",
+    "baseline_models": "train-majority; modality-prior; evidence-grade-prior; target-prior deterministic baselines",
+    "leakage_policy": "stored splits keep records sharing source identifier and molecule/cohort in one split",
+    "download_reference_splits": "/api/download/benchmark_reference_splits.csv",
+    "download_task_cards": "/api/manifest/benchmark_task_cards_v1.csv"
+  }
+]

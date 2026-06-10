@@ -1,0 +1,1013 @@
+id,canonical_name,modality_id,target_gene_symbol,disease_context,therapeutic_status,external_ids,created_at,sense_sequence,antisense_sequence,guide_sequence,passenger_sequence,seed_region,backbone_chemistry,sugar_modification,base_modification,conjugate_delivery,sequence_annotation_status,modification_annotation_status
+1,ASO toxicity study cohort from Bhamra 2025,1,,,study_cohort,"{""pmid"":""41078095""}",2026-06-01T00:00:00Z,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+2,siRNAEfficacyDB source cohort,2,,,closest_work_context,"{""pmid"":""39541343""}",2026-06-01T00:00:00Z,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+3,CMsiRNAdb source cohort,2,,,closest_work_context,"{""pmid"":""41484819""}",2026-06-01T00:00:00Z,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+4,SNA-modified GalNAc-siRNA panel from PMID 41994868,2,TTR,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+5,siVIM-270 chemical modification panel from PMID 41467115,2,VIM,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+6,RGLS4326,1,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+7,APP-AON/ATXN3-AON/HTT-AON panel from PMID 41066632,1,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+8,PNA-braced ASO panel from PMID 38042877,1,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+9,DM1 ASO panel from PMID 37200862,1,DMPK,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+10,ALN-HBV/ALN-HBV02 GalNAc-siRNA panel from PMID 35736224,2,HBV,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+11,GalNAc-siRNA panel from PMID 29459660,2,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+12,negative-control siRNA panel from PMID 29860520,2,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+13,GSK2910546A ASO gapmer panel from PMID 26338776,1,BACH1,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+14,phosphorothioate ASO panel from PMID 41760661,1,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+15,tool ASO safety panel from PMID 41918821,1,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+16,GalNAc-siCEBP?,2,CEBPB,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+17,5?-CP-modified PS-ASO panel from PMID 41467114,1,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+18,BND6482,1,,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+19,L2-Htt,2,HTT,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+20,TP-siRC@tHyNPs (CYP3A4-siRNA),2,CYP3A4,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+21,anti-miR-21-SNA,1,MIR21,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+22,LEM-S401,2,CTGF,,,{},2026-06-01T20:23:34+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+23,2'-diol and 3'-overhang modified STAT3 siRNA panel from PMID 41755844,2,STAT3,,,{},2026-06-01T22:52:59+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+24,hypoxanthine-substituted LNA-gapmer ASO1 panel from PMID 41928909,1,Mapt,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+25,nebulized siIL-1beta.2 from PMID 41898774,2,IL1B,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+26,RGLS4326 anti-miR-17 ASO,1,MIR17,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+27,SNS812,2,SARS-CoV-2 RdRP,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+28,PNAT524 biomolecule-conjugated ASO panel from PMID 41220634,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+29,siSNCA PEI/PPI nanoparticle panel from PMID 40978531,2,SNCA,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+30,JNJ-3989/JNJ-73763989 GalNAc-siRNA regimen from PMID 40919077,2,HBV,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+31,scFv-MML@LPCAT1si from PMID 40898177,2,LPCAT1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+32,Cet/siFAK@ZIF-8@TCM from PMID 40735032,2,PTK2,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+33,EM/siKEAP1@Fe-MOF@HA from PMID 40688667,2,KEAP1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+34,DCA-siRNADUX4/DU01 from PMID 40673060,2,DUX4,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+35,hEV@FAP-siTGFbeta1 from PMID 40046817,2,TGFB1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+36,siAURKA-loaded milk extracellular vesicles from PMID 40896585,2,AURKA,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+37,BSCgal gold-siRNA supracluster from PMID 39448881,2,LGALS1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+38,G-clamp/BNAP-AEO modified Malat1 ASO panel from PMID 38978695,1,MALAT1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+39,aCSF+-formulated CNS ASO/di-siRNA panel from PMID 39554992,7,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+40,pVEC-ASO panel from PMID 38391508,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+41,LNP-siTGFbetaRI from PMID 39264964,2,TGFBR1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+42,CT102,1,IGF1R,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+43,LKA-LP@STAT3-siRNA from PMID 40074308,2,STAT3,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+44,GxS5/siRNA polyplexes from PMID 39263399,2,tdTomato,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+45,GBE-PLL/H2O-PLL solid lipid nanoparticle siRNA carriers from PMID 39684010,2,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+46,P-E/S Lip PD-L1 siRNA nanovesicle from PMID 39068444,2,CD274,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+47,SWNT-PL-PEG-S-S-siLUC conjugate from PMID 39627280,2,LUC,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+48,OligoA-11/Skeen-11 phosphorothioate oligonucleotide panel from PMID 37185731,1,G6PD,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+49,miR-125a-5p agomir from PMID 36632217,8,MIR125A,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+50,CLCN7G215R-siRNA-SiS12 formulation from PMID 37680985,2,CLCN7,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+51,RBCEV-delivered siMstn and siMlycd from PMID 37016578,2,MSTN; MLYCD,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+52,ASO1-ASO3 modified ASO panel from PMID 36700050,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+53,TS1-ASO nucleobase modification panel from PMID 35801870,1,TTR,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+54,ESC+ GalNAc-siRNA D1/D4/D6/D9 panel from PMID 35736224,2,TTR; HAO1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+55,DLin-MC3-DMA-conjugated siRNA panel from PMID 35917865,2,HTT; PPIB,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+56,siLuc-ALC-0315 LNP from PMID 35642083,2,LUC,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+57,PEG-SSN/siRNA nanoparticle formulation from PMID 36412852,2,EGFR,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+58,AMC11 CDplex siRNA panel from PMID 36365241,2,RHEB; MAPK1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+59,GalNAc-G-quadruplex oligonucleotide panel from PMID 35745067,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+60,A10-3.2/siCAT-1/3WJ nanodroplets from PMID 35037525,2,SLC7A1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+61,CYP3A5 PMO/PSO panel from PMID 33633318,1,CYP3A5,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+62,HsPCSK9-1811-LNA/GalNAc ASO panel from PMID 34760338,1,PCSK9,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+63,LNA-ASO renal histopathology panel from PMID 34629736,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+64,LUNAR-REPU910 siRNA from PMID 33738134,2,AR,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+65,LNPssPalmO-Phe-ASOap/ASOgr from PMID 33924589,1,APOB; NR3C1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+66,2'-O-methoxyethyl chimeric ASO tolerability dataset from PMID 34242101,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+67,dual-RGD/EGFR siRNA protein nanocarrier from PMID 34959463,2,EGFR,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+68,PMO-P6 conjugate from PMID 34841414,1,DMD,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+69,PM1(GT/siMMP-9) hydrogel from PMID 33952251,2,MMP9,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+70,stereocontrolled cEt gapmer ASO panel from PMID 31980820,1,MALAT1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+71,306-O12B-3 ASO/LNP formulation from PMID 32160706,1,GFP,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+72,H51(+67)W tcDNA-ASO from PMID 31881528,1,DMD,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+73,GalNAc AON-B/D/E panel from PMID 30583097,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+74,GalNAc-siRNA hepatotoxicity panel with REVERSIR from PMID 29459660,2,HAO1; TTR,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+75,236-LNA-ASO hepatotoxicity screening panel from PMID 29499955,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+76,nephrotoxic AON A/B/C panel from PMID 28325303,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+77,Acsl1/GR LNA gapmer panel from PMID 27461380,1,ACSL1; NR3C1,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+78,toxic LNA/MOE gapmer ASO panel from PMID 26553810,1,long pre-mRNA transcripts,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+79,PMO-GF formulation from PMID 26964641,1,DMD,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+80,3-8-3 LNA gapmer hepatotoxicity panel from PMID 24550163,1,,,,{},2026-06-01T22:53:00+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+81,siRNA candidate from PMID 41020503,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+82,Bepirovirsen,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+83,siRNA candidate from PMID 41076269,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+84,siRNA candidate from PMID 41716677,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+85,siRNA candidate from PMID 40692538,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+86,Plozasiran,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+87,siRNA candidate from PMID 40825982,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+88,siRNA candidate from PMID 40574039,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+89,siRNA candidate from PMID 40314193,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+90,siRNA candidate from PMID 41214041,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+91,siRNA candidate from PMID 40503175,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+92,siRNA candidate from PMID 39896757,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+93,Inclisiran,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+94,ASO candidate from PMID 37365583,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+95,siRNA candidate from PMID 36302886,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+96,ASO candidate from PMID 28853853,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+97,PMO candidate from PMID 24806225,9,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+98,Imetelstat,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+99,Inotersen,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+100,ASO candidate from PMID 36229039,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+101,ASO candidate from PMID 29499955,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+102,siRNA candidate from PMID 29246303,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+103,ASO candidate from PMID 41978261,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+104,SRN001,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+105,Alox15-targeting siRNA from PMID 41847300,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+106,ASO candidate from PMID 39850319,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+107,ASO candidate from PMID 40243849,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+108,TLR9-targeted; STAT3; PD1-targeting ASO from PMID 40214214,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+109,Imetelstat,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+110,siRNA candidate from PMID 41625362,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+111,siRNA candidate from PMID 41360814,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+112,CD11b-modified-targeting siRNA from PMID 40977834,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+113,siRNA candidate from PMID 40380202,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+114,Angptl4-targeting ASO from PMID 39259836,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+115,siRNA candidate from PMID 39606561,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+116,siRNA candidate from PMID 39065632,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+117,siRNA candidate from PMID 38089931,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+118,ASO candidate from PMID 36631935,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+119,ASO candidate from PMID 37346977,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+120,siRNA candidate from PMID 38168301,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+121,siRNA candidate from PMID 37273265,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+122,ASO candidate from PMID 33567808,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+123,siRNA candidate from PMID 35992044,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+124,siRNA candidate from PMID 30544191,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+125,ASO candidate from PMID 29107969,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+126,siRNA candidate from PMID 41897327,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+127,siRNA candidate from PMID 41743270,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+128,ASO candidate from PMID 25539920,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+129,siRNA candidate from PMID 40654369,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+130,Nedosiran,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+131,DNA/RNA heteroduplex oligonucleotide candidate from PMID 39252874,10,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+132,Viltolarsen,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+133,ASO candidate from PMID 32530964,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+134,siRNA candidate from PMID 40737088,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+135,siRNA candidate from PMID 41646886,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+136,siRNA candidate from PMID 39813044,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+137,siRNA candidate from PMID 39231537,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+138,siRNA candidate from PMID 35921401,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+139,siRNA candidate from PMID 35071927,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+140,siRNA candidate from PMID 35205363,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+141,ASO candidate from PMID 34388351,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+142,siRNA candidate from PMID 29450406,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+143,siRNA candidate from PMID 21687525,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+144,siRNA candidate from PMID 41949334,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+145,ASO candidate from PMID 41754970,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+146,Vutrisiran,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+147,ASO candidate from PMID 41399312,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+148,siRNA candidate from PMID 41755009,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+149,siRNA candidate from PMID 41810468,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+150,siRNA candidate from PMID 41477663,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+151,siRNA candidate from PMID 41896932,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+152,Nusinersen,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+153,Pelacarsen,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+154,RO7239958,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+155,ASO candidate from PMID 40654713,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+156,ASO candidate from PMID 41169576,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+157,ASO/siRNA mixed context candidate from PMID 41268339,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+158,siRNA candidate from PMID 41439881,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+159,siRNA candidate from PMID 40911569,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+160,siRNA candidate from PMID 41256914,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+161,ASO candidate from PMID 40604820,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+162,siRNA candidate from PMID 40006524,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+163,Fitusiran,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+164,Ce6-targeting siRNA from PMID 41299672,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+165,siRNA candidate from PMID 41007671,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+166,siRNA candidate from PMID 40573259,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+167,siRNA candidate from PMID 40433119,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+168,siRNA candidate from PMID 39990947,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+169,siRNA candidate from PMID 39934917,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+170,siRNA candidate from PMID 40444266,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+171,siRNA candidate from PMID 39829590,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+172,siRNA candidate from PMID 41304812,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+173,PMO candidate from PMID 39119918,9,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+174,Olezarsen,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+175,ASO/siRNA mixed context candidate from PMID 38271438,7,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+176,siRNA candidate from PMID 39539730,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+177,Fesomersen,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+178,siRNA candidate from PMID 38126895,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+179,siRNA candidate from PMID 39274180,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+180,siRNA candidate from PMID 39684325,2,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+181,ASO candidate from PMID 39329032,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+182,ASO candidate from PMID 37920238,1,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+183,PMO candidate from PMID 37538053,9,,,,{},2026-06-01T23:22:20+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+184,wireframe DNA origami NANP,11,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+185,unspecified siRNA,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+186,unspecified antisense oligonucleotide,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+187,SLN360,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+188,inotersen,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+189,HeyA8; seed13; GL261,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+190,RAW264; cck8,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+191,SKOV3,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+192,HER2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+193,RTR5001,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+194,casimersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+195,HepG2; LO2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+196,Nusinersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+197,Foxp3,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+198,Revusiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+199,Stk25,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+200,Huh7; MCF7; nanoparticles43,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+201,radavirsen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+202,RTR3649; RTR5001; RTR4955,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+203,TLR3; TLR7; TLR8,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+204,hDysE50,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+205,drisapersen,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+206,Inclisiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+207,fomivirsen; mipomersen; nusinersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+208,unspecified oligonucleotide,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+209,SKP2; Ago2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+210,HN1,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+211,siFmr1,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+212,ADO2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+213,HEK293T,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+214,TREM2; PI3K,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+215,CCND1; Drisapersen; Mipomersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+216,Klf15,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+217,HEK293-derived; CD34,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+218,SPC2996; PC3; CaCo2,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+219,MKK4,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+220,MC3-based,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+221,Gb3S; MC3-containing; Gb3,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+222,SLC15A2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+223,FN1,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+224,SIRT1,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+225,siPAX2; siPAX8; WT9,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+226,si097-DV29PG5; si061-DV27PG5,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+227,AS456; IC50; TRL7,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+228,RAW264; HepG2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+229,STAT3-targeted,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+230,Tofersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+231,givosiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+232,fitusiran,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+233,METTL3; Smad3,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+234,Trp53; Cy5-labeled; Mcp1,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+235,APP36; Iba1,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+236,Loop3,5,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+237,Cyr61,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+238,CD248,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+239,Trim21; Trim21-ASOs,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+240,THP1-Dual,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+241,unspecified aptamer,5,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+242,Pkd1,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+243,HSP47,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+244,inclisiran,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+245,PF4,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+246,lumasiran,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+247,ALKBH5,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+248,ANGPTL3,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+249,BAY2306001; BAY2976217,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+250,iC3b; CR3-dependent; CR3-DCC,5,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+251,revusiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+252,nusinersen,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+253,TNRC6; GW182; AGO2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+254,AGO2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+255,Ago2-binding; TLR7; TLR9-associated,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+256,siF12; siF12-A; siF12-AC9,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+257,Malat1-targeting,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+258,SPC5001,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+259,ApoB11; ApoB11-conjugated,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+260,SMN2; Nusinersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+261,LRP4; NCT05070858; cemdisiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+262,RyR2; Cy5-labeled; RyR2-targeting,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+263,PCSK9; Inclisiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+264,patisiran; givosiran; vutrisiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+265,HepG2; ARPE19,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+266,Nrf2; Keap1; GPX4,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+267,GSTK1; OSBPL8; DGAT1,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+268,PEG6000,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+269,Cy5-siRNA; HepG2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+270,PEG2000,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+271,NCT05030428; inclisiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+272,CCL2; MMP9,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+273,CT26,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+274,PNPLA3; rs738409; PNPLA3I148M,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+275,Atp5o,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+276,SPL84,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+277,NS102; ED50,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+278,AlphaFold3; sgc8c; PTK7,5,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+279,TfR1,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+280,HepG2; ACSL4,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+281,CD44,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+282,LP5-SeNP; LP1-SeNP,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+283,KAZ3,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+284,TUBB3; TUBB3-siRNA; TUBB3-LNPs,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+285,Fe3O4; CD44; IC50,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+286,miRNA34a; LNA34a; NOTCH1,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+287,siG12Ss; siG12S; KRASG12S,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+288,siBACE1,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+289,NCT05089084; Plozasiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+290,VP28; VP19,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+291,GalNAc3; GalNAc3-conjugated,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+292,SYT13; Syt13-deficient; Syt13-deficiency,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+293,BIIB078; NCT03626012; BIIB078-treated,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+294,CCA12; ETD12,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+295,SMN2; BPP8-PMO; Cy7,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+296,Ki67,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+297,PLK1,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+298,PNMVA24,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+299,nusinersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+300,MCT4,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+301,LY96; SY5Y; CD4,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+302,PCSK9; GN3; MC3-LNP,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+303,CYP2E1; AML12,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+304,HT29,5,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+305,NCT03218995,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+306,HepG2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+307,NCT03338816; givosiran,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+308,BldA50M50; MixA50; MixD50,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+309,NCT03417102; fitusiran,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+310,CpG55; rH7HA,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+311,pelacarsen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+312,CL1H6; CL1H6-LNP,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+313,GalNAc3; GalNAc3-MOE; GalNAc3-conjugated,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+314,NCT02300233; volanesorsen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+315,TPPS2a; TPPS2a-,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+316,PNPLA3; rs738409; Pnpla3-deficient,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+317,NCT01737398; Inotersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+318,BK12,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+319,Bcl2,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+320,HepG2,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+321,KL4,2,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+322,Myo1E,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+323,NCT01153932; drisapersen,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+324,DM1; MBNL1,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+325,STAT3,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+326,CD40; CD86,7,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+327,Myd88-deficient; MDA5; LGP2,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+328,ARL4C; ARL4C-targeting; CP8,1,,,,{},2026-06-01T23:45:02+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+329,log10; NCT06115993; CTR20232098,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+330,PCSK9; NCT04652726; inclisiran,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+331,DUX4; iDUX4pA,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+332,PCSK9; inclisiran,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+333,AUC0-inf; Zerlasiran,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+334,MC3; MC3-based,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+335,NCT04014335; RO7434656; sefaxersen,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+336,ED50,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+337,Cy3; HEK293,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+338,MC3-LNP,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+339,ABCG2; HCC1937; Ki67,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+340,GATHER2; NCT04435366; mm2,5,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+341,NCT04439539; FUW48; log10IU,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+342,NCT05618379; Nusinersen,7,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+343,EC50; HEK293; SY5Y,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+344,Carm1,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+345,CORE2-TIMI; NCT05079919; NCT05552326,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+346,viltolarsen,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+347,GPC3-LPPEI; GPC3-targeting; GPC3,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+348,NCT05192941; inclisiran,7,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+349,PCSK9; NCT05763875; Inclisiran,7,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+350,SOX9; MC3-DMA; siSOX9,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+351,CXCL5; PC9,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+352,NCT04971928; AUC0; Bepirovirsen,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+353,NCT05139810,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+354,CDR132L,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+355,caspase3,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+356,NCT03672188; log10; elebsiran,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+357,SN38; AS1411; SN38-loaded,5,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+358,Ago2,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+359,NCT03982186,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+360,Volanesorsen,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+361,PCSK9; NCT03060577; inclisiran,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+362,Malat1,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+363,APOC3; ANGPTL3; ANG3,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+364,ANGPTL3,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+365,antiPF4,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+366,SGLT2,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+367,GCD2,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+368,Mo2; Mo3; Argonaute2,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+369,PDCD4,1,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+370,PDIA3; oblimersen,2,,,,{},2026-06-02T12:33:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+371,Inclisiran,2,PCSK9,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+372,IL-4Ralpha ASO,1,IL4RA,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+373,Nusinersen,1,SMN2,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+374,AVI-6002/AVI-6003 PMOplus,12,,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+375,phosphorothioate ASO panel,1,,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+376,G5-GalNAc siRNA platform,2,PCSK9/AGT,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+377,TET3 siRNA lipid nanoparticles,2,TET3,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+378,luciferase siRNA LNPs with beta-triketone ionizable lipids,2,luciferase,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+379,CaP-siSlc31a1,2,SLC31A1,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+380,FW-LP@siIRF5,2,IRF5,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+381,DCA-JAK13033 siRNA,2,JAK1,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+382,siRNA nanocarriers/lipoplexes,2,,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+383,DP-EVs/siPD-L1,2,CD274,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+384,MSC-NVs-siRNA,2,,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+385,TGF-beta siRNA PMNP,2,TGFB1,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+386,siRNA polyplexes,2,Raf-1/PD-L1,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+387,NLRP3 siRNA autonomous delivery system,2,NLRP3,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+388,siRNA-loaded CaP-NP/cGM formulation,2,Chordin,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+389,prazosin-siRNA/antibody conjugate,2,PTEN,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+390,siB/QU@L-OL,2,BACE1,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+391,curcumin coacervate siRNA formulation,2,,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+392,siRNA@VG-Exos,2,IL6,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+393,LNP-SNORA49 RNA/SOX9 ASO,13,SOX9,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+394,pPB-siRNATRAF6/NMm-pPB-siRNATRAF6,2,TRAF6,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+395,pMSNC@ISG15 siRNA,2,ISG15,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+396,SANG-siRNA,2,,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+397,cationic/anionic siRNA lipoplexes,2,,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+398,ISIS 405879,1,,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+399,LNP TNF-alpha siRNA,2,TNF,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+400,siSTAT3 silk sphere formulation,2,STAT3,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+401,GalNAc multimeric siRNA conjugate,2,PPIB,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+402,CDs-pDEAEMA/BIRC5 siRNA,2,BIRC5,,,{},2026-06-02T12:33:41+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+403,NLP-exosome complex STAT3 siRNA,2,STAT3,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+404,P-HyOMe-WRAP5:siF3 nanoparticles,2,FADD,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+405,BE-ST@siBACE1 / BE-ST@siRNA,2,BACE1,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+406,PEI/PHD2 siRNA nanocomplexes,2,PHD2,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+407,PLGA-CpG@ID8-M nanovaccine,14,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+408,siRNA SORT LNPs,2,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+409,Ube3a-AS ASO,1,Ube3a-AS,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+410,CD44 siRNA nanoplexes,2,CD44,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+411,Phe-NPs/ASO,1,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+412,DOTAP/siSmad4@EM,2,Smad4,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+413,TPNs-siRNA,2,MMP-2/MMP-9,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+414,CAP-siRNA complexes,2,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+415,AA-T3A-C12/siHSP47 LNP,2,HSP47,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+416,r/si-ORF7 flexible nano-liposomes,2,ORF7,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+417,MPLN siRNA nanoparticles,2,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+418,ZNF416 siRNA-loaded liposomes,2,ZNF416,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+419,CS-OA coated PLGA siRNA nanoparticles,2,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+420,photocrosslinked bioreducible siRNA nanoparticles (XbNPs),2,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+421,siSTAT3/DoCh LNP,2,STAT3,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+422,GNP-delivered ASO/Ps-ASO single-strand oligonucleotides,1,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+423,customizable siRNA LNP materials,2,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+424,chitosan-mangafodipir mNP anti-eGFP siRNA,2,eGFP,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+425,fully chemically modified hsiRNAs,2,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+426,Br-ApoE(K->A)-PMO and related P-PMO conjugates,9,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+427,polyester-siLuc nanoparticles,2,luciferase,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+428,L2-3@siTNF-alpha LNP,2,TNF-alpha,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+429,elebsiran (BRII-835),2,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+430,ISIS 405879 2'-MOE ASO,1,,,,{},2026-06-02T14:37:29+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+431,SiHa,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+434,siRNA-based,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+435,siRNAs,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+438,LNA ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+441,designated ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+443,inclisiran,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+446,inclisiran,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+447,situ,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+448,Silk,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+451,Single-cell,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+452,single-nucleotide,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+454,single-cell,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+455,IC50,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+456,siTGF-,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+457,signalling,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+458,silenced,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+462,siRNA,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+464,siRNA-DegradaBALL,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+466,Cas6-CBS,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+467,situ,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+468,siNTC,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+470,Simply,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+472,siRNA-mediated,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+473,simulations,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+480,signatures,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+481,sink,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+485,siRNA-Loaded,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+486,Sirius,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+487,unspecified CpG oligodeoxynucleotide,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+491,single-strand,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+492,single-stranded,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+493,patisiran,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+494,unspecified ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+495,site-specific,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+496,YBX1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+498,silica,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+499,signature,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+500,simultaneously,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+501,after ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+503,simulations,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+505,signaling-particularly,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+506,siRNA-treated,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+507,siRNA-Lipid,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+508,CO2,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+514,tofersen,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+516,AAV8,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+517,MnO2,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+518,SMARCAL1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+521,single-patient,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+522,AZD8701,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+523,Sigma-Aldrich,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+524,SARM1,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+525,elebsiran,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+526,siRNA-Silencing,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+527,SiRNA-Loaded,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+528,Silica,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+529,siRNA-induced,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+530,similarly,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+531,siPD-L1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+532,CHO2353,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+533,signatures-driven,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+535,CD107a,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+536,CD8,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+538,Single-guide,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+540,CD19-targeted,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+542,nM ASO,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+545,Site-blocking,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+547,adult ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+549,IC50,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+550,Sigma,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+551,fitusiran,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+552,siRNAGEM,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+553,SIM-guided,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+555,Silver-Enhanced,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+556,with ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+557,single-chain,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+558,signalling,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+559,single-ascending,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+561,single-dose,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+562,siRNA-Based,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+563,Site-specific,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+564,mdx52,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+567,siATF2,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+568,unspecified PMO,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+569,sided,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+570,PS ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+571,simulate,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+572,Na2SO4,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+573,CDKL5,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+575,silk,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+577,similarly,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+578,DUX4,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+579,CO2,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+580,NC1,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+582,sinus,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+583,siRNA-micelles,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+584,singleton,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+585,Silver,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+586,siRNAs,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+587,RAC1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+588,simulations,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+589,SIRT1-regulated,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+591,Hsc70-Bim,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+593,Silencers,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+594,single-walled,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+595,Rab3a-directed,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+596,siMDR1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+597,simulate,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+598,silenced,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+599,inotersen,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+600,the ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+603,siRNA-Mediated,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+604,silk,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+605,SIRT4,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+606,SiRNA-mediated,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+607,siRNA-silenced,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+610,SIRT6-mediated,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+611,simulation,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+613,multifunctional ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+615,Siderophore,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+618,siRNA-MANF,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+619,single-dose,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+620,of ASO,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+621,siRNA-Bckdhb,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+624,sidechain,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+625,situ,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+626,vutrisiran,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+627,which ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+629,PS-ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+630,CP05,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+631,AMO122,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+632,two ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+633,SQY51,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+634,siDUX4,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+635,Atxn2-CAG100-Knockin,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+636,unconjugated ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+637,silver-based,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+640,SIRT2,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+641,site-1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+642,CD36,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+643,ARS2,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+644,BIIB078-treated,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+645,PCSK9,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+646,kgHordeolum000001,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+647,single-base,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+648,Simulations,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+650,siRNA-Biopolymer,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+652,Single-dose,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+653,CgALDH6A1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+654,simplified,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+655,Situ,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+656,following ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+657,olezarsen,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+659,signifies,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+660,BHF7,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+661,silencer,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+662,Cyp2e1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+663,lumasiran,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+664,Sialic,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+666,Single-Cell,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+667,bepirovirsen,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+668,Tox2,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+669,Single-Dose,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+670,The ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+671,TREM2,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+672,Similarly,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+673,pTrc99a,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+674,siFibrinogen,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+675,SIRT2,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+676,signatures,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+677,NPM1,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+678,volanesorsen,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+679,and ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+680,hDMDdel52,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+681,ABCA4,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+683,AD3-CL1,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+684,HEK293,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+685,Both ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+687,MBNL1,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+688,some ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+689,single-center,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+691,SDP1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+692,siRBM3,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+693,siPLK1,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+695,Single-Stranded,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+696,PS-cEt ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+697,pathology19,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+698,TCID50,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+699,antimiR132,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+701,CD8,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+703,components1,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+704,of ASO,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+705,Simplifying,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+706,TLR9,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+707,silica-based,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+708,siRNA,14,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+712,Sixty-five,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+713,single-ascending-dose,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+714,Sirtuin,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+715,simulated,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+716,nusinersen,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+717,DG9-Conjugated,9,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+719,SIRT1-mediated,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+720,Single-cell,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+721,silencing-guided,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+722,NCT05392114,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+723,simplification,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+724,SIRT6-regulated,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+725,siHIF-,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+726,simplification,1,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+727,single-ascending-dose,2,,,,{},2026-06-02T15:59:55+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+728,sli-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+729,CCR5 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+730,hAgo2-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+731,e8-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+732,DICER siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+733,bulge-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+734,P2Y siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+735,GFP siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+736,TNFR1 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+737,siCD46,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+738,MED-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+739,HBV siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+740,SNCG siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+741,siDirect2,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+742,siMek1s,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+743,EGFP siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+744,RTP801 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+745,fork-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+746,SARS- siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+747,PE- siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+748,SNRPD3 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+749,PCBP2 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+750,INCENP siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+751,HCV siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+752,dicer-substrate-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+753,rnd-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+754,RAS siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+755,Peptide-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+756,ss-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+757,PARP1 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+758,NET1 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+759,SNF2H siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+760,E6 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+761,RANK siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+762,NR1 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+763,MEK siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+764,short ASO,1,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+765,LEDGF siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+766,siRNA-4,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+767,apoCIII-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+768,siRNA-7,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+769,BRAFV600E siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+770,EV siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+771,ALS- siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+772,siRNA45,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+773,EV71 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+774,TAK1 siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+775,siRNA-M184V,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+776,WNV siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+777,DNP-siRNA,2,,,,{},2026-06-02T18:08:40+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+778,F7-1 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+779,DNA-modified siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+780,ATXN3-AON,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+781,modified duplex,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+782,UNA-T siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+783,siCD46 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+784,BTK siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+785,GR18-3 ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+786,PCSK9 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+787,ss-siRNA,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+788,SOD-1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+789,VIR-2218,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+790,siRNA-5,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+791,LNA-PS ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+792,SCR ASO,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+793,siRNA-604,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+794,DCA-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+795,THP-1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+796,siVIM-270,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+797,RAB18,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+798,SOD1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+799,STAT3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+800,DM1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+801,199-401,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+802,RILP shRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+803,siNT-1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+804,siVwf5,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+805,shS1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+806,siCtle1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+807,70 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+808,siSdf1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+809,siCdc2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+810,RIsearch2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+811,shR6,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+812,CDCA7L shRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+813,27-32,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+814,AF9,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+815,60 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+816,HoxA1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+817,353 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+818,IDH1 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+819,siR-04,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+820,si2A-AF555,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+821,H1-shRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+822,EIF-5A-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+823,shRNA18,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+824,000 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+825,TGFBR2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+826,siEGFP1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+827,Ago2; Ago1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+828,MBD6 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+829,TNFR1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+830,siGL3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+831,14-8 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+832,10-5,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+833,TS1-ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+834,S10-1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+835,SNA2-ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+836,TMEM16a,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+837,JQ1-ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+838,SNORA13,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+839,GNAO1-neurodevelopmental,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+840,SSR-5,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+841,APOE-1 ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+842,MeCP2,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+843,L858R ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+844,STAT6-targeting,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+845,PC-3,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+846,STAT6,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+847,T0 ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+848,TGFBR2-A,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+849,45-47,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+850,CD-1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+851,WRN-108,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+852,KCNT1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+853,HIV-1,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+854,PS-ASO,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+855,BLOC1S1,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+856,siRNA-3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+857,DFNA2,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+858,NRAS ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+859,ASO-1570,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+860,1504-818,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+861,MECP2,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+862,CALM2 ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+863,siTie2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+864,IGF-1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+865,PRNP ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+866,shRPL9,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+867,MALAT1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+868,11-15,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+869,ASO-001933,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+870,GAAA-3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+871,WT siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+872,BCL-2,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+873,T39 ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+874,NR2E3-Associated,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+875,SSO-1,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+876,CTGTAGGCACCATCAAT-3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+877,F5-3,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+878,VEGF siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+879,42-49,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+880,PCSK9 ASO,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+881,HTT siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+882,IGF2BP2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+883,AAV9; CMT1A,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+884,FGFR2 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+885,IRS2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+886,modified siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+887,LNP-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+888,PKM-ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+889,AsOBP21f,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+890,shRNA-GNEM743T,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+891,PSMD1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+892,si098-DV29P,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+893,YAP1; WWTR1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+894,ACTB ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+895,TNF ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+896,EGFR siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+897,A4GALT-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+898,15 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+899,CD47,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+900,EGFR-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+901,BACE1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+902,UU-3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+903,NSUN4; CD8,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+904,sFRP2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+905,siSmyd3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+906,DUX4,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+907,CD39,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+908,siRNA2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+909,siRNA8,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+910,CD81 ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+911,CXCR4-Targeted,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+912,SMILR siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+913,KRAS siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+914,SSEA-2,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+915,0001 ASO,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+916,siSTT1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+917,PA5-78644,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+918,STAT3,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+919,EZH2-driven,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+920,JAK1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+921,PH-762,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+922,CCL7,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+923,HIF-1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+924,APOE ASO,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+925,Il6,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+926,BC-893,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+927,JAK1-selective,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+928,RBCEV siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+929,modified siRNA,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+930,Atp1a2; SOD1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+931,C5-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+932,siIGF1R-1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+933,TR-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+934,A01406-33,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+935,siT10,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+936,siCpWnt3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+937,KCNQ1; QT1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+938,siHJ1D8,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+939,LINC01257,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+940,CAG-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+941,ORF1ab,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+942,siUC7,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+943,siCoV3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+944,207 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+945,AS-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+946,ADAR1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+947,TPPP siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+948,eIF3m,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+949,85 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+950,SMARCB1,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+951,Serpinh1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+952,CEP290; LCA10,7,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+953,GluN3A,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+954,7C1 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+955,Upf3b,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+956,89E-06,1,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+957,LNA-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+958,shRT5,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+959,siCIP2A,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+960,MORC-1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+961,HMGB1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+962,000 shRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+963,TLR-3,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+964,80 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+965,OVCAR-8,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+966,PINK1 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+967,siRND4,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+968,THIOMAB-siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+969,20-70,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+970,IKK1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+971,siEphA2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+972,HIV-1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+973,GAPDH siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+974,DARPP-32 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+975,NRF2; KEAP1; CCL11,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+976,2016-27,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+977,CSNK2A1 siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+978,PEG-2000,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+979,SSB siRNA,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+980,QGP-1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+981,STAT6,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+982,LFA-1,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+983,LRRK2,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+984,21-5,2,,,,{},2026-06-02T20:47:17+00:00,,,,,,,,,,needs_curator_sequence_curation,needs_curator_modification_curation
+985,"unspecified siRNA (v1 extraction artefact, pending source re-verification)",2,,,unspecified,{},2026-06-07T05:23:32.386523+00:00,,,,,,,,,,unspecified,unspecified
+986,"unspecified ASO (v1 extraction artefact, pending source re-verification)",1,,,unspecified,{},2026-06-07T05:23:32.387522+00:00,,,,,,,,,,unspecified,unspecified
+987,"unspecified PMO (v1 extraction artefact, pending source re-verification)",9,,,unspecified,{},2026-06-07T05:23:32.387522+00:00,,,,,,,,,,unspecified,unspecified
+988,"unspecified CpG oligodeoxynucleotide (v1 extraction artefact, pending source re-verification)",14,,,unspecified,{},2026-06-07T05:23:32.387522+00:00,,,,,,,,,,unspecified,unspecified
+989,"ASO 6 (recovered B2 from PMID:40672232, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""gnificant editing events downstream (Fig. 4f, Supplementary Fig. 9e). ASO 6 produced 20.4% editing at the adjacent GTACG sequence with one major edit upstream of the ASO bindi"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""ASO 6"", ""release_row_id"": 59, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""40672232""}",2026-06-07T21:50:59.899509+00:00,,,,,,,,,,unspecified,unspecified
+990,unspecified siRNA (PMID:31375812),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 64, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""31375812""}",2026-06-07T21:50:59.903503+00:00,,,,,,,,,,unspecified,unspecified
+991,unspecified ASO (PMID:29390093),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 65, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""29390093""}",2026-06-07T21:50:59.903503+00:00,,,,,,,,,,unspecified,unspecified
+992,"Sequence 1 (recovered B2 from PMID:28918038, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""ts, which can be attributed to an \u223c4-fold decrease in monocytes. With Sequence 1 previously reported as highly toxic after repeat dosing in the mouse,15 the high degree of hepatoto"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""Sequence 1"", ""release_row_id"": 66, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""28918038""}",2026-06-07T21:50:59.903503+00:00,,,,,,,,,,unspecified,unspecified
+993,"siRNA-IGF2BP2 (recovered B2 from PMID:41859644, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""vivo-ready siRNA targeting IGF2BP2 at the same dose. Tumors from the siRNA-IGF2BP2 group showed reduced expression of IGF2BP2, NRF2, and GPX4 compared with controls (Fig. 1L), consis"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""siRNA-IGF2BP2"", ""release_row_id"": 82, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""41859644""}",2026-06-07T21:50:59.904501+00:00,,,,,,,,,,unspecified,unspecified
+994,"S9 (recovered B2 from PMID:41552385, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""...9S9), 10 (P9S10), 9 and 10 (P9S910), or 10 and 11 (P9S1011) (Figure S1A). SBMA is caused by a CAG repea"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""S9"", ""release_row_id"": 91, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""41552385""}",2026-06-07T21:50:59.904501+00:00,,,,,,,,,,unspecified,unspecified
+995,unspecified siRNA (PMID:40385635),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 113, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""40385635""}",2026-06-07T21:50:59.904501+00:00,,,,,,,,,,unspecified,unspecified
+996,unspecified siRNA (PMID:41341748),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 116, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""41341748""}",2026-06-07T21:50:59.904501+00:00,,,,,,,,,,unspecified,unspecified
+997,"Anti-N1 (recovered B2 from PMID:38379891, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""tion treatment of a splice-correcting antisense oligonucleotide (ASO) Anti-N1 with the small compounds risdiplam and branaplam. We show that a low-dose treatment of Anti-N1 with"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""Anti-N1"", ""release_row_id"": 157, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""38379891""}",2026-06-07T21:50:59.904501+00:00,,,,,,,,,,unspecified,unspecified
+998,"PH-762 (recovered B2 from PMID:39697325, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""t immunotherapy. This study presents preclinical proof-of-concept for PH-762, an INTASYL designed to silence PD-1, currently in clinical development for advanced cutaneous mali"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""PH-762"", ""release_row_id"": 164, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""39697325""}",2026-06-07T21:50:59.904501+00:00,,,,,,,,,,unspecified,unspecified
+999,"Glu-CT102MOE5 (recovered B2 from PMID:37251692, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""tment of hepatocellular carcinoma. The gapmer CT102MOE5 and conjugate Glu-CT102MOE5 showed superior antiproliferation and IGF1R mRNA suppression effects at 100 nM in vitro and achieve"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""Glu-CT102MOE5"", ""release_row_id"": 188, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""37251692""}",2026-06-07T21:50:59.904501+00:00,,,,,,,,,,unspecified,unspecified
+1000,"si-S1A3-Chol (recovered B2 from PMID:36618268, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""arget effects are minimized. The optimized chemically modified siRNA (si-S1A3-Chol) decreases RA-FLS proliferation and invasiveness without the transfection reagent. Furthermore, si-"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""si-S1A3-Chol"", ""release_row_id"": 190, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""36618268""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1001,unspecified ASO (PMID:36511872),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 193, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""36511872""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1002,"T39 ASO (recovered B2 from PMID:32180554, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""horts of Ldlr\u2212/\u2212 or WT mice using a HFSC diet (Supplemental Fig. 1C). T39 ASO-treated female Ldlr\u2212/\u2212 mice had a significant decrease in VLDL and LDL-C and triglyceride levels (F"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""T39 ASO"", ""release_row_id"": 207, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""32180554""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1003,unspecified siRNA (PMID:27461380),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 220, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""27461380""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1004,"FM10 (recovered B2 from PMID:27378237, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""...ontrol myotube cultures treated with FM10 or standard control PMO were determined by RNA-seq. P-value < 10\u22124 was used as the cutoff for signi"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""FM10"", ""release_row_id"": 222, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""27378237""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1005,unspecified ASO (PMID:41981306),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 476, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41981306""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1006,"TLK2 ASO (recovered B2 from PMID:41878536, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""lated in methylcellulose-based media and treated with 10 \u00b5M NT ASO or TLK2 ASO, either alone or in combination with 200 nM gilteritinib. Colonies were counted on day 6. Data was"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""TLK2 ASO"", ""release_row_id"": 477, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41878536""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1007,unspecified ASO (PMID:42033225),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 478, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""42033225""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1008,"siRNA2 (recovered B2 from PMID:42005705, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""licate wells per experiment.\nResults of Optimal Process Screening for siRNA2 Loaded Polymeric Nanoparticle\nAs shown in Table 2, when the ratio of siRNA2: mPEG-Azo-PEI was 1:20,"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""siRNA2"", ""release_row_id"": 481, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""42005705""}",2026-06-07T21:50:59.905510+00:00,,,,,,,,,,unspecified,unspecified
+1009,"eteplirsen (recovered B2 from PMID:41961051, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""stigators collected data from individuals with DMD who were receiving eteplirsen, golodirsen or casimersen from routine clinical visits. EVOLVE is the first and largest study to ga"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""eteplirsen"", ""release_row_id"": 492, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41961051""}",2026-06-07T21:50:59.906510+00:00,,,,,,,,,,unspecified,unspecified
+1010,unspecified ASO (PMID:41630990),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 500, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41630990""}",2026-06-07T21:50:59.906510+00:00,,,,,,,,,,unspecified,unspecified
+1011,"ASO 8–3 (recovered B2 from PMID:40098305, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""...er characterization of ASO 8\u20133.\nASO 8\u20133 Selectively Hypersensitizes Cancer Cells to Cisplatin and Olaparib but Has Non\u2010specific Cy"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""ASO 8\u20133"", ""release_row_id"": 513, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40098305""}",2026-06-07T21:50:59.907018+00:00,,,,,,,,,,unspecified,unspecified
+1012,"Chol-HDO[PMO] (recovered B2 from PMID:41429785, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""e, the tissue concentration of the antisense strand was enhanced with Chol-HDO[PMO] but not with Chol-HDO[MOE]. This observation was consistent with the finding that Chol-HDO[PMO] imp"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""Chol-HDO[PMO]"", ""release_row_id"": 520, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41429785""}",2026-06-07T21:50:59.908025+00:00,,,,,,,,,,unspecified,unspecified
+1013,"iExoKrasG12D (recovered B2 from PMID:41027940, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""validation testing in preclinical PDAC models. Combination therapy of iExoKrasG12D and anti-CTLA-4 antibodies, but not anti-PD1, revealed robust pre-clinical anti-tumor efficacy via"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""iExoKrasG12D"", ""release_row_id"": 522, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41027940""}",2026-06-07T21:50:59.908025+00:00,,,,,,,,,,unspecified,unspecified
+1014,"D-siRNA (recovered B2 from PMID:41473322, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""... no significant difference in accumulation between D-siRNA and Di-siRNA across various brain regions (Figure 2E, left panel). Plotting the Jak1 mRNA silencing"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""D-siRNA"", ""release_row_id"": 529, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41473322""}",2026-06-07T21:50:59.908025+00:00,,,,,,,,,,unspecified,unspecified
+1015,"KFFK (FFK)2-conjugated PNA (recovered B2 from PMID:41096791, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""nfluence may explain the results observed in the present study.\nHere, KFFK (FFK)2-conjugated PNA targeting carA showed effective cellular entry and antisense activities. Rose et al. obtained a sim"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""KFFK (FFK)2-conjugated PNA"", ""release_row_id"": 533, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41096791""}",2026-06-07T21:50:59.908025+00:00,,,,,,,,,,unspecified,unspecified
+1016,"L2-siRNA (recovered B2 from PMID:40598893, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""injected mice ICV with Cy5-labeled unconjugated siRNA, Chol-siRNA, or L2-siRNA and examined biodistribution after short and long time points (2 and 48 h). Unconjugated siRNA rapi"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""L2-siRNA"", ""release_row_id"": 540, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40598893""}",2026-06-07T21:50:59.908025+00:00,,,,,,,,,,unspecified,unspecified
+1017,"HSA@ICG/siRNA NPs (recovered B2 from PMID:40259913, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""...bited minimal cytotoxicity. As expected, the HSA@ICG/siRNA NPs group, at a concentration of 30 \u03bcg/mL, demonstrated enhanced tumor-killing effects compared to the"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""HSA@ICG/siRNA NPs"", ""release_row_id"": 543, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40259913""}",2026-06-07T21:50:59.908025+00:00,,,,,,,,,,unspecified,unspecified
+1018,unspecified siRNA (PMID:40143003),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 544, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40143003""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1019,"siPCSK9 (recovered B2 from PMID:41290746, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""...ion was PCSK9-dependent (Fig. 1j, k). BMDCs treated with siPCSK9/Mn\u00b2\u207a and siCtrl/Mn\u00b2\u207a, or THP1PCSK9 KO and THP1WT cells treated with Mn\u00b2\u207a, showed similar levels of"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""siPCSK9"", ""release_row_id"": 556, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41290746""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1020,unspecified siRNA (PMID:41226635),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 560, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41226635""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1021,"DG9-PMO (recovered B2 from PMID:40368879, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""y demonstrated significantly reduced cardiomyocyte degeneration after DG9-PMO treatment, which we did not observe in the PMO-treated mice suggesting the limitation of PMO as a l"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""DG9-PMO"", ""release_row_id"": 578, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40368879""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1022,unspecified siRNA (PMID:40297405),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 581, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40297405""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1023,unspecified CpG (PMID:39838063),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 988, ""release_row_id"": 589, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39838063""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1024,unspecified ASO (PMID:39460376),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 598, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39460376""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1025,"ION-827359 (recovered B2 from PMID:39286058, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""healthy volunteer cohort, subjects received five doses of placebo or ION-827359 10 mg, 37.5 mg or 75 mg on Days 1, 4, 8, 15 and 22 or 10 doses of placebo or ION-827359 37.5 mg on"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""ION-827359"", ""release_row_id"": 600, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39286058""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1026,"aODN-Survivin (recovered B2 from PMID:38672408, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""of other therapeutic oligonucleotides, the antisense oligonucleotide aODN-Survivin, previously used in cytotoxicity analysis, caused a 50% decrease in BIRC5 mRNA levels at the highes"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""aODN-Survivin"", ""release_row_id"": 607, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38672408""}",2026-06-07T21:50:59.909025+00:00,,,,,,,,,,unspecified,unspecified
+1027,unspecified siRNA (PMID:38617800),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 608, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38617800""}",2026-06-07T21:50:59.910025+00:00,,,,,,,,,,unspecified,unspecified
+1028,"cRGD-GR9G-(LLHH)3/siEGFR/siP65 (recovered B2 from PMID:39539970, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""rent capability of GBM cells for DNA repair and radiation resistance. cRGD-GR9G-(LLHH)3/siEGFR/siP65 nanoparticles aim to disrupt this repair mechanism, thereby enhancing the effectiveness of radiatio"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""cRGD-GR9G-(LLHH)3/siEGFR/siP65"", ""release_row_id"": 628, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39539970""}",2026-06-07T21:50:59.910025+00:00,,,,,,,,,,unspecified,unspecified
+1029,unspecified ASO (PMID:38042877),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 639, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38042877""}",2026-06-07T21:50:59.910025+00:00,,,,,,,,,,unspecified,unspecified
+1030,unspecified siRNA (PMID:36727438),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 642, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""36727438""}",2026-06-07T21:50:59.910025+00:00,,,,,,,,,,unspecified,unspecified
+1031,unspecified ASO (PMID:38015828),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 644, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38015828""}",2026-06-07T21:50:59.910025+00:00,,,,,,,,,,unspecified,unspecified
+1032,"9b2KC-23b (recovered B2 from PMID:37744174, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""dex of 404.48 and 198.07, respectively (Figure S1; Table 1). In fact, 9b2KC-23b was the most efficient compound of all CPP-PMOs overall, showing 128-fold higher TC50 than EC50. In"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""9b2KC-23b"", ""release_row_id"": 646, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""37744174""}",2026-06-07T21:50:59.910025+00:00,,,,,,,,,,unspecified,unspecified
+1033,unspecified ASO (PMID:37704069),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 648, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""37704069""}",2026-06-07T21:50:59.910025+00:00,,,,,,,,,,unspecified,unspecified
+1034,"iLANDsiPAK4 (recovered B2 from PMID:37719367, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": "". To evaluate the biocompatibility of TPCSsiNC@EV L+, TPCS@EV L+, and iLANDsiPAK4, the major organs, including the brain, heart, liver, spleen, lung, and kidney of mice receiving th"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""iLANDsiPAK4"", ""release_row_id"": 650, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""37719367""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1035,"RO7062931 (recovered B2 from PMID:37147890, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""dose\u2010dependent declines in HBsAg demonstrated target engagement with RO7062931. 19 Various ethnic factors, including genetic and physiologic factors that may influence protein bi"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""RO7062931"", ""release_row_id"": 654, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""37147890""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1036,"DG9-PMO (recovered B2 from PMID:36719755, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""cating improvement in muscle strength. Consistent with the HLS assay, DG9-PMO mice took a significantly shorter time to right themselves on their paws between PD6 and PD10 when"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""DG9-PMO"", ""release_row_id"": 658, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""36719755""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1037,unspecified siRNA (PMID:36614194),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 659, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""36614194""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1038,unspecified ASO (PMID:35861704),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 660, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""35861704""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1039,"ASO-001933 (recovered B2 from PMID:36090761, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""Further modifications to the LNA design resulted in the generation of ASO-001933, which selectively and potently reduces tau in primary cultures from hTau mice, monkey, and human n"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""ASO-001933"", ""release_row_id"": 661, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""36090761""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1040,"LNP-S60-siRNA (recovered B2 from PMID:36520934, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""ed primary mouse bone marrow derived macrophages and splenocytes with LNP-S60-siRNA (Figs 4D, 4E and S4). The rational to work with splenocytes was that they consist of 80\u201390% T and B"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""LNP-S60-siRNA"", ""release_row_id"": 664, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""36520934""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1041,"IONIS-FXIRx (recovered B2 from PMID:35155859, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""ot alter circulating FXI activity or antigen levels.Figure 3Effect of IONIS-FXIRx 200 mg and 300 mg on FXI activity compared with placebo during the 78-day treatment period and subs"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""IONIS-FXIRx"", ""release_row_id"": 666, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""35155859""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1042,"ASO 5–2 (recovered B2 from PMID:34949835, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""a standard curve. Sequences of oligonucleotides used for detection of ASO 5\u20132 were as follows: Probe A: 5\u2032 CTCGACCTCTCTATGGGCAGTCAC..."", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""ASO 5\u20132"", ""release_row_id"": 668, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""34949835""}",2026-06-07T21:50:59.911024+00:00,,,,,,,,,,unspecified,unspecified
+1043,unspecified siRNA (PMID:36457549),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 670, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""36457549""}",2026-06-07T21:50:59.912032+00:00,,,,,,,,,,unspecified,unspecified
+1044,unspecified ASO (PMID:34921016),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 676, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""34921016""}",2026-06-07T21:50:59.912032+00:00,,,,,,,,,,unspecified,unspecified
+1045,"CpG2018B (recovered B2 from PMID:34566407, curator:CM)",14,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""accumulated over recent years.\nHere, we identified a new class B CpG (CpG2018B) that stimulates IFN-\u03b3 secretion and gene expression in both mouse pDCs and human PBMCs. Then, the"", ""ex_placeholder_id"": 988, ""raw_recovered_name"": ""CpG2018B"", ""release_row_id"": 686, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""34566407""}",2026-06-07T21:50:59.912032+00:00,,,,,,,,,,unspecified,unspecified
+1046,unspecified PMO (PMID:33337582),9,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 987, ""release_row_id"": 694, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""33337582""}",2026-06-07T21:50:59.912032+00:00,,,,,,,,,,unspecified,unspecified
+1047,"NVP-13 (recovered B2 from PMID:32178467, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""ore active than their parental sequence (Figure 3A): X07070, X07091 = NVP-13 and X07095 reduced TGFBR2 mRNA twice as much as their parental sequences in Panc-1 cells (X07070: 0"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""NVP-13"", ""release_row_id"": 695, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""32178467""}",2026-06-07T21:50:59.912032+00:00,,,,,,,,,,unspecified,unspecified
+1048,"LNAc/2′OMe18h (recovered B2 from PMID:31873063, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""a1 exon 22 by \u223c50%, 40%, and 28%, respectively (Fig. 2). As expected, LNAc/2\u2032OMe18h showed the highest potency in vivo, a result that contrasts to what we observed in cultured human D"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""LNAc/2\u2032OMe18h"", ""release_row_id"": 696, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""31873063""}",2026-06-07T21:50:59.912032+00:00,,,,,,,,,,unspecified,unspecified
+1049,unspecified ASO (PMID:32805488),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 700, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""32805488""}",2026-06-07T21:50:59.912032+00:00,,,,,,,,,,unspecified,unspecified
+1050,unspecified ASO (PMID:30988454),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 702, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""30988454""}",2026-06-07T21:50:59.912032+00:00,,,,,,,,,,unspecified,unspecified
+1051,"IONIS-PKKRx (recovered B2 from PMID:30817230, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""occurrence of HAE attacks with 60% reduction in kallikrein activity. IONIS-PKKRx has the potential to further decrease attack rate, by reducing the total available prekallikrein, o"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""IONIS-PKKRx"", ""release_row_id"": 706, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""30817230""}",2026-06-07T21:50:59.913032+00:00,,,,,,,,,,unspecified,unspecified
+1052,"BMSP-PMO-GF (recovered B2 from PMID:31629961, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""Adult mdx Mice Treated with a Single Intravenous Injection of 6 mg/kg BMSP-PMO-GF or BMSP-PMO-S(A) Immunohistochemistry for dystrophin expression in body-wide muscles from adult mdx"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""BMSP-PMO-GF"", ""release_row_id"": 708, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""31629961""}",2026-06-07T21:50:59.913032+00:00,,,,,,,,,,unspecified,unspecified
+1053,"LNA-i-miR-221 (recovered B2 from PMID:27327137, curator:CM)",8,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""...erapeutic activity of a novel 13-mer LNA-miR-221 inhibitor (LNA-i-miR-221) in preclinical models of multiple myeloma (MM).12,20 Here we studied the LNA-i-miR-221 bioavailabi"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""LNA-i-miR-221"", ""release_row_id"": 727, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""27327137""}",2026-06-07T21:50:59.913032+00:00,,,,,,,,,,unspecified,unspecified
+1054,unspecified siRNA (PMID:27483025),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 729, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""27483025""}",2026-06-07T21:50:59.913032+00:00,,,,,,,,,,unspecified,unspecified
+1055,"siRMSTN (recovered B2 from PMID:41041909, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""the Synthetic Constructs for Silencing MSTN\nWe designed four CMV\u2010MSP\u2010siRMSTN constructs targeting different sites within the open reading frame (ORF) of the MSTN gene to optimi"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""siRMSTN"", ""release_row_id"": 966, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41041909""}",2026-06-07T21:50:59.913032+00:00,,,,,,,,,,unspecified,unspecified
+1056,"APGS (recovered B2 from PMID:41732207, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""igure 1). Notably, potent silencing was observed after treatment with APGS, targeting APP and GSK3\u03b2 (Figure 1A); BAMT, targeting BACE1 and MTOR (Figure 1C); BATA, targeting B"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""APGS"", ""release_row_id"": 969, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41732207""}",2026-06-07T21:50:59.913032+00:00,,,,,,,,,,unspecified,unspecified
+1057,unspecified siRNA (PMID:40737088),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 1039, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40737088""}",2026-06-07T21:50:59.914033+00:00,,,,,,,,,,unspecified,unspecified
+1058,"siTMEM45A (recovered B2 from PMID:39910045, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""osomes derived from primary BRCA tumor cells for targeted delivery of siTMEM45A in patient-derived xenograft (PDX) mouse models to enhance sensitivity to CDK4/6i. Our research res"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""siTMEM45A"", ""release_row_id"": 1141, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39910045""}",2026-06-07T21:50:59.914033+00:00,,,,,,,,,,unspecified,unspecified
+1059,unspecified siRNA (PMID:38192611),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 1156, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38192611""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1060,unspecified ASO (PMID:37200862),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 1203, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""37200862""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1061,"si3033 (recovered B2 from PMID:37925520, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""K1 silencing is sufficient to inhibit IFN-\u03b3 signaling, we re-injected si3033 or siNTC into a separate cohort of wild-type mice, collected 3-mm skin punches from footpads 2 week"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""si3033"", ""release_row_id"": 1214, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""37925520""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1062,"SMN7D(-10-29) AO (recovered B2 from PMID:35464859, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""detailed ultrastructural analysis of the 2\u2032 O-methyl phosphorothioate SMN7D(-10-29) AO-induced nuclear inclusions in fibroblasts (Figures 4Ai\u2013vi). We observed that the nuclear inclusions"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""SMN7D(-10-29) AO"", ""release_row_id"": 1244, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""35464859""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1063,"PC-DCA siRNA (recovered B2 from PMID:35847173, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""... all of the modification patterns are shown in Table S1.Figure 2PC-DCA siRNA conjugates demonstrate enhanced placental accumulationPregnant CD1 mice subcutaneously injected wit"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""PC-DCA siRNA"", ""release_row_id"": 1247, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""35847173""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1064,unspecified siRNA (PMID:40142497),8,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 144, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""40142497""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1065,"MC3 LNP-siRNA (recovered B2 from PMID:41708903, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""of siRNA targeted SARS-CoV-2 genes. However, the MC3-based LNP-siRNA (MC3 LNP-siRNA) treatment elicited the least off-target immune activation, with no induction of interferon stimula"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""MC3 LNP-siRNA"", ""release_row_id"": 229, ""release_table"": ""offtarget_evidence"", ""source_pmid"": ""41708903""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1066,"elsunersen (recovered B2 from PMID:40263630, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""d registered under CAS# 2755996-85-9. The manufacturing processes for elsunersen follow current Good Manufacturing Practices regulations, and the drug product process follows all r"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""elsunersen"", ""release_row_id"": 512, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40263630""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1067,"STP705 (recovered B2 from PMID:39692702, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""ndings support further trials to establish the safety and efficacy of STP705 for targeted fat reduction and body contouring.\nClinicalTrials.gov identifier: NCT05422378\nFunding:"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""STP705"", ""release_row_id"": 527, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39692702""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1068,unspecified ASO (PMID:40736236),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 538, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40736236""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1069,"PUMCH-E13 (recovered B2 from PMID:40970667, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""...o noteworthy retinal cell apoptosis in PUMCH-E13 treated mice. Opsin blue staining confirmed that cone cell morphology and opsin expression were una"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""PUMCH-E13"", ""release_row_id"": 565, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40970667""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1070,unspecified siRNA (PMID:40848064),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 568, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40848064""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1071,unspecified siRNA (PMID:40207309),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 586, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40207309""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1072,unspecified ASO (PMID:38276948),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 603, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38276948""}",2026-06-07T21:50:59.915029+00:00,,,,,,,,,,unspecified,unspecified
+1073,unspecified siRNA (PMID:39296267),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 605, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39296267""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1074,unspecified siRNA (PMID:38613388),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 609, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38613388""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1075,"siIRF1 (recovered B2 from PMID:39629104, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""on myocarditis.\nZIF-8 nanoparticles loaded with siRNA targeting IRF1 (siIRF1) were coated with a T lymphocyte-macrophage hybrid membrane (siIRF1@ZIF@HM NPs) via sonication and"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""siIRF1"", ""release_row_id"": 634, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39629104""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1076,"MRCV-19 (recovered B2 from PMID:34440222, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""thesis and conjugation are proprietary\n2.2. Assay Methods for Testing MRCV-19\nWe employed a cell-based assay measuring the cytopathic effect (CPE) of the virus infecting Vero E6"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""MRCV-19"", ""release_row_id"": 687, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""34440222""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1077,"revusiran (recovered B2 from PMID:28129130, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": "", pharmacokinetics, and pharmacodynamics of a GalNAc-siRNA conjugate, revusiran, targeting transthyretin (TTR). Subjects received a placebo or ascending doses of revusiran subcuta"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""revusiran"", ""release_row_id"": 717, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""28129130""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1078,"OA2-siRAPSYN (recovered B2 from PMID:38741123, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""... OA2-siRAPSYN\nTo identifying the siRNA silencing effects in Ph+ leukemia cell lines, we first compared three siRN"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""OA2-siRAPSYN"", ""release_row_id"": 1179, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38741123""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1079,"RGD-PEG-ECO/siβ3 (recovered B2 from PMID:31140918, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""ged shelf life and preserved nanoparticle functionality. The targeted RGD-PEG-ECO/si\u03b23 nanoparticles are formed by step-wised self-assembly of RGD-PEG-maleimide, ECO, and siRNA. The nano"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""RGD-PEG-ECO/si\u03b23"", ""release_row_id"": 1292, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""31140918""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1080,"MORF1-MORF2 (recovered B2 from PMID:24308267, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""gonucleotide MORF2. We show that the two conjugates self-assemble via MORF1-MORF2 hybridization at the surface of CD20+ malignant B-cells, which crosslinks CD20 antigens and initiat"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""MORF1-MORF2"", ""release_row_id"": 1306, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""24308267""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1081,unspecified siRNA (PMID:41797405),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 1317, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41797405""}",2026-06-07T21:50:59.916537+00:00,,,,,,,,,,unspecified,unspecified
+1082,"PDA@Mn-siSur-c-NPs (recovered B2 from PMID:41599118, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""20.23%, 7.72%, and 2.74%, respectively (Figure 1B). In contrast, the PDA@Mn-siSur-c-NPs preparation, obtained after coating MnO2 with PDA and PEG\u2013PAMAM, contained 1.33%, 56.14%, 34.41%, 7"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""PDA@Mn-siSur-c-NPs"", ""release_row_id"": 528, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""41599118""}",2026-06-07T21:50:59.917552+00:00,,,,,,,,,,unspecified,unspecified
+1083,unspecified siRNA (PMID:39906612),2,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 985, ""release_row_id"": 545, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39906612""}",2026-06-07T21:50:59.917552+00:00,,,,,,,,,,unspecified,unspecified
+1084,unspecified PMO (PMID:40608957),9,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 987, ""release_row_id"": 572, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40608957""}",2026-06-07T21:50:59.917552+00:00,,,,,,,,,,unspecified,unspecified
+1085,"si-Cx43 (recovered B2 from PMID:40528841, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""hydrogel composite was developed to encapsulate siRNA targeting Cx43 (si-Cx43) nanoparticles (NPs) and anti-VEGF (Avastin). The hydrogel was characterized for gelation, injectab"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""si-Cx43"", ""release_row_id"": 576, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40528841""}",2026-06-07T21:50:59.917552+00:00,,,,,,,,,,unspecified,unspecified
+1086,"D-siRNA-Plk1 (recovered B2 from PMID:40236812, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""N are 131.9 \u00b1 18.7 nm and 24.3 \u00b1 2.3 nm, respectively. The loading of D-siRNA-Plk1 (abbreviated as S) into ARGN only leads to the slight increase in the size (corresponding product,"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""D-siRNA-Plk1"", ""release_row_id"": 583, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40236812""}",2026-06-07T21:50:59.917552+00:00,,,,,,,,,,unspecified,unspecified
+1087,"AS-T9/U4_MH (recovered B2 from PMID:39946362, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""gonucleotide known as T9/U4 into our molecular hybrid, referred to as AS-T9/U4_MH. The T9/U4 sequence has been previously documented to effectively reduce hTERT expression [12,35]."", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""AS-T9/U4_MH"", ""release_row_id"": 588, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39946362""}",2026-06-07T21:50:59.917552+00:00,,,,,,,,,,unspecified,unspecified
+1088,"NANP-siRhoA (recovered B2 from PMID:40308740, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""tempted to deliver siRNAs targeting RhoA embedded in NANP structures (NANP-siRhoA) or as a simple duplex (for simplicity, only ring NANPs are depicted).\nImmunoblot assay using L1 an"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""NANP-siRhoA"", ""release_row_id"": 604, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""40308740""}",2026-06-07T21:50:59.918554+00:00,,,,,,,,,,unspecified,unspecified
+1089,"vivo-3′UTR (recovered B2 from PMID:39676860, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""virus through a plaque assay and the TCID50 assay.\nWe found that the vivo-3\u2032UTR molecule targeting the 3\u2032 untranslated region of the dengue virus exhibited the highest inhibitory"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""vivo-3\u2032UTR"", ""release_row_id"": 611, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39676860""}",2026-06-07T21:50:59.918554+00:00,,,,,,,,,,unspecified,unspecified
+1090,"HNP-siHOXB7 (recovered B2 from PMID:39458966, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""ng early-stage and advanced Luminal A breast cancer were treated with HNP-siHOXB7, HNP-siHOXB7 + TMX, and TMX. Antitumoral activity and gene expression were evaluated following hist"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""HNP-siHOXB7"", ""release_row_id"": 615, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39458966""}",2026-06-07T21:50:59.918554+00:00,,,,,,,,,,unspecified,unspecified
+1091,"cRGD-PEG-siRNA (recovered B2 from PMID:39431993, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""single-stranded siRNAs. After annealing at 95 \u00b0C, the final compound, cRGD-PEG-siRNA, was obtained. The purified siRNA conjugate was analyzed by agarose gel electrophoresis. Results in"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""cRGD-PEG-siRNA"", ""release_row_id"": 629, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""39431993""}",2026-06-07T21:50:59.918554+00:00,,,,,,,,,,unspecified,unspecified
+1092,"PNA4986 (recovered B2 from PMID:35436109, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""oic acid (Gbu)8-DAB-PNA derivative targeting the essential FtsZ gene (PNA4986), and this conjugate showed activity in E.c..."", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""PNA4986"", ""release_row_id"": 665, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""35436109""}",2026-06-07T21:50:59.918554+00:00,,,,,,,,,,unspecified,unspecified
+1093,"HA-SeSe-COOH/siR-93C@PAMAM (recovered B2 from PMID:35156491, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""rafficking of siRNA. In vitro assays in A549 cell line presented that HA-SeSe-COOH/siR-93C@PAMAM has low cytotoxicity, rapid lysosomal escape and significant transfection efficiency; besides, an e"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""HA-SeSe-COOH/siR-93C@PAMAM"", ""release_row_id"": 671, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""35156491""}",2026-06-07T21:50:59.918554+00:00,,,,,,,,,,unspecified,unspecified
+1094,"IONIS-AGT-LRx (recovered B2 from PMID:34222719, curator:CM)",1,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""inhibit the RAAS pathway.\nAGT is primarily synthesized in the liver.\nIONIS-AGT-LRx is an ASO directed to hepatocyte-derived AGT.\nIn 2 phase 2 trials as monotherapy and as an add-on t"", ""ex_placeholder_id"": 986, ""raw_recovered_name"": ""IONIS-AGT-LRx"", ""release_row_id"": 680, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""34222719""}",2026-06-07T21:50:59.918554+00:00,,,,,,,,,,unspecified,unspecified
+1095,"peptide-siRNA-DOX (recovered B2 from PMID:34948105, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""ity as there are no changes in mice\u2019s body weight. When administering peptide-siRNA-DOX, tumor growth is inhibited the most (about three times). These results above prove the sequence to"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""peptide-siRNA-DOX"", ""release_row_id"": 684, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""34948105""}",2026-06-07T21:50:59.918554+00:00,,,,,,,,,,unspecified,unspecified
+1096,unspecified ASO (PMID:26855051),1,,,unspecified,"{""b2_source"": ""collaborator_source_only"", ""ex_placeholder_id"": 986, ""release_row_id"": 947, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""26855051""}",2026-06-07T21:50:59.919552+00:00,,,,,,,,,,unspecified,unspecified
+1097,"siRNA‐CaP@PD1‐NVs (recovered B2 from PMID:38973319, curator:CM)",2,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""tically engineered HEK 293FT cells.\nSynthesis and characterization of siRNA\u2010CaP@PD1\u2010NVs. A) Schematic illustration of the synthesis process of siRNA\u2010CaP@PD1\u2010NVs. B) Confocal images of HEK"", ""ex_placeholder_id"": 985, ""raw_recovered_name"": ""siRNA\u2010CaP@PD1\u2010NVs"", ""release_row_id"": 1198, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""38973319""}",2026-06-07T21:50:59.919552+00:00,,,,,,,,,,unspecified,unspecified
+1098,"Pip6a-PMO (recovered B2 from PMID:31479430, curator:CM)",9,,,unspecified,"{""b2_source"": ""collaborator_curated"", ""curator_date"": ""2026-06-07"", ""curator_initials"": ""CM"", ""evidence_quote"": ""se of 200 mg/kg (Figure 1A). Moreover, 2 and 3 systemic injections of Pip6a-PMO (12.5 mg/kg) led to an almost complete normalization and a full correction, respectively, of DM1-sp"", ""ex_placeholder_id"": 987, ""raw_recovered_name"": ""Pip6a-PMO"", ""release_row_id"": 1289, ""release_table"": ""toxicity_endpoint"", ""source_pmid"": ""31479430""}",2026-06-07T21:50:59.919552+00:00,,,,,,,,,,unspecified,unspecified

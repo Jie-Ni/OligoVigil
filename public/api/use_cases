@@ -1,0 +1,388 @@
+{
+  "case_workflows": [
+    {
+      "id": "galnac_liver_safety",
+      "title": "GalNAc-siRNA liver safety profile",
+      "result_title": "Example result: GalNAc liver safety profile",
+      "audience": "oligonucleotide drug discovery teams",
+      "query": "galnac",
+      "question": "Which verified safety records mention GalNAc delivery and hepatic/liver toxicity signals?",
+      "primary_endpoint": "/api/modification_profile?term=galnac",
+      "release_endpoint": "/api/evidence_records?domain=toxicity&q=galnac",
+      "benchmark_endpoint": "/api/benchmark",
+      "next_action": "Start from GalNAc profile counts, open toxicity evidence, then export A/B benchmark rows for model reuse.",
+      "why_useful": "Connects delivery chemistry, liver safety evidence, provenance, and benchmark-eligible rows in one reusable path.",
+      "workflow_steps": [
+        "Open the GalNAc modification profile.",
+        "Filter verified toxicity records by liver/hepatic endpoints.",
+        "Download evidence_release.csv and benchmark_reference_splits.csv."
+      ],
+      "release_records": 22,
+      "benchmark_task": "toxicity_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "toxicity"
+        },
+        {
+          "label": "primary filter",
+          "value": "GalNAc"
+        },
+        {
+          "label": "evidence use",
+          "value": "safety profile"
+        }
+      ]
+    },
+    {
+      "id": "aso_gapmer_hepatotoxicity",
+      "title": "ASO/gapmer hepatotoxicity review",
+      "result_title": "Example result: ASO/gapmer hepatotoxicity review",
+      "audience": "ASO chemistry and safety groups",
+      "query": "hepatotoxicity",
+      "question": "Which ASO/gapmer records have verified hepatotoxicity source locations and evidence grades?",
+      "primary_endpoint": "/api/evidence_records?domain=toxicity&q=hepatotoxicity",
+      "release_endpoint": "/api/evidence_records?domain=toxicity&q=hepatotoxicity",
+      "benchmark_endpoint": "/api/benchmark",
+      "next_action": "Compare Grade A/B/C hepatotoxicity evidence, inspect exact source locations, and cite record pages.",
+      "why_useful": "Turns a broad safety concern into a citable, source-located evidence packet.",
+      "workflow_steps": [
+        "Search hepatotoxicity release records.",
+        "Open record-level provenance and audit trail.",
+        "Separate A/B benchmark records from C-grade contextual evidence."
+      ],
+      "release_records": 341,
+      "benchmark_task": "toxicity_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "toxicity"
+        },
+        {
+          "label": "primary filter",
+          "value": "hepatotoxicity"
+        },
+        {
+          "label": "evidence use",
+          "value": "record citation"
+        }
+      ]
+    },
+    {
+      "id": "renal_platelet_scan",
+      "title": "Renal and thrombocytopenia safety scan",
+      "result_title": "Example result: renal and platelet safety scan",
+      "audience": "preclinical safety reviewers",
+      "query": "renal",
+      "question": "What verified and candidate safety evidence exists for renal or platelet-related endpoints?",
+      "primary_endpoint": "/api/search?q=renal",
+      "release_endpoint": "/api/evidence_records?domain=toxicity&q=renal",
+      "benchmark_endpoint": "/api/benchmark",
+      "next_action": "Use endpoint filters to build a renal or platelet-focused safety evidence packet.",
+      "why_useful": "Shows how users can move between release evidence and candidate gaps before a review meeting.",
+      "workflow_steps": [
+        "Search renal or platelet endpoint terms.",
+        "Inspect molecule/cohort and source-level evidence.",
+        "Download filtered candidates for missing high-value records."
+      ],
+      "release_records": 51,
+      "benchmark_task": "toxicity_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "toxicity"
+        },
+        {
+          "label": "primary filter",
+          "value": "renal"
+        },
+        {
+          "label": "evidence use",
+          "value": "gap scan"
+        }
+      ]
+    },
+    {
+      "id": "sirna_seed_offtarget",
+      "title": "siRNA seed/off-target transcriptome evidence",
+      "result_title": "Example result: siRNA seed off-target evidence",
+      "audience": "RNAi design and transcriptomics groups",
+      "query": "seed",
+      "question": "Which verified records support seed-mediated, mismatch, or transcriptome-level off-target evidence?",
+      "primary_endpoint": "/api/evidence_records?domain=offtarget&q=seed",
+      "release_endpoint": "/api/evidence_records?domain=offtarget&q=seed",
+      "benchmark_endpoint": "/api/benchmark",
+      "next_action": "Check observed off-target evidence, then use the sequence workbench for seed-window triage.",
+      "why_useful": "Connects design triage with evidence records that computational RNAi users naturally reuse.",
+      "workflow_steps": [
+        "Filter off-target records by seed or mismatch evidence.",
+        "Enter candidate guide sequence in the sequence workbench.",
+        "Reuse offtarget_safety_v0_1 splits for baseline comparison."
+      ],
+      "release_records": 44,
+      "benchmark_task": "offtarget_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "off-target"
+        },
+        {
+          "label": "primary filter",
+          "value": "seed"
+        },
+        {
+          "label": "evidence use",
+          "value": "design triage"
+        }
+      ]
+    },
+    {
+      "id": "benchmark_reuse",
+      "title": "Benchmark reuse with fixed reference splits",
+      "result_title": "Example result: reproducible benchmark reuse",
+      "audience": "ML and computational biology groups",
+      "query": "toxicity_safety_v0_1",
+      "question": "How should users cite and reuse fixed A/B-grade safety benchmark splits?",
+      "primary_endpoint": "/api/benchmark",
+      "release_endpoint": "/api/download/evidence_release.csv",
+      "benchmark_endpoint": "/api/download/benchmark_reference_splits.csv",
+      "next_action": "Download benchmark splits, task cards, and the release evidence; report the version and checksum.",
+      "why_useful": "Makes the database citable by model developers without turning the paper into an algorithm paper.",
+      "workflow_steps": [
+        "Open benchmark metadata and task cards.",
+        "Download fixed train/validation/test reference splits.",
+        "Report task name, version, leakage policy, metrics, and checksum."
+      ],
+      "release_records": 737,
+      "benchmark_task": "toxicity_safety_v0_1 / offtarget_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "benchmark"
+        },
+        {
+          "label": "primary file",
+          "value": "reference splits"
+        },
+        {
+          "label": "evidence use",
+          "value": "model reuse"
+        }
+      ]
+    }
+  ],
+  "use_cases": [
+    {
+      "title": "Safety triage for an ASO/siRNA program",
+      "audience": "wet-lab oligonucleotide researchers",
+      "query": "hepatotoxicity GalNAc ASO",
+      "primary_endpoint": "/api/search?q=hepatotoxicity%20GalNAc%20ASO",
+      "next_action": "Open matching evidence records, cite the record page, and download the release CSV."
+    },
+    {
+      "title": "Off-target mechanism lookup",
+      "audience": "RNAi and transcriptomics groups",
+      "query": "seed-mediated off-target effect",
+      "primary_endpoint": "/api/evidence_records?domain=offtarget&q=seed",
+      "next_action": "Filter by off-target category and inspect PMID-level provenance."
+    },
+    {
+      "title": "Sequence-to-evidence triage",
+      "audience": "oligonucleotide design teams",
+      "query": "AUGCUACUGACUGA",
+      "primary_endpoint": "/api/sequence_search?sequence=AUGCUACUGACUGA&modification=GalNAc&target=PCSK9",
+      "next_action": "Inspect seed windows, then open linked off-target and safety evidence routes."
+    },
+    {
+      "title": "Modification safety profile",
+      "audience": "chemistry and delivery optimization groups",
+      "query": "galnac",
+      "primary_endpoint": "/api/modification_profile?term=galnac",
+      "next_action": "Compare release evidence, candidate coverage, and benchmark rows by chemistry/delivery term."
+    },
+    {
+      "title": "Benchmark dataset reuse",
+      "audience": "ML and computational biology groups",
+      "query": "toxicity_safety_v0_1",
+      "primary_endpoint": "/api/benchmark",
+      "next_action": "Download reference splits and report metrics against fixed train/validation/test groups."
+    },
+    {
+      "id": "galnac_liver_safety",
+      "title": "GalNAc-siRNA liver safety profile",
+      "result_title": "Example result: GalNAc liver safety profile",
+      "audience": "oligonucleotide drug discovery teams",
+      "query": "galnac",
+      "question": "Which verified safety records mention GalNAc delivery and hepatic/liver toxicity signals?",
+      "primary_endpoint": "/api/modification_profile?term=galnac",
+      "release_endpoint": "/api/evidence_records?domain=toxicity&q=galnac",
+      "benchmark_endpoint": "/api/benchmark",
+      "next_action": "Start from GalNAc profile counts, open toxicity evidence, then export A/B benchmark rows for model reuse.",
+      "why_useful": "Connects delivery chemistry, liver safety evidence, provenance, and benchmark-eligible rows in one reusable path.",
+      "workflow_steps": [
+        "Open the GalNAc modification profile.",
+        "Filter verified toxicity records by liver/hepatic endpoints.",
+        "Download evidence_release.csv and benchmark_reference_splits.csv."
+      ],
+      "release_records": 22,
+      "benchmark_task": "toxicity_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "toxicity"
+        },
+        {
+          "label": "primary filter",
+          "value": "GalNAc"
+        },
+        {
+          "label": "evidence use",
+          "value": "safety profile"
+        }
+      ]
+    },
+    {
+      "id": "aso_gapmer_hepatotoxicity",
+      "title": "ASO/gapmer hepatotoxicity review",
+      "result_title": "Example result: ASO/gapmer hepatotoxicity review",
+      "audience": "ASO chemistry and safety groups",
+      "query": "hepatotoxicity",
+      "question": "Which ASO/gapmer records have verified hepatotoxicity source locations and evidence grades?",
+      "primary_endpoint": "/api/evidence_records?domain=toxicity&q=hepatotoxicity",
+      "release_endpoint": "/api/evidence_records?domain=toxicity&q=hepatotoxicity",
+      "benchmark_endpoint": "/api/benchmark",
+      "next_action": "Compare Grade A/B/C hepatotoxicity evidence, inspect exact source locations, and cite record pages.",
+      "why_useful": "Turns a broad safety concern into a citable, source-located evidence packet.",
+      "workflow_steps": [
+        "Search hepatotoxicity release records.",
+        "Open record-level provenance and audit trail.",
+        "Separate A/B benchmark records from C-grade contextual evidence."
+      ],
+      "release_records": 341,
+      "benchmark_task": "toxicity_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "toxicity"
+        },
+        {
+          "label": "primary filter",
+          "value": "hepatotoxicity"
+        },
+        {
+          "label": "evidence use",
+          "value": "record citation"
+        }
+      ]
+    },
+    {
+      "id": "renal_platelet_scan",
+      "title": "Renal and thrombocytopenia safety scan",
+      "result_title": "Example result: renal and platelet safety scan",
+      "audience": "preclinical safety reviewers",
+      "query": "renal",
+      "question": "What verified and candidate safety evidence exists for renal or platelet-related endpoints?",
+      "primary_endpoint": "/api/search?q=renal",
+      "release_endpoint": "/api/evidence_records?domain=toxicity&q=renal",
+      "benchmark_endpoint": "/api/benchmark",
+      "next_action": "Use endpoint filters to build a renal or platelet-focused safety evidence packet.",
+      "why_useful": "Shows how users can move between release evidence and candidate gaps before a review meeting.",
+      "workflow_steps": [
+        "Search renal or platelet endpoint terms.",
+        "Inspect molecule/cohort and source-level evidence.",
+        "Download filtered candidates for missing high-value records."
+      ],
+      "release_records": 51,
+      "benchmark_task": "toxicity_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "toxicity"
+        },
+        {
+          "label": "primary filter",
+          "value": "renal"
+        },
+        {
+          "label": "evidence use",
+          "value": "gap scan"
+        }
+      ]
+    },
+    {
+      "id": "sirna_seed_offtarget",
+      "title": "siRNA seed/off-target transcriptome evidence",
+      "result_title": "Example result: siRNA seed off-target evidence",
+      "audience": "RNAi design and transcriptomics groups",
+      "query": "seed",
+      "question": "Which verified records support seed-mediated, mismatch, or transcriptome-level off-target evidence?",
+      "primary_endpoint": "/api/evidence_records?domain=offtarget&q=seed",
+      "release_endpoint": "/api/evidence_records?domain=offtarget&q=seed",
+      "benchmark_endpoint": "/api/benchmark",
+      "next_action": "Check observed off-target evidence, then use the sequence workbench for seed-window triage.",
+      "why_useful": "Connects design triage with evidence records that computational RNAi users naturally reuse.",
+      "workflow_steps": [
+        "Filter off-target records by seed or mismatch evidence.",
+        "Enter candidate guide sequence in the sequence workbench.",
+        "Reuse offtarget_safety_v0_1 splits for baseline comparison."
+      ],
+      "release_records": 44,
+      "benchmark_task": "offtarget_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "off-target"
+        },
+        {
+          "label": "primary filter",
+          "value": "seed"
+        },
+        {
+          "label": "evidence use",
+          "value": "design triage"
+        }
+      ]
+    },
+    {
+      "id": "benchmark_reuse",
+      "title": "Benchmark reuse with fixed reference splits",
+      "result_title": "Example result: reproducible benchmark reuse",
+      "audience": "ML and computational biology groups",
+      "query": "toxicity_safety_v0_1",
+      "question": "How should users cite and reuse fixed A/B-grade safety benchmark splits?",
+      "primary_endpoint": "/api/benchmark",
+      "release_endpoint": "/api/download/evidence_release.csv",
+      "benchmark_endpoint": "/api/download/benchmark_reference_splits.csv",
+      "next_action": "Download benchmark splits, task cards, and the release evidence; report the version and checksum.",
+      "why_useful": "Makes the database citable by model developers without turning the paper into an algorithm paper.",
+      "workflow_steps": [
+        "Open benchmark metadata and task cards.",
+        "Download fixed train/validation/test reference splits.",
+        "Report task name, version, leakage policy, metrics, and checksum."
+      ],
+      "release_records": 737,
+      "benchmark_task": "toxicity_safety_v0_1 / offtarget_safety_v0_1",
+      "dashboard_cards": [
+        {
+          "label": "domain",
+          "value": "benchmark"
+        },
+        {
+          "label": "primary file",
+          "value": "reference splits"
+        },
+        {
+          "label": "evidence use",
+          "value": "model reuse"
+        }
+      ]
+    },
+    {
+      "title": "Curation contribution or correction",
+      "audience": "database users and authors",
+      "query": "candidate evidence correction",
+      "primary_endpoint": "/api/submission_schema",
+      "next_action": "Submit source location, PMID/DOI, decision, and curator note using the review template fields."
+    }
+  ]
+}

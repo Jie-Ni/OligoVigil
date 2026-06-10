@@ -1,0 +1,115 @@
+{
+  "version": "20260604_core_validation_v45",
+  "title": "OligoVigil Universal Agent Connect",
+  "summary": "Tool-agnostic connection layer for agentic clients, coding tools, notebooks, API importers, MCP clients, and web-fetch/RAG agents.",
+  "base_url": "https://oligovigil.pages.dev",
+  "entrypoints": [
+    {
+      "label": "Universal manifest",
+      "path": "/agent.json",
+      "url": "https://oligovigil.pages.dev/agent.json",
+      "best_for": "agents that can fetch a public URL before coding"
+    },
+    {
+      "label": "OpenAPI import",
+      "path": "/api/openapi.json",
+      "url": "https://oligovigil.pages.dev/api/openapi.json",
+      "best_for": "tools that generate REST clients or actions"
+    },
+    {
+      "label": "Safety Dossier API",
+      "path": "/api/safety_dossier",
+      "url": "https://oligovigil.pages.dev/api/safety_dossier",
+      "best_for": "agents that need a ready-to-use evidence packet instead of raw tables"
+    },
+    {
+      "label": "NLWeb discovery",
+      "path": "/nlweb.json",
+      "url": "https://oligovigil.pages.dev/nlweb.json",
+      "best_for": "natural-language web and agent discovery clients"
+    },
+    {
+      "label": "Bioschemas JSON-LD",
+      "path": "/bioschemas.json",
+      "url": "https://oligovigil.pages.dev/bioschemas.json",
+      "best_for": "search engines, dataset indexers, and AI discovery layers"
+    },
+    {
+      "label": "MCP config",
+      "path": "/mcp.json",
+      "url": "https://oligovigil.pages.dev/mcp.json",
+      "best_for": "MCP-compatible coding agents"
+    },
+    {
+      "label": "LLM guide",
+      "path": "/llms.txt",
+      "url": "https://oligovigil.pages.dev/llms.txt",
+      "best_for": "documentation-first agents"
+    },
+    {
+      "label": "Agent pack",
+      "path": "/api/download/oligovigil_agent_pack.zip",
+      "url": "https://oligovigil.pages.dev/api/download/oligovigil_agent_pack.zip",
+      "best_for": "local SDK, template, prompt, and MCP reuse"
+    }
+  ],
+  "tool_profiles": [
+    {
+      "profile": "OpenAPI importer",
+      "works_for": "coding tools, API action builders, no-code agents, and client generators",
+      "entrypoint": "/api/openapi.json",
+      "what_it_enables": "Automatic discovery of search, evidence detail, triage, benchmark, and download endpoints.",
+      "url": "https://oligovigil.pages.dev/api/openapi.json"
+    },
+    {
+      "profile": "MCP-compatible agent",
+      "works_for": "desktop assistants and coding agents that accept MCP server configs",
+      "entrypoint": "/mcp.json",
+      "what_it_enables": "Tool calls for search, citable record retrieval, safety triage, modification profile, benchmark metadata, and downloads.",
+      "url": "https://oligovigil.pages.dev/mcp.json"
+    },
+    {
+      "profile": "Dossier-first agent",
+      "works_for": "vibe-coding tools, notebooks, and assistants that need a single high-level output",
+      "entrypoint": "/api/safety_dossier",
+      "what_it_enables": "One request returns design context, risk matrix, evidence graph, provenance links, export actions, and benchmark reuse hooks.",
+      "url": "https://oligovigil.pages.dev/api/safety_dossier"
+    },
+    {
+      "profile": "NLWeb-style client",
+      "works_for": "natural-language web agents and site-discovery clients",
+      "entrypoint": "/nlweb.json",
+      "what_it_enables": "Tool discovery for dossier generation, evidence graph retrieval, verified-evidence search, and release download.",
+      "url": "https://oligovigil.pages.dev/nlweb.json"
+    },
+    {
+      "profile": "Documentation-first agent",
+      "works_for": "agents that can read URLs but cannot install tools",
+      "entrypoint": "/llms.txt",
+      "what_it_enables": "Guardrailed use of OligoVigil through stable URLs and endpoint instructions.",
+      "url": "https://oligovigil.pages.dev/llms.txt"
+    },
+    {
+      "profile": "Notebook or data app",
+      "works_for": "Python, R, JavaScript, Streamlit, and dashboard builders",
+      "entrypoint": "/api/download/oligovigil_agent_pack.zip",
+      "what_it_enables": "SDK clients, starter templates, fixed benchmark splits, and CSV downloads.",
+      "url": "https://oligovigil.pages.dev/api/download/oligovigil_agent_pack.zip"
+    },
+    {
+      "profile": "Web fetch or RAG agent",
+      "works_for": "tools that index public web pages and machine-readable text files",
+      "entrypoint": "/agent.json",
+      "what_it_enables": "Single-page discovery of access policy, protocols, primary endpoints, and guardrails.",
+      "url": "https://oligovigil.pages.dev/agent.json"
+    }
+  ],
+  "guardrails": [
+    "Use verified release evidence for claims.",
+    "Treat candidate rows as non-citable gap-finding context.",
+    "Open /api/evidence_detail before making record-level safety claims.",
+    "Do not claim de novo clinical safety or sequence-specific off-target prediction.",
+    "Keep benchmark reference splits unchanged."
+  ],
+  "not_tool_specific": true
+}

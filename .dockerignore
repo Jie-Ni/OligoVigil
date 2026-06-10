@@ -7,7 +7,6 @@ server.*.log
 04_delivery/
 FINAL/
 docs/
-agent_ready/
 Rplots.pdf
 all_tables_audit.zip
 *.bak
