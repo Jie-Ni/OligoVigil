@@ -1,0 +1,116 @@
+table_name,column_name,description,release_status
+evidence_release,evidence_domain,Release evidence domain: toxicity or offtarget,release
+evidence_release,entity_table,Underlying release table: toxicity_endpoint or offtarget_evidence,release
+evidence_release,evidence_id,Stable row identifier within the entity_table,release
+evidence_release,canonical_name,Molecule/cohort/source-derived entity label,release
+evidence_release,modality,Oligonucleotide modality where curated,release
+evidence_release,target_gene_symbol,Target gene symbol where curated; incomplete in current release,release
+evidence_release,disease_context,Disease or biological context where curated,release
+evidence_release,sense_sequence,Sense strand sequence when curator verified; sparse in current release,release
+evidence_release,antisense_sequence,Antisense strand sequence when curator verified; sparse in current release,release
+evidence_release,guide_sequence,Guide strand sequence when curator verified; sparse in current release,release
+evidence_release,passenger_sequence,Passenger strand sequence when curator verified; sparse in current release,release
+evidence_release,seed_region,Seed region when curator verified; sparse in current release,release
+evidence_release,backbone_chemistry,Backbone chemistry annotation when curator verified,release
+evidence_release,sugar_modification,Sugar modification annotation when curator verified,release
+evidence_release,base_modification,Base modification annotation when curator verified,release
+evidence_release,conjugate_delivery,Conjugate or delivery chemistry annotation when curator verified,release
+evidence_release,sequence_annotation_status,Sequence curation status for the linked molecule/cohort,release
+evidence_release,modification_annotation_status,Chemistry/modification curation status for the linked molecule/cohort,release
+evidence_release,category,Toxicity endpoint category or off-target category,release
+evidence_release,evidence_label,Endpoint or off-target evidence label,release
+evidence_release,evidence_grade,Curator-assigned evidence grade A/B/C,release
+evidence_release,source_location,Exact source location supporting the evidence claim,release
+evidence_release,source_document_id,Source identifier matching source_document.id,release
+evidence_release,source_title,Source article/document title,release
+evidence_release,pmid,PubMed identifier where available,release
+evidence_release,source_pmcid,PubMed Central identifier where available,release
+evidence_release,doi,Digital object identifier where available,release
+evidence_release,source_url,Primary source URL or landing page,release
+evidence_release,source_license_status,Conservative source license status inherited from source_document,release
+evidence_release,source_reuse_category,Conservative reuse category inherited from source_document,release
+evidence_release,curation_basis,Derived annotation basis; no raw article text is redistributed,release
+evidence_release,raw_quote_included,Always false for release export,release
+evidence_release,is_observed_experimental,Flag for observed experimental evidence,release
+evidence_release,is_computational_prediction,Flag for computational-only evidence,release
+evidence_release,audit_validation_status,Audit validation status for the release row,release
+evidence_release,curator_decision,Curator decision; release rows must be accept,release
+evidence_release,curator_id,Curator identifier if retained; may be redacted,release
+evidence_release,audit_note,Human audit note supporting the release decision,release
+evidence_release,audited_at,Audit timestamp or batch timestamp,release
+source_document,id,Internal source identifier,release
+source_document,source_type,Source class such as literature or regulatory source,release
+source_document,source_url,Primary source URL or landing page,release
+source_document,pmid,PubMed identifier where available,release
+source_document,pmcid,PubMed Central identifier where available,release
+source_document,doi,Digital object identifier where available,release
+source_document,title,Source title,release
+source_document,journal_or_agency,Journal name or issuing agency,release
+source_document,publication_year,Publication or document year,release
+source_document,license_status,Conservative source-class license status,release
+source_document,reuse_category,Redistribution class for derived/raw use,release
+source_document,accessed_at,Source access timestamp,release
+molecule,id,Internal molecule/cohort identifier,release
+molecule,canonical_name,Molecule or cohort label,release
+molecule,modality_id,Foreign key to modality table,release
+molecule,target_gene_symbol,Target gene symbol where available,release
+molecule,disease_context,Disease context where available,release
+molecule,therapeutic_status,Therapeutic or source-derived status label,release
+toxicity_endpoint,id,Toxicity endpoint row identifier,release
+toxicity_endpoint,molecule_id,Foreign key to molecule,release
+toxicity_endpoint,assay_id,Foreign key to assay metadata,release
+toxicity_endpoint,endpoint_name,Toxicity or safety endpoint label,release
+toxicity_endpoint,endpoint_category,Normalized endpoint category,release
+toxicity_endpoint,source_location,Exact source location supporting the toxicity claim,release
+toxicity_endpoint,evidence_grade,Curator-assigned evidence grade A/B/C,release
+offtarget_evidence,id,Off-target evidence row identifier,release
+offtarget_evidence,molecule_id,Foreign key to molecule,release
+offtarget_evidence,evidence_type,Off-target evidence category,release
+offtarget_evidence,match_type,Seed/mismatch/transcriptome category where curated,release
+offtarget_evidence,is_observed_experimental,Flag for observed experimental evidence,release
+offtarget_evidence,is_computational_prediction,Flag for computational-only evidence,release
+offtarget_evidence,source_location,Exact source location supporting the off-target claim,release
+offtarget_evidence,evidence_grade,Curator-assigned evidence grade A/B/C,release
+benchmark_reference_splits,task_name,Benchmark task name,release
+benchmark_reference_splits,split_name,Reference split label: train/validation/test,release
+benchmark_reference_splits,entity_table,Underlying evidence table,release
+benchmark_reference_splits,entity_id,Underlying evidence row identifier,release
+benchmark_reference_splits,evidence_domain,Toxicity or off-target task domain,release
+benchmark_reference_splits,evidence_grade,Evidence grade used for benchmark eligibility,release
+benchmark_reference_splits,leakage_group,Source/molecule leakage-control group,release
+benchmark_reference_splits,split_strategy,Deterministic split strategy,release
+benchmark_baseline_results,baseline_model,Deterministic baseline model name,release
+benchmark_baseline_results,prediction_basis,Feature/group used by the baseline,release
+benchmark_baseline_results,accuracy,Accuracy on the evaluation split,release
+benchmark_baseline_results,macro_f1,Macro-F1 on the evaluation split,release
+benchmark_baseline_results,coverage,Evaluation row coverage for the baseline,release
+curation_audit,entity_table,Table audited by the row,release
+curation_audit,entity_id,Identifier audited in entity_table,release
+curation_audit,extraction_method,Extraction or review method,release
+curation_audit,extractor_model_or_script,Script/model/batch source for candidate extraction or promotion,release
+curation_audit,validation_status,Review state,release
+curation_audit,curator_decision,Curator accept/reject/pending decision,release
+curation_audit,curator_id,Curator identifier if retained; may be redacted,release
+curation_audit,audit_note,Human audit note,release
+curation_candidate,id,Candidate row identifier; not citable release evidence,candidate_only
+curation_candidate,evidence_domain,Candidate curation domain,candidate_only
+curation_candidate,source_location,Derived source location pointer,candidate_only
+curation_candidate,matched_terms,Rule-derived terms used for candidate triage,candidate_only
+curation_candidate,candidate_signal,Derived candidate signal summary,candidate_only
+curation_candidate,confidence_label,Triage confidence label; not evidence grade,candidate_only
+curation_candidate,validation_status,Review state; candidates are not final evidence,candidate_only
+curation_queue,id,Curation queue row identifier,candidate_only
+curation_queue,evidence_domain,Curation domain assigned to source,candidate_only
+curation_queue,extraction_target,Field to extract during curator pass,candidate_only
+source_license_manifest_v1,source_document_id,Source identifier matching source_document.id,release_manifest
+source_license_manifest_v1,article_license,Conservative article/source license status captured from source metadata,release_manifest
+source_license_manifest_v1,release_evidence_rows,Number of verified release evidence rows linked to the source,release_manifest
+source_license_manifest_v1,candidate_rows,Number of candidate triage rows linked to the source,release_manifest
+source_license_manifest_v1,oa_subset_status,Whether PMCID/OA-like status is present or not verified,release_manifest
+source_license_manifest_v1,raw_text_used,Whether raw source text is stored or redistributed; OligoVigil stores derived annotations only,release_manifest
+source_license_manifest_v1,raw_text_stored,Always false for release package,release_manifest
+source_license_manifest_v1,raw_redistribution_allowed,Whether raw redistribution is claimed; usually false or not claimed,release_manifest
+source_license_manifest_v1,derived_annotation_allowed,Conservative derived annotation reuse status,release_manifest
+source_license_manifest_v1,commercial_reuse_allowed,Commercial reuse status when known; otherwise unknown,release_manifest
+source_license_manifest_v1,license_review_status,Conservative review status for the source row,release_manifest
+source_license_manifest_v1,restriction_note,Human-readable redistribution boundary,release_manifest

@@ -1,0 +1,69 @@
+{
+  "title": "OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides (v1.0.0)",
+  "version": "1.0.0",
+  "publication_date": "2026-06-07",
+  "upload_type": "dataset",
+  "description": "<p>OligoVigil v1.0.0 release. A curator-verified, source-anchored knowledge base of preclinical safety and sequence-independent off-target evidence for therapeutic oligonucleotides (ASO, siRNA, PMO, LNA, aptamer, GalNAc-siRNA). The release contains <b>737 human-adjudicated records</b> (626 toxicity endpoints + 111 off-target observations) from 628 primary sources, each anchored to an exact in-source location and graded A/B/C, plus a <b>leakage-aware 344-record evaluation benchmark</b> (toxicity 263 = 218/23/22; off-target 81 = 66/5/10) with deterministic prior baselines. The v6 within-team collaborator round (2026-06-07) added 48 curator-verified records with new chemistry and delivery dimensions, recovered 110 distinct molecule names, reduced placeholder benchmark contamination from 31.1% to 4.1%, and conducted a pilot second-curator review of 100 release rows. The v6.1 round (2026-06-07d) added a further 32 toxicity records (EXPAND-2) and a 100-row mixed-sample inter-rater study with an independent second curator: binary Cohen kappa = 0.34 (fair, per Landis-Koch); the second curator is systematically stricter than the curator of record (a safety-conservative direction).</p><p>Released alongside a candidate-to-release firewall audit trail (no machine output is presented as human curation), 1,345 demoted machine-proposed candidates, the v2 LLM-vs-human per-candidate decision triple (n = 2,003) for full reproducibility, full curation_audit, and a no-login web portal with documented REST API + OpenAPI + MCP + Bioschemas JSON-LD + W3C PROV interfaces. Companion NAR Database Issue manuscript: [TBD: DOI].</p><p>Data license: CC BY 4.0. Code license: MIT.</p>",
+  "creators": [
+    {
+      "name": "Ni, Jie",
+      "affiliation": "State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University, Nanjing 211102, China; Digital Science Center, University of Innsbruck, Innsbruck 6020, Austria; Department of Medical Informatics, School of Biomedical Engineering and Informatics, Nanjing Medical University, Nanjing 211166, China",
+      "orcid": "0009-0003-9767-5441"
+    },
+    {
+      "name": "Zhang, Xinting",
+      "affiliation": "State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University, Nanjing 211102, China",
+      "orcid": "0009-0005-0158-3679"
+    },
+    {
+      "name": "Xie, Zhuoying",
+      "affiliation": "State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University, Nanjing 211102, China",
+      "orcid": "0000-0003-3534-1924"
+    },
+    {
+      "name": "Lu, Shan",
+      "affiliation": "Women and Children Department, The First Affiliated Hospital, Nanjing Medical University, Nanjing 210029, China",
+      "orcid": "0009-0004-3088-5070"
+    },
+    {
+      "name": "Liu, Yun",
+      "affiliation": "State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University, Nanjing 211102, China; Department of Information, The First Affiliated Hospital, Nanjing Medical University, Nanjing 210029, China",
+      "orcid": "0000-0002-4311-3772"
+    },
+    {
+      "name": "Jatowt, Adam",
+      "affiliation": "Digital Science Center, University of Innsbruck, Innsbruck 6020, Austria",
+      "orcid": "0000-0001-7235-0665"
+    }
+  ],
+  "keywords": [
+    "oligonucleotide therapeutics",
+    "antisense oligonucleotide",
+    "siRNA",
+    "off-target effects",
+    "preclinical safety",
+    "toxicity",
+    "curation",
+    "benchmark",
+    "source provenance",
+    "GalNAc-siRNA",
+    "NAR Database"
+  ],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "language": "eng",
+  "communities": [],
+  "related_identifiers": [
+    {"relation": "isSupplementTo", "identifier": "[TBD: 10.1093/nar/gkXXNNNN]", "resource_type": "publication-article", "scheme": "doi"},
+    {"relation": "isDerivedFrom", "identifier": "10.1093/nar/gkaf1064", "resource_type": "publication-article", "scheme": "doi"},
+    {"relation": "references",   "identifier": "10.1049/syb2.12102",   "resource_type": "publication-article", "scheme": "doi"},
+    {"relation": "references",   "identifier": "10.1186/s12859-025-06359-y", "resource_type": "publication-article", "scheme": "doi"},
+    {"relation": "isPartOf",     "identifier": "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.0", "resource_type": "software", "scheme": "url"}
+  ],
+  "subjects": [
+    {"term": "Computational biology / Bioinformatics", "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D019295", "scheme": "MeSH"},
+    {"term": "Oligonucleotides, Antisense", "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D016376", "scheme": "MeSH"},
+    {"term": "RNA, Small Interfering", "identifier": "http://www.nlm.nih.gov/cgi/mesh/2025/MB_cgi?field=uid&term=D034622", "scheme": "MeSH"}
+  ],
+  "notes": "Submitted as a new database article to NAR Database Issue (2027 cycle). For the full curation-integrity audit and definition-of-done, see 04_delivery/REMEDIATION_REPORT_20260607.md in the accompanying GitHub repository. Curator of record: Jie Ni (curator_id='ni_jie'); single-curator AI-assisted human curation. Inter-rater agreement (KAPPA-2, mixed accept+reject sample of 100, second curator HY): binary Cohen kappa = 0.34 (fair, per Landis-Koch); the second curator is systematically stricter than the curator of record (a safety-conservative direction). KAPPA-1 (release-only pilot, n=100) is superseded by KAPPA-2."
+}

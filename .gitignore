@@ -1,0 +1,124 @@
+# =============================================================================
+# OligoVigil — .gitignore
+# =============================================================================
+# Commit policy: ship the source code, the released DB snapshot
+# (data/oligosafety.db), generated manifests, and the FINAL/ submission kit.
+# Exclude bytecode, editor noise, OS junk, runtime logs, working/backup DBs,
+# and the agent-only workflow scratch files.
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Python bytecode / build artifacts
+# -----------------------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+.eggs/
+
+
+# -----------------------------------------------------------------------------
+# Editor / IDE
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
+# -----------------------------------------------------------------------------
+# OS-specific cruft
+# -----------------------------------------------------------------------------
+**/.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# -----------------------------------------------------------------------------
+# Data backups and intermediate snapshots
+#   - data/*.bak                    → ad-hoc SQLite snapshots
+#   - data/oligosafety.db.pre_*     → pre-migration backups (named by step)
+#   - data/oligosafety.pre_*.db     → older-style pre-batch snapshots
+#   - data/oligosafety.batch*.db    → batch-staging intermediates
+#   - data/oligosafety.remote_*.db  → remote-curation working copies
+#   The released artifact is data/oligosafety.db — keep that one.
+# -----------------------------------------------------------------------------
+data/*.bak
+data/oligosafety.db.pre_*
+data/oligosafety.pre_*.db
+data/oligosafety.batch*.db
+data/oligosafety.remote_*.db
+data/backups/
+data/generated/*.db
+data/generated/*.json
+data/generated/*.jsonl
+data/generated/pmc_xml_cache/
+data/generated/pubmed_abstract_cache*.json
+data/generated/release_scale_*
+data/generated/taskA_agent_reviews/
+all_tables_audit.zip
+
+
+# -----------------------------------------------------------------------------
+# Runtime server logs (regenerated on every server start)
+# -----------------------------------------------------------------------------
+server.err.log
+server.out.log
+*.log
+
+
+# -----------------------------------------------------------------------------
+# Agent-only scratch / workflow files (never part of a release)
+#   These are produced by paper-skill workflows on the local machine
+#   and have no value to a downstream user of the repo.
+# -----------------------------------------------------------------------------
+04_delivery/
+_test*.pdf
+_test*.md
+_v4_workflow.js
+_p8k_workflow.js
+_nature_reviewer_wf.js
+_finish_workflow.js
+*_wf.js
+_*.js
+Rplots.pdf
+FINAL/*/00_SUBMISSION_CHECKLIST.md
+FINAL/*/metadata_ledger.md
+FINAL/*/PI_TODO.md
+FINAL/*/suggested_reviewers*.md
+FINAL/*/peer_review/
+FINAL/*/FORMAL_*.md
+FINAL/*/NAR_AUTHOR_GUIDELINES_COMPLIANCE_AUDIT_*.md
+FINAL/*/NAR_WEB_SERVER_STYLE_RESEARCH_NOTE.md
+FINAL/*/declarations/*DRAFT*.md
+
+
+# -----------------------------------------------------------------------------
+# Per-version manuscript compile scratch
+#   The PDF and the source .md ARE shipped; the *_compile.md intermediate
+#   produced by the LaTeX/pandoc compile pipeline is not.
+# -----------------------------------------------------------------------------
+04_delivery/MANUSCRIPT_DRAFT_v?_compile.md
+
+
+# -----------------------------------------------------------------------------
+# Python venvs
+# -----------------------------------------------------------------------------
+.venv/
+venv/
+env/
+
+
+# -----------------------------------------------------------------------------
+# Secrets — defence-in-depth (the repo should already contain none)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+secrets.json

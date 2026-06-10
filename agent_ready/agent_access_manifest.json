@@ -1,0 +1,82 @@
+{
+  "name": "OligoVigil agent access pack",
+  "version": "20260604-resource-depth-v42",
+  "purpose": "Make OligoVigil easy to reuse from agentic clients, coding tools, OpenAPI importers, MCP clients, llms.txt, universal manifests, SDK clients, prompts, and starter templates.",
+  "artifacts": [
+    {
+      "path": "connectors/universal_agent_manifest.json",
+      "kind": "universal_agent_manifest",
+      "purpose": "Tool-agnostic discovery manifest for agents that can read a public URL."
+    },
+    {
+      "path": "connectors/openapi_action_manifest.json",
+      "kind": "openapi_action_manifest",
+      "purpose": "OpenAPI action/plugin-style manifest for tools that import REST APIs."
+    },
+    {
+      "path": "connectors/mcp_client_config.json",
+      "kind": "mcp_client_config",
+      "purpose": "Generic MCP client configuration pointing to the bundled OligoVigil MCP server."
+    },
+    {
+      "path": "connectors/tool_profiles.json",
+      "kind": "tool_profiles",
+      "purpose": "Connection profiles for OpenAPI importers, MCP agents, documentation-first agents, notebooks, and web-fetch/RAG agents."
+    },
+    {
+      "path": "oligovigil_skill/SKILL.md",
+      "kind": "codex_skill",
+      "purpose": "Optional Codex-specific skill instructions; not required for universal agent access."
+    },
+    {
+      "path": "mcp_server/oligovigil_mcp_server.py",
+      "kind": "mcp_server",
+      "purpose": "Tool server exposing search, record detail, safety triage, modification profile, benchmark, and download manifest tools."
+    },
+    {
+      "path": "clients/python/oligovigil_client.py",
+      "kind": "python_client",
+      "purpose": "Minimal standard-library client for JSON and CSV endpoints."
+    },
+    {
+      "path": "clients/javascript/oligovigil-client.mjs",
+      "kind": "javascript_client",
+      "purpose": "Browser or Node fetch client for common OligoVigil workflows."
+    },
+    {
+      "path": "clients/r/oligovigil_client.R",
+      "kind": "r_client",
+      "purpose": "R helper functions for search, evidence records, details, benchmark metadata, and release CSV."
+    },
+    {
+      "path": "prompts/oligovigil_prompt_pack.md",
+      "kind": "prompt_pack",
+      "purpose": "Reusable prompts for research agents and agentic client workflows."
+    },
+    {
+      "path": "prompts/universal_vibecoding_connector.md",
+      "kind": "universal_prompt",
+      "purpose": "Copy-paste connector prompt for agentic coding tools."
+    },
+    {
+      "path": "templates/streamlit_safety_dashboard.py",
+      "kind": "starter_template",
+      "purpose": "Small safety-evidence dashboard starter."
+    },
+    {
+      "path": "templates/benchmark_reuse_notebook.py",
+      "kind": "starter_template",
+      "purpose": "Notebook-style benchmark reuse starter."
+    },
+    {
+      "path": "llms.txt",
+      "kind": "agent_discovery",
+      "purpose": "Concise machine-readable instructions for AI agents."
+    },
+    {
+      "path": "llms-full.txt",
+      "kind": "agent_discovery",
+      "purpose": "Detailed machine-readable instructions for AI agents."
+    }
+  ]
+}

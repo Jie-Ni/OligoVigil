@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">OligoVigil mark</title>
+  <desc id="desc">Shield, eye, and oligonucleotide chain mark for OligoVigil.</desc>
+  <defs>
+    <linearGradient id="shield" x1="10" y1="6" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#7c3a4d"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#shield)" d="M32 5 54 13v16c0 14.2-8.4 24-22 30C18.4 53 10 43.2 10 29V13L32 5Z"/>
+  <path fill="#fff" d="M16.4 31.6C20.5 24.8 25.6 21.4 32 21.4s11.5 3.4 15.6 10.2C43.5 38.4 38.4 41.8 32 41.8s-11.5-3.4-15.6-10.2Z"/>
+  <circle cx="32" cy="31.6" r="7.2" fill="#17202a"/>
+  <circle cx="32" cy="31.6" r="3.1" fill="#fff"/>
+  <path fill="none" stroke="#f7c667" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" d="M19.8 18.2c5.8 0 5.8 6.8 11.6 6.8s5.8-6.8 11.6-6.8M21.4 45.5c5.1-3.7 7-7.2 10.7-7.2s5.6 3.5 10.5 7.2"/>
+  <circle cx="19.8" cy="18.2" r="2.4" fill="#f7c667"/>
+  <circle cx="31.4" cy="25" r="2.4" fill="#f7c667"/>
+  <circle cx="43" cy="18.2" r="2.4" fill="#f7c667"/>
+</svg>

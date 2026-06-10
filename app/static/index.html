@@ -1,0 +1,1297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OligoVigil Workbench</title>
+    <meta
+      name="description"
+      content="OligoVigil is a free oligonucleotide safety evidence resource with curated toxicity, off-target, provenance, benchmark, and download workflows."
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/ld+json" href="/bioschemas.json" />
+    <link rel="alternate" type="application/json" href="/nlweb.json" />
+    <link rel="stylesheet" href="/styles.css?v=20260604_core_validation_v45" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-lockup">
+        <img class="brand-mark" src="/logo.svg" alt="" aria-hidden="true" />
+        <div class="brand-block">
+          <span class="eyebrow">Oligonucleotide safety evidence resource</span>
+          <h1>OligoVigil</h1>
+          <p>Curated safety and off-target evidence for therapeutic oligonucleotides, with citable provenance and benchmark-ready release data.</p>
+        </div>
+      </div>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#overview" data-view-target="overview">Overview</a>
+        <a href="#search" data-view-target="search">Search</a>
+        <a href="#triage" data-view-target="triage">Dossier</a>
+        <a href="#evidence" data-view-target="evidence">Evidence</a>
+        <a href="#offtarget" data-view-target="offtarget">Off-target</a>
+        <a href="#trust" data-view-target="trust">Trust</a>
+        <a href="#sources" data-view-target="sources">Sources</a>
+        <a href="#downloads" data-view-target="downloads">Downloads</a>
+        <a href="#benchmark" data-view-target="benchmark">Benchmark</a>
+        <a href="#agent" data-view-target="agent">Agent</a>
+        <a href="#cite" data-view-target="cite">Cite</a>
+        <a href="#help" data-view-target="help">Help</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="error-banner" class="error-banner" hidden></div>
+      <div id="provenance-banner" role="note" style="background:#e7f1ff;border:1px solid #b6d4fe;color:#084298;padding:10px 14px;margin:0 0 14px;border-radius:8px;font-size:0.9rem;line-height:1.45;">
+        <strong>Current release: 737 human curator-verified evidence records.</strong> The public release contains 626 toxicity records and 111 off-target records. Candidate rows are kept separate from citable release evidence; unsupported candidates are not shown as verified records. Every release row links to source metadata, an exact source location, evidence grade, and audit status.
+      </div>
+
+      <section class="app-view" id="overview" data-view="overview">
+        <div class="overview-layout resource-hero">
+          <div class="overview-main hero-primary">
+            <div class="overview-head">
+              <div>
+                <h2>Start with a safety question</h2>
+                <p>Search by molecule, target, endpoint, modification, source, PMID, DOI, or off-target mechanism.</p>
+              </div>
+            </div>
+            <div class="hero-search-bar">
+              <input id="hero-search-input" type="search" aria-label="Search OligoVigil" placeholder="GalNAc hepatotoxicity, PCSK9, seed off-target, platelet, renal" />
+              <button id="hero-search-button" type="button">Search</button>
+            </div>
+            <section class="stats-grid" id="stats"></section>
+            <section class="home-workflow-panel" aria-label="Primary database workflows">
+              <div class="workflow-intro">
+                <h3>Primary workflows</h3>
+                <p>Start from a citable release record, a mechanism question, a provenance packet, or a benchmark reuse task.</p>
+              </div>
+              <div class="task-grid">
+              <button type="button" data-workflow-action="evidence:toxicity:hepatic">
+                <img src="/assets/generated/icon-hepatic-safety.png" alt="" aria-hidden="true" />
+                <span>Browse verified evidence</span>
+              </button>
+              <button type="button" data-workflow-action="offtarget">
+                <img src="/assets/generated/icon-offtarget-neuro.png" alt="" aria-hidden="true" />
+                <span>Off-target mechanisms</span>
+              </button>
+              <button type="button" data-workflow-action="triage:AUGCUACUGACUGA:PCSK9:GalNAc:GalNAc:hepatic">
+                <img src="/assets/generated/icon-safety-shield.png" alt="" aria-hidden="true" />
+                <span>Safety triage report</span>
+              </button>
+              <button type="button" data-workflow-action="benchmark">
+                <img src="/assets/generated/icon-assay-matrix.png" alt="" aria-hidden="true" />
+                <span>Reuse benchmark splits</span>
+              </button>
+              </div>
+            </section>
+            <section class="novelty-strip" aria-label="Resource positioning">
+              <div>
+                <strong>Safety-focused</strong>
+                <span>ASO/siRNA toxicity and off-target evidence, not a broad RNA therapeutics catalog.</span>
+              </div>
+              <div>
+                <strong>Source-grounded</strong>
+                <span>Each release record links to source metadata, exact location, and curator audit trail.</span>
+              </div>
+              <div>
+                <strong>Reusable</strong>
+                <span>Bulk CSV/API downloads plus fixed Grade A/B benchmark splits.</span>
+              </div>
+            </section>
+            <section class="signal-strip" aria-label="Safety signal visual index">
+              <div class="signal-tile">
+                <img src="/assets/generated/icon-hepatic-safety.png" alt="" aria-hidden="true" />
+                <span>Hepatic</span>
+              </div>
+              <div class="signal-tile">
+                <img src="/assets/generated/icon-renal-safety.png" alt="" aria-hidden="true" />
+                <span>Renal</span>
+              </div>
+              <div class="signal-tile">
+                <img src="/assets/generated/icon-blood-toxicity.png" alt="" aria-hidden="true" />
+                <span>Blood</span>
+              </div>
+              <div class="signal-tile">
+                <img src="/assets/generated/icon-immune-signal.png" alt="" aria-hidden="true" />
+                <span>Immune</span>
+              </div>
+              <div class="signal-tile">
+                <img src="/assets/generated/icon-offtarget-neuro.png" alt="" aria-hidden="true" />
+                <span>Off-target</span>
+              </div>
+              <div class="signal-tile">
+                <img src="/assets/generated/icon-local-tissue.png" alt="" aria-hidden="true" />
+                <span>Local</span>
+              </div>
+            </section>
+            <div class="visual-band">
+              <img src="/assets/generated/hero-oligovigil-evidence.png" alt="" aria-hidden="true" />
+            </div>
+            <section class="home-examples" aria-label="Example results">
+              <div class="compact-title">
+                <h3>Example Results</h3>
+                <a href="#examples" data-view-target="examples">Open all</a>
+              </div>
+              <div class="home-example-grid" id="home-example-grid"></div>
+            </section>
+          </div>
+
+          <aside class="gate-panel">
+            <h2>Release and Reuse</h2>
+            <div class="gate-list">
+              <div>
+                <span>Verified evidence</span>
+                <strong id="gate-release-status" class="gate-warn">Checking</strong>
+              </div>
+              <div>
+                <span>Benchmark rows</span>
+                <strong id="gate-benchmark-status" class="gate-warn">Checking</strong>
+              </div>
+              <div>
+                <span>Downloads</span>
+                <strong id="gate-download-status" class="gate-warn">Checking</strong>
+              </div>
+              <div>
+                <span>API access</span>
+                <strong id="gate-api-status" class="gate-warn">Checking</strong>
+              </div>
+            </div>
+            <div id="metadata-strip" class="metadata-strip"></div>
+            <div class="hero-actions">
+              <a class="button-link" href="/api/download/evidence_release.csv">Evidence release</a>
+              <a class="button-link" href="#trust" data-view-target="trust">Curation trust</a>
+              <a class="button-link" href="#sources" data-view-target="sources">Browse sources</a>
+              <a class="button-link" href="#downloads" data-view-target="downloads">Download manifest</a>
+              <a class="button-link" href="/api/download/benchmark_reference_splits.csv">Benchmark splits</a>
+              <a class="button-link" href="#cite" data-view-target="cite">Cite release</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="app-view" id="sequence" data-view="sequence" hidden>
+        <div class="section-head">
+          <h2>Sequence and Modification Evidence Coverage</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/sequence_search?sequence=AUGCUACUGACUGA&modification=GalNAc&target=PCSK9">Example data</a>
+            <a class="button-link" href="/api/sequence_coverage">Coverage data</a>
+            <a class="button-link" href="/api/download/sequence_modification_curation_template.csv">Curation template</a>
+            <a class="button-link" href="/api/modification_profile">Modification profiles</a>
+          </div>
+        </div>
+        <div class="notice sequence-warning">
+          <div>
+            <strong>Evidence lookup, not sequence-specific prediction.</strong>
+            OligoVigil parses A/C/G/T/U/N input and retrieves curated literature evidence for seed/off-target mechanisms. It does not perform genome or transcriptome alignment, 3'UTR seed-match scanning, or candidate risk ranking.
+          </div>
+          <a class="button-link secondary-button" href="/api/download/sequence_modification_curation_template.csv">Complete sequence fields</a>
+        </div>
+        <div class="benchmark-grid section-block sequence-coverage-priority" id="sequence-coverage-grid"></div>
+        <div class="sequence-layout">
+          <div class="sequence-panel">
+            <h3>Sequence-to-evidence lookup</h3>
+            <div class="sequence-controls">
+              <label>
+                Oligo sequence
+                <input id="sequence-input" type="search" placeholder="AUGCUACUGACUGA" />
+              </label>
+              <label>
+                Target
+                <input id="sequence-target-input" type="search" placeholder="PCSK9, TTR, DMD" />
+              </label>
+              <label>
+                Modification or delivery
+                <select id="sequence-modification-filter">
+                  <option value="">Any modification</option>
+                </select>
+              </label>
+              <label>
+                Endpoint
+                <input id="sequence-endpoint-input" type="search" placeholder="hepatic, renal, seed" />
+              </label>
+              <button id="sequence-search-button" type="button">Look up evidence</button>
+            </div>
+            <div id="sequence-status-card" class="sequence-status-card"></div>
+          </div>
+          <div class="sequence-panel">
+            <h3>Modification profile</h3>
+            <div class="sequence-controls compact-controls">
+              <label>
+                Term
+                <select id="modification-profile-filter">
+                  <option value="">All terms</option>
+                </select>
+              </label>
+              <button id="modification-profile-button" type="button">Update profile</button>
+            </div>
+            <div id="modification-profile-grid" class="profile-grid"></div>
+          </div>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Linked release evidence</h3>
+            <div class="table-wrap">
+              <table id="sequence-release-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Candidate evidence for curation</h3>
+            <div class="table-wrap">
+              <table id="sequence-candidate-table"></table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view dossier-view" id="triage" data-view="triage" hidden>
+        <div class="dossier-workbench">
+          <div class="triage-panel triage-input-panel dossier-control-panel">
+            <div class="dossier-title-block">
+              <span class="page-kicker">Safety Dossier Studio</span>
+              <h2>Build a citable oligo safety dossier</h2>
+              <p>Convert a candidate design context into release evidence, source provenance, benchmark hooks, and separated candidate gaps.</p>
+              <div class="dossier-tag-row" aria-label="Dossier guardrails">
+                <span>no de novo prediction</span>
+                <span>verified release only</span>
+                <span>candidate gaps separated</span>
+              </div>
+            </div>
+            <div class="triage-controls">
+              <label>
+                Oligo sequence
+                <input id="triage-sequence-input" type="search" placeholder="AUGCUACUGACUGA" />
+              </label>
+              <label>
+                HELM notation
+                <input id="triage-helm-input" type="search" placeholder="RNA1{R(A)P.R(U)P.R(G)}" />
+              </label>
+              <label>
+                Target
+                <input id="triage-target-input" type="search" placeholder="PCSK9, TTR, DMD" />
+              </label>
+              <label>
+                Modification
+                <input id="triage-modification-input" type="search" placeholder="GalNAc, 2'-MOE, LNA, phosphorothioate" />
+              </label>
+              <label>
+                Delivery
+                <input id="triage-delivery-input" type="search" placeholder="GalNAc, lipid nanoparticle, conjugate" />
+              </label>
+              <label>
+                Endpoint focus
+                <input id="triage-endpoint-input" type="search" placeholder="hepatic, renal, platelet, seed" />
+              </label>
+              <label>
+                Species
+                <input id="triage-species-input" type="search" placeholder="human, mouse, rat, non-human primate" />
+              </label>
+              <label>
+                Cell or tissue
+                <input id="triage-cell-type-input" type="search" placeholder="hepatocyte, kidney, platelet" />
+              </label>
+              <button id="triage-run-button" type="button">Build dossier</button>
+            </div>
+            <div id="triage-status-card" class="triage-status-card"></div>
+          </div>
+
+          <div class="triage-panel dossier-spotlight-panel">
+            <div class="dossier-spotlight-head">
+              <div>
+                <h3>Dossier output</h3>
+                <p>Live report summary, evidence graph, provenance policy, and export actions for the current query.</p>
+              </div>
+              <a class="button-link secondary-button" href="#help" data-view-target="help">Evidence policy</a>
+            </div>
+            <div id="triage-summary-grid" class="triage-summary-grid dossier-summary-grid"></div>
+            <div class="dossier-canvas-head">
+              <span>Evidence canvas</span>
+              <small>Design features connected to concerns, verified records, sources, and candidate gaps</small>
+            </div>
+            <div class="evidence-graph-panel" id="triage-evidence-graph"></div>
+            <div id="triage-policy-card" class="triage-policy-card"></div>
+            <div class="dossier-export-panel">
+              <div class="dossier-export-primary">
+                <a id="triage-json-link" class="button-link" href="/api/safety_dossier?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human">Open dossier JSON</a>
+                <button id="triage-print-button" class="secondary-button" type="button">Print dossier</button>
+              </div>
+              <details class="developer-details compact-details export-details">
+                <summary>Technical exports and data files</summary>
+                <div class="inline-actions developer-link-row">
+                  <a id="triage-legacy-link" class="button-link" href="/api/safety_triage?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human">Triage data</a>
+                  <a id="triage-graph-link" class="button-link" href="/api/evidence_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human">Evidence graph</a>
+                  <a id="triage-prov-link" class="button-link" href="/api/prov_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human">PROV JSON</a>
+                  <a class="button-link" href="/api/download/evidence_release.csv">Evidence release</a>
+                  <a class="button-link" href="/api/download/curation_candidates_filtered.csv">Candidate gaps</a>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <section class="section-block">
+          <div class="section-head compact-head">
+            <h2>Dossier Packet</h2>
+            <span class="muted-line">Exportable summary, graph, provenance, and benchmark reuse hooks</span>
+          </div>
+          <div class="dossier-grid" id="triage-dossier-grid"></div>
+        </section>
+        <section class="section-block">
+          <div class="section-head compact-head">
+            <h2>Risk Matrix</h2>
+            <span class="muted-line">Concern-level evidence state and next action</span>
+          </div>
+          <div id="triage-risk-grid" class="triage-risk-grid"></div>
+        </section>
+        <div class="split triage-results">
+          <div>
+            <h3>Citable release evidence</h3>
+            <div class="table-wrap">
+              <table id="triage-release-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Candidate curation gaps</h3>
+            <div class="table-wrap">
+              <table id="triage-candidate-table"></table>
+            </div>
+          </div>
+        </div>
+        <section class="section-block">
+          <div class="section-head compact-head">
+            <h2>Validation Checklist</h2>
+            <span class="muted-line">What a safety scientist should verify before reuse</span>
+          </div>
+          <div class="table-wrap">
+            <table id="triage-validation-table"></table>
+          </div>
+        </section>
+      </section>
+
+      <section class="app-view" id="search" data-view="search" hidden>
+        <div class="section-head">
+          <h2>Search</h2>
+          <div class="inline-actions">
+            <input id="global-search" type="search" aria-label="Search release evidence, candidates, sources, and molecules" placeholder="toxicity, GalNAc, seed, PMID, DOI" />
+            <button id="search-button" type="button">Search</button>
+            <button id="clear-search-button" type="button">Clear</button>
+          </div>
+        </div>
+        <div id="search-summary" class="muted-line"></div>
+        <div class="split search-results">
+          <div>
+            <h3>Sources</h3>
+            <div class="table-wrap">
+              <table id="search-source-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Molecules and cohorts</h3>
+            <div class="table-wrap">
+              <table id="search-molecule-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Candidates</h3>
+            <div class="table-wrap">
+              <table id="search-candidate-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Toxicity</h3>
+            <div class="table-wrap">
+              <table id="search-toxicity-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Off-target</h3>
+            <div class="table-wrap">
+              <table id="search-offtarget-table"></table>
+            </div>
+          </div>
+        </div>
+
+        <div id="query-examples" class="section-block">
+          <div class="section-head">
+            <h2>Query Examples</h2>
+            <a class="button-link" href="/api/examples">Example data</a>
+          </div>
+          <div class="example-grid" id="example-grid"></div>
+        </div>
+      </section>
+
+      <section class="app-view" id="ask" data-view="ask" hidden>
+        <div class="section-head">
+          <h2>Ask OligoVigil</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/ask?q=Show%20GalNAc%20liver%20toxicity%20Grade%20A%2FB%20evidence%20with%20PubMed%20sources">Example data</a>
+            <a class="button-link" href="/api/evidence_records">Release evidence</a>
+            <a class="button-link" href="/api/citation">Citation policy</a>
+          </div>
+        </div>
+        <div class="ask-layout">
+          <div class="ask-panel">
+            <h3>Grounded Question</h3>
+            <textarea id="ask-question" rows="4" aria-label="Ask a read-only evidence question" placeholder="Show GalNAc liver toxicity Grade A/B evidence with PubMed sources"></textarea>
+            <div class="inline-actions">
+              <button id="ask-run-button" type="button">Ask</button>
+              <button id="ask-clear-button" class="secondary-button" type="button">Reset</button>
+            </div>
+            <div class="ask-example-grid" id="ask-example-grid"></div>
+          </div>
+          <div class="ask-panel">
+            <h3>Answer Guardrails</h3>
+            <div class="metadata-strip">
+              <span>release evidence only</span>
+              <span>no writes</span>
+              <span>source-grounded</span>
+              <span>LLM-ready</span>
+            </div>
+            <p id="ask-answer" class="ask-answer"></p>
+            <div class="benchmark-grid" id="ask-summary-grid"></div>
+          </div>
+        </div>
+        <div class="section-block">
+          <div class="section-head">
+            <h2>Interpreted Query</h2>
+            <span class="muted-line">Whitelist query plan exposed for reproducible inspection</span>
+          </div>
+          <div class="benchmark-grid" id="ask-plan-grid"></div>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Grounded Records</h3>
+            <div class="table-wrap">
+              <table id="ask-record-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Source Citations</h3>
+            <div class="table-wrap">
+              <table id="ask-citation-table"></table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="usecases" data-view="usecases" hidden>
+        <div class="section-head">
+          <h2>Use Cases</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/use_cases">Use-case data</a>
+            <a class="button-link" href="/api/case_workflows">Workflow data</a>
+          </div>
+        </div>
+        <div class="usecase-grid" id="usecase-grid"></div>
+      </section>
+
+      <section class="app-view" id="examples" data-view="examples" hidden>
+        <div class="section-head">
+          <h2>Example Results</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/case_workflows">Workflow data</a>
+            <a class="button-link" href="/api/download/evidence_release.csv">Evidence release</a>
+            <a class="button-link" href="/api/download/benchmark_reference_splits.csv">Benchmark splits</a>
+          </div>
+        </div>
+        <div class="examples-focus-layout">
+          <div class="example-result-grid" id="example-result-grid"></div>
+          <div class="workflow-side-panel">
+            <img src="/assets/generated/provenance-network.png" alt="" aria-hidden="true" />
+            <div class="section-block compact-section">
+              <div class="section-head compact-head">
+                <h2>Selected Workflow</h2>
+                <span id="example-workflow-title" class="muted-line"></span>
+              </div>
+              <div class="benchmark-grid compact-dashboard" id="example-dashboard-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="release" data-view="release" hidden>
+        <div class="section-head">
+          <h2>Release Status</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/release_status">Status data</a>
+            <a class="button-link" href="/api/submission_pack">Release packet</a>
+            <a class="button-link" href="/api/field_completeness">Field completeness</a>
+            <a class="button-link" href="/api/readiness">Readiness data</a>
+            <a class="button-link" href="/api/download/all_tables.zip">All tables</a>
+          </div>
+        </div>
+        <div class="quality-grid" id="release-status-grid"></div>
+        <div class="section-block nar-pack-block">
+          <div class="section-head compact-head">
+            <h2>Release Reuse Packet</h2>
+            <span id="submission-pack-status" class="muted-line"></span>
+          </div>
+          <div class="quality-grid" id="submission-pack-grid"></div>
+          <div class="split">
+            <div>
+              <h3>Public Release Blockers</h3>
+              <div class="table-wrap">
+                <table id="release-blocker-table"></table>
+              </div>
+            </div>
+            <div>
+              <h3>Reuse Risk Register</h3>
+              <div class="risk-list" id="reviewer-risk-list"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section-block field-completeness-block">
+          <div class="section-head compact-head">
+            <h2>Field Completeness</h2>
+            <span id="field-completeness-note" class="muted-line"></span>
+          </div>
+          <div class="quality-grid" id="field-completeness-summary-grid"></div>
+          <div class="table-wrap">
+            <table id="field-completeness-table"></table>
+          </div>
+        </div>
+        <div class="section-block core-field-block">
+          <div class="section-head compact-head">
+            <h2>Core Oligo Field Upgrade</h2>
+            <span class="muted-line" id="core-oligo-claim-boundary"></span>
+          </div>
+          <div class="quality-grid" id="core-oligo-status-grid"></div>
+          <div class="split">
+            <div>
+              <h3>Priority Queue</h3>
+              <div class="table-wrap">
+                <table id="core-oligo-priority-table"></table>
+              </div>
+            </div>
+            <div>
+              <h3>Blocking Gates</h3>
+              <div class="trust-policy-list" id="core-oligo-gate-list"></div>
+            </div>
+          </div>
+          <div class="inline-actions">
+            <a class="button-link primary-action" href="/api/download/core_oligo_field_curation_packet.csv">Core field packet</a>
+            <a class="button-link" href="/api/core_oligo_fields">Status JSON</a>
+            <a class="button-link" href="/api/download/sequence_modification_curation_template.csv">Legacy molecule template</a>
+          </div>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Readiness Gates</h3>
+            <div class="table-wrap">
+              <table id="release-gate-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Release Batches</h3>
+            <div class="release-batch-list" id="release-batch-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="help" data-view="help" hidden>
+        <div class="section-head">
+          <h2>Help</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/help">Help data</a>
+            <a class="button-link" href="/api/openapi.json">OpenAPI</a>
+            <a class="button-link" href="#cite" data-view-target="cite">Citation</a>
+          </div>
+        </div>
+        <div class="help-layout">
+          <nav class="help-toc" id="help-toc" aria-label="Help chapters"></nav>
+          <div class="help-content" id="help-content"></div>
+        </div>
+      </section>
+
+      <section class="app-view" id="trust" data-view="trust" hidden>
+        <div class="section-head">
+          <h2>Curation and Trust</h2>
+          <div class="inline-actions">
+            <a class="button-link primary-action" href="/api/curation_protocol">Protocol data</a>
+            <a class="button-link" href="/api/data_availability">Data availability</a>
+            <a class="button-link" href="/api/download/curation_audit.csv">Audit CSV</a>
+            <a class="button-link" href="/api/manifest/license_manifest_v1.csv">License manifest</a>
+            <a class="button-link" href="/api/download/evidence_release.csv">Evidence release</a>
+          </div>
+        </div>
+        <div class="notice">
+          <div id="trust-scope-note">
+            <strong>Loading curation protocol.</strong>
+            Checking release gates, audit coverage, provenance fields, and redistribution policy.
+          </div>
+        </div>
+        <div class="quality-grid" id="trust-release-grid"></div>
+        <div class="section-block independent-validation-block">
+          <div class="section-head compact-head">
+            <h3>Independent Validation</h3>
+            <span class="muted-line" id="independent-validation-note"></span>
+          </div>
+          <div class="quality-grid compact-quality-grid" id="independent-validation-grid"></div>
+          <div class="split">
+            <div>
+              <h3>Sampling Frame</h3>
+              <div class="table-wrap">
+                <table id="validation-sampling-table"></table>
+              </div>
+            </div>
+            <div>
+              <h3>Independent Check Fields</h3>
+              <div class="trust-policy-list" id="validation-review-field-list"></div>
+            </div>
+          </div>
+          <div class="inline-actions">
+            <a class="button-link primary-action" href="/api/download/independent_curation_validation_template.csv">Second-review packet</a>
+            <a class="button-link" href="/api/independent_validation">Validation JSON</a>
+            <a class="button-link" href="/api/download/curation_audit.csv">Audit CSV</a>
+          </div>
+        </div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h3>Audit Path</h3>
+            <span class="muted-line">How users can reproduce the release boundary</span>
+          </div>
+          <div class="trust-step-list" id="trust-reviewer-steps"></div>
+        </div>
+        <div class="split">
+          <div>
+            <div class="section-head compact-head">
+              <h3>Provenance Coverage</h3>
+              <span class="muted-line">Release records only</span>
+            </div>
+            <div class="quality-grid compact-quality-grid" id="trust-provenance-grid"></div>
+          </div>
+          <div>
+            <div class="section-head compact-head">
+              <h3>Evidence Grade Policy</h3>
+              <span class="muted-line">A/B are benchmark eligible; C is contextual</span>
+            </div>
+            <div class="trust-policy-list" id="trust-grade-policy"></div>
+          </div>
+        </div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h3>License and Redistribution Boundary</h3>
+            <span class="muted-line">Raw article text is not redistributed</span>
+          </div>
+          <div class="trust-policy-list" id="trust-redistribution-policy"></div>
+          <div class="table-wrap">
+            <table id="trust-license-table"></table>
+          </div>
+        </div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h3>Audit Method Summary</h3>
+            <span class="muted-line">Counts from curation_audit</span>
+          </div>
+          <div class="table-wrap">
+            <table id="trust-audit-method-table"></table>
+          </div>
+        </div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h3>Known Limitations</h3>
+            <span class="muted-line">Explicitly carried into the manuscript rather than hidden</span>
+          </div>
+          <div class="trust-policy-list" id="trust-limitations"></div>
+        </div>
+      </section>
+
+      <section class="app-view" id="cite" data-view="cite" hidden>
+        <div class="section-head">
+          <h2>Cite OligoVigil</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/citation">Citation data</a>
+            <a class="button-link" href="/api/archive_readiness">Archive readiness</a>
+            <a class="button-link" href="/api/adoption_packet">Adoption packet</a>
+            <a class="button-link" href="/api/download/benchmark_task_cards.csv">Task cards</a>
+          </div>
+        </div>
+        <div class="record-grid">
+          <div>
+            <div class="section-head compact-head">
+              <h2>Preferred Citation</h2>
+              <button id="copy-global-citation-button" class="secondary-button" type="button">Copy</button>
+            </div>
+            <div id="global-citation" class="citation-box text-copy-box"></div>
+          </div>
+          <div>
+            <div class="section-head compact-head">
+              <h2>BibTeX</h2>
+              <button id="copy-global-bibtex-button" class="secondary-button" type="button">Copy</button>
+            </div>
+            <div id="global-bibtex" class="citation-box text-copy-box"></div>
+          </div>
+        </div>
+        <div class="citation-policy-grid" id="citation-policy-grid"></div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h2>Archive DOI Readiness</h2>
+            <a class="button-link" href="/api/download/all_tables.zip">Archive bundle</a>
+          </div>
+          <div class="quality-grid" id="archive-readiness-grid"></div>
+          <div class="table-wrap">
+            <table id="archive-file-table"></table>
+          </div>
+        </div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h2>Adoption Evidence</h2>
+            <span id="adoption-policy-note" class="muted-line"></span>
+          </div>
+          <div class="quality-grid" id="adoption-grid"></div>
+          <div class="table-wrap">
+            <table id="adoption-event-table"></table>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="quality" data-view="quality" hidden>
+        <div class="section-head">
+          <h2>Quality Snapshot</h2>
+          <a class="button-link" href="/api/openapi.json">API schema</a>
+        </div>
+        <div class="quality-grid" id="quality-grid"></div>
+
+        <div id="readiness" class="section-block">
+          <h2>Release Readiness Gates</h2>
+          <div class="table-wrap">
+            <table id="readiness-table"></table>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="curation" data-view="curation" hidden>
+        <div id="candidates">
+          <div class="section-head">
+            <h2>Candidate Evidence Packet</h2>
+            <div class="inline-actions">
+              <input id="candidate-query" type="search" placeholder="Search candidates" />
+              <a id="candidate-download-link" class="button-link" href="/api/download/curation_candidates_filtered.csv">Download filtered CSV</a>
+            </div>
+          </div>
+          <div class="queue-controls">
+            <label>
+              Domain
+              <select id="candidate-domain-filter">
+                <option value="">All domains</option>
+                <option value="toxicity">toxicity</option>
+                <option value="offtarget">offtarget</option>
+                <option value="chemistry">chemistry</option>
+                <option value="assay">assay</option>
+                <option value="delivery">delivery</option>
+                <option value="benchmark">benchmark</option>
+              </select>
+            </label>
+            <label>
+              Confidence
+              <select id="confidence-filter">
+                <option value="">All confidence levels</option>
+                <option value="high_candidate">high_candidate</option>
+                <option value="medium_candidate">medium_candidate</option>
+                <option value="low_candidate">low_candidate</option>
+              </select>
+            </label>
+            <label>
+              Rows
+              <select id="candidate-limit">
+                <option value="250">250</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+              </select>
+            </label>
+          </div>
+          <div class="table-wrap">
+            <table id="candidate-table"></table>
+          </div>
+        </div>
+
+        <div id="queue" class="section-block">
+          <div class="section-head">
+            <h2>Curation Queue</h2>
+            <input id="queue-query" type="search" placeholder="Search queue" />
+          </div>
+          <div class="queue-controls">
+            <label>
+              Domain
+              <select id="domain-filter">
+                <option value="">All domains</option>
+                <option value="toxicity">toxicity</option>
+                <option value="offtarget">offtarget</option>
+                <option value="chemistry">chemistry</option>
+                <option value="assay">assay</option>
+                <option value="delivery">delivery</option>
+                <option value="benchmark">benchmark</option>
+                <option value="molecule_identity">molecule_identity</option>
+                <option value="source_provenance">source_provenance</option>
+              </select>
+            </label>
+            <label>
+              Priority
+              <select id="priority-filter">
+                <option value="">All priorities</option>
+                <option value="high">high</option>
+                <option value="medium">medium</option>
+              </select>
+            </label>
+            <label>
+              Rows
+              <select id="queue-limit">
+                <option value="250">250</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+              </select>
+            </label>
+          </div>
+          <div class="table-wrap">
+            <table id="queue-table"></table>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="evidence" data-view="evidence" hidden>
+        <div id="explorer">
+          <div class="section-head">
+            <h2>Verified Release Gate</h2>
+            <a class="button-link" href="/api/download/evidence_release.csv">Download evidence release</a>
+          </div>
+          <div class="queue-controls">
+            <label>
+              Domain
+              <select id="evidence-domain-filter">
+                <option value="">All domains</option>
+                <option value="toxicity">toxicity</option>
+                <option value="offtarget">offtarget</option>
+              </select>
+            </label>
+            <label>
+              Grade
+              <select id="evidence-grade-filter">
+                <option value="">All grades</option>
+              </select>
+            </label>
+            <label>
+              Modality
+              <select id="evidence-modality-filter">
+                <option value="">All modalities</option>
+              </select>
+            </label>
+            <label>
+              Category
+              <select id="evidence-category-filter">
+                <option value="">All categories</option>
+              </select>
+            </label>
+            <label>
+              Rows
+              <select id="evidence-limit">
+                <option value="100">100</option>
+                <option value="250">250</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+              </select>
+            </label>
+            <input id="evidence-query" type="search" aria-label="Search verified release evidence" placeholder="Search verified release evidence" />
+          </div>
+          <div id="evidence-count" class="muted-line"></div>
+          <div id="offtarget-taxonomy-panel" class="offtarget-taxonomy-panel" hidden>
+            <div class="section-head compact-head">
+              <h3>Off-target mechanism map</h3>
+              <a class="button-link" href="/api/offtarget_taxonomy">Taxonomy data</a>
+            </div>
+            <p id="offtarget-taxonomy-note" class="muted-line"></p>
+            <div id="offtarget-taxonomy-grid" class="mechanism-grid"></div>
+          </div>
+          <div class="table-wrap">
+            <table id="evidence-record-table"></table>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <h2>Evidence Preview</h2>
+          <p id="evidence-preview-note" class="muted-line"></p>
+          <div class="split">
+            <div>
+              <h3>Toxicity</h3>
+              <div class="table-wrap">
+                <table id="toxicity-table"></table>
+              </div>
+            </div>
+            <div>
+              <h3>Off-target</h3>
+              <div class="table-wrap">
+                <table id="offtarget-table"></table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="audit" class="section-block">
+          <div class="section-head">
+            <h2>Provenance Audit</h2>
+            <input id="audit-query" type="search" placeholder="Search audit notes" />
+          </div>
+          <div class="queue-controls">
+            <label>
+              Entity
+              <select id="audit-entity-filter">
+                <option value="">All entities</option>
+                <option value="toxicity_endpoint">toxicity_endpoint</option>
+                <option value="offtarget_evidence">offtarget_evidence</option>
+              </select>
+            </label>
+            <label>
+              Status
+              <select id="audit-status-filter">
+                <option value="">All statuses</option>
+              </select>
+            </label>
+            <label>
+              Rows
+              <select id="audit-limit">
+                <option value="250">250</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+              </select>
+            </label>
+          </div>
+          <div id="audit-count" class="muted-line"></div>
+          <div class="table-wrap">
+            <table id="audit-table"></table>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="record" data-view="record" hidden>
+        <div class="section-head">
+          <h2>Citable Record</h2>
+          <div class="inline-actions">
+            <select id="record-domain">
+              <option value="toxicity">toxicity</option>
+              <option value="offtarget">offtarget</option>
+            </select>
+            <input id="record-id" type="search" value="1" placeholder="Evidence ID" />
+            <button id="record-open-button" type="button">Open</button>
+          </div>
+        </div>
+        <div id="record-detail-card" class="record-detail-card"></div>
+        <div class="record-grid">
+          <div>
+            <div class="section-head compact-head">
+              <h2>Citation</h2>
+              <button id="copy-citation-button" class="secondary-button" type="button">Copy</button>
+            </div>
+            <div id="record-citation" class="citation-box text-copy-box"></div>
+          </div>
+          <div>
+            <div class="section-head compact-head">
+              <h2>BibTeX</h2>
+              <button id="copy-bibtex-button" class="secondary-button" type="button">Copy</button>
+            </div>
+            <div id="record-bibtex" class="citation-box text-copy-box"></div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="record-audit-table"></table>
+        </div>
+      </section>
+
+      <section class="app-view" id="benchmark" data-view="benchmark" hidden>
+        <div class="section-head">
+          <h2>Benchmark</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/benchmark">Benchmark data</a>
+            <a class="button-link" href="/api/download/benchmark_reference_splits.csv">Reference splits</a>
+            <a class="button-link" href="/api/download/benchmark_task_cards.csv">Task cards</a>
+            <a class="button-link" href="/api/download/evidence_release.csv">Evidence release</a>
+          </div>
+        </div>
+        <div class="benchmark-grid" id="benchmark-grid"></div>
+        <div class="section-block">
+          <h3>Benchmark Release Contract</h3>
+          <div class="benchmark-grid" id="benchmark-release-grid"></div>
+        </div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h3>Baseline Results</h3>
+            <div class="inline-actions">
+              <a class="button-link" href="/api/benchmark_baseline_results">Baseline data</a>
+              <a class="button-link" href="/api/download/benchmark_baseline_results.csv">Download baseline CSV</a>
+            </div>
+          </div>
+          <div class="benchmark-grid" id="benchmark-baseline-grid"></div>
+          <div class="table-wrap">
+            <table id="benchmark-baseline-table"></table>
+          </div>
+        </div>
+        <div class="section-block">
+          <h3>Run This Benchmark</h3>
+          <div class="integrated-action-grid compact-action-grid">
+            <a class="button-link" href="/api/download/benchmark_reference_splits.csv">Download reference splits</a>
+            <a class="button-link" href="/api/download/benchmark_baseline_results.csv">Download baseline results</a>
+            <a class="button-link" href="/api/download/benchmark_task_cards.csv">Download task cards</a>
+            <a class="button-link" href="/api/download/evidence_release.csv">Download evidence release</a>
+          </div>
+          <div class="workflow-step-list">
+            <article><strong>1</strong><span>Download the fixed reference splits and evidence release.</span></article>
+            <article><strong>2</strong><span>Select one task card and keep the leakage-group split unchanged.</span></article>
+            <article><strong>3</strong><span>Compare against the deterministic reference baselines before reporting trained models.</span></article>
+            <article><strong>4</strong><span>Cite the OligoVigil version, task name, split checksum, and baseline file.</span></article>
+          </div>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Split Counts</h3>
+            <div class="table-wrap">
+              <table id="benchmark-split-table"></table>
+            </div>
+          </div>
+          <div>
+            <h3>Tasks</h3>
+            <div class="benchmark-task-list" id="benchmark-task-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="agent" data-view="agent" hidden>
+        <div class="section-head">
+          <h2>Agent Connect</h2>
+          <div class="inline-actions">
+            <a class="button-link primary-action" href="/agent.json">Universal manifest</a>
+            <a class="button-link" href="/api/openapi.json">OpenAPI</a>
+            <a class="button-link" href="/mcp.json">MCP config</a>
+            <a class="button-link" href="/llms.txt">llms.txt</a>
+            <a class="button-link" href="/llms-full.txt">Full guide</a>
+            <a class="button-link" href="/api/agent_access">Access metadata</a>
+            <a class="button-link" href="/api/download/oligovigil_agent_pack.zip">Agent pack</a>
+          </div>
+        </div>
+        <div class="notice">
+          <div>
+            <strong>Not Codex-specific.</strong>
+            OligoVigil exposes universal manifests, OpenAPI, MCP config, llms.txt, SDK clients, prompts, and templates so agentic clients, coding tools, and lightweight apps can connect without scraping the webpage or weakening evidence rules.
+          </div>
+        </div>
+        <div class="benchmark-grid" id="agent-summary-grid"></div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h3>Connect From Any Tool</h3>
+            <div class="inline-actions">
+              <a class="button-link" href="/api/agent_connect">Connection profiles</a>
+              <a class="button-link" href="/.well-known/oligovigil-agent.json">Well-known manifest</a>
+              <a class="button-link" href="/.well-known/ai-plugin.json">Action manifest</a>
+            </div>
+          </div>
+          <div class="agent-tool-grid" id="agent-tool-grid"></div>
+        </div>
+        <div class="section-block">
+          <h3>Universal Entrypoints</h3>
+          <div class="agent-connector-grid" id="agent-connector-grid"></div>
+        </div>
+        <div class="section-block">
+          <div class="section-head compact-head">
+            <h3>Installable Pack</h3>
+            <div class="inline-actions">
+              <a class="button-link" href="#downloads" data-view-target="downloads">Downloads</a>
+            </div>
+          </div>
+          <div class="agent-artifact-grid" id="agent-artifact-grid"></div>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Agent Guardrails</h3>
+            <div class="agent-rule-list" id="agent-guardrail-list"></div>
+          </div>
+          <div>
+            <h3>Reusable Workflows</h3>
+            <div class="agent-workflow-list" id="agent-workflow-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="sources" data-view="sources" hidden>
+        <div id="sources-table-section">
+          <div class="section-head">
+            <h2>Verified Sources</h2>
+            <input id="source-query" type="search" aria-label="Search source documents" placeholder="Search sources" />
+          </div>
+          <div class="queue-controls">
+            <label>
+              Type
+              <select id="source-type-filter">
+                <option value="">All source types</option>
+              </select>
+            </label>
+            <label>
+              Year
+              <select id="source-year-filter">
+                <option value="">All years</option>
+              </select>
+            </label>
+          </div>
+          <div class="table-wrap">
+            <table id="source-table"></table>
+          </div>
+        </div>
+
+        <div id="source-detail" class="section-block">
+          <div class="section-head">
+            <h2>Source Detail</h2>
+            <div class="inline-actions">
+              <input id="source-detail-query" type="search" aria-label="Open source detail by PMID, DOI, source ID, or title term" placeholder="PMID, DOI, source ID, or title term" />
+              <button id="source-detail-button" type="button">Open</button>
+            </div>
+          </div>
+          <div id="source-detail-card" class="source-detail-card"></div>
+          <div class="split">
+            <div>
+              <h3>Verified Toxicity</h3>
+              <div class="table-wrap">
+                <table id="source-detail-toxicity-table"></table>
+              </div>
+            </div>
+            <div>
+              <h3>Verified Off-target</h3>
+              <div class="table-wrap">
+                <table id="source-detail-offtarget-table"></table>
+              </div>
+            </div>
+            <div>
+              <h3>Curation Queue Context</h3>
+              <div class="table-wrap">
+                <table id="source-detail-queue-table"></table>
+              </div>
+            </div>
+            <div>
+              <h3>Unpromoted Candidate Context</h3>
+              <p class="muted-line">Candidate rows are gap-finding context only and are not citable release evidence.</p>
+              <div class="table-wrap">
+                <table id="source-detail-candidate-table"></table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolbar section-block">
+          <label>
+            Modality
+            <select id="modality-filter">
+              <option value="">All core/context records</option>
+              <option value="ASO">ASO</option>
+              <option value="siRNA">siRNA</option>
+              <option value="ASO/siRNA mixed context">ASO/siRNA mixed context</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="section-block">
+          <h2>Molecules and Cohorts</h2>
+          <div class="table-wrap">
+            <table id="molecule-table"></table>
+          </div>
+        </div>
+
+        <div id="novelty" class="section-block">
+          <div class="section-head compact-head">
+            <h2>Closest-work Audit</h2>
+            <div class="inline-actions">
+              <a class="button-link" href="/api/novelty_position">Novelty JSON</a>
+              <a class="button-link" href="/api/manifest/closest_work_matrix_v1.csv">Matrix CSV</a>
+            </div>
+          </div>
+          <div class="notice" id="novelty-position-note"></div>
+          <div class="quality-grid compact-quality-grid" id="novelty-position-grid"></div>
+          <div class="trust-policy-list novelty-claim-list" id="novelty-claim-list"></div>
+          <div class="table-wrap">
+            <table id="closest-work-table"></table>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" id="api" data-view="api" hidden>
+        <div class="section-head">
+          <h2>Integrated Tools</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/download/all_tables.zip">All tables</a>
+            <a class="button-link" href="#downloads" data-view-target="downloads">Downloads</a>
+          </div>
+        </div>
+        <div class="notice">
+          <div>
+            <strong>Most users do not need to read API code.</strong>
+            Use the integrated buttons below for the same evidence, benchmark, download, and triage workflows.
+          </div>
+        </div>
+        <div class="integrated-action-grid">
+          <a class="button-link primary-action" href="#triage" data-view-target="triage">Generate safety triage report</a>
+          <a class="button-link" href="#search" data-view-target="search">Search evidence</a>
+          <a class="button-link" href="#evidence" data-view-target="evidence">Browse verified release</a>
+          <a class="button-link" href="#benchmark" data-view-target="benchmark">Open benchmark tools</a>
+          <a class="button-link" href="/api/download/evidence_release.csv">Download evidence release</a>
+          <a class="button-link" href="/api/download/benchmark_reference_splits.csv">Download benchmark splits</a>
+          <a class="button-link" href="#submit" data-view-target="submit">Prepare curator review</a>
+          <a class="button-link" href="/api/download/all_tables.zip">Download full snapshot</a>
+        </div>
+        <details class="developer-details section-block">
+          <summary>Developer API details</summary>
+          <div class="inline-actions developer-link-row">
+            <a class="button-link" href="/api/openapi.json">OpenAPI schema</a>
+            <a class="button-link" href="/api/client_examples">Client examples data</a>
+          </div>
+          <div class="client-grid" id="client-example-grid"></div>
+        </details>
+      </section>
+
+      <section class="app-view" id="submit" data-view="submit" hidden>
+        <div class="section-head">
+          <h2>Submit Evidence</h2>
+          <div class="inline-actions">
+            <a class="button-link" href="/api/submission_schema">Contribution schema</a>
+            <a class="button-link" href="/api/manifest/curator_review_template_v1.csv">Review template</a>
+            <a class="button-link" href="/api/download/curation_candidates_filtered.csv">Candidate packet</a>
+          </div>
+        </div>
+        <div class="submission-panel" id="submission-policy"></div>
+        <div class="table-wrap">
+          <table id="submission-schema-table"></table>
+        </div>
+      </section>
+
+      <section class="app-view" id="downloads" data-view="downloads" hidden>
+        <div class="section-head">
+          <h2>Downloads</h2>
+          <div class="inline-actions">
+            <a class="button-link primary-action" href="/api/downloads">Downloads catalog</a>
+            <a class="button-link" href="/api/download/all_tables.zip">Download all tables</a>
+            <a class="button-link" href="/api/download_manifest">Manifest details</a>
+          </div>
+        </div>
+        <div id="download-summary" class="notice">
+          <div>
+            <strong>Loading download catalog.</strong>
+            Preparing release files, recommended bundles, and checksum details.
+          </div>
+        </div>
+        <div id="download-manifest-grid" class="download-manifest-grid">
+          <div class="loading-panel">Loading release files...</div>
+        </div>
+      </section>
+
+      <section class="app-view" id="coverage" data-view="coverage" hidden>
+        <div class="section-head">
+          <h2>Coverage Matrix</h2>
+          <a class="button-link" href="/api/coverage">Coverage data</a>
+        </div>
+        <div class="coverage-grid" id="coverage-grid"></div>
+
+        <div id="summary" class="section-block">
+          <div class="section-head">
+            <h2>Evidence Summary</h2>
+            <a class="button-link" href="/api/download/all_tables.zip">Download all tables</a>
+          </div>
+          <div class="summary-grid" id="summary-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js?v=20260604_core_validation_v45"></script>
+  </body>
+</html>

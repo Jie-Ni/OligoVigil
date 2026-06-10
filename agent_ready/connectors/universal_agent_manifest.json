@@ -1,0 +1,64 @@
+{
+  "schema_version": "2026-06-04",
+  "name": "OligoVigil",
+  "description": "658 human curator-verified therapeutic oligonucleotide safety and off-target evidence rows with provenance, benchmark splits, and bulk downloads. AI-assisted single-curator curation (a human adjudicated v2 LLM proposals over source passages, re-curated from 2003 v1 machine pre-curated candidates; machine-only rows are labelled machine_precurated_v1); no inter-curator Cohen kappa is claimed.",
+  "auth": {
+    "type": "none",
+    "login_required": false,
+    "free_access": true
+  },
+  "protocols": [
+    {
+      "name": "openapi",
+      "entrypoint": "/api/openapi.json",
+      "recommended_for": "tools that can import REST APIs or generate clients"
+    },
+    {
+      "name": "mcp",
+      "entrypoint": "/mcp.json",
+      "recommended_for": "MCP-compatible coding agents and desktop assistants"
+    },
+    {
+      "name": "llms",
+      "entrypoint": "/llms.txt",
+      "recommended_for": "agents that can fetch documentation URLs"
+    },
+    {
+      "name": "nlweb",
+      "entrypoint": "/nlweb.json",
+      "recommended_for": "natural-language web and agent discovery clients"
+    },
+    {
+      "name": "bioschemas_jsonld",
+      "entrypoint": "/bioschemas.json",
+      "recommended_for": "dataset indexers, search engines, and AI discovery layers"
+    },
+    {
+      "name": "csv_downloads",
+      "entrypoint": "/api/download_manifest",
+      "recommended_for": "notebooks, dashboards, and ETL tools"
+    }
+  ],
+  "primary_endpoints": [
+    "/api/search",
+    "/api/evidence_records",
+    "/api/evidence_detail",
+    "/api/safety_triage",
+    "/api/safety_dossier",
+    "/api/evidence_graph",
+    "/api/prov_graph",
+    "/api/sequence_search",
+    "/api/modification_profile",
+    "/api/benchmark",
+    "/api/download/evidence_release.csv",
+    "/api/download/benchmark_reference_splits.csv"
+  ],
+  "guardrails": [
+    "Use verified release evidence for claims.",
+    "Treat candidate rows as non-citable gap-finding context.",
+    "Open /api/evidence_detail before making record-level safety claims.",
+    "Do not claim de novo clinical safety or sequence-specific off-target prediction.",
+    "Keep benchmark reference splits unchanged."
+  ],
+  "agent_pack": "/api/download/oligovigil_agent_pack.zip"
+}

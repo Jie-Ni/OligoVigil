@@ -1,0 +1,5 @@
+id,assay_type,organism,model_system,cell_line_or_tissue,dose_value,dose_unit,exposure_time_value,exposure_time_unit,replicate_count,source_document_id,source_location
+1,literature_curated_toxicity_summary,,,,,,,,,8,PubMed abstract and article metadata
+2,source_database_context,,,,,,,,,4,PubMed abstract lines describing siRNAEfficacyDB scope
+3,source_database_context,,,,,,,,,5,PMC abstract and construction section
+

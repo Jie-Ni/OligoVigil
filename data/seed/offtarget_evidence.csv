@@ -1,0 +1,1 @@
+id,molecule_id,assay_id,offtarget_gene_symbol,offtarget_transcript_id,evidence_type,measured_effect,effect_unit,match_type,seed_match_length,is_observed_experimental,is_computational_prediction,source_document_id,source_location,evidence_grade

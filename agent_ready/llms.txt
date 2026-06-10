@@ -1,0 +1,48 @@
+# OligoVigil
+
+> 658 human curator-verified safety and off-target evidence rows for therapeutic oligonucleotides, with provenance and benchmark-ready release data. Curation was AI-assisted: a single human curator adjudicated v2 LLM proposals over the source passages (re-curating 2003 v1 machine pre-curated candidates; 1345 unsupported ones were demoted). Machine-only rows are labelled machine_precurated_v1 and are not release evidence. Inter-curator (Cohen kappa) agreement is not yet reported.
+
+Base URL: use the public OligoVigil URL after deployment; use `http://127.0.0.1:8077` only for local testing.
+
+Critical rules:
+
+- Verified release evidence supports claims; candidates are gap-finding context only.
+- Do not infer clinical safety or de novo off-target risk from OligoVigil alone.
+- Use `/api/evidence_detail?domain={toxicity|offtarget}&id={id}` for citable record-level provenance.
+- Include PMID/DOI, evidence grade, source location, OligoVigil version, and audit status when summarizing evidence.
+- Raw article text is not redistributed.
+
+Universal connection:
+
+- `/agent.json`: first discovery file for agentic clients, coding tools, and API importers.
+- `/.well-known/oligovigil-agent.json`: same universal manifest under a well-known path.
+- `/.well-known/ai-plugin.json`: OpenAPI action/plugin-style manifest.
+- `/mcp.json`: generic MCP client configuration.
+- `/api/agent_connect`: connection profiles and entrypoints.
+- `/api/openapi.json`: REST API schema.
+- `/nlweb.json`: natural-language tool discovery for agentic web clients.
+- `/bioschemas.json`: Dataset JSON-LD for search and AI discovery.
+
+Primary endpoints:
+
+- `/api/search`
+- `/api/evidence_records`
+- `/api/evidence_detail`
+- `/api/safety_triage`
+- `/api/safety_dossier`
+- `/api/evidence_graph`
+- `/api/prov_graph`
+- `/api/sequence_search`
+- `/api/modification_profile`
+- `/api/benchmark`
+- `/api/download/evidence_release.csv`
+- `/api/download/benchmark_reference_splits.csv`
+- `/api/download/all_tables.zip`
+- `/api/download/oligovigil_agent_pack.zip`
+
+Agent metadata:
+
+- `/api/agent_access`
+- `/api/agent_connect`
+- `/llms-full.txt`
+- `/api/openapi.json`

@@ -1,0 +1,130 @@
+{
+  "name": "OligoVigil Design System",
+  "version": "20260604_resource_depth_v42",
+  "status": "submission_candidate",
+  "sources": [
+    "app/static/index.html",
+    "app/static/styles.css",
+    "app/static/app.js",
+    "04_delivery/brand_assets/AI_WIDE_ASSET_AUDIT_20260603.md",
+    "devibify skill",
+    "design-review skill",
+    "design-system-research skill"
+  ],
+  "direction": {
+    "summary": "A restrained scientific workbench for a NAR Database Issue submission: dense enough for database users, calm enough for trust, and explicit about evidence provenance.",
+    "principles": [
+      "Evidence and search workflows are primary; imagery supports orientation only.",
+      "Use compact product UI, not marketing-page composition.",
+      "Use one 8px spacing rhythm and one restrained accent family.",
+      "Prefer tables, filters, and stable panels over decorative card walls.",
+      "Every visible number, label, and action must map to real portal data or an actual endpoint.",
+      "Search, Sources, Downloads, Benchmark, Agent Connect, API, and Cite are first-class publication-resource routes.",
+      "Sequence UI is labelled as evidence lookup only until curator-verified sequence strings enable exact alignment claims."
+    ]
+  },
+  "tokens": {
+    "color": {
+      "surface_page": "#f5f7f8",
+      "surface_panel": "#ffffff",
+      "surface_muted": "#f0f4f4",
+      "surface_subtle": "#fafbfb",
+      "text_primary": "#17202a",
+      "text_secondary": "#536270",
+      "text_muted": "#748290",
+      "border": "#d8e0e4",
+      "border_subtle": "#e8edf0",
+      "accent": "#0f766e",
+      "accent_hover": "#0b5f59",
+      "accent_subtle": "#e6f3f1",
+      "plum": "#7c3a4d",
+      "plum_subtle": "#f3e8ed",
+      "warning": "#9a5b12",
+      "warning_subtle": "#fff4d8",
+      "success": "#1f7a4f",
+      "error": "#b42318",
+      "error_subtle": "#fff1f0"
+    },
+    "typography": {
+      "font_family": "IBM Plex Sans, Aptos, Segoe UI Variable, Segoe UI, Arial, sans-serif",
+      "mono_family": "IBM Plex Mono, Cascadia Code, Consolas, monospace",
+      "page_title": "29px / 1.1 / 700",
+      "section_title": "21px / 1.25 / 600",
+      "card_title": "15px / 1.3 / 700",
+      "body": "14px / 1.55 / 400",
+      "label": "12px / 1.25 / 500",
+      "caption": "12px / 1.35 / 500",
+      "button": "13px / 1.2 / 600",
+      "table": "13px / 1.5 / 400",
+      "data_large": "24px / 1.0 / 700 tabular"
+    },
+    "spacing": {
+      "base": 8,
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "section_gap": 24,
+      "panel_padding": 16,
+      "dense_panel_padding": 12
+    },
+    "radius": {
+      "sm": 4,
+      "md": 6,
+      "lg": 8
+    },
+    "border": {
+      "default": "1px solid #d8e0e4",
+      "subtle": "1px solid #e8edf0",
+      "active": "1px solid #0f766e"
+    },
+    "shadow": {
+      "none": "none",
+      "panel": "0 1px 3px rgba(15, 23, 42, 0.05)",
+      "raised": "0 8px 20px rgba(15, 23, 42, 0.07)"
+    },
+    "breakpoints": {
+      "mobile": "max-width: 760px",
+      "tablet": "max-width: 1080px",
+      "desktop": "min-width: 1081px"
+    }
+  },
+  "components": {
+    "topbar": "Compact sticky product header with brand, truncated descriptor on desktop, and horizontally scrollable nav tabs on narrow screens.",
+    "button": "Primary filled button for the main action in a local workflow; secondary links are bordered, white, and stable.",
+    "card": "Use cards only for repeated items, metrics, or framed tools; no nested decorative cards.",
+    "table": "Data tables are first-class surfaces with sticky headers, compact row height, and contained horizontal scroll.",
+    "badge": "Small semantic metadata only; no decorative pill overload.",
+    "hero_visual": "One supporting evidence/provenance image on overview; must not dominate search or status.",
+    "workflow_card": "One-column workflow list with concise query, metadata, counts, and actions.",
+    "download_manifest": "Grouped release file manifest with rows, bytes, SHA256, schema, license/reuse policy, and recommended use.",
+    "agent_access": "Compact install-and-reuse surface for universal manifests, OpenAPI, llms.txt, MCP, optional skill, clients, prompts, templates, and agent guardrails.",
+    "source_packet": "Source detail and record detail must form a provenance loop: source -> verified records -> citable record -> source packet."
+  },
+  "anti_patterns": [
+    "Large topbar that consumes mobile viewport height",
+    "Uniform card walls without task hierarchy",
+    "Decorative chips on every sentence",
+    "Multiple visible primary button blocks in one viewport",
+    "Hero imagery replacing the actual search/evidence workflow",
+    "Homepage signal-icon grids competing with search, release status, and workflow entry points",
+    "Random spacing values outside 4px/8px rhythm",
+    "Large shadows, glass panels, gradient backgrounds, or marketing-page hero layouts"
+  ],
+  "verification": {
+    "required_viewports": [
+      "375x840",
+      "768x900",
+      "1440x920"
+    ],
+    "required_checks": [
+      "no page-level horizontal overflow",
+      "topbar under 96px desktop and under 140px mobile/tablet",
+      "primary workflow actions visible without crowding",
+      "tables contained in table-wrap",
+      "hero and provenance assets loaded",
+      "frontend_contract_check, smoke_test, final_delivery_check pass"
+    ]
+  }
+}

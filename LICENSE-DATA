@@ -1,0 +1,42 @@
+OligoVigil — DATA / DERIVED-ANNOTATIONS LICENSE
+================================================
+
+The OligoVigil database release tables (toxicity_endpoint, offtarget_evidence,
+benchmark_split, curation_audit, source_document derived annotations, and the
+benchmark / baseline CSVs shipped under data/generated/) are released under the
+
+   Creative Commons Attribution 4.0 International License (CC BY 4.0)
+
+Full legal text:  https://creativecommons.org/licenses/by/4.0/legalcode
+Human summary:    https://creativecommons.org/licenses/by/4.0/
+
+Suggested citation:
+   [TBD: Ni Jie + co-authors] (2026). OligoVigil: a curator-verified,
+   source-anchored database of safety and off-target evidence for therapeutic
+   oligonucleotides. Nucleic Acids Research (Database Issue), [TBD: vol/issue].
+   DOI:[TBD: archival DOI from Zenodo/Figshare]. Code DOI:[TBD].
+
+Scope and limits
+----------------
+This CC BY 4.0 grant covers ONLY the OligoVigil-generated derived annotations,
+audit metadata, evidence grading, benchmark splits and machine-readable
+manifests. It does NOT extend to:
+
+  - Third-party article text or PDFs from PubMed/PMC sources. OligoVigil does
+    not redistribute raw third-party article content; only derived annotations
+    and exact in-source location pointers (e.g. "Results > Figure 3; paragraph
+    12") are released. To read the underlying source, users must follow the
+    PMID / PMCID / DOI links to the original publisher.
+  - Restricted-license comparator resources mentioned only as link-out
+    comparators (e.g. DrugBank, TTD). Those sources retain their own licenses.
+  - The OligoVigil source code, which is released separately under MIT (see
+    LICENSE in the same directory).
+
+Attribution requirement under CC BY 4.0
+---------------------------------------
+Re-users must (a) credit the authors, (b) provide a link to the license, and
+(c) indicate if changes were made. They may do so in any reasonable manner,
+but not in any way that suggests the licensor endorses them or their use.
+
+This file is the authoritative data-license declaration for OligoVigil v1
+(2026-06-07 release).

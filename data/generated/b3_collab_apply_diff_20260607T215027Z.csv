@@ -1,0 +1,81 @@
+row_id,offtarget_row_id,pmid,pmcid,old_offtarget_gene_symbol,new_offtarget_gene_symbol,confidence,curator_initials,curator_date,notes,rule
+1,1,41994868,PMC13096799,unspecified,unspecified,high,LQ,2026-06-07,"Luciferase off-target reporter result; si-47/si-50 are oligo IDs, no off-target gene named.",no_change
+2,2,41467115,PMC12744844,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Microarray/RT-qPCR validation of seed-match transcript effects; VIM is intended target; no specific off-target gene named.,no_change
+3,4,41066632,PMC12581821,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Short-read RNAseq transcriptome-wide AON off-target assessment; no specific off-target gene named.,no_change
+4,5,38042877,PMC10693639,unspecified,unspecified,high,LQ,2026-06-07,TMSD/BRO system mitigates off-target interactions; passage names no off-target gene.,no_change
+5,6,37200862,PMC10185704,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq assesses ASO on/off-target effects transcriptome-wide; no off-target gene named; DMPK/MBNL1 are disease/on-target context.,no_change
+6,7,35736224,PMC9262600,unspecified,unspecified,high,LQ,2026-06-07,ALN-HBV/ALN-HBV02/VIR-2218 and GNA are drug/chemistry terms; viral HBV is intended target; no off-target gene named.,no_change
+7,8,29459660,PMC5818625,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Global RNAseq shows seed-enriched downregulation; no individual off-target gene named.,no_change
+8,10,26338776,PMC4605310,unspecified,unspecified,high,LQ,2026-06-07,BACH1 is intended ASO target; off-targets are discussed but not named in excerpt.,no_change
+9,59,40672232,PMC12265680,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Transcriptome-wide off-target RNA editing comparison; no specific off-target gene named.,no_change
+10,60,40503175,PMC12156227,transcriptome-wide,FAH;TNFRSF10B;EGR1;PAK2;PCSK7,high,LQ,2026-06-07,Five non-target genes explicitly downregulated; rat symbols normalized to human HGNC orthologues; CIDEB is intended target and excluded.,update
+11,62,34648028,PMC8565336,unspecified,unspecified,high,LQ,2026-06-07,Improved off-target profile of GalNAc-siRNAs; no off-target gene named.,no_change
+12,63,33664996,PMC7900643,unspecified,unspecified,medium,LQ,2026-06-07,"v2 quote NONE; excerpt gives general seed-matched off-target framing and intended E6/E7/miRNA design context, no specific off-target gene.",no_change
+13,64,31375812,PMC6879195manuscript-id: NIHMS1533065,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,"Genome-wide RNA-seq in Di-siRNAHTT-treated NHP brain; HTT is intended target/outlier, other changes unnamed.",no_change
+14,66,28918038,PMC5537172,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Transcriptome profiling/pathway analysis correlates OTE burden with toxicity; no specific off-target gene named.,no_change
+15,67,26553810,PMC4797265,unspecified,transcriptome-wide,high,LQ,2026-06-07,Global transcriptional profiles report many unintended transcripts reduced by toxic ASOs; none named.,update
+16,78,41918821,PMC13034028,unspecified,transcriptome-wide,high,LQ,2026-06-07,Global RNA/protein OffT assessment; no specific off-target gene named.,update
+17,82,41859644,PMC12996677,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,"RNA-seq plus seed off-target prediction shows no enrichment; IGF2BP2 is intended target and NRF2 is downstream biology, not an off-target call.",no_change
+18,91,41552385,PMC12804371,unspecified,unspecified,high,LQ,2026-06-07,CAG/polyQ allele-selectivity context; no specific off-target gene named.,no_change
+19,113,40385635,PMC12083919,unspecified,unspecified,high,LQ,2026-06-07,Potential off-target genes were qPCR-tested but not named; si098/si086 are oligo IDs.,no_change
+20,116,41341748,PMC12670904,unspecified,unspecified,high,LQ,2026-06-07,Seed reporter luciferase assay; YAP1/WWTR1 are intended targets; no off-target gene named.,no_change
+21,135,40928446,PMC12790151,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq reports broad proliferation/interferon/apoptosis gene patterns; no specific off-target gene named.,no_change
+22,157,38379891,PMC10878212,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq reports counts/overlap of altered genes after ASO/small-molecule combinations; no gene named.,no_change
+23,190,36618268,PMC9813581,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq off-target rate reported; no individual off-target gene named.,no_change
+24,193,36511872,PMC9825156,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq transcriptome-wide changes; FXN is intended activation context and no base-paired off-target gene is named.,no_change
+25,207,32180554,PMC7036698,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq shows widespread IFN-responsive gene response; IFN receptor/LDLR/T39 are not specific off-target genes here.,no_change
+26,217,30114557,PMC6092551,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq identified 44 DE genes/seven downregulated genes but excerpt names none; CEP290 is intended/on-target context.,no_change
+27,220,27461380,PMC4961955,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Microarray reports several similar-sequence pre-mRNAs knocked down; no specific off-target gene named.,no_change
+28,222,27378237,PMC5023379,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq tests ~37000 genes and reports no clear off-target effects; no off-target gene named; DUX4 is intended target.,no_change
+29,12,41020503,PMC12477598,unspecified,unspecified,high,LQ,2026-06-07,Modified UNA/siRNA off-target reduction summary; no off-target gene named.,no_change
+30,13,36229039,PMC9825163,unspecified,unspecified,high,LQ,2026-06-07,PNA assay discusses intended acpP target and potential off-targets; no specific off-target gene named in excerpt.,no_change
+31,15,29246303,PMC5675723,unspecified,unspecified,high,LQ,2026-06-07,TNFR is not isoform-specific HGNC in the excerpt; ICAM is intended target; no unambiguous off-target gene symbol.,no_change
+32,16,41897327,PMC13024069,unspecified,unspecified,high,LQ,2026-06-07,TARDBP/TDP-43 mutant allele is intended target context; no off-target gene named.,no_change
+33,33,39934917,PMC11816505,unspecified,unspecified,high,LQ,2026-06-07,CLCN7 mutant/wild-type are intended allele context; no off-target gene named.,no_change
+34,36,35464859,PMC9019733,unspecified,transcriptome-wide,high,LQ,2026-06-07,Transcriptomic disturbance from phosphorothioate oligos is reported globally; no specific off-target gene named.,update
+35,44,37310350,,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,DNA microarray off-target transcriptome analysis; no specific off-target gene named.,no_change
+36,47,33314011,,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Whole-transcriptome RNA-seq off-target profiling; no specific off-target gene named.,no_change
+37,49,31063435,,unspecified,unspecified,high,LQ,2026-06-07,Coagulation phenotype unrelated to intended FXII/F12 target; no off-target gene named.,no_change
+38,50,30095329,,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Transcriptome analysis reports off-target RNA cleavage status globally; no specific gene named.,no_change
+39,51,41792408,,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,RNA-seq found only two off-target genes but abstract does not name them; ARL4C is intended target.,no_change
+40,56,20544786,,unspecified,HSPA5;PDIA3;CALU;LGALS1;TPI1,medium,LQ,2026-06-07,"Protein-level off-target effect; GRP78/HSPA5 is first named alias, PDIA3 is first official HGNC symbol appearing verbatim; capped at first five grounded proteins and skipped ambiguous phosphoglycerate mutase.",update
+41,73,39192097,,unspecified,unspecified,high,LQ,2026-06-07,ASO-4733 is a drug code; Syt13 is intended target context; toxicity does not name an off-target gene.,no_change
+42,144,40142497,PMC11946339,unspecified,unspecified,high,LQ,2026-06-07,Interferon response/ISGs discussed generically; artificial pri-miR/HBV context names no off-target gene.,no_change
+43,229,41708903,,unspecified,unspecified,high,LQ,2026-06-07,Off-target immune activation and interferon-stimulated genes are generic; viral target context names no host off-target gene.,no_change
+44,333,41066632,PMC12581821,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Duplicate evidence pattern: RNAseq transcriptome-wide AON off-target assessment; no specific off-target gene named.,no_change
+45,334,41994868,PMC13096799,unspecified,unspecified,high,LQ,2026-06-07,"Duplicate evidence pattern: luciferase off-target reporter result; si IDs only, no off-target gene named.",no_change
+46,344,35736224,PMC9262600,unspecified,unspecified,high,LQ,2026-06-07,Duplicate evidence pattern: ALN-HBV codes and GNA chemistry only; no off-target gene named.,no_change
+47,345,29459660,PMC5818625,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Duplicate evidence pattern: global RNAseq seed-enriched downregulation; no individual gene named.,no_change
+48,346,26338776,PMC4605310,unspecified,unspecified,high,LQ,2026-06-07,Duplicate evidence pattern: BACH1 intended target; off-targets not named.,no_change
+49,351,41467115,PMC12744844,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Duplicate evidence pattern: microarray/RT-qPCR seed-match transcript effects; no specific off-target gene named.,no_change
+50,355,37200862,PMC10185704,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Duplicate evidence pattern: RNA-seq transcriptome-wide ASO assessment; no off-target gene named.,no_change
+51,364,29246303,PMC5675723,unspecified,unspecified,high,LQ,2026-06-07,Duplicate evidence pattern: TNFR lacks isoform-specific HGNC grounding; ICAM is intended target.,no_change
+52,390,35801870,PMC9303313,unspecified,unspecified,high,LQ,2026-06-07,"Off-target-effect/hepatotoxicity correlation statement; TS ASO chemistry terms only, no off-target gene named.",no_change
+53,391,36511872,PMC9825156,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Duplicate evidence pattern: RNA-seq transcriptome-wide changes; no base-paired off-target gene named.,no_change
+54,392,26553810,PMC4797265,unspecified,transcriptome-wide,high,LQ,2026-06-07,Duplicate evidence pattern: global transcriptional profile reports many unintended transcripts but names none.,update
+55,394,40926414,PMC12703169,unspecified,unspecified,high,LQ,2026-06-07,"Pharmacological profiling targets are not named; TMEM16a/ANO1 is intended target context, not an off-target gene.",no_change
+56,411,29390093,PMC5861398,transcriptome-wide,AGAP1,high,LQ,2026-06-07,Agap1 explicitly described as the most affected off-target transcript; mouse symbol normalized to human HGNC orthologue.,update
+57,414,24550163,PMC4005641,unspecified,unspecified,high,LQ,2026-06-07,"P53 and Nrf2/ARE are reporter/pathway readouts for toxicity, not off-target genes.",no_change
+58,416,41981306,PMC13099374,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,"RNA-seq potential off-target assessment; KCNT1 is intended target and SOD1/HTT are comparator ASO targets, no off-target gene named.",no_change
+59,417,41704705,PMC12907196,unspecified,unspecified,high,LQ,2026-06-07,Mismatched antiviral oligo control; HIV target context and no off-target gene named.,no_change
+60,436,36090761,PMC9424863,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,"RNA-seq selectivity assessment; MAPT is intended target and the only DE gene, so no off-target gene is named.",no_change
+61,441,32180554,PMC7036698,unspecified,transcriptome-wide,medium,LQ,2026-06-07,"T39 ASO off-target phenotype is followed by RNAseq of gWAT, but excerpt names no specific off-target gene.",update
+62,451,41859644,PMC12996677,unspecified,transcriptome-wide,high,LQ,2026-06-07,RNA-seq/seed prediction reports no enrichment of predicted off-targets; IGF2BP2 is intended target and NRF2 is downstream biology.,update
+63,456,41552385,PMC12804371,unspecified,unspecified,high,LQ,2026-06-07,"AR CAG-repeat allele reporter context is intended selectivity, not an off-target gene call.",no_change
+64,462,40385635,PMC12083919,unspecified,unspecified,high,LQ,2026-06-07,Duplicate evidence pattern: potential off-target genes tested by qPCR but not named; si IDs only.,no_change
+65,463,41341748,PMC12670904,unspecified,unspecified,high,LQ,2026-06-07,"Duplicate evidence pattern: seed reporter luciferase assay; YAP1/WWTR1 intended targets, no off-target gene named.",no_change
+66,464,40672232,PMC12265680,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,"Transcriptome-wide off-target editing events reported; SMN2/ACTB are guide targets/comparators, no off-target gene named.",no_change
+67,483,40928446,PMC12790151,transcriptome-wide,transcriptome-wide,high,LQ,2026-06-07,Duplicate evidence pattern: RNA-seq broad gene-pattern safety assessment; no specific off-target gene named.,no_change
+68,530,30114557,PMC6092551,unspecified,transcriptome-wide,high,LQ,2026-06-07,Duplicate evidence pattern: RNA-seq found DE genes but none named; CEP290 is intended/on-target context.,update
+69,534,28918038,PMC5537172,unspecified,transcriptome-wide,high,LQ,2026-06-07,Transcriptome/selectivity-screen context links toxicity to off-target transcript downregulation; no gene named.,update
+70,19,40737088,PMC12309379,,transcriptome-wide,medium,LQ,2026-06-07,DGE analysis reports reduced off-target effects globally in intro summary; no specific gene named.,update
+71,20,41646886,PMC12870468,,transcriptome-wide,high,LQ,2026-06-07,Strand-specific RNA-seq DEGs/seed-region DEGs; no specific off-target gene named.,update
+72,21,39813044,PMC12522049manuscript-id: NIHMS2116935,,YY1;FADD,high,LQ,2026-06-07,YY1 and FADD explicitly named as off-target mRNAs; PIK3CB is intended target and excluded.,update
+73,22,39231537,PMC11472056,,unspecified,high,LQ,2026-06-07,Off-target activity suppression is described generically; no RNA-seq/microarray top-hit or specific gene named.,update
+74,23,35921401,PMC9389587,,unspecified,high,LQ,2026-06-07,Cell-based seed off-target assay summary; no off-target gene named.,update
+75,24,35071927,PMC8771963,,transcriptome-wide,high,LQ,2026-06-07,"Microarray genome-wide siVIM off-target assessment; VIM is intended target, no specific off-target gene named.",update
+76,25,35205363,PMC8872465,,unspecified,high,LQ,2026-06-07,Luciferase CM/SM reporter assays for 26 siRNAs; no off-target gene named.,update
+77,26,34388351,PMC8713556,,transcriptome-wide,high,LQ,2026-06-07,RNA-seq evaluates transcriptome-wide off-target splicing/expression events; no specific gene named.,update
+78,27,29450406,PMC5808362,,transcriptome-wide,high,LQ,2026-06-07,"Microarray genome-wide off-target assessment; vimentin/VIM is intended target, no specific off-target gene named.",update
+79,28,21687525,PMC3109444,,transcriptome-wide,high,LQ,2026-06-07,Whole-genome profiling of off-target gene regulation in tumor/liver; no specific gene named.,update
+80,201,33577685,PMC7969009,,unspecified,high,LQ,2026-06-07,"Luciferase reporter assay with Ttr-targeted siRNA; TTR/Ttr is intended target, no off-target gene named.",update

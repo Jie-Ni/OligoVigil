@@ -1,0 +1,4 @@
+id,entity_table,entity_id,extraction_method,extractor_model_or_script,validation_status,curator_decision,curator_id,audit_note,audited_at
+1,source_document,1,manual,none,verified,accept,chen_ming,NAR official guideline source,2026-06-01T00:00:00Z
+2,source_document,3,manual,none,verified,linkout_only,liu_qiang,Closest work; do not import raw records,2026-06-01T00:00:00Z
+3,source_document,5,manual,none,verified,linkout_only,liu_qiang,High-overlap competitor; do not import raw records,2026-06-01T00:00:00Z

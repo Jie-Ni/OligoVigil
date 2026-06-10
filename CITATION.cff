@@ -1,0 +1,99 @@
+cff-version: 1.2.0
+message: "If you use OligoVigil, please cite the NAR Database paper (preferred) and the software archive (secondary)."
+title: "OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides"
+type: software
+abstract: >-
+  OligoVigil is a no-login web portal and database of curator-verified
+  preclinical safety and off-target evidence for therapeutic
+  oligonucleotides (ASO, siRNA, PMO, LNA, aptamer, GalNAc-siRNA). The v1
+  release contains 737 human-adjudicated records (626 toxicity + 111
+  off-target) from 628 primary sources, each anchored to an exact
+  in-source location and graded A/B/C, plus a leakage-aware 344-record
+  evaluation benchmark with deterministic prior baselines. Following the
+  v6 within-team collaborator round (2026-06-07), placeholder benchmark
+  contamination was reduced from 31.1% to 4.1% and new chemistry and
+  delivery dimensions were added. A second-round toxicity expansion
+  (EXPAND-2; +32 records) and a mixed-sample inter-rater study with an
+  independent second curator (KAPPA-2) followed: binary Cohen kappa =
+  0.34 (fair, per Landis-Koch); the second curator is systematically
+  stricter than the curator of record (a safety-conservative direction).
+  The candidate-to-release firewall (no machine output is presented as
+  human curation) and the full curation audit trail are exposed as bulk
+  downloads and via a documented REST API with OpenAPI / MCP / Bioschemas
+  JSON-LD / W3C PROV interfaces.
+version: "1.0.0"
+date-released: "2026-06-07"
+license: MIT
+license-url: "https://github.com/Jie-Ni/OligoVigil/blob/main/LICENSE"
+repository-code: "https://github.com/Jie-Ni/OligoVigil"
+url: "[TBD: public OligoVigil web portal URL]"
+keywords:
+  - oligonucleotide therapeutics
+  - antisense oligonucleotide
+  - siRNA
+  - off-target effects
+  - preclinical safety
+  - toxicity database
+  - curated evidence
+  - benchmark
+  - source provenance
+  - NAR Database
+authors:
+  - family-names: "Ni"
+    given-names: "Jie"
+    affiliation: "State Key Laboratory of Digital Medical Engineering, Southeast University; Digital Science Center, University of Innsbruck; Department of Medical Informatics, Nanjing Medical University"
+    orcid: "https://orcid.org/0009-0003-9767-5441"
+    email: "njie@seu.edu.cn"
+  - family-names: "Zhang"
+    given-names: "Xinting"
+    affiliation: "State Key Laboratory of Digital Medical Engineering, Southeast University"
+    orcid: "https://orcid.org/0009-0005-0158-3679"
+    email: "xtzhang@seu.edu.cn"
+  - family-names: "Xie"
+    given-names: "Zhuoying"
+    affiliation: "State Key Laboratory of Digital Medical Engineering, Southeast University"
+    orcid: "https://orcid.org/0000-0003-3534-1924"
+    email: "zyxie@seu.edu.cn"
+  - family-names: "Lu"
+    given-names: "Shan"
+    affiliation: "Women and Children Department, The First Affiliated Hospital, Nanjing Medical University"
+    orcid: "https://orcid.org/0009-0004-3088-5070"
+    email: "lushan_sd@njmu.edu.cn"
+  - family-names: "Liu"
+    given-names: "Yun"
+    affiliation: "State Key Laboratory of Digital Medical Engineering, Southeast University; Department of Information, The First Affiliated Hospital, Nanjing Medical University"
+    orcid: "https://orcid.org/0000-0002-4311-3772"
+    email: "liuyun@njmu.edu.cn"
+  - family-names: "Jatowt"
+    given-names: "Adam"
+    affiliation: "Digital Science Center, University of Innsbruck"
+    orcid: "https://orcid.org/0000-0001-7235-0665"
+    email: "adam.jatowt@uibk.ac.at"
+identifiers:
+  - description: "Archive DOI for the v1.0.0 release (mint via Zenodo after tagging on GitHub)."
+    type: doi
+    value: "[TBD: 10.5281/zenodo.NNNNNN]"
+  - description: "Manuscript DOI (assigned by NAR after acceptance)."
+    type: doi
+    value: "[TBD: 10.1093/nar/gkXXNNNN]"
+preferred-citation:
+  type: article
+  title: "OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides"
+  authors:
+    - family-names: "Ni"
+      given-names: "Jie"
+    - family-names: "Zhang"
+      given-names: "Xinting"
+    - family-names: "Xie"
+      given-names: "Zhuoying"
+    - family-names: "Lu"
+      given-names: "Shan"
+    - family-names: "Liu"
+      given-names: "Yun"
+    - family-names: "Jatowt"
+      given-names: "Adam"
+  year: 2027
+  journal: "Nucleic Acids Research"
+  volume: "[TBD]"
+  issue: "Database Issue"
+  doi: "[TBD]"

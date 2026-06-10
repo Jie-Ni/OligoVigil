@@ -1,0 +1,8 @@
+services:
+  oligosafetydb:
+    build: .
+    ports:
+      - "8077:8077"
+    volumes:
+      - ./data:/app/data
+

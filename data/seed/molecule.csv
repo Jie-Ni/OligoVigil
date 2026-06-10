@@ -1,0 +1,5 @@
+id,canonical_name,modality_id,target_gene_symbol,disease_context,therapeutic_status,external_ids,created_at
+1,ASO toxicity study cohort from Bhamra 2025,1,,,study_cohort,"{""pmid"":""41078095""}",2026-06-01T00:00:00Z
+2,siRNAEfficacyDB source cohort,2,,,closest_work_context,"{""pmid"":""39541343""}",2026-06-01T00:00:00Z
+3,CMsiRNAdb source cohort,2,,,closest_work_context,"{""pmid"":""41484819""}",2026-06-01T00:00:00Z
+

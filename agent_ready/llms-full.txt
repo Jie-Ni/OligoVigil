@@ -1,0 +1,63 @@
+# OligoVigil Agent Guide
+
+OligoVigil is a no-login oligonucleotide safety evidence resource for ASO/siRNA toxicity and off-target evidence. It is built around 658 human curator-verified release records, source provenance, audit trails, downloads, and benchmark splits. Curation was AI-assisted: a single human curator adjudicated v2 LLM proposals over the source passages, re-curating 2003 v1 machine pre-curated candidates (~74% measured false-accept), of which 1345 unsupported rows were demoted. Machine-only rows are labelled machine_precurated_v1 and are not release evidence; only the human curator rows are curator_verified. Inter-curator (Cohen kappa) agreement is not yet reported (single curator).
+
+## Evidence Policy
+
+Use release evidence for claims. Candidate records are derived annotations awaiting review and must not be cited as verified evidence. Grade A/B release records are benchmark-eligible; Grade C records are contextual and excluded from reference splits.
+
+Do not use OligoVigil to claim that a therapeutic oligonucleotide is clinically safe. The portal provides source-grounded evidence packets, not de novo safety prediction.
+
+## Universal Agent Connection
+
+OligoVigil is not tied to one agent framework.
+
+- Use `/agent.json` as the first discovery URL for agentic clients, coding tools, and API importers.
+- Use `/api/openapi.json` for tools that import REST APIs or build actions.
+- Use `/mcp.json` for MCP-compatible clients.
+- Use `/llms.txt` for documentation-first agents.
+- Use `/api/download/oligovigil_agent_pack.zip` for local SDK clients, prompts, templates, and the MCP server.
+
+## Common Tasks
+
+Safety lookup:
+
+1. Call `/api/search?q={query}`.
+2. Filter release evidence with `/api/evidence_records?domain=toxicity&q={query}` or `/api/evidence_records?domain=offtarget&q={query}`.
+3. Open citable records with `/api/evidence_detail?domain={domain}&id={id}`.
+4. Report evidence grade, source location, PMID/DOI, source title, and audit status.
+
+Design triage:
+
+1. Call `/api/safety_triage` with sequence, target, modification, delivery, endpoint, species, and cell type when known.
+2. Separate release-supported concerns, candidate gaps, and missing external checks.
+3. State that the report is source-grounded triage and not de novo alignment or prediction.
+
+Benchmark reuse:
+
+1. Download `/api/download/benchmark_reference_splits.csv`.
+2. Download `/api/download/benchmark_task_cards.csv`.
+3. Download `/api/download/benchmark_baseline_results.csv`.
+4. Keep leakage groups unchanged and cite version plus checksums.
+
+## Downloads
+
+- `/api/download/evidence_release.csv`: unified verified toxicity/off-target evidence table.
+- `/api/download/benchmark_reference_splits.csv`: fixed Grade A/B splits.
+- `/api/download/benchmark_task_cards.csv`: task definitions, targets, metrics, leakage policy.
+- `/api/download/benchmark_baseline_results.csv`: diagnostic majority-class baseline rows.
+- `/api/download/curation_candidates_filtered.csv`: candidate gaps only.
+- `/api/download/all_tables.zip`: full reproducible snapshot.
+- `/api/download/oligovigil_agent_pack.zip`: universal manifests, MCP server, optional Codex skill, clients, prompt pack, and templates.
+
+## Guardrails
+
+- Do not cite candidate records as verified evidence.
+- Do not invent missing PMID, DOI, source location, evidence grade, or benchmark result.
+- Do not quote source articles from OligoVigil outputs.
+- Do not silently switch from release evidence to candidates.
+- Do not change benchmark reference split groups when reporting model results.
+
+## Citation
+
+Use `/api/citation` for global citation text. Use `/api/evidence_detail` for record-level citation packets. Use `/api/benchmark` and task cards for benchmark reuse citation.

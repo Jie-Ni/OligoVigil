@@ -1,0 +1,16 @@
+source_name,source_url,source_owner,source_type,license_text_url,raw_redistribution_allowed,derived_annotations_allowed,linkout_only,not_safe,reviewer,review_date,notes
+NAR Database Issue guidelines,https://academic.oup.com/nar/pages/Ms_Prep_Database,Oxford University Press,guideline,https://academic.oup.com/pages/standard-publication-reuse-rights,false,true,true,false,wang_fang,2026-06-01,Use as guideline citation and derived checklist only
+PubMed metadata,https://pubmed.ncbi.nlm.nih.gov/,NCBI,metadata,https://www.ncbi.nlm.nih.gov/home/about/policies/,false,true,true,false,wang_fang,2026-06-01,Store PMID/DOI/title/journal/year and link out
+PMC Open Access subset,https://pmc.ncbi.nlm.nih.gov/tools/openftlist/,NCBI,full_text,https://pmc.ncbi.nlm.nih.gov/tools/openftlist/,conditional,true,true,false,wang_fang,2026-06-01,Check article-level license before using full text or tables
+ClinicalTrials.gov,https://clinicaltrials.gov/,NIH,registry,https://clinicaltrials.gov/about-site/terms-conditions,unknown,true,true,false,wang_fang,2026-06-01,Use NCT IDs and derived annotations until terms are reviewed
+PubChem,https://pubchem.ncbi.nlm.nih.gov/,NCBI,chemical_database,https://pubchem.ncbi.nlm.nih.gov/docs/programmatic-access,true,true,true,false,wang_fang,2026-06-01,Public identifiers/descriptors are preferred over mirrored records
+DailyMed,https://dailymed.nlm.nih.gov/dailymed/,NLM,label_database,https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm,unknown,true,true,false,wang_fang,2026-06-01,Use SPL links and derived label annotations
+FDA documents,https://www.fda.gov/,FDA,regulatory_documents,https://www.fda.gov/about-fda/about-website/website-policies,unknown,true,true,false,wang_fang,2026-06-01,Derived annotations and source links only for MVP
+EMA EPARs,https://www.ema.europa.eu/,EMA,regulatory_documents,https://www.ema.europa.eu/en/about-us/legal-notice,unknown,true,true,false,wang_fang,2026-06-01,Derived annotations and source links only for MVP
+DrugBank,https://go.drugbank.com/,DrugBank,licensed_database,https://go.drugbank.com/legal/terms_of_use,false,false,true,false,wang_fang,2026-06-01,Do not import raw records without license
+TTD,https://db.idrblab.net/ttd/,IDG/IDRBLab,database,https://idrblab.org/terms,false,unknown,true,false,wang_fang,2026-06-01,Link-out only until terms are reviewed
+theRNA,https://therna.renlab.cn/,Ren Lab/NAR,closest_work,https://academic.oup.com/nar/article/54/D1/D1672/8307363,false,false,true,false,wang_fang,2026-06-01,Closest-work comparator only
+siRNAEfficacyDB,https://cellknowledge.com.cn/siRNAEfficacy,CellKnowledge,closest_work,https://pmc.ncbi.nlm.nih.gov/articles/PMC11665841/,false,false,true,false,wang_fang,2026-06-01,Closest-work comparator only
+CMsiRNAdb,https://cellknowledge.com.cn/CMsiRNAdb/,CellKnowledge,closest_work,https://pmc.ncbi.nlm.nih.gov/articles/PMC12870949/,false,false,true,false,wang_fang,2026-06-01,High-overlap comparator only
+CRISPRoffT,https://ccsm.uth.edu/CRISPRoffT/,UTHealth Houston/NAR,closest_work,https://academic.oup.com/nar/article/53/D1/D914/7889256,false,false,true,false,wang_fang,2026-06-01,Exclude CRISPR guide scope from core
+

@@ -1,0 +1,25 @@
+panel,group,category,value,note
+field_completeness,toxicity,PMID/DOI/source location,100,release-row provenance fields are complete
+field_completeness,toxicity,evidence grade,100,A/B/C grade assigned to each release row
+field_completeness,toxicity,sequence/modification,5.6,structured sequence/chemistry remains a curation worklist
+field_completeness,toxicity,dose,0.3,dose_value populated for 2/626 toxicity rows
+field_completeness,off-target,PMID/DOI/source location,100,release-row provenance fields are complete
+field_completeness,off-target,evidence grade,100,A/B/C grade assigned to each release row
+field_completeness,off-target,off-target gene/mechanism,94.6,105/111 off-target rows have structured gene/mechanism status
+field_completeness,off-target,dose,0,dose not a core off-target field in the current release
+far_audit,false accept category,Domain confusion,33,efficacy PK biodistribution or non-safety result mislabelled
+far_audit,false accept category,Boilerplate/no endpoint,13,generic safety rationale not anchored to a named endpoint
+far_audit,false accept category,Scope exclusion,18,out-of-scope agent or assay class
+far_audit,false accept category,Acronym collision,1,ASO read as atrial septal occluder
+far_audit,false accept category,Other,1,residual false-accept reason
+kappa2,curator1_accept,curator2_accept,20,100-row mixed accept+reject study
+kappa2,curator1_accept,curator2_reject,23,100-row mixed accept+reject study
+kappa2,curator1_accept,curator2_abstain,7,100-row mixed accept+reject study
+kappa2,curator1_reject,curator2_accept,3,100-row mixed accept+reject study
+kappa2,curator1_reject,curator2_reject,46,100-row mixed accept+reject study
+kappa2,curator1_reject,curator2_abstain,1,100-row mixed accept+reject study
+benchmark,release rows,total verified release,737,626 toxicity plus 111 off-target
+benchmark,benchmark rows,Grade A/B reference split,344,pair-level source x molecule isolation
+benchmark,benchmark gap,Grade A/B not yet benchmarked,164,near-term regrouping worklist
+benchmark,metadata gap,placeholder benchmark rows,14,4.1 percent residual placeholder rows after B2 recovery
+benchmark,metadata gap,missing toxicity dose,624,624/626 toxicity rows lack structured dose_value

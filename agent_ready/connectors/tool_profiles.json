@@ -1,0 +1,46 @@
+{
+  "profiles": [
+    {
+      "profile": "OpenAPI importer",
+      "works_for": "coding tools, API action builders, no-code agents, and client generators",
+      "entrypoint": "/api/openapi.json",
+      "what_it_enables": "Automatic discovery of search, evidence detail, triage, benchmark, and download endpoints."
+    },
+    {
+      "profile": "MCP-compatible agent",
+      "works_for": "desktop assistants and coding agents that accept MCP server configs",
+      "entrypoint": "/mcp.json",
+      "what_it_enables": "Tool calls for search, citable record retrieval, safety triage, modification profile, benchmark metadata, and downloads."
+    },
+    {
+      "profile": "Dossier-first agent",
+      "works_for": "vibe-coding tools, notebooks, and assistants that need a single high-level output",
+      "entrypoint": "/api/safety_dossier",
+      "what_it_enables": "One request returns design context, risk matrix, evidence graph, provenance links, export actions, and benchmark reuse hooks."
+    },
+    {
+      "profile": "NLWeb-style client",
+      "works_for": "natural-language web agents and site-discovery clients",
+      "entrypoint": "/nlweb.json",
+      "what_it_enables": "Tool discovery for dossier generation, evidence graph retrieval, verified-evidence search, and release download."
+    },
+    {
+      "profile": "Documentation-first agent",
+      "works_for": "agents that can read URLs but cannot install tools",
+      "entrypoint": "/llms.txt",
+      "what_it_enables": "Guardrailed use of OligoVigil through stable URLs and endpoint instructions."
+    },
+    {
+      "profile": "Notebook or data app",
+      "works_for": "Python, R, JavaScript, Streamlit, and dashboard builders",
+      "entrypoint": "/api/download/oligovigil_agent_pack.zip",
+      "what_it_enables": "SDK clients, starter templates, fixed benchmark splits, and CSV downloads."
+    },
+    {
+      "profile": "Web fetch or RAG agent",
+      "works_for": "tools that index public web pages and machine-readable text files",
+      "entrypoint": "/agent.json",
+      "what_it_enables": "Single-page discovery of access policy, protocols, primary endpoints, and guardrails."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+id,name,in_core_scope,scope_note
+1,ASO,1,Core scope for preclinical toxicity and off-target evidence
+2,siRNA,1,Core scope for preclinical toxicity and off-target evidence
+3,shRNA,0,Future extension only
+4,saRNA,0,Future extension only
+5,aptamer,0,Future extension only; generic aptamer databases already exist
+6,CRISPR guide RNA,0,Excluded from core because CRISPRoffT covers CRISPR/Cas off-targets
+7,ASO/siRNA mixed context,1,Core-scope mixed ASO or siRNA context when source metadata does not distinguish molecule class
