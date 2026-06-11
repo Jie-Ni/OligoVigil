@@ -1,6 +1,6 @@
 {
   "version": "20260604_core_validation_v45",
-  "generated_at": "2026-06-10T22:58:01+00:00",
+  "generated_at": "2026-06-11T14:10:40+00:00",
   "doi_status": "10.5281/zenodo.20633779",
   "archive_url": "https://doi.org/10.5281/zenodo.20633779",
   "license_policy": "Raw article text is not redistributed. Curator-reviewed derived annotations, source metadata, and PMID/DOI links are provided for reuse.",
@@ -196,7 +196,7 @@
       "recommended_use": "Connect agentic clients, MCP clients, OpenAPI importers, notebooks, or small apps without scraping the portal UI.",
       "rows": 16,
       "bytes": 17199,
-      "sha256": "3d6246487c694e1b76639e2f2a232d8b29ae6ecaeeb6f1e12e0c51f1b908f49c",
+      "sha256": "19626faa459516237a62e3f7a5b5cad13922b29c76eeeda43b7acf2332cd79ec",
       "schema": "agent_access_manifest.json",
       "license": "Derived annotations; raw article text not redistributed; source PMID/DOI linked.",
       "version": "20260604_core_validation_v45"

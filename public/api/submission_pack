@@ -1,9 +1,9 @@
 {
   "version": "20260604_core_validation_v45",
-  "generated_at": "2026-06-10T22:59:15+00:00",
+  "generated_at": "2026-06-11T14:12:46+00:00",
   "go_no_go": {
-    "status": "go_after_cloudflare_pages_live_verification",
-    "summary": "The resource is technically usable, curator-audited, DOI-backed, and Cloudflare Pages-ready; public citation should wait until the HTTPS portal URL resolves."
+    "status": "go_after_author_metadata_and_final_pdf_qa",
+    "summary": "The resource is technically usable, curator-audited, DOI-backed, and live at the public HTTPS portal URL."
   },
   "submission_snapshot": {
     "verified_release_evidence": 737,
@@ -21,7 +21,7 @@
   "adoption_status": {
     "external_users": "not_claimed_predeployment",
     "citation_status": "not_claimed_prepublication",
-    "public_usage_analytics": "not_available_before_public_https_deployment",
+    "public_usage_analytics": "ready_to_collect_after_public_https_deployment",
     "evidence_to_collect": [
       "server access logs and download counts",
       "public issue/correction submissions",
@@ -32,8 +32,8 @@
   "public_release_blockers": [
     {
       "item": "Stable public HTTPS URL",
-      "status": "configured_pending_live_verification",
-      "owner_action": "Deploy the generated Cloudflare Pages package and verify https://oligovigil.pages.dev or the assigned pages.dev URL."
+      "status": "complete",
+      "owner_action": "Live URL verified on 2026-06-11: https://oligovigil.pages.dev."
     },
     {
       "item": "Archived data and benchmark DOI",
@@ -85,8 +85,8 @@
     {
       "question": "Will it stay available?",
       "current_answer": "The portal supports no-login access, CSV/ZIP downloads, manifests, maintenance commitments, and a DOI-backed archive (10.5281/zenodo.20633779).",
-      "risk": "The Cloudflare Pages URL still has to resolve before public reuse can be claimed.",
-      "mitigation": "Deploy the generated Cloudflare Pages package and run the smoke/final checks against the deployed URL."
+      "risk": "Long-term usage evidence still needs to be collected after public launch.",
+      "mitigation": "Track public access logs, download counts, issue/correction submissions, and early-user feedback after deployment."
     }
   ],
   "case_study_cards": [
@@ -159,8 +159,8 @@
     },
     {
       "check": "stable_public_url",
-      "status": "configured_pending_live_verification",
-      "evidence": "Cloudflare Pages export targets https://oligovigil.pages.dev; final pass requires the deployed URL to resolve."
+      "status": "pass",
+      "evidence": "Cloudflare Pages URL https://oligovigil.pages.dev resolved and passed live endpoint checks on 2026-06-11."
     }
   ],
   "field_completeness_summary": {
@@ -172,7 +172,7 @@
     "action_note": "Core provenance fields support citation now; sequence and chemistry fields remain the highest-value expansion path before public submission."
   },
   "recommended_next_actions": [
-    "Deploy https://oligovigil.pages.dev or the assigned Cloudflare Pages URL and run the same smoke/final checks against it.",
+    "Keep https://oligovigil.pages.dev live and repeat smoke/final checks before submission.",
     "Keep the frozen data bundle tied to DOI 10.5281/zenodo.20633779 and do not mutate the v1.0.1 release files.",
     "Add baseline result table after DOI freeze without changing reference splits.",
     "Expand exact sequence/modification curation to make sequence search a primary use case."

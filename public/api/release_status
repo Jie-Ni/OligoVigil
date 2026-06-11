@@ -1,6 +1,6 @@
 {
   "version": "20260604_core_validation_v45",
-  "generated_at": "2026-06-10T22:59:12+00:00",
+  "generated_at": "2026-06-11T14:12:38+00:00",
   "release_name": "OligoVigil release: 737 human curator-verified safety/off-target evidence rows (626 toxicity + 111 off-target; re-curated from 2003 v1 machine pre-curated candidates); Cohen κ_binary = 0.42 (moderate, drop-abstain) / 0.34 (fair, collapse-abstain) on a 100-row mixed inter-rater study",
   "release_snapshot": {
     "verified_release_records": 737,
@@ -33,8 +33,8 @@
     },
     {
       "check": "stable_public_url",
-      "status": "configured_pending_live_verification",
-      "evidence": "Cloudflare Pages export is configured for https://oligovigil.pages.dev; final pass requires the live URL smoke test."
+      "status": "pass",
+      "evidence": "https://oligovigil.pages.dev is live, HTTPS-enabled, and no-login accessible."
     }
   ],
   "readiness_gates": [
@@ -45,8 +45,8 @@
     },
     {
       "gate": "Public HTTPS URL",
-      "status": "configured_pending_live_verification",
-      "evidence": "Cloudflare Pages export is configured for https://oligovigil.pages.dev; final pass requires the live URL smoke test."
+      "status": "pass",
+      "evidence": "https://oligovigil.pages.dev is live, HTTPS-enabled, and no-login accessible."
     },
     {
       "gate": "Download availability",
@@ -65,9 +65,9 @@
     }
   ],
   "public_url_gate": {
-    "status": "cloudflare_pages_configured_pending_live_verification",
+    "status": "pass_live_cloudflare_pages",
     "required_for_public_release": true,
-    "evidence": "Static Pages package targets https://oligovigil.pages.dev; verify the assigned URL after Cloudflare deployment."
+    "evidence": "Live Cloudflare Pages URL verified on 2026-06-11: https://oligovigil.pages.dev."
   },
   "release_batches": [
     {
@@ -107,8 +107,8 @@
     }
   ],
   "next_release_requirements": [
-    "Deploy stable public HTTPS URL.",
-    "Freeze release package and archive benchmark/data snapshot with DOI.",
+    "Maintain the verified public HTTPS URL: https://oligovigil.pages.dev.",
+    "Keep the frozen release package aligned with archive DOI 10.5281/zenodo.20633779.",
     "Continue sequence/modification curation to convert sequence search from triage to exact alignment."
   ]
 }

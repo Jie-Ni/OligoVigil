@@ -28,6 +28,7 @@ ARCHIVE_DOI = "10.5281/zenodo.20633779"
 ARCHIVE_URL = f"https://doi.org/{ARCHIVE_DOI}"
 CODE_RELEASE_URL = "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1"
 PREFERRED_PUBLIC_URL = "https://oligovigil.pages.dev"
+PUBLIC_URL_VERIFIED_DATE = "2026-06-11"
 CORE_OLIGO_FIELD_SUMMARY_PATH = (
     ROOT / "data" / "generated" / "core_oligo_field_curation_packet_v1_summary.json"
 )
@@ -884,8 +885,8 @@ def api_quality() -> dict[str, object]:
             },
             {
                 "check": "stable_public_url",
-                "status": "configured_pending_live_verification",
-                "evidence": f"Cloudflare Pages export targets {PREFERRED_PUBLIC_URL}; final pass requires the deployed URL to resolve.",
+                "status": "pass",
+                "evidence": f"Cloudflare Pages URL {PREFERRED_PUBLIC_URL} resolved and passed live endpoint checks on {PUBLIC_URL_VERIFIED_DATE}.",
             },
         ],
     }
@@ -1263,8 +1264,8 @@ def api_release_status() -> dict[str, object]:
         },
         {
             "gate": "Public HTTPS URL",
-            "status": "configured_pending_live_verification",
-            "evidence": f"Cloudflare Pages export is configured for {PREFERRED_PUBLIC_URL}; final pass requires the live URL smoke test.",
+            "status": "pass",
+            "evidence": f"{PREFERRED_PUBLIC_URL} is live, HTTPS-enabled, and no-login accessible.",
         },
         {
             "gate": "Download availability",
@@ -1311,15 +1312,15 @@ def api_release_status() -> dict[str, object]:
             },
             {
                 "check": "stable_public_url",
-                "status": "configured_pending_live_verification",
-                "evidence": f"Cloudflare Pages export is configured for {PREFERRED_PUBLIC_URL}; final pass requires the live URL smoke test.",
+                "status": "pass",
+                "evidence": f"{PREFERRED_PUBLIC_URL} is live, HTTPS-enabled, and no-login accessible.",
             },
         ],
         "readiness_gates": readiness_gates,
         "public_url_gate": {
-            "status": "cloudflare_pages_configured_pending_live_verification",
+            "status": "pass_live_cloudflare_pages",
             "required_for_public_release": True,
-            "evidence": f"Static Pages package targets {PREFERRED_PUBLIC_URL}; verify the assigned URL after Cloudflare deployment.",
+            "evidence": f"Live Cloudflare Pages URL verified on {PUBLIC_URL_VERIFIED_DATE}: {PREFERRED_PUBLIC_URL}.",
         },
         "release_batches": [
             {
@@ -1359,8 +1360,8 @@ def api_release_status() -> dict[str, object]:
             },
         ],
         "next_release_requirements": [
-            "Deploy stable public HTTPS URL.",
-            "Freeze release package and archive benchmark/data snapshot with DOI.",
+            f"Maintain the verified public HTTPS URL: {PREFERRED_PUBLIC_URL}.",
+            f"Keep the frozen release package aligned with archive DOI {ARCHIVE_DOI}.",
             "Continue sequence/modification curation to convert sequence search from triage to exact alignment.",
         ],
     }
@@ -1557,8 +1558,8 @@ def api_readiness() -> dict[str, object]:
         },
         {
             "gate": "Public HTTPS URL",
-            "status": "configured_pending_live_verification",
-            "evidence": f"Cloudflare Pages export is configured for {PREFERRED_PUBLIC_URL}; final pass requires the live URL smoke test.",
+            "status": "pass",
+            "evidence": f"{PREFERRED_PUBLIC_URL} is live, HTTPS-enabled, and no-login accessible.",
         },
         {
             "gate": "Download availability",
@@ -2907,14 +2908,15 @@ def api_data_availability() -> dict[str, object]:
             "reference splits are available through the web portal and REST API. Raw article text "
             "and PDFs are not redistributed; release tables contain curator-reviewed derived "
             f"annotations and source links. The frozen v1.0.1 data archive is available at {ARCHIVE_URL}. "
-            "The stable public HTTPS portal URL is assigned during Cloudflare Pages deployment."
+            f"The stable public HTTPS portal is available at {PREFERRED_PUBLIC_URL}."
         ),
         "access": {
             "login_required": False,
             "free_access": True,
             "bulk_download": True,
-            "public_https_url_status": "cloudflare_pages_export_ready_pending_project_url",
-            "preferred_public_url": PREFERRED_PUBLIC_URL,
+            "public_https_url_status": "live_verified_cloudflare_pages",
+            "public_url": PREFERRED_PUBLIC_URL,
+            "verified_on": PUBLIC_URL_VERIFIED_DATE,
             "maintenance_commitment": "Maintain the same public URL for at least 5 years after publication.",
         },
         "archive": {
@@ -2975,8 +2977,8 @@ def api_submission_pack() -> dict[str, object]:
     blockers = [
             {
                 "item": "Stable public HTTPS URL",
-                "status": "configured_pending_live_verification",
-                "owner_action": f"Deploy the generated Cloudflare Pages package and verify {PREFERRED_PUBLIC_URL} or the assigned pages.dev URL.",
+                "status": "complete",
+                "owner_action": f"Live URL verified on {PUBLIC_URL_VERIFIED_DATE}: {PREFERRED_PUBLIC_URL}.",
             },
             {
                 "item": "Archived data and benchmark DOI",
@@ -3028,16 +3030,16 @@ def api_submission_pack() -> dict[str, object]:
         {
             "question": "Will it stay available?",
             "current_answer": f"The portal supports no-login access, CSV/ZIP downloads, manifests, maintenance commitments, and a DOI-backed archive ({ARCHIVE_DOI}).",
-            "risk": "The Cloudflare Pages URL still has to resolve before public reuse can be claimed.",
-            "mitigation": "Deploy the generated Cloudflare Pages package and run the smoke/final checks against the deployed URL.",
+            "risk": "Long-term usage evidence still needs to be collected after public launch.",
+            "mitigation": "Track public access logs, download counts, issue/correction submissions, and early-user feedback after deployment.",
         },
     ]
     return {
         "version": PORTAL_VERSION,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "go_no_go": {
-            "status": "go_after_cloudflare_pages_live_verification",
-            "summary": "The resource is technically usable, curator-audited, DOI-backed, and Cloudflare Pages-ready; public citation should wait until the HTTPS portal URL resolves.",
+            "status": "go_after_author_metadata_and_final_pdf_qa",
+            "summary": "The resource is technically usable, curator-audited, DOI-backed, and live at the public HTTPS portal URL.",
         },
         "submission_snapshot": {
             "verified_release_evidence": snapshot.get("verified_release_records", 0),
@@ -3055,7 +3057,7 @@ def api_submission_pack() -> dict[str, object]:
         "adoption_status": {
             "external_users": "not_claimed_predeployment",
             "citation_status": "not_claimed_prepublication",
-            "public_usage_analytics": "not_available_before_public_https_deployment",
+            "public_usage_analytics": "ready_to_collect_after_public_https_deployment",
             "evidence_to_collect": [
                 "server access logs and download counts",
                 "public issue/correction submissions",
@@ -3078,7 +3080,7 @@ def api_submission_pack() -> dict[str, object]:
         "quality_checks": quality.get("checks", []),
         "field_completeness_summary": field_completeness.get("summary", {}),
         "recommended_next_actions": [
-            f"Deploy {PREFERRED_PUBLIC_URL} or the assigned Cloudflare Pages URL and run the same smoke/final checks against it.",
+            f"Keep {PREFERRED_PUBLIC_URL} live and repeat smoke/final checks before submission.",
             f"Keep the frozen data bundle tied to DOI {ARCHIVE_DOI} and do not mutate the v1.0.1 release files.",
             "Add baseline result table after DOI freeze without changing reference splits.",
             "Expand exact sequence/modification curation to make sequence search a primary use case.",

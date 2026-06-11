@@ -1708,8 +1708,8 @@ async function loadCitation() {
     .map(([label, value]) => `<div class="quality-card long-value"><span>${escapeHtml(label)}</span><strong>${escapeHtml(cardText(value))}</strong></div>`)
     .join("");
   document.getElementById("archive-readiness-grid").innerHTML = [
-    ["DOI status", archive.doi_status || "pending", "must be minted after public archive upload"],
-    ["archive ready", archive.archive_ready ? "yes" : "not yet", "blocked until public URL and DOI"],
+    ["DOI status", archive.doi_status || "pending", "versioned archive identifier"],
+    ["archive ready", archive.archive_ready ? "yes" : "not yet", "public URL and DOI gate"],
     ["ready files", `${archive.required_files_ready || 0}/${archive.required_files_total || 0}`, "release artifacts"],
     ["version", archive.version || "", "archive metadata version"],
   ]

@@ -8,9 +8,9 @@ date: "2026-06-10"
 
 ## Web portal
 
-The OligoVigil web portal will be freely accessible without login or registration at:
+The OligoVigil web portal is freely accessible without login or registration at:
 
-**`[TBD: public HTTPS URL]`**
+**`https://oligovigil.pages.dev/`**
 
 The portal supports browsing, free-text search, filtered evidence tables, per-record provenance display, curation-audit inspection, benchmark downloads and programmatic access through REST/OpenAPI, MCP, Bioschemas JSON-LD and W3C PROV-compatible exports.
 
@@ -20,11 +20,11 @@ A frozen, citable snapshot of the release corresponding to this manuscript is as
 
 **`10.5281/zenodo.20633779`**
 
-The archive will contain the exact files backing the manuscript counts: 737 human curator-verified release records, 626 toxicity endpoints, 111 off-target observations, 660 primary release sources, the source-license manifest, curation-audit exports, benchmark reference splits, deterministic baseline outputs, schema documentation and checksums.
+The archive contains the exact files backing the manuscript counts: 737 human curator-verified release records, 626 toxicity endpoints, 111 off-target observations, 660 primary release sources, the source-license manifest, curation-audit exports, benchmark reference splits, deterministic baseline outputs, schema documentation and checksums.
 
 ## Source code
 
-The curation scripts, release QA scripts, web portal, API implementation, baseline code and figure-generation scripts will be available at:
+The curation scripts, release QA scripts, web portal, API implementation, baseline code and figure-generation scripts are available at:
 
 **`https://github.com/Jie-Ni/OligoVigil`**
 
@@ -36,7 +36,7 @@ The curation scripts, release QA scripts, web portal, API implementation, baseli
 
 ## Itemised release downloads
 
-All release files will be available as individual downloads and as `all_tables.zip`.
+All release files are available as individual downloads and as `all_tables.zip`.
 
 | File | Rows | Description |
 |---|---:|---|
@@ -59,4 +59,4 @@ All numerical claims in the manuscript are tied to the 2026-06-08 release snapsh
 
 ---
 
-*[TBD before submission: insert final public URL after stable deployment.]*
+Public URL verified: `https://oligovigil.pages.dev/` (2026-06-11).

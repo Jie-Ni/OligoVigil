@@ -202,7 +202,7 @@ No abstract-level batch-promotion script is shipped. The promotion gate requires
 
 The current Docker release exposes a no-login web portal and REST API with CSV/ZIP downloads. The Cloudflare Pages static export in `public/` mirrors the read-only portal for free persistent HTTPS hosting. The primary citable release files are `evidence_release.csv`, `source_document.csv`, `molecule.csv`, `curation_audit.csv`, `benchmark_reference_splits.csv`, `benchmark_task_cards.csv`, `benchmark_baseline_results.csv`, `license_manifest_v1.csv`, `source_license_manifest_v1.csv`, and `data_dictionary_v1.csv`. File sizes, row counts, checksums, and file-specific reuse notes are exposed through `/api/downloads` and `/api/data_availability`.
 
-The release archive DOI is `10.5281/zenodo.20633779`; the code release tag is `https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1`. Before NAR submission, deploy `public/` to Cloudflare Pages, verify the assigned stable HTTPS URL, and replace remaining public-URL placeholders in the manuscript package. The local release deliberately does not claim public adoption, citation impact or long-term URL availability before deployment.
+The release archive DOI is `10.5281/zenodo.20633779`; the code release tag is `https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1`. The public no-login portal is live at `https://oligovigil.pages.dev/`. The local release deliberately does not claim public adoption or citation impact before post-launch usage evidence exists.
 
 ## Delivery Package
 

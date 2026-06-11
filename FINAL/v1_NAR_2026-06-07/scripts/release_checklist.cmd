@@ -56,7 +56,7 @@ echo     FINAL/v1_NAR_2026-06-07/metadata_ledger.md
 echo     FINAL/v1_NAR_2026-06-07/declarations/03_data_availability.md
 echo     CITATION.cff
 echo with:
-echo     [public HTTPS URL TBD]      -- e.g. https://oligovigil.dsc.uibk.ac.at
+echo     public HTTPS URL            -- https://oligovigil.pages.dev/
 echo     [TBD: GitHub URL]           -- e.g. https://github.com/^<owner^>/oligovigil
 echo     Zenodo DOI                  -- 10.5281/zenodo.20633779
 echo.

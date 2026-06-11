@@ -7,13 +7,14 @@
     "benchmark_split_records": 344,
     "candidate_records": 41114
   },
-  "availability_statement_draft": "OligoVigil is provided as a no-login, free web resource. Versioned CSV downloads, checksums, source metadata, curation audit trails, license manifests, and benchmark reference splits are available through the web portal and REST API. Raw article text and PDFs are not redistributed; release tables contain curator-reviewed derived annotations and source links. The frozen v1.0.1 data archive is available at https://doi.org/10.5281/zenodo.20633779. The stable public HTTPS portal URL is assigned during Cloudflare Pages deployment.",
+  "availability_statement_draft": "OligoVigil is provided as a no-login, free web resource. Versioned CSV downloads, checksums, source metadata, curation audit trails, license manifests, and benchmark reference splits are available through the web portal and REST API. Raw article text and PDFs are not redistributed; release tables contain curator-reviewed derived annotations and source links. The frozen v1.0.1 data archive is available at https://doi.org/10.5281/zenodo.20633779. The stable public HTTPS portal is available at https://oligovigil.pages.dev.",
   "access": {
     "login_required": false,
     "free_access": true,
     "bulk_download": true,
-    "public_https_url_status": "cloudflare_pages_export_ready_pending_project_url",
-    "preferred_public_url": "https://oligovigil.pages.dev",
+    "public_https_url_status": "live_verified_cloudflare_pages",
+    "public_url": "https://oligovigil.pages.dev",
+    "verified_on": "2026-06-11",
     "maintenance_commitment": "Maintain the same public URL for at least 5 years after publication."
   },
   "archive": {

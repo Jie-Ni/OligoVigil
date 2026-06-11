@@ -4,7 +4,7 @@
   "release_type": "verified_public_release_candidate",
   "schema": "sqlite_v1",
   "portal_version": "20260604_core_validation_v45",
-  "generated_at": "2026-06-10T22:59:02+00:00",
+  "generated_at": "2026-06-11T14:12:05+00:00",
   "active_source_manifest": "source_candidates_v6.csv",
   "database_bytes": 62210048,
   "release_snapshot": {
