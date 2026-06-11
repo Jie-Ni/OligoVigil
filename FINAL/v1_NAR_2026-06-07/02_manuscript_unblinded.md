@@ -198,7 +198,7 @@ Planned work follows directly from the limitations above. We will (i) extend the
 
 ## Funding
 
-This work received no external funding. The computational results reported in this manuscript were obtained on institutional research-computing facilities at Southeast University, Nanjing Medical University and the University of Innsbruck; we thank the operators for compute allocations that made this study possible.
+This work received no external funding. The computational results reported in this manuscript were obtained on the Austrian Scientific Computing (ASC) federated MUSICA cluster (site Linz, MUSICA-LNZ), supplemented by the LEO5 high-performance computing facility at the University of Innsbruck. We thank the operators of both sites for compute allocations that made this study possible.
 
 ## Author contributions (CRediT)
 
@@ -206,7 +206,7 @@ This work received no external funding. The computational results reported in th
 **Xinting Zhang** — Investigation; Data curation; Validation.
 **Zhuoying Xie** — Investigation; Visualisation.
 **Shan Lu** — Resources; Writing — review & editing.
-**Yun Liu** — Conceptualisation; Supervision; Writing — review & editing; Resources; Funding acquisition.
+**Yun Liu** — Conceptualisation; Supervision; Writing — review & editing; Resources.
 **Adam Jatowt** — Supervision; Writing — review & editing; Resources.
 
 ## Conflict of interest

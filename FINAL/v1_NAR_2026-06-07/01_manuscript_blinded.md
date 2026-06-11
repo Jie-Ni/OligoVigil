@@ -190,7 +190,7 @@ Planned work follows directly from the limitations above. We will (i) extend the
 
 ## Funding
 
-This work received no external funding. The computational results reported in this manuscript were obtained on institutional research-computing facilities at [INSTITUTION], [INSTITUTION] and the [INSTITUTION]; we thank the operators for compute allocations that made this study possible.
+This work received no external funding. The computational results reported in this manuscript were obtained on institutional high-performance computing facilities (provider and site details withheld for blind review). We thank the operators of these facilities for compute allocations that made this study possible.
 
 ## Author contributions (CRediT)
 
@@ -198,7 +198,7 @@ This work received no external funding. The computational results reported in th
 **[CO-AUTHOR]** — Investigation; Data curation; Validation.
 **[CO-AUTHOR]** — Investigation; Visualisation.
 **[CO-AUTHOR]** — Resources; Writing — review & editing.
-**[CO-AUTHOR]** — Conceptualisation; Supervision; Writing — review & editing; Resources; Funding acquisition.
+**[CO-AUTHOR]** — Conceptualisation; Supervision; Writing — review & editing; Resources.
 **[CO-AUTHOR]** — Supervision; Writing — review & editing; Resources.
 
 ## Conflict of interest

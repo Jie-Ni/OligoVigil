@@ -18,7 +18,7 @@ Role assignments below follow the convention used in the team's Octo-Agent / ESW
 
 **Shan Lu** — Resources; Writing — review & editing.
 
-**Yun Liu** — Conceptualisation; Supervision; Writing — review & editing; Resources; Funding acquisition.
+**Yun Liu** — Conceptualisation; Supervision; Writing — review & editing; Resources.
 
 **Adam Jatowt** — Supervision; Writing — review & editing; Resources.
 
@@ -30,9 +30,8 @@ Role assignments below follow the convention used in the team's Octo-Agent / ESW
 - **Software (Jie Ni).** Implemented the curation pipeline, the 70,283-task work queue, the v2 LLM-curator under exclusion-first + verbatim-grounding-quote constraints, the QA suites (`smoke_test.py`, `frontend_contract_check.py`, `final_delivery_check.py`), the public web portal (no-login REST API + OpenAPI + MCP + Bioschemas + W3C PROV), and the release scripts that produced `evidence_release.csv`, `benchmark_reference_splits.csv`, `curation_audit.csv`, and `v2_human_override_decisions.csv`.
 - **Writing — Original Draft (Jie Ni).** Drafted the entire manuscript including the honesty-locked numbers (release 658, benchmark 344, target-gene-only 12.9%, sequence/chemistry 0%, FAR 0.73).
 - **Writing — Review & Editing (all).** A post-curation copy-editing pass on the manuscript text used a large-language-model in an editorial role under a hard "numbers-and-honesty-caveats are locked" constraint (Yuan1z0825/nature-skills polishing skill, see `06_genai_disclosure.md`). All authors are responsible for the final wording.
-- **Funding acquisition (Yun Liu).** See `04_funding.md`.
 - **Supervision (Yun Liu, Adam Jatowt).** Provided scientific oversight; reviewed all major design decisions including the candidate/release firewall and the honesty-led framing of the curation-integrity remediation.
-- **Resources (Shan Lu, Yun Liu, Adam Jatowt).** Provided institutional research-computing resources used to run the v2 LLM curator and the QA suites (institutional facilities at Southeast University, Nanjing Medical University and the University of Innsbruck; see `04_funding.md` for the full acknowledgement).
+- **Resources (Shan Lu, Yun Liu, Adam Jatowt).** Provided institutional, domain and research-computing resources used to run the curation workflows and QA suites; the computational work used the Austrian Scientific Computing (ASC) federated MUSICA cluster and the LEO5 high-performance computing facility at the University of Innsbruck (see `04_funding.md` for the full acknowledgement).
 
 ## Author identities (locked, ORCID-validated)
 

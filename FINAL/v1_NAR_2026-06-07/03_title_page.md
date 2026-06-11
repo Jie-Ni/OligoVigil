@@ -51,11 +51,11 @@ All six ORCID iDs have been checksum-validated (ISO 7064 MOD 11-2). For NAR subm
 
 ## Funding
 
-This work received no external funding. The computational results reported in this manuscript were obtained on institutional research-computing facilities at Southeast University, Nanjing Medical University and the University of Innsbruck; we thank the operators for compute allocations that made this study possible. \[TBD: confirm whether additional named grants (e.g. NSFC, FWF, Horizon Europe) should be acknowledged in addition to or in place of the above; the same "no external funding" statement is used in the team's Octo-Agent / ESWA 2026-06-07 submission.\]
+This work received no external funding. The computational results reported in this manuscript were obtained on the Austrian Scientific Computing (ASC) federated MUSICA cluster (site Linz, MUSICA-LNZ), supplemented by the LEO5 high-performance computing facility at the University of Innsbruck. We thank the operators of both sites for compute allocations that made this study possible.
 
 ## Acknowledgements
 
-We thank \[TBD: non-author contributors — e.g. HPC operators by name, beta-testers of the portal, colleagues who provided feedback\] for their support of this work. \(Insert specific names at camera-ready.\)
+We thank the operators of the Austrian Scientific Computing (ASC) federated MUSICA cluster and the LEO5 high-performance computing facility at the University of Innsbruck for compute allocations that made this study possible.
 
 ## Declarations summary
 
@@ -65,7 +65,7 @@ We thank \[TBD: non-author contributors — e.g. HPC operators by name, beta-tes
 - **Code availability:** Curation scripts, QA suites, baseline reproducibility code and the portal source are released under the MIT License (code) and CC BY 4.0 (derived annotations); see `LICENSE` and `LICENSE-DATA` in the repository.
 - **Ethics:** No human subjects, animal experiments or identifiable personal data were involved; the resource is derived from published preclinical literature.
 - **AI-assisted curation disclosure:** A documented AI-assisted human curation workflow was used (Stage-2 source-grounded LLM proposals with verbatim grounding gate, followed by single-human adjudication); the firewall between machine proposals and human decisions is enforced in the data model and audited per record. See `declarations/06_genai_disclosure.md`.
-- **Author contributions (CRediT):** see `declarations/01_credit_author_statement.md`. Summary: **Jie Ni** — Conceptualisation; Methodology; Software; Investigation; Formal analysis; Data curation; Visualisation; Writing — original draft; Project administration. **Xinting Zhang** — Investigation; Data curation; Validation. **Zhuoying Xie** — Investigation; Visualisation. **Shan Lu** — Resources; Writing — review & editing. **Yun Liu** — Conceptualisation; Supervision; Writing — review & editing; Resources; Funding acquisition. **Adam Jatowt** — Supervision; Writing — review & editing; Resources.
+- **Author contributions (CRediT):** see `declarations/01_credit_author_statement.md`. Summary: **Jie Ni** — Conceptualisation; Methodology; Software; Investigation; Formal analysis; Data curation; Visualisation; Writing — original draft; Project administration. **Xinting Zhang** — Investigation; Data curation; Validation. **Zhuoying Xie** — Investigation; Visualisation. **Shan Lu** — Resources; Writing — review & editing. **Yun Liu** — Conceptualisation; Supervision; Writing — review & editing; Resources. **Adam Jatowt** — Supervision; Writing — review & editing; Resources.
 
 ## Word counts and item counts (computed from 02_manuscript_unblinded.md, 2026-06-10)
 
