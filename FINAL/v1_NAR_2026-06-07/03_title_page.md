@@ -77,5 +77,5 @@ We thank the operators of the Austrian Scientific Computing (ASC) federated MUSI
 
 ## Submission
 
-Date: \[TBD: YYYY-MM-DD on submission\]
+Date: 2026-06-11
 Manuscript type: Database Article (NAR Database Issue 2027 cycle)

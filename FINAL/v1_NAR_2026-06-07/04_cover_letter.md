@@ -1,4 +1,4 @@
-\[TBD: date\]
+11 June 2026
 
 To the Editor-in-Chief  
 *Nucleic Acids Research*, Database Issue
