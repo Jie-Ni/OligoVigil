@@ -12,7 +12,7 @@ The OligoVigil web portal is freely accessible without login or registration at:
 
 **`https://oligovigil.pages.dev/`**
 
-The portal supports browsing, free-text search, filtered evidence tables, per-record provenance display, curation-audit inspection, benchmark downloads and programmatic access through REST/OpenAPI, MCP, Bioschemas JSON-LD and W3C PROV-compatible exports.
+The portal is served over HTTPS and supports browsing, free-text search, filtered evidence tables, per-record provenance display, curation-audit inspection, benchmark downloads and programmatic access through REST/OpenAPI, MCP, Bioschemas JSON-LD and W3C PROV-compatible exports. The interface has responsive layouts for desktop, tablet and phone screens.
 
 ## Versioned release archive
 
@@ -36,7 +36,7 @@ The curation scripts, release QA scripts, web portal, API implementation, baseli
 
 ## Itemised release downloads
 
-All release files are available as individual downloads and as `all_tables.zip`.
+All release files are available as individual downloads and as `all_tables.zip`. Tabular data are provided as CSV, schema files as SQL/CSV documentation, API responses as JSON and bulk release packages as ZIP archives with checksums.
 
 | File | Rows | Description |
 |---|---:|---|

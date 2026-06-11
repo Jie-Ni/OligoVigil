@@ -6,21 +6,21 @@ date: "2026-06-11"
 
 # CRediT Author Contribution Statement
 
-This statement follows the Contributor Roles Taxonomy (CRediT) as adopted by Nucleic Acids Research and Oxford University Press. The 14 standard CRediT roles are: Conceptualisation, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Resources, Software, Supervision, Validation, Visualisation, Writing — Original Draft, and Writing — Review & Editing.
+This statement follows the Contributor Roles Taxonomy (CRediT) as adopted by Nucleic Acids Research and Oxford University Press. The 14 standard CRediT roles are: Conceptualisation, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Resources, Software, Supervision, Validation, Visualisation, Writing - Original Draft, and Writing - Review & Editing.
 
 Role assignments below follow the CRediT taxonomy and have been prepared for author confirmation before submission.
 
-**Jie Ni** — Conceptualisation; Methodology; Software; Investigation; Formal analysis; Data curation; Visualisation; Writing — original draft; Project administration.
+**Jie Ni** - Conceptualisation; Methodology; Software; Investigation; Formal analysis; Data curation; Visualisation; Writing - original draft; Project administration.
 
-**Xinting Zhang** — Investigation; Data curation; Validation.
+**Xinting Zhang** - Investigation; Data curation; Validation.
 
-**Zhuoying Xie** — Investigation; Visualisation.
+**Zhuoying Xie** - Investigation; Visualisation.
 
-**Shan Lu** — Resources; Writing — review & editing.
+**Shan Lu** - Resources; Writing - review & editing.
 
-**Yun Liu** — Conceptualisation; Supervision; Writing — review & editing; Resources.
+**Yun Liu** - Conceptualisation; Supervision; Writing - review & editing; Resources.
 
-**Adam Jatowt** — Supervision; Writing — review & editing; Resources.
+**Adam Jatowt** - Supervision; Writing - review & editing; Resources.
 
 ## Notes specific to OligoVigil
 

@@ -19,7 +19,7 @@
 
 ---
 
-## S1. Curation protocol — full v2 curator rubric
+## S1. Curation protocol - full v2 curator rubric
 
 This is the verbatim curator-rubric prompt used by the v2 source-grounded LLM pre-curator (`scripts/curate_v2_llm.py`). It is reproduced exactly as implemented in the curator system prompt, with the four gates that the manuscript Methods Stage 3 summarises in plain English. The grounding gate is enforced **in code** (see snippet at the bottom of this section): an LLM accept whose `grounding_quote` is not a verbatim substring of the supplied passage is forced to a reject.
 
@@ -31,15 +31,15 @@ This is the verbatim curator-rubric prompt used by the v2 source-grounded LLM pr
 >
 > Decide ACCEPT only if ALL of the following hold, judged strictly from the SUPPLIED PASSAGE (not outside knowledge):
 >
-> **GATE 1 — MOLECULE IN SCOPE (exclusion-first).** A therapeutic oligonucleotide must be the agent UNDER STUDY: antisense oligonucleotide / ASO / gapmer / siRNA / RNAi therapeutic / morpholino (PMO) / LNA / aptamer / GalNAc-siRNA, or a delivery vehicle carrying such an oligo. REJECT if the agent is: CRISPR/Cas, shRNA, AAV/viral gene therapy, mRNA therapeutic, endogenous lncRNA/circRNA/miRNA biology, a small molecule / natural product / TCM, a G-quadruplex small-molecule ligand, agricultural/insect/nematode RNAi, or an oligo used merely as a lab knockdown TOOL rather than as the therapeutic under study. Disambiguate acronyms by sense: "ASO" must mean antisense oligonucleotide here, NOT atrial septal occluder, arteriosclerosis obliterans, or the journal Annals of Surgical Oncology; "mismatch" must mean oligo hybridization mismatch, NOT dMMR/MSI-H tumor status.
+> **GATE 1 - MOLECULE IN SCOPE (exclusion-first).** A therapeutic oligonucleotide must be the agent UNDER STUDY: antisense oligonucleotide / ASO / gapmer / siRNA / RNAi therapeutic / morpholino (PMO) / LNA / aptamer / GalNAc-siRNA, or a delivery vehicle carrying such an oligo. REJECT if the agent is: CRISPR/Cas, shRNA, AAV/viral gene therapy, mRNA therapeutic, endogenous lncRNA/circRNA/miRNA biology, a small molecule / natural product / TCM, a G-quadruplex small-molecule ligand, agricultural/insect/nematode RNAi, or an oligo used merely as a lab knockdown TOOL rather than as the therapeutic under study. Disambiguate acronyms by sense: "ASO" must mean antisense oligonucleotide here, NOT atrial septal occluder, arteriosclerosis obliterans, or the journal Annals of Surgical Oncology; "mismatch" must mean oligo hybridization mismatch, NOT dMMR/MSI-H tumor status.
 >
-> **GATE 2 — PRIMARY RESULT.** The passage must report an actually observed/measured/administered result. REJECT background, introduction, motivation/hypothesis, methods/protocol descriptions, prior-work recaps, and review/meta-analysis/guidance text.
+> **GATE 2 - PRIMARY RESULT.** The passage must report an actually observed/measured/administered result. REJECT background, introduction, motivation/hypothesis, methods/protocol descriptions, prior-work recaps, and review/meta-analysis/guidance text.
 >
-> **GATE 3 — EVIDENCE TYPE MATCHES DOMAIN.** First classify the evidence type, then require it to match the requested domain:
->   - *toxicity domain:* ACCEPT only a safety/tolerability/toxicity endpoint (hepatic, renal, platelet, immune/cytokine/complement, hemolysis, cell-viability/cytotoxicity, genotoxicity, body weight, mortality, adverse events) LINKED to the oligo or its delivery product. REJECT if the evidence type is efficacy / target knockdown potency / pharmacokinetics / biodistribution / on-target activity, or if the toxicity belongs to an external toxin or disease-injury model where the oligo is only a knockdown tool, or if "cytotoxicity" is a cancer-cell-killing efficacy readout.
->   - *offtarget domain:* ACCEPT only an OBSERVED unintended-effect result: seed-mediated, mismatch/hybridization-dependent, transcriptome-wide, RNA-seq, or microarray off-target evidence. REJECT computational/design-only specificity screens, PK/biodistribution, and on-target/efficacy "specificity".
+> **GATE 3 - EVIDENCE TYPE MATCHES DOMAIN.** First classify the evidence type, then require it to match the requested domain:
+> - *toxicity domain:* ACCEPT only a safety/tolerability/toxicity endpoint (hepatic, renal, platelet, immune/cytokine/complement, hemolysis, cell-viability/cytotoxicity, genotoxicity, body weight, mortality, adverse events) LINKED to the oligo or its delivery product. REJECT if the evidence type is efficacy / target knockdown potency / pharmacokinetics / biodistribution / on-target activity, or if the toxicity belongs to an external toxin or disease-injury model where the oligo is only a knockdown tool, or if "cytotoxicity" is a cancer-cell-killing efficacy readout.
+> - *offtarget domain:* ACCEPT only an OBSERVED unintended-effect result: seed-mediated, mismatch/hybridization-dependent, transcriptome-wide, RNA-seq, or microarray off-target evidence. REJECT computational/design-only specificity screens, PK/biodistribution, and on-target/efficacy "specificity".
 >
-> **GATE 4 — GROUNDING.** Provide grounding_quote: an EXACT verbatim span copied from the supplied passage that simultaneously establishes the in-scope oligo and the domain-matched primary result. If no single passage supports the accept, set grounding_quote to "NONE" and do not accept.
+> **GATE 4 - GROUNDING.** Provide grounding_quote: an EXACT verbatim span copied from the supplied passage that simultaneously establishes the in-scope oligo and the domain-matched primary result. If no single passage supports the accept, set grounding_quote to "NONE" and do not accept.
 >
 > If the passage is too truncated/ambiguous to apply the gates, set decision="abstain".
 >
@@ -49,19 +49,19 @@ This is the verbatim curator-rubric prompt used by the v2 source-grounded LLM pr
 
 ```python
 def verify_grounding(decision: dict, passage: str) -> dict:
-    """Force reject if an accept is not grounded in a verbatim substring of the passage."""
-    if decision.get("decision") != "accept":
-        return decision
-    quote = (decision.get("grounding_quote") or "").strip()
-    norm_p = " ".join(passage.split()).lower()
-    norm_q = " ".join(quote.split()).lower()
-    grounded = bool(norm_q) and norm_q != "none" and len(norm_q) >= 12 and norm_q in norm_p
-    decision["grounding_verified"] = grounded
-    if not grounded:
-        decision["decision"] = "reject"
-        decision["grade"] = "NA"
-        decision["reason"] = "ungrounded: grounding_quote is not a verbatim span of the source passage; " + decision.get("reason", "")
-    return decision
+ """Force reject if an accept is not grounded in a verbatim substring of the passage."""
+ if decision.get("decision") != "accept":
+ return decision
+ quote = (decision.get("grounding_quote") or "").strip()
+ norm_p = " ".join(passage.split()).lower()
+ norm_q = " ".join(quote.split()).lower()
+ grounded = bool(norm_q) and norm_q != "none" and len(norm_q) >= 12 and norm_q in norm_p
+ decision["grounding_verified"] = grounded
+ if not grounded:
+ decision["decision"] = "reject"
+ decision["grade"] = "NA"
+ decision["reason"] = "ungrounded: grounding_quote is not a verbatim span of the source passage; " + decision.get("reason", "")
+ return decision
 ```
 
 The check is intentionally strict: whitespace is collapsed, comparison is case-insensitive, and a minimum 12-character quote is required. An LLM that confabulates a rationale cannot pass this gate, because no such verbatim span exists in the cached source.
@@ -77,68 +77,68 @@ The LLM **never** writes to `curation_audit.curator_id`, `curator_decision`, or 
 The release schema is the single SQLite file `data/oligosafety.db` (full DDL at `data/schema_sqlite.sql`). The text-tree below shows the in-scope tables and the foreign-key paths a downstream user follows from a primary source to released evidence; `curation_audit` is shown on the side as it cross-references every other table by `(entity_table, entity_id)`.
 
 ```
-source_document  (36,245 rows; PMID / PMCID / DOI / title / venue / license)
-   |
-   v
-curation_queue  (70,283 rows; per-(source, evidence_domain) task)
-   |
-   v
-curation_candidate  (41,114 rows; matched_terms / source_location / status
-                     in { machine_precurated_v1,
-                          candidate_needs_curator_review,
-                          curator_rejected,
-                          recurated_rejected })
-   |
-   +--> toxicity_endpoint   (release: 626 curator-verified rows)
-   |        molecule_id  --> molecule
-   |        assay_id     --> assay
-   |        source_document_id --> source_document
-   |        endpoint_name / endpoint_category / direction /
-   |        significance_label / is_observed_experimental /
-   |        source_location / evidence_grade
-   |
-   +--> offtarget_evidence  (release: 111 curator-verified rows)
-            molecule_id  --> molecule
-            assay_id     --> assay
-            source_document_id --> source_document
-            offtarget_gene_symbol / offtarget_transcript_id /
-            evidence_type / match_type / seed_match_length /
-            is_observed_experimental / is_computational_prediction /
-            source_location / evidence_grade
+source_document (36,245 rows; PMID / PMCID / DOI / title / venue / license)
+ |
+ v
+curation_queue (70,283 rows; per-(source, evidence_domain) task)
+ |
+ v
+curation_candidate (41,114 rows; matched_terms / source_location / status
+ in { machine_precurated_v1,
+ candidate_needs_curator_review,
+ curator_rejected,
+ recurated_rejected })
+ |
+ +--> toxicity_endpoint (release: 626 curator-verified rows)
+ | molecule_id --> molecule
+ | assay_id --> assay
+ | source_document_id --> source_document
+ | endpoint_name / endpoint_category / direction /
+ | significance_label / is_observed_experimental /
+ | source_location / evidence_grade
+ |
+ +--> offtarget_evidence (release: 111 curator-verified rows)
+ molecule_id --> molecule
+ assay_id --> assay
+ source_document_id --> source_document
+ offtarget_gene_symbol / offtarget_transcript_id /
+ evidence_type / match_type / seed_match_length /
+ is_observed_experimental / is_computational_prediction /
+ source_location / evidence_grade
 
-molecule         (1,012 rows in the current molecule table)
-   modality_id  --> modality   (e.g., ASO, siRNA, PMO, CpG ODN, aptamer)
-   canonical_name / target_gene_symbol / disease_context /
-   therapeutic_status / external_ids /
-   sense_sequence / antisense_sequence / guide_sequence /
-   passenger_sequence / seed_region /
-   backbone_chemistry / sugar_modification / base_modification /
-   conjugate_delivery /
-   sequence_annotation_status / modification_annotation_status
+molecule (1,012 rows in the current molecule table)
+ modality_id --> modality (e.g., ASO, siRNA, PMO, CpG ODN, aptamer)
+ canonical_name / target_gene_symbol / disease_context /
+ therapeutic_status / external_ids /
+ sense_sequence / antisense_sequence / guide_sequence /
+ passenger_sequence / seed_region /
+ backbone_chemistry / sugar_modification / base_modification /
+ conjugate_delivery /
+ sequence_annotation_status / modification_annotation_status
 
-assay            (per-experiment context: species, route, dose, duration)
-modality         (controlled vocabulary; in_core_scope flag)
+assay (per-experiment context: species, route, dose, duration)
+modality (controlled vocabulary; in_core_scope flag)
 
-benchmark_split  (344 rows; task_name {toxicity_safety_v0_1, offtarget_safety_v0_1};
-                  split_name {train, validation, test};
-                  entity_table + entity_id -> toxicity_endpoint / offtarget_evidence;
-                  split_strategy = 'source_plus_molecule_grouped_*';
-                  leakage_group keyed at (source_id, molecule_id) pair)
+benchmark_split (344 rows; task_name {toxicity_safety_v0_1, offtarget_safety_v0_1};
+ split_name {train, validation, test};
+ entity_table + entity_id -> toxicity_endpoint / offtarget_evidence;
+ split_strategy = 'source_plus_molecule_grouped_*';
+ leakage_group keyed at (source_id, molecule_id) pair)
 
 ---- audit cross-cut ---------------------------------------------
-curation_audit   (one row per curator decision)
-   entity_table   { 'toxicity_endpoint' | 'offtarget_evidence' | 'curation_candidate' }
-   entity_id      (FK into the addressed table)
-   validation_status
-     { 'curator_verified'        -- 737 current release rows
-     , 'curator_rejected'        -- 28,908 rows (mixed source)
-     , 'machine_precurated_v1'   -- 1,983 historical rows (never released)
-     , 'recurated_rejected'      -- 1,345 rows (demoted after source review)
-     , 'verified'                -- 3 rows, editorial_seed_nonhuman }
-   curator_decision  { 'accept' | 'reject' | NULL for machine rows }
-   curator_id        { human curator id | 'machine_v1_keyword_classifier' |
-                       'editorial_seed_nonhuman' | NULL }
-   audit_note / audited_at
+curation_audit (one row per curator decision)
+ entity_table { 'toxicity_endpoint' | 'offtarget_evidence' | 'curation_candidate' }
+ entity_id (FK into the addressed table)
+ validation_status
+ { 'curator_verified' -- 737 current release rows
+ , 'curator_rejected' -- 28,908 rows (mixed source)
+ , 'machine_precurated_v1' -- 1,983 historical rows (never released)
+ , 'recurated_rejected' -- 1,345 rows (demoted after source review)
+ , 'verified' -- 3 rows, editorial_seed_nonhuman }
+ curator_decision { 'accept' | 'reject' | NULL for machine rows }
+ curator_id { human curator id | 'machine_v1_keyword_classifier' |
+ 'editorial_seed_nonhuman' | NULL }
+ audit_note / audited_at
 ```
 
 The candidate-to-release firewall is enforced by:
@@ -158,7 +158,7 @@ The candidate-to-release firewall is enforced by:
 | Primary scope | Broad functional RNA therapeutics catalogue | siRNA on-target silencing efficacy | Chemically modified siRNA efficacy | Chemically modified siRNA catalogue (efficacy) | CRISPR/Cas guide off-targets (different molecular class) | **Safety + off-target evidence for therapeutic oligonucleotides (ASO / siRNA / PMO / LNA / aptamer / GalNAc-siRNA)** |
 | Evidence type | Curated efficacy entries | Silencing efficacy measurements | Modification-aware efficacy | Modification annotations + efficacy | Off-target observations for Cas9/Cas12 | **Observed safety endpoints + observed off-target results (737/737 observed experimental rows)** |
 | Source anchoring (exact in-source location) | Reference-level | Reference-level | Reference-level | Reference-level | Reference-level | **Source-localised: section / figure / table / paragraph captured per release row; 74.2% (547/737) full-text PMC-anchored; 100% PMID, 99.5% DOI** |
-| Audit trail (machine-vs-human separation) | Not provided | Not provided | Not provided | Not provided | Not provided | **Three-stage pipeline: candidate → v1 machine pre-curation → v2 source-grounded LLM proposal → single-human accept/reject + grade; full `curation_audit` table downloadable; 1,345 demoted candidates retained as `recurated_rejected`** |
+| Audit trail (machine-vs-human separation) | Not provided | Not provided | Not provided | Not provided | Not provided | **Three-stage pipeline: candidate -> v1 machine pre-curation -> v2 source-grounded LLM proposal -> single-human accept/reject + grade; full `curation_audit` table downloadable; 1,345 demoted candidates retained as `recurated_rejected`** |
 | Benchmark splits | Not provided | Not provided | Not provided | Not provided | Not provided | **344 Grade A/B records split 218/23/22 (toxicity) + 66/5/10 (off-target); `source_plus_molecule_grouped_*` strategy; 4 deterministic prior baselines provided** |
 | No-login web access | Browser UI (catalogue) | Browser UI | Browser UI | Browser UI | Browser UI | **No-login portal + documented REST API + OpenAPI + MCP server + `llms.txt` + Bioschemas JSON-LD + W3C PROV; bulk CSV/ZIP downloads** |
 
@@ -166,9 +166,9 @@ The candidate-to-release firewall is enforced by:
 
 ---
 
-## S4. Reproducibility — deterministic prior baselines on the fixed splits
+## S4. Reproducibility - deterministic prior baselines on the fixed splits
 
-Source: `data/generated/benchmark_baseline_results_v1.csv` (16 rows = 4 baselines × 2 tasks × 2 evaluation splits = validation + test). Reproduced verbatim below.
+Source: `data/generated/benchmark_baseline_results_v1.csv` (16 rows = 4 baselines x 2 tasks x 2 evaluation splits = validation + test). Reproduced verbatim below.
 
 | task_name | baseline_model | split | train n | eval n | majority_label | majority_frac_train | accuracy | macro-F1 | coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -191,12 +191,12 @@ Source: `data/generated/benchmark_baseline_results_v1.csv` (16 rows = 4 baseline
 
 ### S4.1 One-line summary per baseline
 
-- **`train_majority_class`** — predicts the global training-set majority label for every evaluation row. Sanity floor. Coverage 1.00 by construction.
-- **`modality_prior_class`** — predicts the training-set majority label *within the evaluation row's modality*; falls back to the global majority when the modality is unseen. Coverage drops below 1.00 only when the held-out test row contains a modality with no training-set support (one off-target test row at coverage 0.90; one toxicity test row at coverage 0.9545).
-- **`evidence_grade_prior_class`** — predicts the training-set majority label *within the same evidence grade* (A or B). Acts as a difficulty diagnostic: identical to `train_majority_class` here because the train-set majority label is the same in both grades.
-- **`target_prior_class`** — predicts the training-set majority label *within the same target gene symbol*; coverage falls when the test row's target is unseen in training (off-target test 0.90; toxicity test 0.7727), serving as a leakage check.
+- **`train_majority_class`** - predicts the global training-set majority label for every evaluation row. Sanity floor. Coverage 1.00 by construction.
+- **`modality_prior_class`** - predicts the training-set majority label *within the evaluation row's modality*; falls back to the global majority when the modality is unseen. Coverage drops below 1.00 only when the held-out test row contains a modality with no training-set support (one off-target test row at coverage 0.90; one toxicity test row at coverage 0.9545).
+- **`evidence_grade_prior_class`** - predicts the training-set majority label *within the same evidence grade* (A or B). Acts as a difficulty diagnostic: identical to `train_majority_class` here because the train-set majority label is the same in both grades.
+- **`target_prior_class`** - predicts the training-set majority label *within the same target gene symbol*; coverage falls when the test row's target is unseen in training (off-target test 0.90; toxicity test 0.7727), serving as a leakage check.
 
-All four baselines tie at macro-F1 = 0.2593 on the toxicity test set (n=22), reflecting the dominance of the "hepatic" class and the small n; off-target test macro-F1 spans 0.1429–0.3667 (n=10). These are reported only as difficulty diagnostics, not as method benchmarks.
+All four baselines tie at macro-F1 = 0.2593 on the toxicity test set (n=22), reflecting the dominance of the "hepatic" class and the small n; off-target test macro-F1 spans 0.1429-0.3667 (n=10). These are reported only as difficulty diagnostics, not as method benchmarks.
 
 ---
 
@@ -215,15 +215,15 @@ All four baselines tie at macro-F1 = 0.2593 on the toxicity test set (n=22), ref
 | `v1_keyword_decision` | v1 keyword classifier verdict (`accept` / `reject`) |
 | `v2_llm_proposal` | v2 source-grounded LLM verdict (`accept` / `reject` / `abstain`) |
 | `human_decision` | Ni Jie's final verdict (`accept` / `reject`) |
-| `human_grade` | final grade (A/B/C/NA) — only for accepts |
+| `human_grade` | final grade (A/B/C/NA) - only for accepts |
 | `is_observed_experimental` | 0/1, copied from the release table after promotion |
 | `is_computational_prediction` | 0/1 (only the single Grade-C off-target row id 156 is 1) |
 | `current_validation_status` | `curator_verified` for accepts; `recurated_rejected` for human rejects of v1 accepts; `curator_rejected` for v1 rejects |
 | `curator_id` | `ni_jie` for every human-touched row |
 
-### S5.1 v2 LLM proposal × human decision cross-tabulation (n = 2,003)
+### S5.1 v2 LLM proposal x human decision cross-tabulation (n = 2,003)
 
-|  | human=accept | human=reject | row total |
+| | human=accept | human=reject | row total |
 | --- | --- | --- | --- |
 | **v2=accept** | 618 | **20** | 638 |
 | **v2=reject** | **7** | 523 | 530 |
@@ -232,9 +232,9 @@ All four baselines tie at macro-F1 = 0.2593 on the toxicity test set (n=22), ref
 
 **Highlighted cells reproduced exactly:**
 
-- v2 accept × human reject = **20** (over-accepts caught)
-- v2 reject × human accept = **7** (over-rejects recovered)
-- v2 abstain × human accept = **33** (abstains promoted on reading)
+- v2 accept x human reject = **20** (over-accepts caught)
+- v2 reject x human accept = **7** (over-rejects recovered)
+- v2 abstain x human accept = **33** (abstains promoted on reading)
 
 Firm-decision overrides = 20 + 7 = 27 of 1,168 firm calls = **2.3%** divergence (Methods Stage 3). The 33 abstain-to-accept recoveries are reported separately because abstain is the model's explicit "ask a human" signal, not a substantive disagreement.
 
@@ -246,16 +246,16 @@ The historical Stage-3 decision table contains **658 human accepts and 1,345 rej
 import csv
 from collections import Counter
 with open("04_delivery/v2_human_override_decisions.csv", encoding="utf-8") as fh:
-    rows = list(csv.DictReader(fh))
+ rows = list(csv.DictReader(fh))
 c = Counter()
 for r in rows:
-    c[(r["v2_llm_proposal"], r["human_decision"])] += 1
+ c[(r["v2_llm_proposal"], r["human_decision"])] += 1
 # Reproduces the table above exactly (2,003 rows, 6 occupied cells).
 ```
 
 ---
 
-## S6. Backup chain — DB integrity restoration points
+## S6. Backup chain - DB integrity restoration points
 
 Each backup is a `.bak` snapshot of `data/oligosafety.db` taken immediately before a curation-integrity edit, so any contested edit can be inspected by diff. Output of `ls data/oligosafety.db.pre_*.bak` (sorted lexicographically; 14 snapshots):
 
@@ -278,16 +278,16 @@ data/oligosafety.db.pre_recuration_demote_20260607_022035.bak
 
 ### S6.1 What each backup precedes
 
-- `pre_batch008_20260602.bak`, `pre_batch009_mega_fast_20260602.bak` — pre-batch candidate-ingestion snapshots from the June-02 release-scale pre-curation runs.
-- `pre_status_relabel_20260604.bak` — pre-relabel snapshot before the v1 status enum was renamed to make `machine_precurated_v1` distinct from any human verdict.
-- `pre_enum_rename_20260606_122249.bak`, `pre_enum_rename_20260607_022138.bak` — pre-rename snapshots for the candidate-status enum normalisations.
-- `pre_recuration_demote_20260606_121506.bak`, `pre_recuration_demote_20260606_121512.bak`, `pre_recuration_demote_20260607_022035.bak` — snapshots immediately before the v2+human-driven demotions wrote `validation_status='recurated_rejected'` on the 1,345 unsupported candidates.
-- `pre_full_rebuild_20260607_022009.bak` — pre-rebuild snapshot before the 2026-06-07 historical 658-record provisional release.
-- `pre_candidate_enum_20260607_025745.bak` — pre-cleanup snapshot before the final candidate-enum migration.
-- `pre_curator_identity_20260607_032934.bak` — snapshot taken before the curator-id merge (legacy curator labels were collapsed to canonical `ni_jie`).
-- `pre_garbage_molecule_fix_20260607_052332.bak` — snapshot taken before merging 45 v1-extraction-artefact molecule_ids into 4 placeholder `unspecified <modality>` molecules (S7 item 2).
-- `pre_audit_reconcile_20260607_052436.bak` — snapshot before pruning duplicate audit rows and 2 orphan audits, leaving one curator-verified accept audit per then-current release row; the current release contains 737 such audits.
-- `pre_leakage_relabel_20260607_053524.bak` — snapshot before re-keying `benchmark_split.leakage_group` to canonical placeholder identifiers and dropping the offending test row from the cross-split (source × molecule) group (Methods, Benchmark construction; S7 item 3).
+- `pre_batch008_20260602.bak`, `pre_batch009_mega_fast_20260602.bak` - pre-batch candidate-ingestion snapshots from the June-02 release-scale pre-curation runs.
+- `pre_status_relabel_20260604.bak` - pre-relabel snapshot before the v1 status enum was renamed to make `machine_precurated_v1` distinct from any human verdict.
+- `pre_enum_rename_20260606_122249.bak`, `pre_enum_rename_20260607_022138.bak` - pre-rename snapshots for the candidate-status enum normalisations.
+- `pre_recuration_demote_20260606_121506.bak`, `pre_recuration_demote_20260606_121512.bak`, `pre_recuration_demote_20260607_022035.bak` - snapshots immediately before the v2+human-driven demotions wrote `validation_status='recurated_rejected'` on the 1,345 unsupported candidates.
+- `pre_full_rebuild_20260607_022009.bak` - pre-rebuild snapshot before the 2026-06-07 historical 658-record provisional release.
+- `pre_candidate_enum_20260607_025745.bak` - pre-cleanup snapshot before the final candidate-enum migration.
+- `pre_curator_identity_20260607_032934.bak` - snapshot taken before the curator-id merge (legacy curator labels were collapsed to canonical `ni_jie`).
+- `pre_garbage_molecule_fix_20260607_052332.bak` - snapshot taken before merging 45 v1-extraction-artefact molecule_ids into 4 placeholder `unspecified <modality>` molecules (S7 item 2).
+- `pre_audit_reconcile_20260607_052436.bak` - snapshot before pruning duplicate audit rows and 2 orphan audits, leaving one curator-verified accept audit per then-current release row; the current release contains 737 such audits.
+- `pre_leakage_relabel_20260607_053524.bak` - snapshot before re-keying `benchmark_split.leakage_group` to canonical placeholder identifiers and dropping the offending test row from the cross-split (source x molecule) group (Methods, Benchmark construction; S7 item 3).
 
 ---
 
@@ -301,7 +301,7 @@ SELECT license_status, reuse_category, COUNT(*) FROM source_document
  GROUP BY license_status, reuse_category ORDER BY 3 DESC;
 ```
 
-**Table S6.2a — all 36,245 indexed sources:**
+**Table S6.2a - all 36,245 indexed sources:**
 
 | license_status | reuse_category | n |
 | --- | --- | --- |
@@ -313,7 +313,7 @@ SELECT license_status, reuse_category, COUNT(*) FROM source_document
 | open_access | derived_annotations_only | 1 |
 | **total** | | **36,245** |
 
-**Table S6.2b — 660 current release-anchored sources:**
+**Table S6.2b - 660 current release-anchored sources:**
 
 | license_status | reuse_category | n |
 | --- | --- | --- |
