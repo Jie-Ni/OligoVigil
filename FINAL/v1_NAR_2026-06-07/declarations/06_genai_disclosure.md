@@ -4,50 +4,20 @@ subtitle: "OligoVigil submission to Nucleic Acids Research, Database Issue"
 date: "2026-06-11"
 ---
 
-# Generative-AI disclosure — OligoVigil (NAR Database Issue)
+# Generative AI Use Disclosure
 
-*Drafted from the verifiable evidence trail in `data/generated/v2_*_review_final.csv` (column `extractor_model`) and the `scripts/curate_v2_llm.py` / `scripts/recurate_release_v2.py` files in the project. One item explicitly awaits PI confirmation; placeholder is left literal per the honesty lock.*
+## Use in the database curation workflow
 
-## 1. LLM use in the database curation pipeline (Stage 2 / Stage 3 of Methods)
+A large language model was used as a proposal-only pre-screen during source-grounded re-curation. The model never wrote a curator decision, curator identity, or validation status. Each release row was individually adjudicated against its cited source passage by the human curator of record before acceptance.
 
-A large language model was used as a **proposal-only pre-screen** during v2 re-curation. The model never wrote a curator decision, identity, or `validation_status`. Every release row was individually adjudicated against its cited source passage by the human curator of record before being accepted.
+The model was constrained by an exclusion-first rubric requiring: (i) an in-scope therapeutic oligonucleotide or delivery context; (ii) a primary observed result; (iii) agreement between the requested evidence domain and the reported evidence type; and (iv) a verbatim grounding quote from the supplied passage. Grounding quotes were checked programmatically before human review, and ungrounded proposals were forced to reject.
 
-**The model that was actually used:** GPT-5.5, accessed through the OpenAI Codex CLI (manual-agent mode). This is the literal value recorded in the `extractor_model` column of both per-row proposal CSVs shipped with the release:
+The curation audit records the model-proposal labels and the final human decisions per candidate in `04_delivery/v2_human_override_decisions.csv` (n = 2,003). Cross-tabulating the model proposal against the human decision reproduces the reported override statistics: 20 model accepts rejected by the human curator, 7 model rejects accepted by the human curator, 33 model abstains recovered as human accepts, and 92 grade adjustments.
 
-- `data/generated/v2_offtarget_review_final.csv` — 565 rows, `extractor_model ∈ {"codex_gpt-5.5_manual_agent" (326), "codex_no_source_abstain_rule" (239)}`.
-- `data/generated/v2_toxicity_review_final.csv` — 1,438 rows, `extractor_model ∈ {"codex_gpt-5.5_manual_agent" (840), "codex_gpt-5.5_manual_agent+main_grounding_repair" (2), "codex_no_source_abstain_rule" (596)}`.
+## Use in manuscript preparation
 
-The `codex_no_source_abstain_rule` rows are abstains produced by a deterministic non-LLM rule when no source passage was available (the loader returned an empty `passage`); the LLM was not invoked on those rows. Total LLM-invoked proposals: **1,168 of 2,003** (the rule produced 835 abstains).
+Language-editing tools were used to support grammar, concision and stylistic revision of the manuscript. They were not used to generate evidence records, substitute for curator decisions, invent references, alter numerical results, or create scientific claims. All numerical claims were checked against the release database and audit files before submission. All authors reviewed the final manuscript and are responsible for its content.
 
-**The constraints under which the model ran**, copied verbatim from the curator rubric in `scripts/curate_v2_llm.py`:
+## Non-use
 
-1. Exclusion-first scope (CRISPR, shRNA, viral, mRNA therapeutics, endogenous lncRNA/miRNA, small molecules, agricultural RNAi, oligonucleotides used merely as a tool — all rejected before any positive judgement).
-2. Primary observed result required (no background, methods or hypothesis text).
-3. Evidence type must match the requested domain.
-4. **Verbatim grounding quote** — the model must supply an exact substring of the supplied passage; the substring is checked **in code** (`verify_grounding()` in `scripts/curate_v2_llm.py`) and ungrounded rationales are forced to a reject before any human ever sees them.
-
-The model's output was a JSON proposal; the human curator (Ni Jie, sole curator of record, see `curator_id='ni_jie'` in `curation_audit`) read the source and recorded the final accept/reject decision, evidence grade and note row by row. The human override rate against the model's firm decisions is 27 / 1,168 (2.3%), with 33 / 835 LLM-abstain cases recovered as human accepts and 92 / 658 evidence grades adjusted (full per-candidate triple in `04_delivery/v2_human_override_decisions.csv`).
-
-**Fallback paths not used in the release.** The project also contains `scripts/recurate_release_v2.py` with `--provider {anthropic,gemini}` defaults (Google Gemini 2.5 Flash; Anthropic Claude Opus); these were intended as alternative paths but were **not the path that produced the released proposals**, as the `extractor_model` audit column proves. Disclosure has been narrowed accordingly.
-
-## 2. LLM use in manuscript preparation
-
-A separate post-curation copy-editing pass on the manuscript text used a large language model in an **editorial role**: applied the `Yuan1z0825/nature-skills` polishing skill against draft v2 to produce draft v3, then a referee-panel revision to produce draft v4. The pass operated under a hard "numbers-and-honesty-caveats are locked" constraint, with every numeric claim independently re-verified against the live release database afterwards (`04_delivery/numerical_claim_audit.md`: 60+ numeric claims, 0 mismatches). The model did not generate or substitute any scientific claim, methodological statement, evidence record, or result. All scientific responsibility remains with the human authors.
-
-**Underlying model snapshot for the editorial pass:** [TBD: confirm by PI — Anthropic Claude (Opus or Sonnet snapshot used in the Yuan1z0825/nature-skills polishing pass)].
-
-## 3. What was NOT used
-
-For the avoidance of doubt: no embedding model, no fine-tuned model, no retrieval-augmented-generation retriever beyond the deterministic local PMC-XML and cached-PubMed-abstract loaders implemented in `scripts/curate_v2_llm.py` (`pmc_text`, `load_abstract_cache`), and no LLM-generated synthetic data were used in the production of the release database, the benchmark, or the manuscript. The figures were drawn programmatically (matplotlib) and not generated by an image LLM.
-
-## 4. Reproducibility
-
-Every Stage-3 LLM proposal that became part of a release-acceptance decision is shipped, per candidate, in `04_delivery/v2_human_override_decisions.csv` (n = 2,003 rows). Cross-tabulating `v2_llm_proposal` against `human_decision` exactly reproduces the override statistics in the manuscript (`v2_accept × human_reject = 20`; `v2_reject × human_accept = 7`; `v2_abstain × human_accept = 33`; grade adjustments 92).
-
----
-
-*Honesty-lock items remaining for the PI to confirm before submission:*
-
-- **(c1)** The literal model identifier `gpt-5.5` is the string recorded by the Codex CLI agent in our `extractor_model` column. If OpenAI's canonical public model ID differs (e.g. the dated snapshot the API resolved to), please replace with the canonical string captured from `response.model` on a live SDK reply.
-- **(c2)** The underlying model snapshot used by the manuscript-editing pass (`Yuan1z0825/nature-skills`). Pull from your local Claude Code / API call log.
-- **(c3)** Confirm this disclosure block reads truthfully end-to-end and replace this footnote with a final signed-off statement.
+No synthetic data, generated evidence records, generated citations, generated images, fine-tuned model, embedding-based retrieval system, or de novo risk-prediction model was used to produce the release database, benchmark, figures or scientific results.

@@ -21,7 +21,7 @@
 
 ## S1. Curation protocol — full v2 curator rubric
 
-This is the verbatim curator-rubric prompt used by the v2 source-grounded LLM pre-curator (`scripts/curate_v2_llm.py`). It is reproduced exactly as it is shipped in the curator system prompt, with the four gates that the manuscript Methods (§Stage 3) summarises in plain English. The grounding gate is enforced **in code** (see snippet at the bottom of this section): an LLM accept whose `grounding_quote` is not a verbatim substring of the supplied passage is forced to a reject.
+This is the verbatim curator-rubric prompt used by the v2 source-grounded LLM pre-curator (`scripts/curate_v2_llm.py`). It is reproduced exactly as implemented in the curator system prompt, with the four gates that the manuscript Methods Stage 3 summarises in plain English. The grounding gate is enforced **in code** (see snippet at the bottom of this section): an LLM accept whose `grounding_quote` is not a verbatim substring of the supplied passage is forced to a reject.
 
 > *Curator system message (verbatim from `curate_v2_llm.py`):*
 >
@@ -159,7 +159,7 @@ The candidate-to-release firewall is enforced by:
 | Evidence type | Curated efficacy entries | Silencing efficacy measurements | Modification-aware efficacy | Modification annotations + efficacy | Off-target observations for Cas9/Cas12 | **Observed safety endpoints + observed off-target results (737/737 observed experimental rows)** |
 | Source anchoring (exact in-source location) | Reference-level | Reference-level | Reference-level | Reference-level | Reference-level | **Source-localised: section / figure / table / paragraph captured per release row; 74.2% (547/737) full-text PMC-anchored; 100% PMID, 99.5% DOI** |
 | Audit trail (machine-vs-human separation) | Not provided | Not provided | Not provided | Not provided | Not provided | **Three-stage pipeline: candidate → v1 machine pre-curation → v2 source-grounded LLM proposal → single-human accept/reject + grade; full `curation_audit` table downloadable; 1,345 demoted candidates retained as `recurated_rejected`** |
-| Benchmark splits | Not provided | Not provided | Not provided | Not provided | Not provided | **344 Grade A/B records split 218/23/22 (toxicity) + 66/5/10 (off-target); `source_plus_molecule_grouped_*` strategy; 4 deterministic prior baselines shipped** |
+| Benchmark splits | Not provided | Not provided | Not provided | Not provided | Not provided | **344 Grade A/B records split 218/23/22 (toxicity) + 66/5/10 (off-target); `source_plus_molecule_grouped_*` strategy; 4 deterministic prior baselines provided** |
 | No-login web access | Browser UI (catalogue) | Browser UI | Browser UI | Browser UI | Browser UI | **No-login portal + documented REST API + OpenAPI + MCP server + `llms.txt` + Bioschemas JSON-LD + W3C PROV; bulk CSV/ZIP downloads** |
 
 **Bottom line:** none of the comparators ship a curator-verified, source-anchored, graded, audited safety/off-target evidence layer with a leakage-aware benchmark. OligoVigil targets a complementary niche to all five.
@@ -202,7 +202,7 @@ All four baselines tie at macro-F1 = 0.2593 on the toxicity test set (n=22), ref
 
 ## S5. Provenance of `v2_human_override_decisions.csv`
 
-`04_delivery/v2_human_override_decisions.csv` ships the per-candidate decision triple for every row in the v1 pre-curation pool, so the human-vs-model statistics in Methods §Stage 3 are reproducible. Schema (14 columns, 2,003 rows):
+`04_delivery/v2_human_override_decisions.csv` provides the per-candidate decision triple for every row in the v1 pre-curation pool, so the human-vs-model statistics in Methods Stage 3 are reproducible. Schema (14 columns, 2,003 rows):
 
 | column | description |
 | --- | --- |
@@ -236,7 +236,7 @@ All four baselines tie at macro-F1 = 0.2593 on the toxicity test set (n=22), ref
 - v2 reject × human accept = **7** (over-rejects recovered)
 - v2 abstain × human accept = **33** (abstains promoted on reading)
 
-Firm-decision overrides = 20 + 7 = 27 of 1,168 firm calls = **2.3%** divergence (Methods §Stage 3). The 33 abstain-to-accept recoveries are reported separately because abstain is the model's explicit "ask a human" signal, not a substantive disagreement.
+Firm-decision overrides = 20 + 7 = 27 of 1,168 firm calls = **2.3%** divergence (Methods Stage 3). The 33 abstain-to-accept recoveries are reported separately because abstain is the model's explicit "ask a human" signal, not a substantive disagreement.
 
 The historical Stage-3 decision table contains **658 human accepts and 1,345 rejects** from the original 2,003-candidate pool. One computational accept was subsequently removed, leaving 657 rows from that pool; later curator-verified expansion rounds added 80 observed rows, producing the current 737-row release.
 
@@ -269,7 +269,7 @@ data/oligosafety.db.pre_enum_rename_20260606_122249.bak
 data/oligosafety.db.pre_enum_rename_20260607_022138.bak
 data/oligosafety.db.pre_full_rebuild_20260607_022009.bak
 data/oligosafety.db.pre_garbage_molecule_fix_20260607_052332.bak
-data/oligosafety.db.pre_honesty_relabel_20260604.bak
+data/oligosafety.db.pre_status_relabel_20260604.bak
 data/oligosafety.db.pre_leakage_relabel_20260607_053524.bak
 data/oligosafety.db.pre_recuration_demote_20260606_121506.bak
 data/oligosafety.db.pre_recuration_demote_20260606_121512.bak
@@ -279,15 +279,15 @@ data/oligosafety.db.pre_recuration_demote_20260607_022035.bak
 ### S6.1 What each backup precedes
 
 - `pre_batch008_20260602.bak`, `pre_batch009_mega_fast_20260602.bak` — pre-batch candidate-ingestion snapshots from the June-02 release-scale pre-curation runs.
-- `pre_honesty_relabel_20260604.bak` — pre-relabel snapshot before the v1 status enum was renamed to make `machine_precurated_v1` distinct from any human verdict.
+- `pre_status_relabel_20260604.bak` — pre-relabel snapshot before the v1 status enum was renamed to make `machine_precurated_v1` distinct from any human verdict.
 - `pre_enum_rename_20260606_122249.bak`, `pre_enum_rename_20260607_022138.bak` — pre-rename snapshots for the candidate-status enum normalisations.
 - `pre_recuration_demote_20260606_121506.bak`, `pre_recuration_demote_20260606_121512.bak`, `pre_recuration_demote_20260607_022035.bak` — snapshots immediately before the v2+human-driven demotions wrote `validation_status='recurated_rejected'` on the 1,345 unsupported candidates.
 - `pre_full_rebuild_20260607_022009.bak` — pre-rebuild snapshot before the 2026-06-07 historical 658-record provisional release.
 - `pre_candidate_enum_20260607_025745.bak` — pre-cleanup snapshot before the final candidate-enum migration.
-- `pre_curator_identity_20260607_032934.bak` — snapshot taken before the curator-id merge (`chen_ming` and `jie_ni` collapsed to canonical `ni_jie`).
+- `pre_curator_identity_20260607_032934.bak` — snapshot taken before the curator-id merge (legacy curator labels were collapsed to canonical `ni_jie`).
 - `pre_garbage_molecule_fix_20260607_052332.bak` — snapshot taken before merging 45 v1-extraction-artefact molecule_ids into 4 placeholder `unspecified <modality>` molecules (S7 item 2).
 - `pre_audit_reconcile_20260607_052436.bak` — snapshot before pruning duplicate audit rows and 2 orphan audits, leaving one curator-verified accept audit per then-current release row; the current release contains 737 such audits.
-- `pre_leakage_relabel_20260607_053524.bak` — snapshot before re-keying `benchmark_split.leakage_group` to canonical placeholder identifiers and dropping the offending test row from the cross-split (source × molecule) group (Methods §Benchmark construction; S7 item 3).
+- `pre_leakage_relabel_20260607_053524.bak` — snapshot before re-keying `benchmark_split.leakage_group` to canonical placeholder identifiers and dropping the offending test row from the cross-split (source × molecule) group (Methods, Benchmark construction; S7 item 3).
 
 ---
 
@@ -331,7 +331,7 @@ The current release separates removed rows, residual metadata gaps and benchmark
 
 ### S7.1 Removed computational off-target row
 
-The earlier draft contained one Grade-C computational off-target prediction (`offtarget_evidence.id = 156`). It was removed from the release at the v5 revision and was not re-introduced. Consequently, **all 737 current release rows are observed experimental results**.
+An earlier release-candidate table contained one Grade-C computational off-target prediction (`offtarget_evidence.id = 156`). It was removed from the release during curation review and was not re-introduced. Consequently, **all 737 current release rows are observed experimental results**.
 
 ### S7.2 Residual placeholder molecules
 

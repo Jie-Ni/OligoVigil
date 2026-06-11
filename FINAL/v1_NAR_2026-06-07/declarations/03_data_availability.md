@@ -55,7 +55,7 @@ The authors commit to maintaining the OligoVigil web portal and downloadable rel
 
 ## Reproducibility
 
-All numerical claims in the manuscript are tied to the 2026-06-08 release snapshot after the EXPAND-2 and KAPPA-2 updates. The shipped release files reproduce the headline counts: 737 release records, 626 toxicity records, 111 off-target records, 344 benchmark rows, 36,245 indexed source documents, 70,283 curation tasks, 41,114 candidate annotations, 1,345 demoted candidates, 105/111 populated off-target-gene-status rows and a 0.73 machine-stage false-accept-rate estimate from the 126-row audit.
+All numerical claims in the manuscript are tied to the 2026-06-08 release snapshot after the EXPAND-2 and KAPPA-2 updates. The release files reproduce the reported counts: 737 release records, 626 toxicity records, 111 off-target records, 344 benchmark rows, 36,245 indexed source documents, 70,283 curation tasks, 41,114 candidate annotations, 1,345 demoted candidates, 105/111 populated off-target-gene-status rows and a 0.73 machine-stage false-accept-rate estimate from the 126-row audit.
 
 ---
 

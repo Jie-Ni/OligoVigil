@@ -8,4 +8,4 @@ date: "2026-06-11"
 
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
-This statement is endorsed individually by all six authors: Jie Ni, Xinting Zhang, Zhuoying Xie, Shan Lu, Yun Liu, and Adam Jatowt. The wording is aligned with the team's Octo-Agent / ESWA 2026-06-07 submission.
+This statement is endorsed individually by all six authors: Jie Ni, Xinting Zhang, Zhuoying Xie, Shan Lu, Yun Liu, and Adam Jatowt.

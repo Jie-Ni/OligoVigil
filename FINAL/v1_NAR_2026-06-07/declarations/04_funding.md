@@ -12,4 +12,4 @@ This work received no external funding. The computational results reported in th
 
 ---
 
-*Statement aligned with the team's Octo-Agent / ESWA 2026-06-07 submission style, with no named grant support declared for this manuscript.*
+*No named grant support is declared for this manuscript.*
