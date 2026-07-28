@@ -1,8 +1,8 @@
 # OligoVigil
 
-> 658 human curator-verified safety and off-target evidence rows for therapeutic oligonucleotides, with provenance and benchmark-ready release data. Curation was AI-assisted: a single human curator adjudicated v2 LLM proposals over the source passages (re-curating 2003 v1 machine pre-curated candidates; 1345 unsupported ones were demoted). Machine-only rows are labelled machine_precurated_v1 and are not release evidence. Inter-curator (Cohen kappa) agreement is not yet reported.
+> 737 human curator-verified safety and off-target evidence rows (626 toxicity endpoints + 111 off-target observations) for therapeutic oligonucleotides, drawn from 660 primary sources, with provenance and benchmark-ready release data. Curation was AI-assisted: a single human curator adjudicated v2 LLM proposals over the source passages (re-curating 2003 v1 machine pre-curated candidates; 1345 unsupported ones were demoted). Machine-only rows are labelled machine_precurated_v1 and are not release evidence. Inter-curator reliability was measured on a blinded second-curator 100-row mixed accept/reject sample (KAPPA-2): Cohen kappa_binary = 0.42 (drop-abstain, n=92) / 0.34 (collapse-abstain, n=100), raw agreement 66%.
 
-Base URL: use the public OligoVigil URL after deployment; use `http://127.0.0.1:8077` only for local testing.
+Base URL: https://oligovigil.pages.dev/ ; use `http://127.0.0.1:8077` only for local testing.
 
 Critical rules:
 
