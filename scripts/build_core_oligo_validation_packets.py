@@ -428,7 +428,7 @@ def build_core_packet(rows: list[dict[str, object]]) -> dict[str, object]:
         "priority_counts": dict(sorted(priority_counts.items())),
         "missing_counts": dict(sorted(missing_counts.items())),
         "policy": "This packet is a curation worklist. Empty sequence, modification, dose, exposure, or model fields must not be inferred without an exact source location.",
-        "submission_claim_boundary": "Until P0 rows are source-verified, the portal should claim verified safety/off-target evidence with provenance, not complete oligo sequence/modification coverage.",
+        "public_claim_boundary": "Until P0 rows are source-verified, the portal should claim verified safety/off-target evidence with provenance, not complete oligo sequence/modification coverage.",
     }
     CORE_SUMMARY.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     return summary

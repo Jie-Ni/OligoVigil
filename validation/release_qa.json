@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-08-05T01:30:00+02:00",
+  "release": {
+    "web_version": "1.0.2",
+    "archived_version": "v1.0.1",
+    "archived_doi": "10.5281/zenodo.20633779",
+    "production_url": "https://oligovigil.pages.dev",
+    "deployment_url": "https://c73169f8.oligovigil.pages.dev"
+  },
+  "counts": {
+    "evidence_records": 737,
+    "toxicity_records": 626,
+    "offtarget_records": 111,
+    "primary_studies": 660,
+    "molecules": 524,
+    "release_audit_rows": 737,
+    "benchmark_split_rows": 344
+  },
+  "submitted_audit": {
+    "candidate_pool": 2003,
+    "outside_verified_release": 1345,
+    "sample_rows": 126,
+    "machine_accept_rows": 90,
+    "false_accept_rows": 66,
+    "false_accept_rate": 0.73,
+    "wilson_95_ci": [
+      0.63,
+      0.81
+    ]
+  },
+  "identifier_normalization": {
+    "database_pmcid_changes_remaining": 0,
+    "database_canonical_name_changes_remaining": 0,
+    "csv_files_changed_remaining": 0,
+    "csv_cells_changed_remaining": 0,
+    "public_bundle_pmcid_errors": 0
+  },
+  "bundle": {
+    "filename": "all_tables.zip",
+    "bytes": 326772,
+    "sha256": "839c02e7f3914b67fb628e70e5bcd6bdc13d872c7428c9f8196db95ae2d22b66",
+    "members": 14,
+    "deterministic": true
+  },
+  "public_assets": {
+    "structured_assets_scanned": 38,
+    "download_manifest_files": 13,
+    "benchmark_task_card_rows": 2,
+    "retired_route_checks": "PASS"
+  },
+  "tests": {
+    "static_release": "PASS",
+    "serialization_guard": "13/13 PASS",
+    "frontend_contract": "PASS",
+    "smoke_test": "PASS",
+    "online_production_and_deployment": "PASS"
+  }
+}

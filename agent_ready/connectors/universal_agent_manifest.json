@@ -1,7 +1,7 @@
 {
   "schema_version": "2026-06-04",
   "name": "OligoVigil",
-  "description": "658 human curator-verified therapeutic oligonucleotide safety and off-target evidence rows with provenance, benchmark splits, and bulk downloads. AI-assisted single-curator curation (a human adjudicated v2 LLM proposals over source passages, re-curated from 2003 v1 machine pre-curated candidates; machine-only rows are labelled machine_precurated_v1); no inter-curator Cohen kappa is claimed.",
+  "description": "737 human curator-verified safety and off-target observations (626 toxicity and 111 off-target) from 660 primary studies, with source provenance, benchmark splits, and bulk downloads.",
   "auth": {
     "type": "none",
     "login_required": false,

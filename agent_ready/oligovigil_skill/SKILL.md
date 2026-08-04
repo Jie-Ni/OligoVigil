@@ -9,7 +9,7 @@ Use OligoVigil as a source-grounded database for therapeutic oligonucleotide saf
 
 ## Base URL
 
-Prefer the public deployment URL when available. For local testing, use `http://127.0.0.1:8077`.
+Use `https://oligovigil.pages.dev` as the default base URL.
 
 ## Core Rules
 

@@ -1,10 +1,8 @@
 /*
   X-Robots-Tag: all
-  Cache-Control: public, max-age=300
 
 /api/*
   Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=300
 
 /api/download/*.csv
   Content-Type: text/csv; charset=utf-8
@@ -18,11 +16,8 @@
   Content-Type: application/zip
   Content-Disposition: attachment
 
+/api/download/*.md
+  Content-Type: text/markdown; charset=utf-8
+
 /bioschemas.json
   Content-Type: application/ld+json; charset=utf-8
-
-/llms.txt
-  Content-Type: text/plain; charset=utf-8
-
-/llms-full.txt
-  Content-Type: text/plain; charset=utf-8

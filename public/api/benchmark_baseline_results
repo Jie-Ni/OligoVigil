@@ -15,7 +15,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Sanity baseline: predicts the most common training category for the task.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "offtarget_safety_v0_1",
@@ -33,7 +33,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "offtarget_safety_v0_1",
@@ -51,7 +51,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Uses only A/B grade labels already present in the fixed reference split.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "offtarget_safety_v0_1",
@@ -69,7 +69,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "offtarget_safety_v0_1",
@@ -87,7 +87,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Sanity baseline: predicts the most common training category for the task.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "offtarget_safety_v0_1",
@@ -105,7 +105,7 @@
     "coverage": 0.9,
     "status": "completed_deterministic_baseline",
     "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "offtarget_safety_v0_1",
@@ -123,7 +123,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Uses only A/B grade labels already present in the fixed reference split.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "offtarget_safety_v0_1",
@@ -141,7 +141,7 @@
     "coverage": 0.9,
     "status": "completed_deterministic_baseline",
     "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "toxicity_safety_v0_1",
@@ -159,7 +159,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Sanity baseline: predicts the most common training category for the task.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "toxicity_safety_v0_1",
@@ -177,7 +177,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "toxicity_safety_v0_1",
@@ -195,7 +195,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Uses only A/B grade labels already present in the fixed reference split.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "toxicity_safety_v0_1",
@@ -213,7 +213,7 @@
     "coverage": 0.9565,
     "status": "completed_deterministic_baseline",
     "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "toxicity_safety_v0_1",
@@ -231,7 +231,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Sanity baseline: predicts the most common training category for the task.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "toxicity_safety_v0_1",
@@ -249,7 +249,7 @@
     "coverage": 0.9545,
     "status": "completed_deterministic_baseline",
     "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "toxicity_safety_v0_1",
@@ -267,7 +267,7 @@
     "coverage": 1.0,
     "status": "completed_deterministic_baseline",
     "notes": "Uses only A/B grade labels already present in the fixed reference split.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   },
   {
     "task_name": "toxicity_safety_v0_1",
@@ -285,6 +285,6 @@
     "coverage": 0.7727,
     "status": "completed_deterministic_baseline",
     "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
-    "version": "20260604_core_validation_v45"
+    "version": "1.0.2"
   }
 ]

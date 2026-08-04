@@ -1,12 +1,17 @@
 {
-  "version": "20260604_core_validation_v45",
-  "title": "OligoVigil: a curated safety and off-target evidence resource with benchmark-ready data for therapeutic oligonucleotides",
-  "doi_status": "10.5281/zenodo.20633779",
-  "archive_url": "https://doi.org/10.5281/zenodo.20633779",
-  "code_release_url": "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1",
-  "preferred_citation": "OligoVigil Consortium. OligoVigil: a curated safety and off-target evidence resource with benchmark-ready data for therapeutic oligonucleotides. OligoVigil 20260604_core_validation_v45; 2026. Curator-verified ASO/siRNA toxicity and off-target release evidence with reference benchmark splits. Data archive: 10.5281/zenodo.20633779.",
-  "bibtex": "@misc{OligoVigil_20260604_core_validation_v45,\n  title = {OligoVigil: a curated safety and off-target evidence resource with benchmark-ready data for therapeutic oligonucleotides},\n  author = {OligoVigil Consortium},\n  year = {2026},\n  doi = {10.5281/zenodo.20633779},\n  url = {https://doi.org/10.5281/zenodo.20633779},\n  note = {Version 20260604_core_validation_v45; data archive},\n  howpublished = {OligoVigil public web resource}\n}",
-  "record_citation_template": "Use /api/evidence_detail?domain={toxicity|offtarget}&id={id} and cite the returned citation.plain_text plus the source PMID/DOI.",
+  "version": "1.0.2",
+  "title": "OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides",
+  "archived_snapshot": {
+    "version": "v1.0.1",
+    "doi": "10.5281/zenodo.20633779",
+    "url": "https://doi.org/10.5281/zenodo.20633779"
+  },
+  "preferred_citation": "Ni J, Zhang X, Xie Z, Lu S, Liu Y, Jatowt A. OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides. v1.0.1. Zenodo; 2026. doi:10.5281/zenodo.20633779.",
+  "bibtex": "@dataset{OligoVigil_v1_0_1,\n  title = {OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides},\n  author = {Ni, Jie and Zhang, Xinting and Xie, Zhuoying and Lu, Shan and Liu, Yun and Jatowt, Adam},\n  year = {2026},\n  doi = {10.5281/zenodo.20633779},\n  url = {https://doi.org/10.5281/zenodo.20633779},\n  note = {Version v1.0.1; archived data snapshot}\n}",
+  "web_release": {
+    "version": "1.0.2",
+    "url": "https://oligovigil.pages.dev"
+  },
   "benchmark_citation_template": "Cite OligoVigil version, benchmark task name, benchmark_reference_splits.csv, and the release-package checksum.",
   "downloads": {
     "evidence_release": "/api/download/evidence_release.csv",

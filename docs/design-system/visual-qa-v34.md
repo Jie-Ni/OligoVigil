@@ -1,8 +1,8 @@
 # OligoVigil Visual QA v34
 
 Date: 2026-06-03
-Version: `20260603_formal_submission_ui_v34`
-Status: `visual_submission_candidate_local_pass`
+Version: `20260603_public_release_ui_v34`
+Status: `visual_release_candidate_local_pass`
 
 ## Design Review Verdict
 
@@ -45,6 +45,6 @@ The portal now presents as a restrained scientific database workbench rather tha
 - `python scripts/smoke_test.py`: pass
 - `python scripts/final_delivery_check.py`: pass
 
-## Remaining Submission Gate
+## Remaining Deployment Gate
 
-The local portal is technically and visually ready for presubmission review, but NAR submission remains blocked until the same Docker build is deployed to a stable public HTTPS URL with no login requirement.
+The local portal has passed technical and visual review; public operation still requires deployment to a stable HTTPS URL with no login requirement.

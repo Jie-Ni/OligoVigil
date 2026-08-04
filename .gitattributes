@@ -1,0 +1,28 @@
+.gitattributes text eol=lf
+*.css text eol=lf
+*.csv text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.svg text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+public/api/** text eol=lf
+
+*.db -text -diff -merge !eol
+*.gif -text -diff -merge !eol
+*.ico -text -diff -merge !eol
+*.jpeg -text -diff -merge !eol
+*.jpg -text -diff -merge !eol
+*.pdf -text -diff -merge !eol
+*.png -text -diff -merge !eol
+*.sqlite -text -diff -merge !eol
+*.sqlite3 -text -diff -merge !eol
+*.tif -text -diff -merge !eol
+*.tiff -text -diff -merge !eol
+*.woff -text -diff -merge !eol
+*.woff2 -text -diff -merge !eol
+*.zip -text -diff -merge !eol

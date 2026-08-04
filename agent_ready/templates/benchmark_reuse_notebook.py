@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 
-BASE_URL = os.environ.get("OLIGOVIGIL_BASE_URL", "http://127.0.0.1:8077").rstrip("/")
+BASE_URL = os.environ.get("OLIGOVIGIL_BASE_URL", "https://oligovigil.pages.dev").rstrip("/")
 
 splits = pd.read_csv(f"{BASE_URL}/api/download/benchmark_reference_splits.csv")
 tasks = pd.read_csv(f"{BASE_URL}/api/download/benchmark_task_cards.csv")

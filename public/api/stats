@@ -1,15 +1,12 @@
 {
   "counts": {
-    "source_document": 36245,
-    "modality": 14,
-    "molecule": 1012,
-    "assay": 1771,
+    "source_document": 660,
+    "modality": 11,
+    "molecule": 524,
     "toxicity_endpoint": 626,
     "offtarget_evidence": 111,
-    "curation_audit": 32977,
-    "benchmark_split": 344,
-    "curation_queue": 70283,
-    "curation_candidate": 41114
+    "curation_audit": 737,
+    "benchmark_split": 344
   },
   "evidence_grades": [
     {

@@ -1,5 +1,5 @@
 export class OligoVigilClient {
-  constructor(baseUrl = "http://127.0.0.1:8077") {
+  constructor(baseUrl = "https://oligovigil.pages.dev") {
     this.baseUrl = baseUrl.replace(/\/$/, "");
   }
 

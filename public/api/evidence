@@ -4864,7 +4864,7 @@
     },
     {
       "id": 477,
-      "canonical_name": "TLK2 ASO (recovered B2 from PMID:41878536, curator:CM)",
+      "canonical_name": "TLK2 ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -4916,7 +4916,7 @@
     },
     {
       "id": 481,
-      "canonical_name": "siRNA2 (recovered B2 from PMID:42005705, curator:CM)",
+      "canonical_name": "siRNA2",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -4929,7 +4929,7 @@
     },
     {
       "id": 482,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -4942,7 +4942,7 @@
     },
     {
       "id": 483,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -4955,7 +4955,7 @@
     },
     {
       "id": 485,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -4968,7 +4968,7 @@
     },
     {
       "id": 492,
-      "canonical_name": "eteplirsen (recovered B2 from PMID:41961051, curator:CM)",
+      "canonical_name": "eteplirsen",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5007,7 +5007,7 @@
     },
     {
       "id": 509,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5020,7 +5020,7 @@
     },
     {
       "id": 510,
-      "canonical_name": "unspecified CpG oligodeoxynucleotide (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified CpG oligodeoxynucleotide",
       "modality": "CpG oligodeoxynucleotide",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5033,7 +5033,7 @@
     },
     {
       "id": 511,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "cell viability/cytotoxicity",
       "endpoint_category": "general safety",
@@ -5046,7 +5046,7 @@
     },
     {
       "id": 512,
-      "canonical_name": "elsunersen (recovered B2 from PMID:40263630, curator:CM)",
+      "canonical_name": "elsunersen",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5059,7 +5059,7 @@
     },
     {
       "id": 513,
-      "canonical_name": "ASO 8–3 (recovered B2 from PMID:40098305, curator:CM)",
+      "canonical_name": "ASO 8–3",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5072,7 +5072,7 @@
     },
     {
       "id": 514,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5124,7 +5124,7 @@
     },
     {
       "id": 520,
-      "canonical_name": "Chol-HDO[PMO] (recovered B2 from PMID:41429785, curator:CM)",
+      "canonical_name": "Chol-HDO[PMO]",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5137,7 +5137,7 @@
     },
     {
       "id": 522,
-      "canonical_name": "iExoKrasG12D (recovered B2 from PMID:41027940, curator:CM)",
+      "canonical_name": "iExoKrasG12D",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5150,7 +5150,7 @@
     },
     {
       "id": 527,
-      "canonical_name": "STP705 (recovered B2 from PMID:39692702, curator:CM)",
+      "canonical_name": "STP705",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5163,7 +5163,7 @@
     },
     {
       "id": 528,
-      "canonical_name": "PDA@Mn-siSur-c-NPs (recovered B2 from PMID:41599118, curator:CM)",
+      "canonical_name": "PDA@Mn-siSur-c-NPs",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5176,7 +5176,7 @@
     },
     {
       "id": 529,
-      "canonical_name": "D-siRNA (recovered B2 from PMID:41473322, curator:CM)",
+      "canonical_name": "D-siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5215,7 +5215,7 @@
     },
     {
       "id": 533,
-      "canonical_name": "KFFK (FFK)2-conjugated PNA (recovered B2 from PMID:41096791, curator:CM)",
+      "canonical_name": "KFFK (FFK)2-conjugated PNA",
       "modality": "ASO",
       "endpoint_name": "cell viability/cytotoxicity",
       "endpoint_category": "general safety",
@@ -5241,7 +5241,7 @@
     },
     {
       "id": 539,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "cell viability/cytotoxicity",
       "endpoint_category": "general safety",
@@ -5254,7 +5254,7 @@
     },
     {
       "id": 540,
-      "canonical_name": "L2-siRNA (recovered B2 from PMID:40598893, curator:CM)",
+      "canonical_name": "L2-siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5267,7 +5267,7 @@
     },
     {
       "id": 543,
-      "canonical_name": "HSA@ICG/siRNA NPs (recovered B2 from PMID:40259913, curator:CM)",
+      "canonical_name": "HSA@ICG/siRNA NPs",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5306,7 +5306,7 @@
     },
     {
       "id": 546,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "renal safety",
       "endpoint_category": "renal",
@@ -5345,7 +5345,7 @@
     },
     {
       "id": 556,
-      "canonical_name": "siPCSK9 (recovered B2 from PMID:41290746, curator:CM)",
+      "canonical_name": "siPCSK9",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5371,7 +5371,7 @@
     },
     {
       "id": 565,
-      "canonical_name": "PUMCH-E13 (recovered B2 from PMID:40970667, curator:CM)",
+      "canonical_name": "PUMCH-E13",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5436,7 +5436,7 @@
     },
     {
       "id": 574,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5449,7 +5449,7 @@
     },
     {
       "id": 576,
-      "canonical_name": "si-Cx43 (recovered B2 from PMID:40528841, curator:CM)",
+      "canonical_name": "si-Cx43",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5462,7 +5462,7 @@
     },
     {
       "id": 578,
-      "canonical_name": "DG9-PMO (recovered B2 from PMID:40368879, curator:CM)",
+      "canonical_name": "DG9-PMO",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5488,7 +5488,7 @@
     },
     {
       "id": 583,
-      "canonical_name": "D-siRNA-Plk1 (recovered B2 from PMID:40236812, curator:CM)",
+      "canonical_name": "D-siRNA-Plk1",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5527,7 +5527,7 @@
     },
     {
       "id": 588,
-      "canonical_name": "AS-T9/U4_MH (recovered B2 from PMID:39946362, curator:CM)",
+      "canonical_name": "AS-T9/U4_MH",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5566,7 +5566,7 @@
     },
     {
       "id": 600,
-      "canonical_name": "ION-827359 (recovered B2 from PMID:39286058, curator:CM)",
+      "canonical_name": "ION-827359",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5618,7 +5618,7 @@
     },
     {
       "id": 604,
-      "canonical_name": "NANP-siRhoA (recovered B2 from PMID:40308740, curator:CM)",
+      "canonical_name": "NANP-siRhoA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5644,7 +5644,7 @@
     },
     {
       "id": 607,
-      "canonical_name": "aODN-Survivin (recovered B2 from PMID:38672408, curator:CM)",
+      "canonical_name": "aODN-Survivin",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5683,7 +5683,7 @@
     },
     {
       "id": 611,
-      "canonical_name": "vivo-3′UTR (recovered B2 from PMID:39676860, curator:CM)",
+      "canonical_name": "vivo-3′UTR",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5696,7 +5696,7 @@
     },
     {
       "id": 615,
-      "canonical_name": "HNP-siHOXB7 (recovered B2 from PMID:39458966, curator:CM)",
+      "canonical_name": "HNP-siHOXB7",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5774,7 +5774,7 @@
     },
     {
       "id": 628,
-      "canonical_name": "cRGD-GR9G-(LLHH)3/siEGFR/siP65 (recovered B2 from PMID:39539970, curator:CM)",
+      "canonical_name": "cRGD-GR9G-(LLHH)3/siEGFR/siP65",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5787,7 +5787,7 @@
     },
     {
       "id": 629,
-      "canonical_name": "cRGD-PEG-siRNA (recovered B2 from PMID:39431993, curator:CM)",
+      "canonical_name": "cRGD-PEG-siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5800,7 +5800,7 @@
     },
     {
       "id": 631,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5813,7 +5813,7 @@
     },
     {
       "id": 634,
-      "canonical_name": "siIRF1 (recovered B2 from PMID:39629104, curator:CM)",
+      "canonical_name": "siIRF1",
       "modality": "siRNA",
       "endpoint_name": "cell viability/cytotoxicity",
       "endpoint_category": "general safety",
@@ -5904,7 +5904,7 @@
     },
     {
       "id": 646,
-      "canonical_name": "9b2KC-23b (recovered B2 from PMID:37744174, curator:CM)",
+      "canonical_name": "9b2KC-23b",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5930,7 +5930,7 @@
     },
     {
       "id": 650,
-      "canonical_name": "iLANDsiPAK4 (recovered B2 from PMID:37719367, curator:CM)",
+      "canonical_name": "iLANDsiPAK4",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -5969,7 +5969,7 @@
     },
     {
       "id": 654,
-      "canonical_name": "RO7062931 (recovered B2 from PMID:37147890, curator:CM)",
+      "canonical_name": "RO7062931",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6008,7 +6008,7 @@
     },
     {
       "id": 658,
-      "canonical_name": "DG9-PMO (recovered B2 from PMID:36719755, curator:CM)",
+      "canonical_name": "DG9-PMO",
       "modality": "PMO",
       "endpoint_name": "immune activation",
       "endpoint_category": "immunotoxicity",
@@ -6047,7 +6047,7 @@
     },
     {
       "id": 661,
-      "canonical_name": "ASO-001933 (recovered B2 from PMID:36090761, curator:CM)",
+      "canonical_name": "ASO-001933",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6073,7 +6073,7 @@
     },
     {
       "id": 664,
-      "canonical_name": "LNP-S60-siRNA (recovered B2 from PMID:36520934, curator:CM)",
+      "canonical_name": "LNP-S60-siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6086,7 +6086,7 @@
     },
     {
       "id": 665,
-      "canonical_name": "PNA4986 (recovered B2 from PMID:35436109, curator:CM)",
+      "canonical_name": "PNA4986",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6099,7 +6099,7 @@
     },
     {
       "id": 666,
-      "canonical_name": "IONIS-FXIRx (recovered B2 from PMID:35155859, curator:CM)",
+      "canonical_name": "IONIS-FXIRx",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6112,7 +6112,7 @@
     },
     {
       "id": 668,
-      "canonical_name": "ASO 5–2 (recovered B2 from PMID:34949835, curator:CM)",
+      "canonical_name": "ASO 5–2",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6138,7 +6138,7 @@
     },
     {
       "id": 671,
-      "canonical_name": "HA-SeSe-COOH/siR-93C@PAMAM (recovered B2 from PMID:35156491, curator:CM)",
+      "canonical_name": "HA-SeSe-COOH/siR-93C@PAMAM",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6216,7 +6216,7 @@
     },
     {
       "id": 680,
-      "canonical_name": "IONIS-AGT-LRx (recovered B2 from PMID:34222719, curator:CM)",
+      "canonical_name": "IONIS-AGT-LRx",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6229,7 +6229,7 @@
     },
     {
       "id": 684,
-      "canonical_name": "peptide-siRNA-DOX (recovered B2 from PMID:34948105, curator:CM)",
+      "canonical_name": "peptide-siRNA-DOX",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6242,7 +6242,7 @@
     },
     {
       "id": 686,
-      "canonical_name": "CpG2018B (recovered B2 from PMID:34566407, curator:CM)",
+      "canonical_name": "CpG2018B",
       "modality": "CpG oligodeoxynucleotide",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6255,7 +6255,7 @@
     },
     {
       "id": 687,
-      "canonical_name": "MRCV-19 (recovered B2 from PMID:34440222, curator:CM)",
+      "canonical_name": "MRCV-19",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6307,7 +6307,7 @@
     },
     {
       "id": 695,
-      "canonical_name": "NVP-13 (recovered B2 from PMID:32178467, curator:CM)",
+      "canonical_name": "NVP-13",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6320,7 +6320,7 @@
     },
     {
       "id": 696,
-      "canonical_name": "LNAc/2′OMe18h (recovered B2 from PMID:31873063, curator:CM)",
+      "canonical_name": "LNAc/2′OMe18h",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6385,7 +6385,7 @@
     },
     {
       "id": 706,
-      "canonical_name": "IONIS-PKKRx (recovered B2 from PMID:30817230, curator:CM)",
+      "canonical_name": "IONIS-PKKRx",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6398,7 +6398,7 @@
     },
     {
       "id": 708,
-      "canonical_name": "BMSP-PMO-GF (recovered B2 from PMID:31629961, curator:CM)",
+      "canonical_name": "BMSP-PMO-GF",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6411,7 +6411,7 @@
     },
     {
       "id": 717,
-      "canonical_name": "revusiran (recovered B2 from PMID:28129130, curator:CM)",
+      "canonical_name": "revusiran",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6437,7 +6437,7 @@
     },
     {
       "id": 727,
-      "canonical_name": "LNA-i-miR-221 (recovered B2 from PMID:27327137, curator:CM)",
+      "canonical_name": "LNA-i-miR-221",
       "modality": "miRNA agomir",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6489,7 +6489,7 @@
     },
     {
       "id": 742,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6502,7 +6502,7 @@
     },
     {
       "id": 743,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "systemic safety/tolerability",
       "endpoint_category": "general safety",
@@ -6528,7 +6528,7 @@
     },
     {
       "id": 759,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6541,7 +6541,7 @@
     },
     {
       "id": 812,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6567,7 +6567,7 @@
     },
     {
       "id": 819,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6580,7 +6580,7 @@
     },
     {
       "id": 829,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6593,7 +6593,7 @@
     },
     {
       "id": 830,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6606,7 +6606,7 @@
     },
     {
       "id": 903,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6619,7 +6619,7 @@
     },
     {
       "id": 905,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6697,7 +6697,7 @@
     },
     {
       "id": 966,
-      "canonical_name": "siRMSTN (recovered B2 from PMID:41041909, curator:CM)",
+      "canonical_name": "siRMSTN",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6710,7 +6710,7 @@
     },
     {
       "id": 969,
-      "canonical_name": "APGS (recovered B2 from PMID:41732207, curator:CM)",
+      "canonical_name": "APGS",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6723,7 +6723,7 @@
     },
     {
       "id": 974,
-      "canonical_name": "S9 (recovered B2 from PMID:41552385, curator:CM)",
+      "canonical_name": "S9",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6749,7 +6749,7 @@
     },
     {
       "id": 1043,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "thrombocytopenia",
       "endpoint_category": "hematological",
@@ -6801,7 +6801,7 @@
     },
     {
       "id": 1087,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "cell viability/cytotoxicity",
       "endpoint_category": "general safety",
@@ -6814,7 +6814,7 @@
     },
     {
       "id": 1117,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6840,7 +6840,7 @@
     },
     {
       "id": 1131,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "renal safety",
       "endpoint_category": "renal",
@@ -6853,7 +6853,7 @@
     },
     {
       "id": 1141,
-      "canonical_name": "siTMEM45A (recovered B2 from PMID:39910045, curator:CM)",
+      "canonical_name": "siTMEM45A",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6892,7 +6892,7 @@
     },
     {
       "id": 1172,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6905,7 +6905,7 @@
     },
     {
       "id": 1179,
-      "canonical_name": "OA2-siRAPSYN (recovered B2 from PMID:38741123, curator:CM)",
+      "canonical_name": "OA2-siRAPSYN",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6931,7 +6931,7 @@
     },
     {
       "id": 1198,
-      "canonical_name": "siRNA‐CaP@PD1‐NVs (recovered B2 from PMID:38973319, curator:CM)",
+      "canonical_name": "siRNA‐CaP@PD1‐NVs",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6957,7 +6957,7 @@
     },
     {
       "id": 1214,
-      "canonical_name": "si3033 (recovered B2 from PMID:37925520, curator:CM)",
+      "canonical_name": "si3033",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6983,7 +6983,7 @@
     },
     {
       "id": 1240,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -6996,7 +6996,7 @@
     },
     {
       "id": 1244,
-      "canonical_name": "SMN7D(-10-29) AO (recovered B2 from PMID:35464859, curator:CM)",
+      "canonical_name": "SMN7D(-10-29) AO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -7009,7 +7009,7 @@
     },
     {
       "id": 1247,
-      "canonical_name": "PC-DCA siRNA (recovered B2 from PMID:35847173, curator:CM)",
+      "canonical_name": "PC-DCA siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -7061,7 +7061,7 @@
     },
     {
       "id": 1289,
-      "canonical_name": "Pip6a-PMO (recovered B2 from PMID:31479430, curator:CM)",
+      "canonical_name": "Pip6a-PMO",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -7074,7 +7074,7 @@
     },
     {
       "id": 1292,
-      "canonical_name": "RGD-PEG-ECO/siβ3 (recovered B2 from PMID:31140918, curator:CM)",
+      "canonical_name": "RGD-PEG-ECO/siβ3",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -7100,7 +7100,7 @@
     },
     {
       "id": 1297,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -7113,7 +7113,7 @@
     },
     {
       "id": 1306,
-      "canonical_name": "MORF1-MORF2 (recovered B2 from PMID:24308267, curator:CM)",
+      "canonical_name": "MORF1-MORF2",
       "modality": "PMO",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -7139,7 +7139,7 @@
     },
     {
       "id": 1329,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -7152,7 +7152,7 @@
     },
     {
       "id": 1387,
-      "canonical_name": "unspecified siRNA (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified siRNA",
       "modality": "siRNA",
       "endpoint_name": "hepatotoxicity",
       "endpoint_category": "hepatic",
@@ -8571,7 +8571,7 @@
     },
     {
       "id": 59,
-      "canonical_name": "ASO 6 (recovered B2 from PMID:40672232, curator:CM)",
+      "canonical_name": "ASO 6",
       "modality": "ASO",
       "evidence_type": "transcriptome-level off-target effect",
       "evidence_grade": "A",
@@ -8649,7 +8649,7 @@
     },
     {
       "id": 66,
-      "canonical_name": "Sequence 1 (recovered B2 from PMID:28918038, curator:CM)",
+      "canonical_name": "Sequence 1",
       "modality": "ASO",
       "evidence_type": "transcriptome-level off-target effect",
       "evidence_grade": "A",
@@ -8688,7 +8688,7 @@
     },
     {
       "id": 78,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "evidence_type": "transcriptome-level off-target effect",
       "evidence_grade": "A",
@@ -8701,7 +8701,7 @@
     },
     {
       "id": 82,
-      "canonical_name": "siRNA-IGF2BP2 (recovered B2 from PMID:41859644, curator:CM)",
+      "canonical_name": "siRNA-IGF2BP2",
       "modality": "siRNA",
       "evidence_type": "transcriptome-level off-target effect",
       "evidence_grade": "A",
@@ -8714,7 +8714,7 @@
     },
     {
       "id": 91,
-      "canonical_name": "S9 (recovered B2 from PMID:41552385, curator:CM)",
+      "canonical_name": "S9",
       "modality": "siRNA",
       "evidence_type": "hybridization/mismatch off-target effect",
       "evidence_grade": "A",
@@ -8792,7 +8792,7 @@
     },
     {
       "id": 157,
-      "canonical_name": "Anti-N1 (recovered B2 from PMID:38379891, curator:CM)",
+      "canonical_name": "Anti-N1",
       "modality": "ASO",
       "evidence_type": "transcriptome-level off-target effect",
       "evidence_grade": "A",
@@ -8805,7 +8805,7 @@
     },
     {
       "id": 164,
-      "canonical_name": "PH-762 (recovered B2 from PMID:39697325, curator:CM)",
+      "canonical_name": "PH-762",
       "modality": "siRNA",
       "evidence_type": "transcriptome-level off-target effect",
       "evidence_grade": "A",
@@ -8818,7 +8818,7 @@
     },
     {
       "id": 188,
-      "canonical_name": "Glu-CT102MOE5 (recovered B2 from PMID:37251692, curator:CM)",
+      "canonical_name": "Glu-CT102MOE5",
       "modality": "ASO",
       "evidence_type": "hybridization/mismatch off-target effect",
       "evidence_grade": "A",
@@ -8831,7 +8831,7 @@
     },
     {
       "id": 190,
-      "canonical_name": "si-S1A3-Chol (recovered B2 from PMID:36618268, curator:CM)",
+      "canonical_name": "si-S1A3-Chol",
       "modality": "siRNA",
       "evidence_type": "seed-mediated off-target effect",
       "evidence_grade": "A",
@@ -8870,7 +8870,7 @@
     },
     {
       "id": 207,
-      "canonical_name": "T39 ASO (recovered B2 from PMID:32180554, curator:CM)",
+      "canonical_name": "T39 ASO",
       "modality": "ASO",
       "evidence_type": "off-target evidence",
       "evidence_grade": "A",
@@ -8883,7 +8883,7 @@
     },
     {
       "id": 217,
-      "canonical_name": "unspecified ASO (v1 extraction artefact, pending source re-verification)",
+      "canonical_name": "unspecified ASO",
       "modality": "ASO",
       "evidence_type": "transcriptome-level off-target effect",
       "evidence_grade": "A",
@@ -8909,7 +8909,7 @@
     },
     {
       "id": 222,
-      "canonical_name": "FM10 (recovered B2 from PMID:27378237, curator:CM)",
+      "canonical_name": "FM10",
       "modality": "PMO",
       "evidence_type": "transcriptome-level off-target effect",
       "evidence_grade": "A",
@@ -8922,7 +8922,7 @@
     },
     {
       "id": 229,
-      "canonical_name": "MC3 LNP-siRNA (recovered B2 from PMID:41708903, curator:CM)",
+      "canonical_name": "MC3 LNP-siRNA",
       "modality": "siRNA",
       "evidence_type": "off-target evidence",
       "evidence_grade": "B",

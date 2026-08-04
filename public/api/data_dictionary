@@ -558,66 +558,6 @@
     "release_status": "release"
   },
   {
-    "table_name": "curation_candidate",
-    "column_name": "id",
-    "description": "Candidate row identifier; not citable release evidence",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_candidate",
-    "column_name": "evidence_domain",
-    "description": "Candidate curation domain",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_candidate",
-    "column_name": "source_location",
-    "description": "Derived source location pointer",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_candidate",
-    "column_name": "matched_terms",
-    "description": "Rule-derived terms used for candidate triage",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_candidate",
-    "column_name": "candidate_signal",
-    "description": "Derived candidate signal summary",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_candidate",
-    "column_name": "confidence_label",
-    "description": "Triage confidence label; not evidence grade",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_candidate",
-    "column_name": "validation_status",
-    "description": "Review state; candidates are not final evidence",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_queue",
-    "column_name": "id",
-    "description": "Curation queue row identifier",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_queue",
-    "column_name": "evidence_domain",
-    "description": "Curation domain assigned to source",
-    "release_status": "candidate_only"
-  },
-  {
-    "table_name": "curation_queue",
-    "column_name": "extraction_target",
-    "description": "Field to extract during curator pass",
-    "release_status": "candidate_only"
-  },
-  {
     "table_name": "source_license_manifest_v1",
     "column_name": "source_document_id",
     "description": "Source identifier matching source_document.id",

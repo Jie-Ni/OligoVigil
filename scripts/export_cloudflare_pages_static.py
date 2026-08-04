@@ -10,7 +10,6 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
-
 ROOT = Path(__file__).resolve().parents[1]
 STATIC_DIR = ROOT / "app" / "static"
 MANIFEST_DIR = ROOT / "data" / "manifests"
@@ -22,81 +21,26 @@ JSON_ENDPOINTS = [
     "/api/metadata",
     "/api/summary",
     "/api/facets",
-    "/api/quality",
     "/api/coverage",
-    "/api/examples",
-    "/api/help",
-    "/api/curation_protocol",
     "/api/data_availability",
-    "/api/release_status",
-    "/api/submission_pack",
-    "/api/field_completeness",
-    "/api/core_oligo_fields",
     "/api/independent_validation",
-    "/api/novelty_position",
-    "/api/archive_readiness",
-    "/api/adoption_packet",
-    "/api/agent_access",
-    "/api/agent_connect",
     "/api/citation",
-    "/api/use_cases",
-    "/api/case_workflows",
-    "/api/sequence_coverage",
-    "/api/offtarget_taxonomy",
-    "/api/client_examples",
-    "/api/submission_schema",
-    "/api/openapi.json",
     "/api/download_manifest",
     "/api/downloads",
-    "/api/readiness",
-    "/api/closest_work",
     "/api/data_dictionary",
     "/api/evidence",
     "/api/benchmark",
     "/api/benchmark_baseline_results",
     "/api/benchmark_tasks",
-    "/agent.json",
-    "/.well-known/oligovigil-agent.json",
-    "/.well-known/ai-plugin.json",
-    "/mcp.json",
-    "/nlweb.json",
-    "/.well-known/nlweb.json",
     "/bioschemas.json",
 ]
 
 
 QUERY_ENDPOINTS = [
-    ("/api/search?q=hepatotoxicity&limit=50", "/api/search"),
-    ("/api/ask?q=Show%20GalNAc%20liver%20toxicity%20Grade%20A%2FB%20evidence&limit=25", "/api/ask"),
-    ("/api/sources?limit=500", "/api/sources"),
-    ("/api/source_detail?q=hepatotoxicity", "/api/source_detail"),
-    ("/api/molecules?limit=500", "/api/molecules"),
-    ("/api/evidence_records?limit=500", "/api/evidence_records"),
-    ("/api/evidence_detail?domain=toxicity&id=1", "/api/evidence_detail"),
-    ("/api/audit?entity_table=toxicity_endpoint&limit=500", "/api/audit"),
-    ("/api/curation_queue?limit=500", "/api/curation_queue"),
-    ("/api/curation_candidates?limit=500", "/api/curation_candidates"),
-    (
-        "/api/sequence_search?sequence=AUGCUACUGACUGA&modification=GalNAc&target=PCSK9",
-        "/api/sequence_search",
-    ),
-    (
-        "/api/safety_triage?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human",
-        "/api/safety_triage",
-    ),
-    (
-        "/api/safety_dossier?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human",
-        "/api/safety_dossier",
-    ),
-    (
-        "/api/evidence_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&endpoint=hepatic",
-        "/api/evidence_graph",
-    ),
-    (
-        "/api/prov_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&endpoint=hepatic",
-        "/api/prov_graph",
-    ),
-    ("/api/modification_profile?term=galnac", "/api/modification_profile"),
+    ("/api/sources?limit=1000", "/api/sources"),
+    ("/api/molecules?limit=1000", "/api/molecules"),
+    ("/api/evidence_records?limit=1000", "/api/evidence_records"),
+    ("/api/audit?limit=1000", "/api/audit"),
 ]
 
 
@@ -105,36 +49,34 @@ DOWNLOAD_ENDPOINTS = [
     "/api/download/benchmark_reference_splits.csv",
     "/api/download/benchmark_baseline_results.csv",
     "/api/download/benchmark_task_cards.csv",
-    "/api/download/sequence_modification_curation_template.csv",
-    "/api/download/core_oligo_field_curation_packet.csv",
-    "/api/download/independent_curation_validation_template.csv",
-    "/api/download/curation_candidates_filtered.csv",
+    "/api/download/benchmark_readme.md",
     "/api/download/all_tables.zip",
-    "/api/download/oligovigil_agent_pack.zip",
     "/api/download/source_document.csv",
     "/api/download/molecule.csv",
     "/api/download/toxicity_endpoint.csv",
     "/api/download/offtarget_evidence.csv",
     "/api/download/curation_audit.csv",
     "/api/download/benchmark_split.csv",
-    "/api/download/curation_queue.csv",
-    "/api/download/curation_candidate.csv",
+    "/api/manifest/benchmark_task_cards_v1.csv",
 ]
 
 
-TEXT_ENDPOINTS = [
-    "/llms.txt",
-    "/llms-full.txt",
-]
+TEXT_ENDPOINTS: list[str] = []
+
+
+PUBLIC_MANIFEST_FILES = {
+    "benchmark_task_cards_v1.csv",
+    "data_dictionary_v1.csv",
+    "license_manifest_v1.csv",
+    "source_license_manifest_v1.csv",
+}
 
 
 HEADERS = """/*
   X-Robots-Tag: all
-  Cache-Control: public, max-age=300
 
 /api/*
   Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=300
 
 /api/download/*.csv
   Content-Type: text/csv; charset=utf-8
@@ -148,19 +90,24 @@ HEADERS = """/*
   Content-Type: application/zip
   Content-Disposition: attachment
 
+/api/download/*.md
+  Content-Type: text/markdown; charset=utf-8
+
 /bioschemas.json
   Content-Type: application/ld+json; charset=utf-8
-
-/llms.txt
-  Content-Type: text/plain; charset=utf-8
-
-/llms-full.txt
-  Content-Type: text/plain; charset=utf-8
 """
 
 
-REDIRECTS = """/downloads /#downloads 302
-/* /index.html 200
+REDIRECTS = "/downloads /#downloads 302\n"
+
+
+ROUTES = """{
+  "version": 1,
+  "include": [
+    "/api/*"
+  ],
+  "exclude": []
+}
 """
 
 
@@ -219,6 +166,8 @@ def write_endpoint(
 def export_manifest_files(base_url: str, public_base_url: str, output_dir: Path) -> list[Path]:
     written = []
     for path in sorted(MANIFEST_DIR.glob("*.csv")):
+        if path.name not in PUBLIC_MANIFEST_FILES:
+            continue
         endpoint = f"/api/manifest/{path.name}"
         written.append(write_endpoint(base_url, public_base_url, output_dir, endpoint))
     return written
@@ -247,24 +196,29 @@ def main() -> int:
     if output_dir.exists():
         shutil.rmtree(output_dir)
     shutil.copytree(STATIC_DIR, output_dir)
+    generated_assets = output_dir / "assets" / "generated"
+    if generated_assets.exists():
+        shutil.rmtree(generated_assets)
 
     written: list[Path] = []
     for endpoint in JSON_ENDPOINTS + TEXT_ENDPOINTS + DOWNLOAD_ENDPOINTS:
         written.append(write_endpoint(args.base_url, args.public_base_url, output_dir, endpoint))
     for endpoint, override in QUERY_ENDPOINTS:
         written.append(
-            write_endpoint(args.base_url, args.public_base_url, output_dir, endpoint, override=override)
+            write_endpoint(
+                args.base_url, args.public_base_url, output_dir, endpoint, override=override
+            )
         )
     written.extend(export_manifest_files(args.base_url, args.public_base_url, output_dir))
 
     (output_dir / "_headers").write_text(HEADERS, encoding="utf-8")
     (output_dir / "_redirects").write_text(REDIRECTS, encoding="utf-8")
+    (output_dir / "_routes.json").write_text(ROUTES, encoding="utf-8")
     (output_dir / "STATIC_EXPORT_README.txt").write_text(
         "\n".join(
             [
                 "OligoVigil Cloudflare Pages static export",
                 f"generated_at_utc={datetime.now(timezone.utc).replace(microsecond=0).isoformat()}",
-                f"source_base_url={args.base_url.rstrip('/')}",
                 f"public_base_url={args.public_base_url.rstrip('/')}",
                 "deployment_command=npx wrangler pages deploy public --project-name oligovigil",
                 "",
@@ -281,9 +235,8 @@ def main() -> int:
 
     manifest = {
         "generated_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-        "source_base_url": args.base_url.rstrip("/"),
         "public_base_url": args.public_base_url.rstrip("/"),
-        "output": str(output_dir),
+        "output": "public",
         "files_written": len({path.resolve() for path in written}),
         "recommended_project_name": "oligovigil",
         "recommended_pages_url": "https://oligovigil.pages.dev",

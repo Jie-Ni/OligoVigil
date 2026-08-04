@@ -92,16 +92,6 @@ curation_audit,validation_status,Review state,release
 curation_audit,curator_decision,Curator accept/reject/pending decision,release
 curation_audit,curator_id,Curator identifier if retained; may be redacted,release
 curation_audit,audit_note,Human audit note,release
-curation_candidate,id,Candidate row identifier; not citable release evidence,candidate_only
-curation_candidate,evidence_domain,Candidate curation domain,candidate_only
-curation_candidate,source_location,Derived source location pointer,candidate_only
-curation_candidate,matched_terms,Rule-derived terms used for candidate triage,candidate_only
-curation_candidate,candidate_signal,Derived candidate signal summary,candidate_only
-curation_candidate,confidence_label,Triage confidence label; not evidence grade,candidate_only
-curation_candidate,validation_status,Review state; candidates are not final evidence,candidate_only
-curation_queue,id,Curation queue row identifier,candidate_only
-curation_queue,evidence_domain,Curation domain assigned to source,candidate_only
-curation_queue,extraction_target,Field to extract during curator pass,candidate_only
 source_license_manifest_v1,source_document_id,Source identifier matching source_document.id,release_manifest
 source_license_manifest_v1,article_license,Conservative article/source license status captured from source metadata,release_manifest
 source_license_manifest_v1,release_evidence_rows,Number of verified release evidence rows linked to the source,release_manifest

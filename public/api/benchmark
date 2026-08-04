@@ -1,5 +1,5 @@
 {
-  "version": "20260604_core_validation_v45",
+  "version": "1.0.2",
   "release_records": 737,
   "benchmark_eligible_records": 344,
   "eligibility_rule": "Curator-verified accepted Grade A/B toxicity or off-target release evidence.",
@@ -83,9 +83,15 @@
     }
   ],
   "benchmark_release": {
-    "doi_status": "10.5281/zenodo.20633779",
-    "archive_url": "https://doi.org/10.5281/zenodo.20633779",
-    "recommended_archive": "Zenodo v1.0.1 data snapshot.",
+    "archived_snapshot": {
+      "version": "v1.0.1",
+      "doi": "10.5281/zenodo.20633779",
+      "url": "https://doi.org/10.5281/zenodo.20633779"
+    },
+    "web_release": {
+      "version": "1.0.2",
+      "url": "https://oligovigil.pages.dev"
+    },
     "citation_policy": "Cite OligoVigil version, task name, and the reference split CSV checksum.",
     "leakage_control": "stored_source_plus_molecule_grouped_splits"
   },
@@ -93,7 +99,7 @@
     {
       "task_name": "toxicity_safety_v0_1",
       "version": "20260604_resource_depth_v42",
-      "doi_status": "pending_public_archive_before_submission",
+      "release_reference": "OligoVigil web release v1.0.2",
       "prediction_target": "oligonucleotide safety endpoint triage from molecule/modality/provenance fields",
       "label_source": "toxicity_endpoint.endpoint_category and endpoint_name",
       "eligibility_rule": "curator_verified accept evidence_grade in A/B",
@@ -112,7 +118,7 @@
     {
       "task_name": "offtarget_safety_v0_1",
       "version": "20260604_resource_depth_v42",
-      "doi_status": "pending_public_archive_before_submission",
+      "release_reference": "OligoVigil web release v1.0.2",
       "prediction_target": "observed off-target signal or off-target evidence type",
       "label_source": "offtarget_evidence.evidence_type and is_computational_prediction",
       "eligibility_rule": "curator_verified accept evidence_grade in A/B",
@@ -143,11 +149,11 @@
       "purpose": "Unified curator-verified toxicity and off-target release evidence.",
       "recommended_use": "Primary citation and evidence reuse table.",
       "rows": 737,
-      "bytes": 620435,
-      "sha256": "1e75030b03e14f40e87a445af6c96e4b0e189abf78604998767cfe2baa78c775",
+      "bytes": 525515,
+      "sha256": "e328d0a8c56a5ae87472b957603ad74d402c60602220ee54891b10e1167a362b",
       "schema": "data_dictionary_v1.csv",
-      "license": "Curator-reviewed derived annotations and source identifiers; raw article text/PDFs are not redistributed.",
-      "version": "20260604_core_validation_v45"
+      "license": "Curator-reviewed derived annotations with source identifiers and links.",
+      "version": "1.0.2"
     },
     {
       "category": "Benchmark",
@@ -156,11 +162,11 @@
       "purpose": "Deterministic Grade A/B reference train/validation/test splits.",
       "recommended_use": "Canonical ML benchmark split file.",
       "rows": 344,
-      "bytes": 146241,
-      "sha256": "5bf1a917a6acd47ddd0d087723737286873b33c6e7062db5a0009345535079fe",
+      "bytes": 142430,
+      "sha256": "4b20e1ff70c81af270e1ce1a05a6d47c6c4b0f4b8e8859adfff472805126f254",
       "schema": "benchmark_task_cards_v1.csv",
-      "license": "Derived benchmark split assignments over Grade A/B release evidence; cite version and checksum.",
-      "version": "20260604_core_validation_v45"
+      "license": "Benchmark split assignments over Grade A/B release evidence; cite version and checksum.",
+      "version": "1.0.2"
     },
     {
       "category": "Benchmark",
@@ -169,11 +175,11 @@
       "purpose": "Task definitions, targets, metrics, and leakage policy.",
       "recommended_use": "Cite task name, version, and checksum with benchmark results.",
       "rows": 2,
-      "bytes": 1556,
-      "sha256": "dc90d58981c070cb9009b1b272b24deddd42715ff1dec7694f93a37232a6ddeb",
+      "bytes": 1541,
+      "sha256": "fb0c7b8c79e2e99d5ea9dcadd6141da69f20b42f4ffe9ca8edf3da6395a37b30",
       "schema": "benchmark_task_cards_v1.csv",
-      "license": "Derived task metadata for benchmark reuse; cite task name, version, and checksum.",
-      "version": "20260604_core_validation_v45"
+      "license": "Task metadata for benchmark reuse; cite task name, version, and checksum.",
+      "version": "1.0.2"
     },
     {
       "category": "Benchmark",
@@ -182,11 +188,11 @@
       "purpose": "Deterministic majority, modality-prior, grade-prior, and target-prior baselines for validation/test split sanity checks.",
       "recommended_use": "Reference baselines before reporting trained model comparisons.",
       "rows": 16,
-      "bytes": 5125,
-      "sha256": "4803c43392607d15fa40e332745753b291a90a17dfa92706014c53f8933af8e1",
+      "bytes": 4740,
+      "sha256": "681de737d30f7aad48c49a98aca10c1ebdd96130d60dfacf9ab4301dccc9756c",
       "schema": "benchmark_task_cards_v1.csv",
       "license": "Derived deterministic baseline metrics over fixed splits.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     }
   ],
   "baseline_models": [
@@ -233,7 +239,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Sanity baseline: predicts the most common training category for the task.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "offtarget_safety_v0_1",
@@ -251,7 +257,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "offtarget_safety_v0_1",
@@ -269,7 +275,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Uses only A/B grade labels already present in the fixed reference split.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "offtarget_safety_v0_1",
@@ -287,7 +293,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "offtarget_safety_v0_1",
@@ -305,7 +311,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Sanity baseline: predicts the most common training category for the task.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "offtarget_safety_v0_1",
@@ -323,7 +329,7 @@
       "coverage": 0.9,
       "status": "completed_deterministic_baseline",
       "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "offtarget_safety_v0_1",
@@ -341,7 +347,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Uses only A/B grade labels already present in the fixed reference split.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "offtarget_safety_v0_1",
@@ -359,7 +365,7 @@
       "coverage": 0.9,
       "status": "completed_deterministic_baseline",
       "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "toxicity_safety_v0_1",
@@ -377,7 +383,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Sanity baseline: predicts the most common training category for the task.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "toxicity_safety_v0_1",
@@ -395,7 +401,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "toxicity_safety_v0_1",
@@ -413,7 +419,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Uses only A/B grade labels already present in the fixed reference split.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "toxicity_safety_v0_1",
@@ -431,7 +437,7 @@
       "coverage": 0.9565,
       "status": "completed_deterministic_baseline",
       "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "toxicity_safety_v0_1",
@@ -449,7 +455,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Sanity baseline: predicts the most common training category for the task.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "toxicity_safety_v0_1",
@@ -467,7 +473,7 @@
       "coverage": 0.9545,
       "status": "completed_deterministic_baseline",
       "notes": "Falls back to global majority when the evaluation modality is unseen in training.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "toxicity_safety_v0_1",
@@ -485,7 +491,7 @@
       "coverage": 1.0,
       "status": "completed_deterministic_baseline",
       "notes": "Uses only A/B grade labels already present in the fixed reference split.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "task_name": "toxicity_safety_v0_1",
@@ -503,7 +509,7 @@
       "coverage": 0.7727,
       "status": "completed_deterministic_baseline",
       "notes": "Useful as a leakage check: low coverage indicates many held-out targets are unseen.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     }
   ]
 }

@@ -102,4 +102,4 @@ Rules:
 
 - No server-side rendered loading placeholders; initial async regions can remain blank for a short period.
 - No formal visual regression test suite yet; current QA relies on browser screenshot inspection and contract/smoke checks.
-- A public HTTPS deployment is still required before NAR presubmission.
+- A public HTTPS deployment is still required before the public release.

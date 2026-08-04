@@ -1,8 +1,8 @@
 # OligoVigil Visual QA v35
 
-Version: `20260603_formal_submission_ui_v35`
+Version: `20260603_public_release_ui_v35`
 
-Context: five user-agent review pass before NAR-style submission hardening. Personas covered oligonucleotide drug discovery, toxicology review, RNAi/off-target use, ML benchmark reuse, and NAR editor/resource evaluation.
+Context: five user-agent review pass before public release hardening. Personas covered oligonucleotide drug discovery, toxicology review, RNAi/off-target use, ML benchmark reuse, and public resource evaluation.
 
 ## v40 Agent Access Addendum
 
@@ -82,8 +82,8 @@ Artifacts:
 - `C:/Users/Jie/Desktop/codex/OligoVigil_v35_five_agent_qa/desktop_sequence.png`
 - `C:/Users/Jie/Desktop/codex/OligoVigil_v35_five_agent_qa/visual_metrics_v35.json`
 
-## Remaining Submission Blockers
+## Remaining Release Checks
 
-- Public HTTPS deployment is still required before NAR presubmission.
+- Public HTTPS deployment is still required before the public release.
 - DOI/archive should remain pending until the public release is frozen.
 - Exact sequence-alignment claims remain blocked until curator-verified sequence/modification strings are added.

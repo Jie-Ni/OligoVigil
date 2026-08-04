@@ -1,6 +1,6 @@
 """b2_decontam_placeholder_molecules.py
 
-Referee 2 / Editor blocker B2: 4 placeholder molecules (985-988, modalities siRNA/ASO/PMO/CpG)
+Placeholder-cleanup gate B2: 4 placeholder molecules (985-988, modalities siRNA/ASO/PMO/CpG)
 were carrying 144 release rows. Even though pair-isolation technically held (leakage_group keys
 include source_id), the molecule half of the (source x molecule) key was a synthetic bucket
 shared across 30-60+ unrelated papers. That contaminates 107/344 = 31% of the benchmark by

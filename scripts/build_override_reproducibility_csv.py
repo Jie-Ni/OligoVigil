@@ -1,4 +1,4 @@
-"""Build the human override reproducibility CSV (n=2,003) requested by NAR Referee 2.
+"""Build the human override reproducibility CSV (n=2,003) prepared for independent reproducibility review.
 
 Joins:
   - data/generated/v2_offtarget_review_final.csv  (565 rows)

@@ -6,7 +6,6 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = ROOT.parent
 DB_PATH = ROOT / "data" / "oligosafety.db"
@@ -34,14 +33,12 @@ TASKS = {
 
 def split_counts(conn: sqlite3.Connection) -> dict[str, dict[str, int]]:
     counts: dict[str, dict[str, int]] = {}
-    for task, split, count in conn.execute(
-        """
+    for task, split, count in conn.execute("""
         SELECT task_name, split_name, COUNT(*) AS n
         FROM benchmark_split
         GROUP BY task_name, split_name
         ORDER BY task_name, split_name
-        """
-    ):
+        """):
         counts.setdefault(str(task), {})[str(split)] = int(count)
     return counts
 
@@ -63,7 +60,9 @@ def grade_counts(conn: sqlite3.Connection) -> dict[str, dict[str, int]]:
         ORDER BY task_name, evidence_grade
     """
     for task, grade, count in conn.execute(query):
-        counts.setdefault(str(task), {})[str(grade)] = counts.setdefault(str(task), {}).get(str(grade), 0) + int(count)
+        counts.setdefault(str(task), {})[str(grade)] = counts.setdefault(str(task), {}).get(
+            str(grade), 0
+        ) + int(count)
     return counts
 
 
@@ -78,7 +77,7 @@ def task_cards(conn: sqlite3.Connection) -> list[dict[str, object]]:
             {
                 "task_name": task_name,
                 "version": VERSION,
-                "doi_status": "pending_public_archive_before_submission",
+                "release_reference": "OligoVigil web release v1.0.2",
                 "prediction_target": config["prediction_target"],
                 "label_source": config["label_source"],
                 "eligibility_rule": "curator_verified accept evidence_grade in A/B",
@@ -106,7 +105,10 @@ def write_outputs(cards: list[dict[str, object]]) -> None:
         writer.writeheader()
         writer.writerows(cards)
     JSON_PATH.write_text(json.dumps(cards, ensure_ascii=False, indent=2), encoding="utf-8")
-    total = sum(int(card["train_rows"]) + int(card["validation_rows"]) + int(card["test_rows"]) for card in cards)
+    total = sum(
+        int(card["train_rows"]) + int(card["validation_rows"]) + int(card["test_rows"])
+        for card in cards
+    )
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     lines = [
         "# Benchmark V1 Card",
@@ -114,14 +116,14 @@ def write_outputs(cards: list[dict[str, object]]) -> None:
         f"Generated at: `{now}`",
         f"Version: `{VERSION}`",
         f"Reference split rows: `{total}`",
-        "DOI status: `pending_public_archive_before_submission`",
+        "Release reference: `OligoVigil web release v1.0.2`",
         "",
         "## Reuse Contract",
         "",
         "- Eligible records: curator-verified accepted Grade A/B release evidence only.",
         "- Split strategy: stored source plus molecule/cohort grouped leakage control.",
         "- Required citation: cite OligoVigil version, benchmark task name, and the downloaded reference split file.",
-        "- Public archive action: mint a Zenodo/Figshare DOI after stable public URL deployment and before manuscript submission.",
+        "- Archived snapshot: OligoVigil v1.0.1, DOI 10.5281/zenodo.20633779.",
         "",
         "## Task Cards",
         "",

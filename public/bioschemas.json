@@ -3,7 +3,7 @@
   "@type": "Dataset",
   "@id": "https://oligovigil.pages.dev/#overview",
   "name": "OligoVigil",
-  "description": "Source-localized oligonucleotide (ASO/siRNA) safety and off-target evidence resource. 737 human curator-verified release rows (626 toxicity + 111 off-target), Cohen κ_binary = 0.42 (drop-abstain) / 0.34 (collapse-abstain) from a blinded second-curator 100-row inter-rater study, independently re-curated over source passages from 2003 v1 machine pre-curated candidates (v2 LLM-assisted), with citable provenance, benchmark splits, downloads, and agent-readable access.",
+  "description": "Source-localized oligonucleotide safety and off-target evidence resource with 737 human curator-verified observations (626 toxicity and 111 off-target) from 660 primary studies, provenance, benchmark splits, downloads, and agent-readable access.",
   "url": "https://oligovigil.pages.dev/",
   "license": "Derived annotations and source metadata are redistributed under the project data policy; raw third-party article text is not redistributed.",
   "isAccessibleForFree": true,

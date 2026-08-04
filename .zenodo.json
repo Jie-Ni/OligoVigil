@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "publication_date": "2026-06-10",
   "upload_type": "dataset",
-  "description": "<p>OligoVigil v1.0.1 is a metadata-corrected release candidate for a Nucleic Acids Research Database Issue resource. It is a curator-verified, source-anchored knowledge base of preclinical safety and off-target evidence for therapeutic oligonucleotides including ASO and siRNA-class modalities. The release contains <b>737 human curator-verified evidence records</b> from <b>660 primary sources</b>, comprising <b>626 toxicity endpoints</b> and <b>111 off-target observations</b>. Each release row is anchored to an exact source location, assigned an evidence grade and linked to a curation-audit record.</p><p>The release was built from 36,245 indexed source documents, 70,283 curation tasks and 41,114 candidate annotations through candidate generation, source-grounded proposal gating and row-by-row human adjudication. A 2,003-candidate machine pool had a measured false-accept rate of 0.73 in a 126-row audit, and 1,345 unsupported candidates were demoted rather than released. OligoVigil also provides a 344-record Grade A/B benchmark with pair-level source-by-molecule isolation, deterministic baselines, bulk downloads, REST/OpenAPI access, MCP manifests, Bioschemas JSON-LD and W3C PROV exports. A mixed 100-row second-curator study yielded Cohen kappa_binary = 0.42 under the drop-abstain convention and 0.34 under a safety-conservative collapse-abstain convention.</p><p>Archive DOI: 10.5281/zenodo.20633779. Data license: CC BY 4.0. Code license: MIT. A companion NAR manuscript DOI will be added after journal assignment.</p>",
+"description": "<p>OligoVigil v1.0.1 is a versioned release of a curator-verified, source-anchored knowledge base of preclinical safety and off-target evidence for therapeutic oligonucleotides including ASO and siRNA-class modalities. The release contains <b>737 human curator-verified evidence records</b> from <b>660 primary sources</b>, comprising <b>626 toxicity endpoints</b> and <b>111 off-target observations</b>. Each release row is anchored to an exact source location, assigned an evidence grade and linked to a curation-audit record.</p><p>The release was built from 36,245 indexed source documents, 70,283 curation tasks and 41,114 candidate annotations through candidate generation, source-grounded proposal gating and row-by-row human adjudication. A 2,003-candidate machine pool had a measured false-accept rate of 0.73 in a 126-row audit, and 1,345 unsupported candidates were demoted rather than released. OligoVigil also provides a 344-record Grade A/B benchmark with pair-level source-by-molecule isolation, deterministic baselines, bulk downloads, REST/OpenAPI access, MCP manifests, Bioschemas JSON-LD and W3C PROV exports. A mixed 100-row second-curator study yielded Cohen kappa_binary = 0.42 under the drop-abstain convention and 0.34 under a safety-conservative collapse-abstain convention.</p><p>Archive DOI: 10.5281/zenodo.20633779. Data license: CC BY 4.0. Code license: MIT.</p>",
   "creators": [
     {
       "name": "Ni, Jie",
@@ -46,8 +46,7 @@
     "curation",
     "benchmark",
     "source provenance",
-    "GalNAc-siRNA",
-    "NAR Database"
+    "GalNAc-siRNA"
   ],
   "access_right": "open",
   "license": "CC-BY-4.0",
@@ -95,5 +94,5 @@
       "scheme": "MeSH"
     }
   ],
-  "notes": "Metadata-corrected release candidate for NAR Database Issue submission. Curator of record: Jie Ni. All headline counts correspond to the 2026-06-08 release snapshot after EXPAND-2 and KAPPA-2 updates. Versioned data files, schema documentation, audit exports and benchmark splits are available through the GitHub release and web-portal downloads."
+  "notes": "Versioned OligoVigil dataset release. Curator of record: Jie Ni. All headline counts correspond to the 2026-06-08 release snapshot after EXPAND-2 and KAPPA-2 updates. Versioned data files, schema documentation, audit exports and benchmark splits are available through the GitHub release and web-portal downloads."
 }

@@ -58,7 +58,7 @@ def main() -> None:
     parser.add_argument("--label", default=datetime.now().strftime("%Y%m%d_%H%M%S"))
     args = parser.parse_args()
 
-    package_dir = PACKAGE_ROOT / f"OligoVigil_presubmission_release_{args.label}"
+    package_dir = PACKAGE_ROOT / f"OligoVigil_public_release_{args.label}"
     zip_path = PACKAGE_ROOT / f"{package_dir.name}.zip"
 
     if package_dir.exists() or zip_path.exists():

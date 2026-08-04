@@ -2,31 +2,31 @@
   "modality": [
     {
       "label": "siRNA",
-      "n": 581
+      "n": 270
     },
     {
       "label": "ASO",
-      "n": 330
+      "n": 199
     },
     {
       "label": "ASO/siRNA mixed context",
-      "n": 40
+      "n": 26
     },
     {
       "label": "PMO",
-      "n": 34
+      "n": 16
     },
     {
       "label": "CpG oligodeoxynucleotide",
-      "n": 13
-    },
-    {
-      "label": "aptamer",
-      "n": 7
+      "n": 4
     },
     {
       "label": "miRNA agomir",
       "n": 3
+    },
+    {
+      "label": "aptamer",
+      "n": 2
     },
     {
       "label": "ASO/RNA mixed context",
@@ -48,129 +48,61 @@
   "sources_by_type": [
     {
       "label": "literature_discovery",
-      "n": 36209
-    },
-    {
-      "label": "review_reference",
-      "n": 13
-    },
-    {
-      "label": "clinical_context",
-      "n": 5
+      "n": 652
     },
     {
       "label": "literature_signal",
-      "n": 5
-    },
-    {
-      "label": "closest_work",
       "n": 4
     },
     {
-      "label": "method_reference",
+      "label": "clinical_context",
       "n": 3
     },
     {
-      "label": "tool_reference",
-      "n": 2
-    },
-    {
-      "label": "challenge_notice",
-      "n": 1
-    },
-    {
-      "label": "industry_guidance",
-      "n": 1
-    },
-    {
-      "label": "nar_editorial",
-      "n": 1
-    },
-    {
-      "label": "nar_guideline",
+      "label": "method_reference",
       "n": 1
     }
   ],
   "sources_by_year": [
     {
       "label": "2026",
-      "n": 4109
+      "n": 100
     },
     {
       "label": "2025",
-      "n": 5131
+      "n": 179
     },
     {
       "label": "2024",
-      "n": 2474
+      "n": 105
     },
     {
       "label": "2023",
-      "n": 1398
+      "n": 70
     },
     {
       "label": "2022",
-      "n": 1083
+      "n": 43
     },
     {
       "label": "2021",
-      "n": 1104
+      "n": 41
     },
     {
       "label": "2020",
-      "n": 1040
+      "n": 19
     },
     {
       "label": "2019",
-      "n": 918
+      "n": 16
     },
     {
       "label": "2018",
-      "n": 942
+      "n": 13
     },
     {
       "label": "2017",
-      "n": 1000
-    }
-  ],
-  "candidate_by_domain": [
-    {
-      "label": "offtarget",
-      "n": 28649
-    },
-    {
-      "label": "toxicity",
-      "n": 6201
-    },
-    {
-      "label": "delivery",
-      "n": 2630
-    },
-    {
-      "label": "assay",
-      "n": 1889
-    },
-    {
-      "label": "chemistry",
-      "n": 1080
-    },
-    {
-      "label": "benchmark",
-      "n": 665
-    }
-  ],
-  "candidate_by_confidence": [
-    {
-      "label": "low_candidate",
-      "n": 19562
-    },
-    {
-      "label": "medium_candidate",
-      "n": 14698
-    },
-    {
-      "label": "high_candidate",
-      "n": 6854
+      "n": 17
     }
   ],
   "toxicity_by_category": [

@@ -6,10 +6,16 @@ import json
 import sqlite3
 import sys
 import time
-import zipfile
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.request import urlopen
 
+try:
+    from test_public_static_release import collect_public_asset_failures
+except ModuleNotFoundError as error:
+    if error.name != "test_public_static_release":
+        raise
+    from scripts.test_public_static_release import collect_public_asset_failures
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data" / "oligosafety.db"
@@ -40,6 +46,39 @@ def get_json(path: str) -> object:
     raise last_error or AssertionError(f"{path} failed")
 
 
+def assert_not_found(path: str) -> None:
+    try:
+        with urlopen(f"{BASE_URL}{path}", timeout=5) as response:
+            fail(f"{path} returned {response.status}; expected 404")
+    except HTTPError as error:
+        if error.code != 404:
+            raise
+
+
+def find_internal_work_key(payload: object, path: str = "$") -> str | None:
+    forbidden_keys = {
+        "candidate_records",
+        "queue_tasks",
+        "curation_candidate",
+        "curation_candidates",
+        "curation_queue",
+    }
+    if isinstance(payload, dict):
+        for key, value in payload.items():
+            child_path = f"{path}.{key}"
+            if str(key).lower() in forbidden_keys:
+                return child_path
+            found = find_internal_work_key(value, child_path)
+            if found is not None:
+                return found
+    elif isinstance(payload, list):
+        for index, value in enumerate(payload):
+            found = find_internal_work_key(value, f"{path}[{index}]")
+            if found is not None:
+                return found
+    return None
+
+
 def check_db() -> None:
     conn = sqlite3.connect(DB_PATH)
     try:
@@ -59,15 +98,11 @@ def check_db() -> None:
         offtarget_count = conn.execute("SELECT COUNT(*) FROM offtarget_evidence").fetchone()[0]
         benchmark_count = conn.execute("SELECT COUNT(*) FROM benchmark_split").fetchone()[0]
         release_count = toxicity_count + offtarget_count
-        # Release is the human curator-verified survivor set (~658) after v2 + human
-        # re-curation demoted the inflated v1 machine pre-curation. The old >=2000 gate
-        # encoded the v1 over-count and is intentionally retired.
-        if release_count < 600:
-            fail("expected at least 600 human curator-verified release evidence records")
-        if release_count == 0 and benchmark_count != 0:
-            fail("benchmark_split must remain empty until verified release records exist")
-        release_without_audit = conn.execute(
-            """
+        if toxicity_count != 626 or offtarget_count != 111 or release_count != 737:
+            fail("release evidence counts must remain 626 toxicity + 111 off-target = 737")
+        if benchmark_count != 344:
+            fail("benchmark_split must contain exactly 344 manuscript-aligned rows")
+        release_without_audit = conn.execute("""
             SELECT SUM(n)
             FROM (
                 SELECT COUNT(*) AS n
@@ -92,12 +127,10 @@ def check_db() -> None:
                       AND audit.curator_decision = 'accept'
                 )
             )
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if release_without_audit:
             fail("release evidence rows must have curator_verified accept audit records")
-        invalid_release_grades = conn.execute(
-            """
+        invalid_release_grades = conn.execute("""
             SELECT COUNT(*)
             FROM (
                 SELECT evidence_grade, source_location FROM toxicity_endpoint
@@ -107,12 +140,10 @@ def check_db() -> None:
             WHERE evidence_grade NOT IN ('A', 'B', 'C')
                OR source_location IS NULL
                OR source_location = ''
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if invalid_release_grades:
             fail("release evidence rows must have A/B/C grade and non-empty source location")
-        benchmark_invalid = conn.execute(
-            """
+        benchmark_invalid = conn.execute("""
             SELECT COUNT(*)
             FROM benchmark_split AS split
             LEFT JOIN toxicity_endpoint AS tox
@@ -120,13 +151,11 @@ def check_db() -> None:
             LEFT JOIN offtarget_evidence AS off
               ON split.entity_table = 'offtarget_evidence' AND split.entity_id = off.id
             WHERE COALESCE(tox.evidence_grade, off.evidence_grade, '') NOT IN ('A', 'B')
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if benchmark_invalid:
             fail("benchmark splits may only reference Grade A/B release evidence")
 
-        duplicate_pmids = conn.execute(
-            """
+        duplicate_pmids = conn.execute("""
             SELECT COUNT(*)
             FROM (
                 SELECT pmid
@@ -135,41 +164,34 @@ def check_db() -> None:
                 GROUP BY pmid
                 HAVING COUNT(*) > 1
             )
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if duplicate_pmids:
             fail("source_document contains duplicate PMIDs")
 
-        missing_queue_sources = conn.execute(
-            """
+        missing_queue_sources = conn.execute("""
             SELECT COUNT(*)
             FROM curation_queue AS queue
             LEFT JOIN source_document AS source ON source.id = queue.source_document_id
             WHERE source.id IS NULL
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if missing_queue_sources:
             fail("curation_queue contains missing source_document references")
 
-        missing_candidate_refs = conn.execute(
-            """
+        missing_candidate_refs = conn.execute("""
             SELECT COUNT(*)
             FROM curation_candidate AS candidate
             LEFT JOIN curation_queue AS queue ON queue.id = candidate.queue_id
             LEFT JOIN source_document AS source ON source.id = candidate.source_document_id
             WHERE queue.id IS NULL OR source.id IS NULL
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if missing_candidate_refs:
             fail("curation_candidate contains missing queue/source references")
 
-        raw_abstract_leak = conn.execute(
-            """
+        raw_abstract_leak = conn.execute("""
             SELECT COUNT(*)
             FROM curation_candidate
             WHERE redistribution_level != 'derived_annotations_only'
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if raw_abstract_leak:
             fail("curation candidates must remain derived annotations only")
 
@@ -179,19 +201,16 @@ def check_db() -> None:
         if crispr_core:
             fail("CRISPR guide RNA must not be in core scope")
 
-        crispr_molecules = conn.execute(
-            """
+        crispr_molecules = conn.execute("""
             SELECT COUNT(*)
             FROM molecule
             JOIN modality ON molecule.modality_id = modality.id
             WHERE modality.name LIKE '%CRISPR%'
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if crispr_molecules:
             fail("CRISPR guide RNA must not appear in molecule records")
 
-        unproven_release = conn.execute(
-            """
+        unproven_release = conn.execute("""
             SELECT COUNT(*)
             FROM curation_audit
             WHERE validation_status IN (
@@ -200,19 +219,16 @@ def check_db() -> None:
                 'curator_verified_abstract_level'
             )
               AND curator_decision = 'accept'
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if unproven_release:
             fail("unverified or abstract-level records cannot be accepted")
 
-        batch_script_audit = conn.execute(
-            """
+        batch_script_audit = conn.execute("""
             SELECT COUNT(*)
             FROM curation_audit
             WHERE extractor_model_or_script = 'build_curator_batch1.py'
                OR extraction_method LIKE '%curator_batch1%'
-            """
-        ).fetchone()[0]
+            """).fetchone()[0]
         if batch_script_audit:
             fail("disabled curator batch1 script must not appear in release audit records")
     finally:
@@ -231,216 +247,258 @@ def check_api() -> None:
     release_count = int(counts.get("toxicity_endpoint", 0)) + int(
         counts.get("offtarget_evidence", 0)
     )
+    for key, expected in {
+        "source_document": 660,
+        "molecule": 524,
+        "curation_audit": 737,
+        "benchmark_split": 344,
+    }.items():
+        if counts.get(key) != expected:
+            fail(f"public stats {key} count must be {expected}")
+    if release_count != 737:
+        fail("public stats release evidence total must be 737")
+    internal_key = find_internal_work_key(stats)
+    if internal_key is not None:
+        fail(f"public stats expose withheld curation work at {internal_key}")
 
-    for endpoint in [
+    expected_endpoints = [
         "/api/metadata",
         "/api/summary",
         "/api/facets",
-        "/api/quality",
         "/api/coverage",
-        "/api/examples",
-        "/api/ask?q=Show%20GalNAc%20liver%20toxicity%20Grade%20A%2FB%20evidence",
-        "/api/help",
-        "/api/release_status",
-        "/api/submission_pack",
-        "/api/field_completeness",
-        "/api/core_oligo_fields",
-        "/api/curation_protocol",
         "/api/independent_validation",
-        "/api/novelty_position",
         "/api/data_availability",
-        "/api/archive_readiness",
-        "/api/adoption_packet",
-        "/api/agent_access",
-        "/api/agent_connect",
-        "/agent.json",
-        "/mcp.json",
         "/api/citation",
-        "/api/use_cases",
-        "/api/client_examples",
-        "/api/submission_schema",
-        "/api/sequence_coverage",
-        "/api/offtarget_taxonomy",
-        "/api/sequence_search?sequence=AUGCUACUGACUGA&modification=galnac&target=PCSK9",
-        "/api/safety_triage?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human",
-        "/api/safety_dossier?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human",
-        "/api/evidence_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human",
-        "/api/prov_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human",
         "/bioschemas.json",
-        "/nlweb.json",
-        "/api/modification_profile?term=galnac",
         "/api/download_manifest",
         "/api/downloads",
-        "/api/openapi.json",
-        "/api/search?q=toxicity",
-        "/api/source_detail?q=hepatotoxicity",
-        "/api/sources",
-        "/api/molecules",
+        "/api/sources?limit=1000",
+        "/api/molecules?limit=1000",
         "/api/evidence",
-        "/api/evidence_records?domain=toxicity&grade=C",
-        "/api/evidence_detail?domain=toxicity&id=1",
+        "/api/evidence_records?limit=1000",
         "/api/benchmark",
         "/api/benchmark_baseline_results",
-        "/api/audit?entity_table=toxicity_endpoint",
-        "/api/readiness",
-        "/api/closest_work",
+        "/api/benchmark_tasks",
+        "/api/audit?limit=1000",
         "/api/data_dictionary",
-        "/api/curation_queue",
-        "/api/curation_candidates",
-    ]:
+    ]
+    payloads: dict[str, object] = {}
+    for endpoint in expected_endpoints:
         payload = get_json(endpoint)
         if payload is None:
             fail(f"{endpoint} returned empty payload")
+        internal_key = find_internal_work_key(payload)
+        if internal_key is not None:
+            fail(f"{endpoint} exposes withheld curation work at {internal_key}")
+        payloads[endpoint] = payload
 
-    triage = get_json(
-        "/api/safety_triage?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human"
-    )
-    if not isinstance(triage, dict) or not triage.get("risk_matrix"):
-        fail("safety triage payload missing risk matrix")
-    if triage.get("triage_policy", {}).get("prediction_mode") != "no de novo safety prediction":
-        fail("safety triage must expose no-prediction policy")
-    if not triage.get("dossier"):
-        fail("safety triage payload missing dossier metadata")
+    metadata = payloads["/api/metadata"]
+    if not isinstance(metadata, dict) or metadata.get("data_release_version") != "1.0.2":
+        fail("metadata endpoint must report web release 1.0.2")
+    release_snapshot = metadata.get("release_snapshot", {})
+    if release_snapshot != {
+        "verified_release_records": 737,
+        "toxicity_records": 626,
+        "offtarget_records": 111,
+        "benchmark_split_records": 344,
+        "primary_studies": 660,
+    }:
+        fail("metadata release snapshot differs from the submitted manuscript contract")
 
-    dossier = get_json(
-        "/api/safety_dossier?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human"
-    )
-    if not isinstance(dossier, dict) or not dossier.get("evidence_graph"):
-        fail("safety dossier payload missing evidence graph")
-    graph = get_json(
-        "/api/evidence_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human"
-    )
-    if not isinstance(graph, dict) or graph.get("counts", {}).get("nodes", 0) < 5:
-        fail("evidence graph payload missing query graph nodes")
-    prov = get_json(
-        "/api/prov_graph?sequence=AUGCUACUGACUGA&target=PCSK9&modification=GalNAc&delivery=GalNAc&endpoint=hepatic&species=human"
-    )
-    if prov.get("standard") != "W3C PROV-compatible JSON profile":
-        fail("PROV graph payload missing W3C profile")
+    for endpoint, expected_rows in [
+        ("/api/evidence_records?limit=1000", 737),
+        ("/api/sources?limit=1000", 660),
+        ("/api/molecules?limit=1000", 524),
+        ("/api/audit?limit=1000", 737),
+    ]:
+        payload = payloads[endpoint]
+        if not isinstance(payload, list) or len(payload) != expected_rows:
+            fail(f"{endpoint} must expose exactly {expected_rows} release rows")
 
-    agent_access = get_json("/api/agent_access")
-    if not isinstance(agent_access, dict) or not agent_access.get("guardrails"):
-        fail("agent access payload missing guardrails")
-    if agent_access.get("pack", {}).get("files", 0) < 14:
-        fail("agent access pack metadata is incomplete")
-    if not agent_access.get("tool_profiles"):
-        fail("agent access payload missing universal tool profiles")
+    evidence_records = payloads["/api/evidence_records?limit=1000"]
+    evidence_domains = {
+        domain: sum(1 for row in evidence_records if row.get("evidence_domain") == domain)
+        for domain in ("toxicity", "offtarget")
+    }
+    if evidence_domains != {"toxicity": 626, "offtarget": 111}:
+        fail("evidence API must expose 626 toxicity and 111 off-target rows")
 
-    agent_connect = get_json("/api/agent_connect")
-    if not isinstance(agent_connect, dict) or not agent_connect.get("not_tool_specific"):
-        fail("agent connect payload must be tool agnostic")
-    if len(agent_connect.get("entrypoints", [])) < 5:
-        fail("agent connect payload missing universal entrypoints")
+    data_availability = payloads["/api/data_availability"]
+    if not isinstance(data_availability, dict):
+        fail("data_availability endpoint returned a malformed payload")
+    if "availability_statement_draft" in data_availability:
+        fail("data_availability endpoint exposes a draft statement")
+    if not data_availability.get("availability_statement"):
+        fail("data_availability endpoint is missing its public statement")
+
+    citation = payloads["/api/citation"]
+    if not isinstance(citation, dict):
+        fail("citation endpoint returned a malformed payload")
+    archived = citation.get("archived_snapshot", {})
+    web_release = citation.get("web_release", {})
+    if archived.get("version") != "v1.0.1" or archived.get("doi") != ("10.5281/zenodo.20633779"):
+        fail("citation endpoint does not identify the manuscript-cited archived snapshot")
+    if web_release.get("version") != "1.0.2":
+        fail("citation endpoint does not identify the current web release")
+
+    benchmark = payloads["/api/benchmark"]
+    if not isinstance(benchmark, dict) or benchmark.get("benchmark_eligible_records") != 344:
+        fail("benchmark endpoint must report exactly 344 eligible release rows")
+
+    baseline_results = payloads["/api/benchmark_baseline_results"]
+    if not isinstance(baseline_results, list) or len(baseline_results) != 16:
+        fail("benchmark_baseline_results endpoint must expose exactly 16 rows")
+    benchmark_tasks = payloads["/api/benchmark_tasks"]
+    if not isinstance(benchmark_tasks, list) or len(benchmark_tasks) != 2:
+        fail("benchmark_tasks endpoint must expose exactly two task cards")
 
     with urlopen(f"{BASE_URL}/api/download/source_document.csv", timeout=5) as response:
         body = response.read().decode("utf-8")
-    if "source_url" not in body or "theRNA" not in body:
-        fail("download CSV does not contain expected source rows")
+    source_rows = list(csv.DictReader(io.StringIO(body)))
+    if not source_rows or "source_url" not in source_rows[0]:
+        fail("source_document.csv does not contain the expected release columns")
+    if len(source_rows) != 660:
+        fail("source_document.csv must contain exactly 660 release-linked sources")
 
     with urlopen(f"{BASE_URL}/api/download/all_tables.zip", timeout=5) as response:
         zip_body = response.read()
     if len(zip_body) < 1000:
         fail("all-table zip download is unexpectedly small")
 
-    with urlopen(f"{BASE_URL}/llms.txt", timeout=5) as response:
-        llms_text = response.read().decode("utf-8")
-    if "Verified release evidence supports claims" not in llms_text:
-        fail("llms.txt missing verified evidence guardrail")
-
-    with urlopen(f"{BASE_URL}/api/download/oligovigil_agent_pack.zip", timeout=5) as response:
-        agent_pack = response.read()
-    with zipfile.ZipFile(io.BytesIO(agent_pack), "r") as archive:
-        names = set(archive.namelist())
-    if "agent_ready/mcp_server/oligovigil_mcp_server.py" not in names:
-        fail("agent pack missing MCP server")
-    if "agent_ready/oligovigil_skill/SKILL.md" not in names:
-        fail("agent pack missing OligoVigil skill")
-    if "agent_ready/connectors/universal_agent_manifest.json" not in names:
-        fail("agent pack missing universal manifest")
-    if "agent_ready/prompts/universal_vibecoding_connector.md" not in names:
-        fail("agent pack missing universal vibe-coding connector prompt")
-
     with urlopen(f"{BASE_URL}/api/download/evidence_release.csv", timeout=5) as response:
         evidence_release = response.read().decode("utf-8")
     if "evidence_domain" not in evidence_release:
         fail("evidence release CSV is missing its header")
-    evidence_release_lines = len([line for line in evidence_release.splitlines() if line.strip()])
-    if release_count == 0 and evidence_release_lines != 1:
-        fail("evidence release CSV must be header-only before verified promotion")
-    if release_count > 0 and evidence_release_lines <= 1:
-        fail("evidence release CSV must contain curator-verified release rows")
+    if len(list(csv.DictReader(io.StringIO(evidence_release)))) != 737:
+        fail("evidence release CSV must contain exactly 737 release rows")
 
     with urlopen(f"{BASE_URL}/api/download/benchmark_reference_splits.csv", timeout=5) as response:
         benchmark_splits = response.read().decode("utf-8")
     if "task_name" not in benchmark_splits or "leakage_group" not in benchmark_splits:
         fail("benchmark reference split CSV is missing expected columns")
-    if release_count > 0 and len([line for line in benchmark_splits.splitlines() if line.strip()]) <= 1:
-        fail("benchmark reference split CSV must contain Grade A/B rows after verified promotion")
+    if len(list(csv.DictReader(io.StringIO(benchmark_splits)))) != 344:
+        fail("benchmark reference split CSV must contain exactly 344 rows")
 
-    core_fields = get_json("/api/core_oligo_fields")
-    # P0 = Grade A/B benchmark-linked release rows. After honest re-curation the release is 658
-    # with 345 benchmark rows, so P0 tracks the benchmark size (was >=1000 under the inflated v1).
-    if not isinstance(core_fields, dict) or core_fields.get("summary", {}).get("p0_benchmark_linked_rows", 0) < 300:
-        fail("core oligo field API must expose at least 300 P0 benchmark-linked rows")
+    validation = payloads["/api/independent_validation"]
+    sample = validation.get("sample", {}) if isinstance(validation, dict) else {}
+    metrics = validation.get("metrics", {}) if isinstance(validation, dict) else {}
+    if (
+        sample.get("sample_rows") != 126
+        or sample.get("machine_accept_rows") != 90
+        or sample.get("false_accept_rows") != 66
+        or metrics.get("false_accept_rate") != 0.73
+        or metrics.get("wilson_95_ci") != [0.63, 0.81]
+    ):
+        fail("independent validation API does not match the submitted audit summary")
 
-    validation = get_json("/api/independent_validation")
-    if not isinstance(validation, dict) or validation.get("sample", {}).get("sample_rows") != 500:
-        fail("independent validation API must expose the 500-row second-review packet")
-
-    with urlopen(f"{BASE_URL}/api/download/core_oligo_field_curation_packet.csv", timeout=5) as response:
-        core_packet = response.read().decode("utf-8")
-    if "missing_sequence" not in core_packet or "core-field-" not in core_packet:
-        fail("core oligo field packet is missing expected curation columns")
-
-    with urlopen(f"{BASE_URL}/api/download/independent_curation_validation_template.csv", timeout=5) as response:
-        validation_packet = response.read().decode("utf-8")
-    if "reviewer2_decision" not in validation_packet or "candidate_reject_control" not in validation_packet:
-        fail("independent validation template is missing reviewer-2 or reject-control fields")
+    assert_not_found("/api/download/independent_curation_validation_template.csv")
 
     with urlopen(f"{BASE_URL}/api/download/benchmark_baseline_results.csv", timeout=5) as response:
         baseline_results = response.read().decode("utf-8")
-    if "baseline_model" not in baseline_results or "macro_f1" not in baseline_results or "coverage" not in baseline_results:
+    if (
+        "baseline_model" not in baseline_results
+        or "macro_f1" not in baseline_results
+        or "coverage" not in baseline_results
+    ):
         fail("benchmark baseline result CSV is missing expected columns")
-
-    with urlopen(f"{BASE_URL}/api/download/curation_candidates_filtered.csv?domain=toxicity", timeout=5) as response:
-        filtered_candidates = response.read().decode("utf-8")
-    if "candidate_signal" not in filtered_candidates or "toxicity" not in filtered_candidates:
-        fail("filtered candidate download is missing expected toxicity candidates")
 
     with urlopen(f"{BASE_URL}/api/manifest/license_manifest_v1.csv", timeout=5) as response:
         manifest = response.read().decode("utf-8")
-    if "DrugBank" not in manifest or "linkout_only" not in manifest:
-        fail("license manifest download is missing expected guardrails")
+    for marker in ["PubMed metadata", "PMC Open Access subset", "linkout_only"]:
+        if marker not in manifest:
+            fail(f"license manifest download is missing release guardrail: {marker}")
+    manifest_lower = manifest.lower()
+    if "drugbank" in manifest_lower or "closest_work" in manifest_lower:
+        fail("license manifest exposes a non-release source class")
 
     with urlopen(f"{BASE_URL}/api/manifest/source_license_manifest_v1.csv", timeout=5) as response:
         source_license = response.read().decode("utf-8")
-    if "raw_text_stored" not in source_license or "derived_annotation_allowed" not in source_license:
+    if (
+        "raw_text_stored" not in source_license
+        or "derived_annotation_allowed" not in source_license
+    ):
         fail("source license manifest is missing record-level reuse fields")
-
-    with urlopen(f"{BASE_URL}/api/manifest/closest_work_matrix_v1.csv", timeout=5) as response:
-        closest_work = response.read().decode("utf-8")
-    if "CMsiRNAdb" not in closest_work or "OligoVigil" not in closest_work:
-        fail("closest-work matrix is missing critical comparators")
+    if len(list(csv.DictReader(io.StringIO(source_license)))) != 660:
+        fail("source license manifest must contain exactly 660 release-linked sources")
 
     with urlopen(f"{BASE_URL}/api/manifest/data_dictionary_v1.csv", timeout=5) as response:
         data_dictionary = response.read().decode("utf-8")
-    if "curation_candidate" not in data_dictionary or "release_status" not in data_dictionary:
-        fail("data dictionary manifest is missing expected fields")
+    if "release_status" not in data_dictionary:
+        fail("data dictionary manifest is missing release_status fields")
+    if "curation_candidate" in data_dictionary or "curation_queue" in data_dictionary:
+        fail("data dictionary exposes withheld curation work tables")
 
-    with urlopen(f"{BASE_URL}/api/manifest/curation_queue_v1.csv", timeout=5) as response:
-        queue = response.read().decode("utf-8")
-    if "evidence_domain" not in queue or "toxicity" not in queue:
-        fail("curation queue manifest is missing expected tasks")
-
-    with urlopen(f"{BASE_URL}/api/manifest/curation_candidate_v1.csv", timeout=5) as response:
-        candidates = response.read().decode("utf-8")
-    if "candidate_signal" not in candidates or "derived_annotations_only" not in candidates:
-        fail("curation candidate manifest is missing expected guardrails")
-
-    with urlopen(f"{BASE_URL}/api/manifest/curator_review_template_v1.csv", timeout=5) as response:
-        review = response.read().decode("utf-8")
-    if "curator_decision" not in review or "source_location_verified" not in review:
-        fail("curator review template is missing promotion gate fields")
+    assert_not_found("/api/manifest/curator_review_template_v1.csv")
+    for path in [
+        "/api/examples",
+        "/api/ask",
+        "/api/help",
+        "/api/use_cases",
+        "/api/case_workflows",
+        "/api/sequence_coverage",
+        "/api/sequence_search",
+        "/api/safety_triage",
+        "/api/safety_dossier",
+        "/api/evidence_graph",
+        "/api/prov_graph",
+        "/api/modification_profile",
+        "/api/client_examples",
+        "/api/submission_schema",
+        "/api/openapi.json",
+        "/api/search",
+        "/api/source_detail",
+        "/api/evidence_detail",
+        "/api/offtarget_taxonomy",
+        "/api/quality",
+        "/api/curation_protocol",
+        "/api/release_status",
+        "/api/closest_work",
+        "/api/core_oligo_fields",
+        "/api/field_completeness",
+        "/api/novelty_position",
+        "/api/adoption_packet",
+        "/api/readiness",
+        "/api/archive_readiness",
+        "/api/agent_access",
+        "/api/agent_connect",
+        "/api/submission_pack",
+        "/agent.json",
+        "/.well-known/ai-plugin.json",
+        "/.well-known/nlweb.json",
+        "/.well-known/oligovigil-agent.json",
+        "/mcp.json",
+        "/nlweb.json",
+        "/llms.txt",
+        "/llms-full.txt",
+        "/api/download/oligovigil_agent_pack.zip",
+        "/api/curation_queue",
+        "/api/curation_candidates",
+        "/api/download/sequence_modification_curation_template.csv",
+        "/api/download/core_oligo_field_curation_packet.csv",
+        "/api/download/independent_curation_validation_template.csv",
+        "/api/download/curation_queue.csv",
+        "/api/download/curation_candidate.csv",
+        "/api/download/curation_candidates_filtered.csv",
+        "/api/download/assay.csv",
+        "/api/manifest/sequence_modification_curation_template_v1.csv",
+        "/api/manifest/core_oligo_field_curation_packet_v1.csv",
+        "/api/manifest/independent_curation_validation_template_v1.csv",
+        "/api/manifest/closest_work_matrix_v1.csv",
+        "/api/manifest/curation_queue_v1.csv",
+        "/api/manifest/curation_candidate_v1.csv",
+        "/api/manifest/source_candidates_v1.csv",
+        "/api/manifest/source_candidates_v2.csv",
+        "/api/manifest/source_candidates_v3.csv",
+        "/api/manifest/source_candidates_v4.csv",
+        "/api/manifest/source_candidates_v5.csv",
+        "/api/manifest/source_candidates_v6.csv",
+        "/api/manifest/pubmed_discovery_candidates_v1.csv",
+        "/api/manifest/pubmed_discovery_candidates_v2.csv",
+        "/api/manifest/pubmed_discovery_candidates_v3.csv",
+        "/api/manifest/pubmed_discovery_candidates_v4.csv",
+        "/api/manifest/source_document_pubmed_v1.csv",
+    ]:
+        assert_not_found(path)
 
 
 def check_manifests() -> None:
@@ -471,7 +529,9 @@ def check_manifests() -> None:
                 duplicate_expanded.add(pmid)
             seen_expanded.add(pmid)
         if duplicate_expanded:
-            fail(f"expanded source candidate manifest contains duplicate PMIDs: {sorted(duplicate_expanded)}")
+            fail(
+                f"expanded source candidate manifest contains duplicate PMIDs: {sorted(duplicate_expanded)}"
+            )
     if SOURCE_CANDIDATES_V3.exists():
         with SOURCE_CANDIDATES_V3.open("r", encoding="utf-8", newline="") as handle:
             v3_rows = list(csv.DictReader(handle))
@@ -541,6 +601,10 @@ def check_manifests() -> None:
 def main() -> None:
     check_db()
     check_manifests()
+    scanned, public_failures = collect_public_asset_failures()
+    if public_failures:
+        details = "; ".join(sorted(public_failures)[:10])
+        fail(f"public static asset checks failed after scanning {scanned} assets: {details}")
     check_api()
     print("smoke_test=pass")
 

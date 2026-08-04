@@ -1,7 +1,7 @@
 {
   "name": "OligoVigil Design System",
   "version": "20260604_resource_depth_v42",
-  "status": "submission_candidate",
+  "status": "release_candidate",
   "sources": [
     "app/static/index.html",
     "app/static/styles.css",
@@ -12,7 +12,7 @@
     "design-system-research skill"
   ],
   "direction": {
-    "summary": "A restrained scientific workbench for a NAR Database Issue submission: dense enough for database users, calm enough for trust, and explicit about evidence provenance.",
+    "summary": "A restrained scientific workbench for a public scientific resource: dense enough for database users, calm enough for trust, and explicit about evidence provenance.",
     "principles": [
       "Evidence and search workflows are primary; imagery supports orientation only.",
       "Use compact product UI, not marketing-page composition.",

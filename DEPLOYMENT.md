@@ -1,6 +1,6 @@
 # OligoVigil Public URL Deployment Guide
 
-OligoVigil needs a stable, no-login public HTTPS URL for NAR Database submission. The v1.0.1 data archive DOI is already minted:
+OligoVigil uses a stable, no-login public HTTPS URL. The existing v1.0.1 archive identifiers are:
 
 - Data DOI: `10.5281/zenodo.20633779`
 - DOI URL: `https://doi.org/10.5281/zenodo.20633779`
@@ -13,7 +13,8 @@ The recommended free public-hosting route is Cloudflare Pages. It gives a stable
 Generate the static release package from the local read-only portal:
 
 ```powershell
-cd C:\Users\Jie\Desktop\NAR_OligoSafetyDB\repo_ready
+git clone https://github.com/Jie-Ni/OligoVigil.git
+cd OligoVigil
 docker compose up -d --build
 python scripts\export_cloudflare_pages_static.py --base-url http://127.0.0.1:8077 --public-base-url https://oligovigil.pages.dev --output public
 ```
@@ -21,7 +22,7 @@ python scripts\export_cloudflare_pages_static.py --base-url http://127.0.0.1:807
 Deploy with Wrangler after Cloudflare login:
 
 ```powershell
-cd C:\Users\Jie\Desktop\NAR_OligoSafetyDB\repo_ready
+cd OligoVigil
 npx wrangler login
 npx wrangler pages deploy public --project-name oligovigil
 ```
@@ -32,7 +33,7 @@ Expected canonical URL if the project name is available:
 https://oligovigil.pages.dev
 ```
 
-If Cloudflare reports that `oligovigil` is already taken, use a specific project name such as `oligovigil-db` and use the assigned `*.pages.dev` URL in the manuscript.
+If Cloudflare reports that `oligovigil` is already taken, use a specific project name such as `oligovigil-db` and record the assigned `*.pages.dev` URL in the site metadata and release documentation.
 
 ### What the static export contains
 
@@ -59,7 +60,7 @@ Invoke-WebRequest "$url/bioschemas.json" -UseBasicParsing
 Invoke-WebRequest "$url/.well-known/oligovigil-agent.json" -UseBasicParsing
 ```
 
-Then replace remaining manuscript placeholders for the public HTTPS URL with the live Cloudflare Pages URL and recompile the final PDFs.
+Then verify that site metadata and downloadable artifacts point to the intended public release.
 
 ## Temporary: Cloudflare Quick Tunnel
 
@@ -69,7 +70,7 @@ Use only for live preview while developing:
 cloudflared tunnel --url http://localhost:8077
 ```
 
-The resulting `*.trycloudflare.com` URL is temporary and should not be used as the NAR submission URL.
+The resulting `*.trycloudflare.com` URL is temporary and should not be used as the canonical public URL.
 
 ## Optional: Named Cloudflare Tunnel
 
@@ -82,4 +83,4 @@ cloudflared tunnel route dns oligovigil oligovigil.<your-domain>
 cloudflared tunnel run oligovigil
 ```
 
-For NAR, Cloudflare Pages is cleaner because it does not depend on the local machine.
+Cloudflare Pages avoids depending on the local machine for public availability.

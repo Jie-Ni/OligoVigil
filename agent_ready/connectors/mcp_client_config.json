@@ -6,13 +6,13 @@
         "agent_ready/mcp_server/oligovigil_mcp_server.py"
       ],
       "env": {
-        "OLIGOVIGIL_BASE_URL": "https://your-public-oligovigil.example.org"
+        "OLIGOVIGIL_BASE_URL": "https://oligovigil.pages.dev"
       }
     }
   },
   "notes": [
-    "Replace OLIGOVIGIL_BASE_URL with the public OligoVigil deployment URL.",
-    "For local testing, use http://127.0.0.1:8077.",
+    "OLIGOVIGIL_BASE_URL points to the public OligoVigil deployment.",
+    "Set OLIGOVIGIL_BASE_URL to another deployment URL when needed.",
     "The MCP server exposes read-only tools only."
   ]
 }

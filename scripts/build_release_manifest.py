@@ -78,7 +78,7 @@ def main() -> None:
     ]
     manifest = {
         "project": "OligoVigil",
-        "release_type": "presubmission_release",
+        "release_type": "public_release",
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "file_count": len(entries),
         "entries": entries,

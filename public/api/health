@@ -1,4 +1,4 @@
 {
   "ok": true,
-  "database": "/app/data/oligosafety.db"
+  "database": "oligosafety.db"
 }

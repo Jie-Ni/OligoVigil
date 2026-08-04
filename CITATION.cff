@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use OligoVigil, please cite the NAR Database paper (preferred) and the software archive (secondary)."
+message: "If you use OligoVigil, cite the versioned release archive used in your analysis."
 title: "OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides"
 type: software
 abstract: >-
@@ -9,24 +9,16 @@ abstract: >-
   release contains 737 human-adjudicated records (626 toxicity + 111
   off-target) from 660 primary sources, each anchored to an exact
   in-source location and graded A/B/C, plus a leakage-aware 344-record
-  evaluation benchmark with deterministic prior baselines. Following the
-  v6 within-team collaborator round (2026-06-07), placeholder benchmark
-  contamination was reduced from 31.1% to 4.1% and new chemistry and
-  delivery dimensions were added. A second-round toxicity expansion
-  (EXPAND-2; +32 records) and a mixed-sample inter-rater study with an
-  independent second curator (KAPPA-2) followed: Cohen kappa_binary =
-  0.42 under the drop-abstain convention and 0.34 under a
-  safety-conservative collapse-abstain convention.
-  The candidate-to-release firewall (no machine output is presented as
-  human curation) and the full curation audit trail are exposed as bulk
-  downloads and via a documented REST API with OpenAPI / MCP / Bioschemas
-  JSON-LD / W3C PROV interfaces.
-version: "1.0.1"
-date-released: "2026-06-10"
+  evaluation benchmark with deterministic prior baselines. Versioned bulk
+  downloads and release-scoped JSON resources expose the evidence records,
+  source provenance, curation audit trail, benchmark resources, and
+  Bioschemas JSON-LD metadata.
+version: "1.0.2"
+date-released: "2026-08-04"
 license: MIT
 license-url: "https://github.com/Jie-Ni/OligoVigil/blob/main/LICENSE"
 repository-code: "https://github.com/Jie-Ni/OligoVigil"
-url: "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1"
+url: "https://oligovigil.pages.dev/"
 keywords:
   - oligonucleotide therapeutics
   - antisense oligonucleotide
@@ -37,7 +29,6 @@ keywords:
   - curated evidence
   - benchmark
   - source provenance
-  - NAR Database
 authors:
   - family-names: "Ni"
     given-names: "Jie"
@@ -77,7 +68,7 @@ identifiers:
     type: url
     value: "https://github.com/Jie-Ni/OligoVigil/releases/tag/v1.0.1"
 preferred-citation:
-  type: article
+  type: data
   title: "OligoVigil: a curator-verified, source-anchored database of safety and off-target evidence for therapeutic oligonucleotides"
   authors:
     - family-names: "Ni"
@@ -92,6 +83,6 @@ preferred-citation:
       given-names: "Yun"
     - family-names: "Jatowt"
       given-names: "Adam"
-  year: 2027
-  journal: "Nucleic Acids Research"
-  issue: "Database Issue"
+  year: 2026
+  doi: "10.5281/zenodo.20633779"
+  version: "1.0.1"

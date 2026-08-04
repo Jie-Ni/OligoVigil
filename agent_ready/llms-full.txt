@@ -1,6 +1,6 @@
 # OligoVigil Agent Guide
 
-OligoVigil is a no-login oligonucleotide safety evidence resource for ASO/siRNA toxicity and off-target evidence. It is built around 737 human curator-verified release records (626 toxicity endpoints + 111 off-target observations from 660 primary sources), source provenance, audit trails, downloads, and benchmark splits. Curation was AI-assisted: a single human curator adjudicated v2 LLM proposals over the source passages, re-curating 2003 v1 machine pre-curated candidates (~74% measured false-accept), of which 1345 unsupported rows were demoted. Machine-only rows are labelled machine_precurated_v1 and are not release evidence; only the human curator rows are curator_verified. Curation used a single primary curator; Inter-curator reliability was measured on a blinded second-curator 100-row mixed accept/reject sample (KAPPA-2): Cohen kappa_binary = 0.42 (drop-abstain, n=92) / 0.34 (collapse-abstain, n=100), raw agreement 66%.
+OligoVigil is a no-login oligonucleotide safety evidence resource built around 737 human curator-verified observations (626 toxicity and 111 off-target) from 660 primary studies, with source provenance, audit trails, downloads, and benchmark splits. A 2,003-candidate machine stage was evaluated by independent source-grounded re-adjudication of a 126-record stratified sample: 66 false accepts among 90 machine-accepted records, rate 0.73 (Wilson 95% CI 0.63-0.81). Human adjudication produced the released observations and demoted or removed 1,345 unsupported candidates.
 
 ## Evidence Policy
 

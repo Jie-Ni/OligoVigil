@@ -1,9 +1,19 @@
 {
-  "version": "20260604_core_validation_v45",
-  "generated_at": "2026-06-11T14:10:40+00:00",
-  "doi_status": "10.5281/zenodo.20633779",
-  "archive_url": "https://doi.org/10.5281/zenodo.20633779",
-  "license_policy": "Raw article text is not redistributed. Curator-reviewed derived annotations, source metadata, and PMID/DOI links are provided for reuse.",
+  "version": "1.0.2",
+  "data_release_version": "1.0.2",
+  "generated_at": "2026-08-04T23:07:36+00:00",
+  "version_map": {
+    "archived_snapshot": {
+      "version": "v1.0.1",
+      "doi": "10.5281/zenodo.20633779",
+      "url": "https://doi.org/10.5281/zenodo.20633779"
+    },
+    "web_release": {
+      "version": "1.0.2",
+      "url": "https://oligovigil.pages.dev"
+    }
+  },
+  "license_policy": "Curator-reviewed derived annotations, source metadata, and PMID/DOI links connect records to the original sources.",
   "recommended_bundle": "/api/download/all_tables.zip",
   "files": [
     {
@@ -13,11 +23,11 @@
       "purpose": "Unified curator-verified toxicity and off-target release evidence.",
       "recommended_use": "Primary citation and evidence reuse table.",
       "rows": 737,
-      "bytes": 620435,
-      "sha256": "1e75030b03e14f40e87a445af6c96e4b0e189abf78604998767cfe2baa78c775",
+      "bytes": 525515,
+      "sha256": "e328d0a8c56a5ae87472b957603ad74d402c60602220ee54891b10e1167a362b",
       "schema": "data_dictionary_v1.csv",
-      "license": "Curator-reviewed derived annotations and source identifiers; raw article text/PDFs are not redistributed.",
-      "version": "20260604_core_validation_v45"
+      "license": "Curator-reviewed derived annotations with source identifiers and links.",
+      "version": "1.0.2"
     },
     {
       "category": "Core release",
@@ -25,12 +35,12 @@
       "url": "/api/download/source_document.csv",
       "purpose": "Source-level provenance metadata with PMID/DOI/PMCID links.",
       "recommended_use": "Resolve original articles and regulatory documents.",
-      "rows": 36245,
-      "bytes": 11482278,
-      "sha256": "2f030405e6a01b5239406f1da107b67f09b3bd3c83474127efbda95e6d4f6273",
+      "rows": 660,
+      "bytes": 219359,
+      "sha256": "e23cb06ee8a5185022a60ba8bd5994546df8d1f04d297081e6d72ce36837d796",
       "schema": "data_dictionary_v1.csv",
-      "license": "Source metadata and identifiers only; users must follow source URLs for original document terms.",
-      "version": "20260604_core_validation_v45"
+      "license": "Release-linked source metadata and identifiers.",
+      "version": "1.0.2"
     },
     {
       "category": "Core release",
@@ -38,12 +48,12 @@
       "url": "/api/download/molecule.csv",
       "purpose": "Molecule/cohort entities linked to modality and target annotations.",
       "recommended_use": "Join evidence records to molecule-level context.",
-      "rows": 1012,
-      "bytes": 177070,
-      "sha256": "b25660c1eea3d88706460b1c76dbbb6b5eb7e225f53da0ad837a2b7ff632318f",
+      "rows": 524,
+      "bytes": 95390,
+      "sha256": "18ea6860acc9ad8d08a754e2f90227d8ac348483238d144491e30762c61ef220",
       "schema": "data_dictionary_v1.csv",
-      "license": "Derived molecule/cohort annotations linked to release evidence; sequence fields are curator-verified only when populated.",
-      "version": "20260604_core_validation_v45"
+      "license": "Derived molecule and cohort annotations linked to release evidence.",
+      "version": "1.0.2"
     },
     {
       "category": "Benchmark",
@@ -52,11 +62,11 @@
       "purpose": "Deterministic Grade A/B reference train/validation/test splits.",
       "recommended_use": "Canonical ML benchmark split file.",
       "rows": 344,
-      "bytes": 146241,
-      "sha256": "5bf1a917a6acd47ddd0d087723737286873b33c6e7062db5a0009345535079fe",
+      "bytes": 142430,
+      "sha256": "4b20e1ff70c81af270e1ce1a05a6d47c6c4b0f4b8e8859adfff472805126f254",
       "schema": "benchmark_task_cards_v1.csv",
-      "license": "Derived benchmark split assignments over Grade A/B release evidence; cite version and checksum.",
-      "version": "20260604_core_validation_v45"
+      "license": "Benchmark split assignments over Grade A/B release evidence; cite version and checksum.",
+      "version": "1.0.2"
     },
     {
       "category": "Benchmark",
@@ -65,11 +75,24 @@
       "purpose": "Task definitions, targets, metrics, and leakage policy.",
       "recommended_use": "Cite task name, version, and checksum with benchmark results.",
       "rows": 2,
-      "bytes": 1556,
-      "sha256": "dc90d58981c070cb9009b1b272b24deddd42715ff1dec7694f93a37232a6ddeb",
+      "bytes": 1541,
+      "sha256": "fb0c7b8c79e2e99d5ea9dcadd6141da69f20b42f4ffe9ca8edf3da6395a37b30",
       "schema": "benchmark_task_cards_v1.csv",
-      "license": "Derived task metadata for benchmark reuse; cite task name, version, and checksum.",
-      "version": "20260604_core_validation_v45"
+      "license": "Task metadata for benchmark reuse; cite task name, version, and checksum.",
+      "version": "1.0.2"
+    },
+    {
+      "category": "Benchmark",
+      "filename": "benchmark_readme.md",
+      "url": "/api/download/benchmark_readme.md",
+      "purpose": "Human-readable benchmark contract with task definitions, leakage policy, baselines, reporting rules, and checksums.",
+      "recommended_use": "Read before reusing the reference splits or reporting model comparisons.",
+      "rows": null,
+      "bytes": 1837,
+      "sha256": "be7494e13061822a0eb007c16b5b400ed5dfe476272a1e60a74eaa1ca29750c1",
+      "schema": "benchmark_task_cards_v1.csv",
+      "license": "Human-readable benchmark documentation.",
+      "version": "1.0.2"
     },
     {
       "category": "Benchmark",
@@ -78,11 +101,11 @@
       "purpose": "Deterministic majority, modality-prior, grade-prior, and target-prior baselines for validation/test split sanity checks.",
       "recommended_use": "Reference baselines before reporting trained model comparisons.",
       "rows": 16,
-      "bytes": 5125,
-      "sha256": "4803c43392607d15fa40e332745753b291a90a17dfa92706014c53f8933af8e1",
+      "bytes": 4740,
+      "sha256": "681de737d30f7aad48c49a98aca10c1ebdd96130d60dfacf9ab4301dccc9756c",
       "schema": "benchmark_task_cards_v1.csv",
       "license": "Derived deterministic baseline metrics over fixed splits.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "category": "Benchmark",
@@ -91,89 +114,24 @@
       "purpose": "Stored split assignments backing the reference split export.",
       "recommended_use": "Audit or regenerate benchmark_reference_splits.csv.",
       "rows": 344,
-      "bytes": 71468,
-      "sha256": "c281b9a28de0ac42b537d15540214de311cc299e6d6356175582cde9c11fcd7e",
+      "bytes": 71123,
+      "sha256": "76544b88bee98f82e2e7ff7444a8046dcf9edcc8f9204065d70338f945675bc9",
       "schema": "data_dictionary_v1.csv",
-      "license": "Derived annotations; raw article text not redistributed; source PMID/DOI linked.",
-      "version": "20260604_core_validation_v45"
+      "license": "Derived annotations with linked source identifiers.",
+      "version": "1.0.2"
     },
     {
       "category": "Curation and audit",
       "filename": "curation_audit.csv",
       "url": "/api/download/curation_audit.csv",
-      "purpose": "Curation decision, validation status, extraction method, and audit trail (v1 curator_id 'machine_v1_keyword_classifier' = automated pre-curation, not human).",
-      "recommended_use": "Inspect provenance and curator decision history.",
-      "rows": 32977,
-      "bytes": 7160750,
-      "sha256": "9c7736581411c56d15d3f37082d10276bc97e03ae9ee1d759205c5be73ffad54",
+      "purpose": "Release-level curation decisions, validation status, extraction method, and audit trail.",
+      "recommended_use": "Join to release evidence by entity_table and entity_id.",
+      "rows": 737,
+      "bytes": 194658,
+      "sha256": "7955856055dcd4cc5b92a67060d1255454864fb612a6b98939cd341fba592ad8",
       "schema": "data_dictionary_v1.csv",
-      "license": "Audit metadata and curator decisions; no raw article text redistributed.",
-      "version": "20260604_core_validation_v45"
-    },
-    {
-      "category": "Curation and audit",
-      "filename": "sequence_modification_curation_template.csv",
-      "url": "/api/download/sequence_modification_curation_template.csv",
-      "purpose": "Template for sequence and chemical-modification completion.",
-      "recommended_use": "Curator input; not a release evidence table.",
-      "rows": 984,
-      "bytes": 165730,
-      "sha256": "3fb23daf678fa9c21d9ea98cb72b58bb70f0cc6352697411864f2afffc68179a",
-      "schema": "data_dictionary_v1.csv",
-      "license": "Derived annotations; raw article text not redistributed; source PMID/DOI linked.",
-      "version": "20260604_core_validation_v45"
-    },
-    {
-      "category": "Curation and audit",
-      "filename": "core_oligo_field_curation_packet.csv",
-      "url": "/api/download/core_oligo_field_curation_packet.csv",
-      "purpose": "Prioritized release-row packet for source-verified sequence, modification, delivery, dose, exposure, and model curation.",
-      "recommended_use": "Fill P0 benchmark-linked rows first; not a release claim until verified.",
-      "rows": 705,
-      "bytes": 429479,
-      "sha256": "c598c8d8ddf98ac33eca6b5ce8d0d3eca8a4c602ebfb34a8636e202eae6cf6df",
-      "schema": "core_oligo_field_curation_packet_v1.csv",
-      "license": "Derived annotations; raw article text not redistributed; source PMID/DOI linked.",
-      "version": "20260604_core_validation_v45"
-    },
-    {
-      "category": "Curation and audit",
-      "filename": "independent_curation_validation_template.csv",
-      "url": "/api/download/independent_curation_validation_template.csv",
-      "purpose": "Independent second-review sample containing release accept rows and rejected candidate controls for agreement/error-rate estimation.",
-      "recommended_use": "Complete before claiming release-row false-accept / false-reject error rates. (Inter-curator Cohen kappa is separately claimed from the completed 100-row KAPPA-2 study: 0.42 drop-abstain / 0.34 collapse-abstain, raw agreement 66%.)",
-      "rows": 500,
-      "bytes": 348452,
-      "sha256": "5b4fd2f060fb15ea5114b12ab849e5df231b61f583b1f924b3b6d734c99e544f",
-      "schema": "independent_curation_validation_template_v1.csv",
-      "license": "Derived annotations; raw article text not redistributed; source PMID/DOI linked.",
-      "version": "20260604_core_validation_v45"
-    },
-    {
-      "category": "Curation and audit",
-      "filename": "curation_candidates_filtered.csv",
-      "url": "/api/download/curation_candidates_filtered.csv",
-      "purpose": "Derived candidate annotations awaiting curator review.",
-      "recommended_use": "Gap-finding only; do not cite as verified evidence.",
-      "rows": 5000,
-      "bytes": 2537002,
-      "sha256": "d6827b9572a14b4898caa3a8dbf95cd54166bb67094b8e1c829eda051bf7a933",
-      "schema": "data_dictionary_v1.csv",
-      "license": "Derived triage candidates only; not citable verified release evidence.",
-      "version": "20260604_core_validation_v45"
-    },
-    {
-      "category": "Curation and audit",
-      "filename": "curator_review_template_v1.csv",
-      "url": "/api/manifest/curator_review_template_v1.csv",
-      "purpose": "Human review packet template with provenance and decision fields.",
-      "recommended_use": "Manual curation and external contribution review.",
-      "rows": 41114,
-      "bytes": 8908335,
-      "sha256": "2a8ad663490b175a8d8179683c674cf702aa668610911a0b672bcfe49a3e352e",
-      "schema": "data_dictionary_v1.csv",
-      "license": "Blank/manual review template; not release evidence.",
-      "version": "20260604_core_validation_v45"
+      "license": "Release audit metadata and curator decisions.",
+      "version": "1.0.2"
     },
     {
       "category": "Manifests",
@@ -182,24 +140,11 @@
       "purpose": "Bulk reproducible snapshot of core CSV tables.",
       "recommended_use": "Archive or reproduce the release locally.",
       "rows": null,
-      "bytes": 11667765,
-      "sha256": "7991849754097ae7f5143c0106233c8625d0f25545ca9311d17bdb83ef54c978",
-      "schema": "RELEASE_MANIFEST.json",
-      "license": "Bundle of derived annotations, source metadata, audit files, manifests, and benchmark files; raw article text/PDFs excluded.",
-      "version": "20260604_core_validation_v45"
-    },
-    {
-      "category": "Agent access",
-      "filename": "oligovigil_agent_pack.zip",
-      "url": "/api/download/oligovigil_agent_pack.zip",
-      "purpose": "Universal manifests, MCP server, optional Codex skill, clients, prompts, llms.txt, and starter templates for agent reuse.",
-      "recommended_use": "Connect agentic clients, MCP clients, OpenAPI importers, notebooks, or small apps without scraping the portal UI.",
-      "rows": 16,
-      "bytes": 17199,
-      "sha256": "19626faa459516237a62e3f7a5b5cad13922b29c76eeeda43b7acf2332cd79ec",
-      "schema": "agent_access_manifest.json",
-      "license": "Derived annotations; raw article text not redistributed; source PMID/DOI linked.",
-      "version": "20260604_core_validation_v45"
+      "bytes": 326772,
+      "sha256": "839c02e7f3914b67fb628e70e5bcd6bdc13d872c7428c9f8196db95ae2d22b66",
+      "schema": "data_dictionary_v1.csv",
+      "license": "Bundle of release annotations, source metadata, audit files, manifests, and benchmark files.",
+      "version": "1.0.2"
     },
     {
       "category": "Manifests",
@@ -207,25 +152,25 @@
       "url": "/api/manifest/license_manifest_v1.csv",
       "purpose": "Source reuse and redistribution policy annotations.",
       "recommended_use": "Check whether raw, derived, or link-out reuse is allowed.",
-      "rows": 15,
-      "bytes": 3160,
-      "sha256": "57cf736ef103630b0e1ad9e186e31e24f3abba13806a2e347b63a2fdbf93a43b",
+      "rows": 2,
+      "bytes": 614,
+      "sha256": "898f3d35c0369f30cce52aa7d5a4c0ab716d09225188b71a956212a2fa59e5eb",
       "schema": "license_manifest_v1.csv",
       "license": "Source-class redistribution policy annotations.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     },
     {
       "category": "Manifests",
       "filename": "source_license_manifest_v1.csv",
       "url": "/api/manifest/source_license_manifest_v1.csv",
-      "purpose": "Record-level source provenance and conservative reuse flags for every source_document row.",
-      "recommended_use": "Article/source-level license audit before manuscript submission or external redistribution.",
-      "rows": 36245,
-      "bytes": 18909708,
-      "sha256": "616153cc128a167e5e688d74c1c34f23d07ded991c04214399151caee80782a9",
+      "purpose": "Release-linked source provenance and reuse metadata.",
+      "recommended_use": "Review source identifiers, licenses, and reuse categories.",
+      "rows": 660,
+      "bytes": 348955,
+      "sha256": "72143ef1bf31adbb19be547be2b7b9e17fb508934589310a1da80cf00ae38b87",
       "schema": "source_license_manifest_v1.csv",
-      "license": "Source-level conservative reuse flags; article-level legal reuse should be verified before raw redistribution.",
-      "version": "20260604_core_validation_v45"
+      "license": "Release-linked source provenance and reuse metadata.",
+      "version": "1.0.2"
     },
     {
       "category": "Manifests",
@@ -233,25 +178,12 @@
       "url": "/api/manifest/data_dictionary_v1.csv",
       "purpose": "Column-level schema and field descriptions.",
       "recommended_use": "Read before parsing release tables.",
-      "rows": 115,
-      "bytes": 9937,
-      "sha256": "43165ef14577c3208ea694e7710b6cd6c01cb96f288fa9b41c8a121689eea5b5",
+      "rows": 105,
+      "bytes": 9086,
+      "sha256": "433e5cdb1b5ebc325cecc34007c530aff190f0821ac67352110c64db8efa098a",
       "schema": "data_dictionary_v1.csv",
       "license": "Column definitions for release and manifest files.",
-      "version": "20260604_core_validation_v45"
-    },
-    {
-      "category": "Manifests",
-      "filename": "closest_work_matrix_v1.csv",
-      "url": "/api/manifest/closest_work_matrix_v1.csv",
-      "purpose": "Comparison against adjacent RNA and oligonucleotide resources.",
-      "recommended_use": "Novelty and scope audit.",
-      "rows": 8,
-      "bytes": 3234,
-      "sha256": "7c40276da9074e537079725fd66f0282ba4a871a9652634a1ab3184dbe945705",
-      "schema": "closest_work_matrix_v1.csv",
-      "license": "Derived annotations; raw article text not redistributed; source PMID/DOI linked.",
-      "version": "20260604_core_validation_v45"
+      "version": "1.0.2"
     }
   ]
 }

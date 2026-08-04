@@ -11,7 +11,7 @@ from urllib.request import Request, urlopen
 
 @dataclass(frozen=True)
 class OligoVigilClient:
-    base_url: str = "http://127.0.0.1:8077"
+    base_url: str = "https://oligovigil.pages.dev"
     timeout: float = 30.0
 
     def _url(self, path: str, params: dict[str, str | int] | None = None) -> str:

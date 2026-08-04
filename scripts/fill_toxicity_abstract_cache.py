@@ -36,7 +36,7 @@ DB_PATH = ROOT / "data" / "oligosafety.db"
 GENERATED = ROOT / "data" / "generated"
 EXISTING_CACHE = GENERATED / "pubmed_abstract_cache_batch003.json"
 
-USER_AGENT = "OligoVigil-NAR-2026 (mailto:njie@seu.edu.cn)"
+USER_AGENT = "OligoVigil-public-resource (mailto:njie@seu.edu.cn)"
 EFETCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 BATCH_SIZE = 200
 SLEEP_BETWEEN_BATCHES = 0.34  # ~3 req/s ceiling without API key

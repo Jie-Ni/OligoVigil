@@ -1,10 +1,7 @@
 # =============================================================================
 # OligoVigil — .gitignore
 # =============================================================================
-# Commit policy: ship the source code, the released DB snapshot
-# (data/oligosafety.db), generated manifests, and the FINAL/ submission kit.
-# Exclude bytecode, editor noise, OS junk, runtime logs, working/backup DBs,
-# and the agent-only workflow scratch files.
+# Commit policy: ship source code and reviewed public release artifacts.
 # =============================================================================
 
 
@@ -74,10 +71,12 @@ server.out.log
 
 
 # -----------------------------------------------------------------------------
-# Agent-only scratch / workflow files (never part of a release)
-#   These are produced by paper-skill workflows on the local machine
-#   and have no value to a downstream user of the repo.
+# Local workflow files
 # -----------------------------------------------------------------------------
+DECISIONS/
+FINAL/
+submission/
+submissions/
 04_delivery/
 _test*.pdf
 _test*.md
@@ -117,7 +116,7 @@ env/
 
 
 # -----------------------------------------------------------------------------
-# Secrets — defence-in-depth (the repo should already contain none)
+# Local credentials
 # -----------------------------------------------------------------------------
 .env
 .env.*

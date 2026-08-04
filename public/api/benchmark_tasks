@@ -2,7 +2,7 @@
   {
     "task_name": "toxicity_safety_v0_1",
     "version": "20260604_resource_depth_v42",
-    "doi_status": "pending_public_archive_before_submission",
+    "release_reference": "OligoVigil web release v1.0.2",
     "prediction_target": "oligonucleotide safety endpoint triage from molecule/modality/provenance fields",
     "label_source": "toxicity_endpoint.endpoint_category and endpoint_name",
     "eligibility_rule": "curator_verified accept evidence_grade in A/B",
@@ -21,7 +21,7 @@
   {
     "task_name": "offtarget_safety_v0_1",
     "version": "20260604_resource_depth_v42",
-    "doi_status": "pending_public_archive_before_submission",
+    "release_reference": "OligoVigil web release v1.0.2",
     "prediction_target": "observed off-target signal or off-target evidence type",
     "label_source": "offtarget_evidence.evidence_type and is_computational_prediction",
     "eligibility_rule": "curator_verified accept evidence_grade in A/B",
